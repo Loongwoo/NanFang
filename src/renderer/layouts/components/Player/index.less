@@ -1,0 +1,214 @@
+@primary: @primary-color;
+
+.hover(@color:@primary) {
+  & {
+    transition: all 0.3s ease-in;
+  }
+  &:hover {
+    color: @color;
+  }
+}
+
+.controlWrap {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  background-color: @player-bg-color;
+}
+
+.player {
+  .controlWrap();
+  height: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.btn {
+  font-size: 20px;
+  padding: 0 8px;
+  cursor: pointer;
+  .hover();
+}
+
+.playPause {
+  .btn();
+  font-size: 35px;
+}
+
+.loading {
+  padding: 0 11px;
+  font-size: 29px;
+  color: #ccc;
+}
+
+.trackInfo {
+  flex: 1;
+  .controlWrap();
+}
+
+.cover {
+  width: 30px;
+  height: 30px;
+  margin-left: 15px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.progressWrap {
+  &:extend(.playerInfo);
+  flex: 1;
+  min-width: 430px;
+  margin: 0 10px;
+  padding: 0 10px;
+  background: transparent;
+  overflow: hidden;
+  position: relative;
+}
+@keyframes process-animation {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 2.969em 0;
+  }
+}
+.loadedBar {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  background-color: @loaded-bar-bg-color;
+  background-size: 2.89em 2.89em;
+  background-image: linear-gradient(
+    -45deg,
+    rgba(204, 204, 204, 0.1) 0em,
+    rgba(204, 204, 204, 0.1) 0.8em,
+    #b9dfdc 0.9em,
+    #b9dfdc 2.1em,
+    rgba(204, 204, 204, 0.027) 2.1em,
+    rgba(204, 204, 204, 0.1) 2.9em,
+    #b9dfdc 2.9em,
+    #b9dfdc 4.1em
+  );
+  animation: process-animation 1s infinite linear;
+  transition: all 1s ease-out;
+  &.complete {
+    background-image: none;
+  }
+}
+
+.progress {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  position: relative;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  justify-content: space-between;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.name {
+  display: flex;
+  align-items: baseline;
+  padding: 3px 5px;
+}
+
+.albumName {
+  font-size: 13px;
+  color: #444;
+  font-weight: normal;
+}
+.trackName {
+  flex: 1;
+  width: 20px;
+  font-size: 12px;
+  font-weight: 400;
+  color: @text-color-secondary;
+  word-break: keep-all;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.playedBar {
+  // position: absolute;
+  height: 22px;
+  width: 100%;
+  margin: 0 0 -6px;
+  background: transparent;
+  -webkit-appearance: none;
+
+  &:focus {
+    outline: none;
+  }
+  &::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 2px;
+    box-shadow: 0px 0px 0px #8c756a;
+    background: #dee2ec;
+    border-radius: 0px;
+    border: 0px solid #8c756a;
+  }
+  &::-webkit-slider-thumb {
+    box-shadow: 0px 0px 0px #0292b7;
+    border: 0px solid #0292b7;
+    height: 10px;
+    width: 3px;
+    border-radius: 0;
+    background: #dee2ec;
+    -webkit-appearance: none;
+    margin-top: -10px;
+  }
+  &:focus::-webkit-slider-runnable-track {
+    background: #dee2ec;
+  }
+}
+
+.conBtn {
+  font-size: 16px;
+  &:extend(.btn);
+  .hover();
+}
+
+.volumeSlider {
+  width: 100px;
+}
+
+.rate {
+  .conBtn();
+  font-size: 13px;
+  font-weight: bold;
+  background-color: transparent;
+}
+
+.hidden {
+  width: 0;
+  height: 0;
+  max-width: 0;
+  max-height: 0;
+}
+
+.playlist {
+  width: 100%;
+  height: 300px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.barWrap {
+  display: flex;
+}
+
+.duration {
+  padding: 0 5px;
+}
+
+.menuItem {
+  height: 20px !important;
+  line-height: 20px !important;
+}

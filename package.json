@@ -1,0 +1,170 @@
+{
+  "name": "mob",
+  "version": "0.2.2",
+  "private": true,
+  "author": {
+    "name": "zenghongtu",
+    "email": "zenghongtu@gmail.com",
+    "url": "https://github.com/zenghongtu"
+  },
+  "description": "一个高颜值并且实用的喜马拉雅桌面客户端。",
+  "main": "./dist/main/main.js",
+  "build": {
+    "productName": "Mob",
+    "appId": "com.zenghongtu.Mob",
+    "directories": {
+      "output": "release"
+    },
+    "asar": true,
+    "artifactName": "${productName}-${version}-${os}-${arch}.${ext}",
+    "compression": "maximum",
+    "files": [
+      "dist/",
+      "package.json"
+    ],
+    "dmg": {
+      "contents": [
+        {
+          "x": 410,
+          "y": 150,
+          "type": "link",
+          "path": "/Applications"
+        },
+        {
+          "x": 130,
+          "y": 150,
+          "type": "file"
+        }
+      ]
+    },
+    "mac": {
+      "category": "public.app-category.music",
+      "icon": "build/icon.icns"
+    },
+    "win": {
+      "icon": "build/icon.ico",
+      "target": "nsis"
+    },
+    "nsis": {
+      "allowToChangeInstallationDirectory": true,
+      "oneClick": false,
+      "menuCategory": true,
+      "allowElevation": false,
+      "artifactName": "${productName}-Setup-${version}.${ext}"
+    },
+    "linux": {
+      "category": "Music",
+      "icon": "build/icons",
+      "target": [
+        "deb",
+        "AppImage"
+      ]
+    },
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "zenghongtu",
+        "repo": "Mob"
+      }
+    ],
+    "electronDownload": {
+      "mirror": "http://npm.taobao.org/mirrors/electron/"
+    }
+  },
+  "scripts": {
+    "start": "yarn run start:renderer && yarn run start:main",
+    "start:main": "electron-webpack dev",
+    "start:main:dev_tools": "cross-env DEV_TOOLS=1 electron-webpack dev",
+    "start:renderer": "cross-env APP_ROOT=src/renderer PORT=6008 BROWSER=none umi dev",
+    "build:main:prod": "cross-env NODE_ENV=production webpack --config ./build/webpack.main.prod.config.js",
+    "build:main:dev": "cross-env NODE_ENV=development webpack --config ./build/webpack.main.config.js",
+    "build:renderer": "cross-env APP_ROOT=src/renderer umi build",
+    "build": "rm -rf dist && yarn run build:renderer && yarn run build:main:prod",
+    "test:renderer": "cross-env APP_ROOT=src/renderer PORT=6008 BROWSER=none umi test",
+    "test:watch": "yarn run test:renderer -w",
+    "test": "yarn run test:renderer",
+    "watch": "tsc -w",
+    "lint": "tslint -c tslint.json -p tsconfig.json",
+    "debug:main": "electron --inspect=5858 -w ./dist/main/main.js",
+    "pack": "yarn run build && electron-builder --dir",
+    "dist": "electron-builder",
+    "package:win": "yarn run build && rm -rf release && electron-builder build --win --x64",
+    "package:linux": "yarn run build && rm -rf release && electron-builder build --linux",
+    "package:mac": "yarn run build && rm -rf release && electron-builder build --mac",
+    "prettier": "prettier --list-different \"./**/*.{ts,tsx,js,jsx,less}\"",
+    "release:win": "yarn run build && electron-builder build --ia32 --x64 --win -p always",
+    "release:mac": "yarn run build && electron-builder build --mac -p always",
+    "release:linux": "yarn run build && electron-builder build --linux -p always",
+    "release:linux:arm": "yarn run build electron-builder build --linux --armv7l -p always",
+    "release:all": "yarn run build && electron-builder build -mwl -p always",
+    "release": "yarn run build && electron-builder build",
+    "patch": "yarn version --patch && git push origin master && git push origin --tags",
+    "minor": "yarn version --minor && git push origin master && git push origin --tags",
+    "major": "yarn version --major && git push origin master && git push origin --tags"
+  },
+  "repository": "https://github.com/zenghongtu/Mob",
+  "keywords": [
+    "Electron",
+    "umi",
+    "dva",
+    "typescript",
+    "ximalaya"
+  ],
+  "devDependencies": {
+    "@types/jest": "^24.0.12",
+    "awesome-typescript-loader": "^5.2.1",
+    "cross-env": "^5.2.0",
+    "electron": "^4.0.5",
+    "electron-builder": "^20.38.5",
+    "electron-debug": "^2.0.0",
+    "electron-webpack": "^2.6.2",
+    "electron-webpack-ts": "^3.1.1",
+    "husky": "^1.3.1",
+    "less-vars-to-js": "^1.3.0",
+    "lint-staged": "^8.1.5",
+    "prettier": "1.16.4",
+    "ts-loader": "^5.3.3",
+    "tslint": "^5.10.0",
+    "typescript": "^3.2.4",
+    "uglifyjs-webpack-plugin": "^2.1.1",
+    "umi": "^2.6.16",
+    "umi-plugin-locale": "^2.6.2",
+    "umi-plugin-react": "^1.4.2",
+    "webpack": "4.28.0",
+    "webpack-cli": "^3.2.1",
+    "webpack-merge": "^4.2.1"
+  },
+  "dependencies": {
+    "antd": "^3.17.0",
+    "axios": "^0.18.0",
+    "electron-referer": "^0.3.0",
+    "electron-store": "^3.2.0",
+    "global": "^4.3.2",
+    "hash.js": "^1.1.7",
+    "http-proxy": "^1.17.0",
+    "lodash": "^4.17.11",
+    "normalize.css": "^8.0.1",
+    "react-color": "^2.17.3",
+    "react-player": "^1.11.0",
+    "redux-persist": "^5.10.0"
+  },
+  "electronWebpack": {
+    "main": {
+      "sourceDirectory": "src/main"
+    },
+    "renderer": {
+      "sourceDirectory": null
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "prettier --write",
+      "tslint --fix",
+      "git add -f"
+    ],
+    "*.{css,less,json}": [
+      "prettier --write",
+      "git add -f"
+    ]
+  }
+}

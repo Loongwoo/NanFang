@@ -1,0 +1,32 @@
+.hover {
+  transition: @transition-base;
+  cursor: pointer;
+  &:hover {
+    color: @primary-color;
+  }
+}
+
+.like {
+  .hover();
+}
+
+.itemWrap {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+  .hover();
+}
+
+.itemWidget {
+  font-weight: bold;
+  min-width: 40px;
+  text-align: right;
+}
+.itemTitle {
+  flex: 1;
+  margin-left: 10px;
+  word-break: keep-all;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
