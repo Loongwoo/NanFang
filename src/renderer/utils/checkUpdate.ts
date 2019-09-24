@@ -2,7 +2,7 @@ import Axios from 'axios';
 import pkg from '../../../package.json';
 import { notification } from 'antd';
 import { shell } from 'electron';
-const RELEASES_URL = 'https://github.com/zenghongtu/Mob/releases/latest';
+const RELEASES_URL = 'https://github.com/Loongwoo/NanFang/releases/latest';
 
 const LS_KEY = 'LAST_NOTIFICATION_VERSION';
 

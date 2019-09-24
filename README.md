@@ -1,8 +1,6 @@
-<img src="https://github.com/zenghongtu/Mob/blob/master/build/icons/128x128.png" />
-
 ## 安装
 
-[**这里**](https://github.com/zenghongtu/Mob/releases/latest) 去下载最新版本。
+[**这里**](https://github.com/Loongwoo/NanFang/releases/latest) 去下载最新版本。
 
 ## 开发
 
