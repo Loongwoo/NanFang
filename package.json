@@ -3,15 +3,15 @@
   "version": "0.0.1",
   "private": true,
   "author": {
-    "name": "zenghongtu",
-    "email": "zenghongtu@gmail.com",
-    "url": "https://github.com/zenghongtu"
+    "name": "Loongwoo",
+    "email": "xulongwu@kiwik.cn",
+    "url": "https://github.com/Loongwoo"
   },
-  "description": "一个高颜值并且实用的喜马拉雅桌面客户端。",
+  "description": "一个演示的桌面客户端。",
   "main": "./dist/main/main.js",
   "build": {
-    "productName": "无名",
-    "appId": "com.zenghongtu.Mob",
+    "productName": "NanFang",
+    "appId": "com.kiwik.NanFang",
     "directories": {
       "output": "release"
     },
@@ -38,7 +38,7 @@
       ]
     },
     "mac": {
-      "category": "public.app-category.music",
+      "category": "public.app-category.education",
       "icon": "build/icon.icns"
     },
     "win": {
@@ -63,8 +63,8 @@
     "publish": [
       {
         "provider": "github",
-        "owner": "zenghongtu",
-        "repo": "Mob"
+        "owner": "Loongwoo",
+        "repo": "NanFang"
       }
     ],
     "electronDownload": {
