@@ -126,9 +126,9 @@ const SetShortcutModal = ({ onChangeVisible, onModifyHotkey }) => {
     219: '[',
     220: '\\',
     221: ']',
-    222: '\'',
+    222: "'",
   };
-  const handleKeydown = (e) => {
+  const handleKeydown = e => {
     if (!curInputName) {
       return;
     }
@@ -181,22 +181,22 @@ const SetShortcutModal = ({ onChangeVisible, onModifyHotkey }) => {
   };
   return (
     <Modal
-      title='设置快捷键'
+      title="设置快捷键"
       visible={true}
       mask={true}
       maskClosable={false}
-      okText='确认'
-      cancelText='取消'
+      okText="确认"
+      cancelText="取消"
       onOk={handleOk}
       onCancel={handleCancel}
     >
       <Form>
-        {fnArr.map((fnName) => {
+        {fnArr.map(fnName => {
           return (
             <Form.Item key={fnName} label={fnMap[fnName]}>
-              <Tooltip trigger='click' title='按下需要的设置快捷键吧'>
+              <Tooltip trigger="click" title="按下需要的设置快捷键吧">
                 <Input
-                  placeholder='输入快捷键'
+                  placeholder="输入快捷键"
                   value={curShortcuts[fnName]}
                   onFocus={() => {
                     setCurInputName(fnName);
@@ -250,7 +250,7 @@ export default function() {
   const [modalVisible, setModalVisible] = useState(false);
   const [enableHotkey, setEnableHotkey] = useState(initEnableHotkey);
   const [enableBackgroundImage, setEnableBackgroundImage] = useState(
-    initEnableBackgroundImage,
+    initEnableBackgroundImage
   );
   const t = localStorage.getItem(THEME_KEY);
   const curTheme = t ? JSON.parse(t) : DEFAULT_THEME_VALUE;
@@ -269,7 +269,7 @@ export default function() {
   };
   const handleUpdateThemeMessage = (
     event,
-    { type, status, payload: { output, theme } },
+    { type, status, payload: { output, theme } }
   ) => {
     if (status !== 'error') {
       message.success('设置成功！😋');
@@ -294,16 +294,12 @@ export default function() {
   const handleModifyHotkey = (args: IModifyHotkeyArgs) => {
     ipcRenderer.send(MODIFY_HOTKEY, args);
   };
-  const handleSwitchHotkey = (checked) => {
-    ipcRenderer.send(MODIFY_HOTKEY, {
-      type: 'switch',
-      payload: checked,
-    });
+  const handleSwitchHotkey = checked => {
     handleModifyHotkey({ type: 'switch', payload: checked });
     setEnableHotkey(checked);
   };
 
-  const handleSwitchBackgroundImage = (checked) => {
+  const handleSwitchBackgroundImage = checked => {
     ipcRenderer.send(UPDATE_BACKGROUND_IMAGE, {
       type: 'switch',
       payload: checked,
@@ -334,7 +330,7 @@ export default function() {
     ipcRenderer.send(UPDATE_THEME, args);
   };
 
-  const handleConfirmColor = (colorName) => (color) => {
+  const handleConfirmColor = colorName => color => {
     setTheme({ ...theme, [colorName]: color });
   };
 
@@ -353,11 +349,11 @@ export default function() {
     <div className={styles.wrap}>
       <h2>设置</h2>
       <Form>
-        <Form.Item label='是否开启快捷键'>
+        <Form.Item label="是否开启快捷键">
           <Switch
             checked={enableHotkey}
-            checkedChildren={<Icon type='check' />}
-            unCheckedChildren={<Icon type='close' />}
+            checkedChildren={<Icon type="check" />}
+            unCheckedChildren={<Icon type="close" />}
             onChange={handleSwitchHotkey}
           />
         </Form.Item>
@@ -367,15 +363,15 @@ export default function() {
             设置快捷键
           </Button>
         </Form.Item>
-        <Form.Item label='是否开启背景'>
+        <Form.Item label="是否开启背景">
           <Switch
             checked={enableBackgroundImage}
-            checkedChildren={<Icon type='check' />}
-            unCheckedChildren={<Icon type='close' />}
+            checkedChildren={<Icon type="check" />}
+            unCheckedChildren={<Icon type="close" />}
             onChange={handleSwitchBackgroundImage}
           />
         </Form.Item>
-        <Form.Item label='更换背景图'>
+        <Form.Item label="更换背景图">
           <Upload
             multiple={false}
             showUploadList={false}
@@ -395,7 +391,7 @@ export default function() {
                   '因为一些原因，目前换肤非真正意义上的换肤，只是简单的把颜色换一下。如果两个相同颜色会再也分不开的，只能清除设置了😬'
                 }
               >
-                <Icon style={{ color: 'red' }} type='exclamation-circle' />
+                <Icon style={{ color: 'red' }} type="exclamation-circle" />
               </Tooltip>
             </span>
           }
@@ -422,8 +418,8 @@ export default function() {
           </div>
         </Form.Item>
 
-        <Form.Item label='重置'>
-          <Button type='danger' onClick={handleResetAllSetting}>
+        <Form.Item label="重置">
+          <Button type="danger" onClick={handleResetAllSetting}>
             重置所有设置
           </Button>
         </Form.Item>

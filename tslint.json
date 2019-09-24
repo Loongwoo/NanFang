@@ -9,18 +9,18 @@
     },
     "new-parens": true,
     "no-arg": true,
-    "no-bitwise": true,
     "no-conditional-assignment": true,
     "no-consecutive-blank-lines": false,
     "ordered-imports": false,
-    "quotemark": [true, "single"],
+    "quotemark": false,
     "variable-name": false,
     "only-arrow-functions": false,
     "max-classes-per-file": false,
     "no-bitwise": false,
     "no-namespace": false,
     "ban-types": false,
-    "no-empty": false
+    "no-empty": false,
+    "arrow-parens": false
   },
   "jsRules": {
     "max-line-length": {

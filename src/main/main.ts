@@ -75,7 +75,7 @@ const template = [
         click(item, focusedWindow) {
           if (focusedWindow) {
             if (focusedWindow.id === 1) {
-              BrowserWindow.getAllWindows().forEach((win) => {
+              BrowserWindow.getAllWindows().forEach(win => {
                 if (win.id > 1) {
                   win.close();
                 }
@@ -161,12 +161,12 @@ function createWindow() {
   const titleBarStyle = isMac ? 'hiddenInset' : 'default';
   mainWindow = new BrowserWindow({
     minHeight: 600,
-    minWidth: 800,
-    width: 1040,
+    minWidth: 900,
+    width: 1165,
     height: 715,
     backgroundColor: 'white',
     titleBarStyle,
-    title: 'Mob',
+    title: '没有名字',
     frame: !isMac,
     icon: path.join(__dirname, '../../build/icon.png'),
     show: true,
@@ -189,14 +189,14 @@ function createWindow() {
         pathname: path.join(__dirname, './dist/renderer/index.html'),
         protocol: 'file:',
         slashes: true,
-      }),
+      })
     );
   }
 
   if (isMac) {
     setTimeout(
       () => systemPreferences.isTrustedAccessibilityClient(true),
-      1000,
+      1000
     );
   }
 
@@ -207,7 +207,7 @@ function createWindow() {
     mainWindow = null;
   });
 
-  mainWindow.on('close', (e) => {
+  mainWindow.on('close', e => {
     if (forceQuit || !isMac) {
       app.quit();
     } else {
@@ -269,7 +269,7 @@ const registerHotkeys = (shortcuts, isRetry = false) => {
 
   const newShortcuts = { ...DEFAULT_MEDIA_SHORTCUT, ...shortcuts };
   globalShortcut.unregisterAll();
-  Object.keys(newShortcuts).forEach((key) => {
+  Object.keys(newShortcuts).forEach(key => {
     globalShortcut.register(key, () => {
       mainWindow.webContents.send(TRIGGER_HOTKEY, newShortcuts[key]);
     });
@@ -323,7 +323,7 @@ const handleUploadBackgroundImage = (event, args: IUploadBackgroundImage) => {
       if (prevImageUrl) {
         // get correct path
         const prevImagePath = decodeURI(prevImageUrl).slice(7);
-        fs.unlink(prevImagePath, (err) => {
+        fs.unlink(prevImagePath, err => {
           if (err) {
             // tslint:disable-next-line:no-console
             console.error(err);
@@ -360,15 +360,15 @@ const handleUpdateTheme = (event, args: IUpdateTheme) => {
   const cssFilename = genUniqueKey() + '.css';
   const output = path.join(app.getPath('userData'), cssFilename);
   const cc = {};
-  Object.keys(curTheme).forEach((colorName) => {
+  Object.keys(curTheme).forEach(colorName => {
     cc[curTheme[colorName]] = nextTheme[colorName];
   });
   const reg = new RegExp(Object.keys(cc).join('|'), 'g');
 
-  const newContent = content.replace(reg, (matched) => {
+  const newContent = content.replace(reg, matched => {
     return cc[matched];
   });
-  fs.writeFile(output, newContent, 'utf8', (error) => {
+  fs.writeFile(output, newContent, 'utf8', error => {
     if (error) {
       event.sender.send(UPDATE_THEME, {
         type,
@@ -386,7 +386,7 @@ const handleUpdateTheme = (event, args: IUpdateTheme) => {
     const prevThemeUrl = settings.get(THEME_URL);
     if (prevThemeUrl) {
       const prevThemePath = decodeURI(prevThemeUrl);
-      fs.unlink(prevThemePath, (err) => {
+      fs.unlink(prevThemePath, err => {
         if (err) {
           // tslint:disable-next-line:no-console
           console.error(err);
@@ -417,7 +417,7 @@ app.on('activate', () => {
   }
 });
 
-app.on('before-quit', (e) => {
+app.on('before-quit', e => {
   forceQuit = true;
   mainWindow = null;
 });

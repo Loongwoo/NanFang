@@ -2,17 +2,20 @@ import { memo, useState, useEffect } from 'react';
 import { Menu, Dropdown, Input, Icon, Divider } from 'antd';
 import router from 'umi/router';
 import { debounce } from 'lodash';
-
 import { CustomIcon } from '@/components/CustomIcon';
 import { SuggestRspData, getSuggest } from '@/services/suggest';
 import styles from './index.less';
 import { connect } from 'dva';
 import checkUpdate from '@/utils/checkUpdate';
 
-const Search = Input.Search;
-
 let lastHistoryLen = 0;
-const NavBar = ({ history, isLogin }) => {
+
+const NavBar = ({
+  history,
+  isLogin,
+  route: { routes },
+  location: { pathname },
+}) => {
   const { length, action } = history;
 
   const [curIndx, setCurIndx] = useState(0);
@@ -32,7 +35,7 @@ const NavBar = ({ history, isLogin }) => {
     checkUpdate();
   }, []);
 
-  const fetchSuggests = debounce(async (kw) => {
+  const fetchSuggests = debounce(async kw => {
     if (!kw) {
       setSuggests(null);
       return;
@@ -48,55 +51,26 @@ const NavBar = ({ history, isLogin }) => {
     setSuggests(suggests);
   }, 200);
 
-  const handleRedirectSearch = (kw) => {
+  const handleRedirectSearch = kw => {
     setText(kw);
     setVisible(false);
     router.push(`/search/${kw}`);
   };
 
-  const handleInputChange = (e) => {
-    const kw = e.target.value;
-    setText(kw);
-    fetchSuggests(kw);
-  };
-
-  const handleSearchClick = (kw) => {
-    if (kw) {
-      handleRedirectSearch(kw);
-    }
-  };
-
-  const handleFocus = () => {
-    setVisible(true);
-  };
-
-  const handleBlur = () => {
-    setTimeout(() => {
-      setVisible(false);
-    }, 100);
-  };
-
-  const handlePressEnter = (e) => {
-    const kw = e.target.value;
-    if (kw) {
-      handleRedirectSearch(kw);
-    }
-  };
-
-  const handleArrowClick = (n) => {
+  const handleArrowClick = n => {
     return () => {
       setCurIndx(curIndx + n);
       router.go(n);
     };
   };
 
-  const handleWidgetIconClick = (pathname) => {
+  const handleWidgetIconClick = pathname => {
     return () => {
       router.push(`/${pathname}`);
     };
   };
 
-  const handleLogin = (type) => {
+  const handleLogin = type => {
     return () => {
       router.push({
         pathname: `/login`,
@@ -109,10 +83,9 @@ const NavBar = ({ history, isLogin }) => {
   };
 
   // todo fix
-  // const handleRefreshClick = () => {
-  //   location.reload();
-  // };
-  //
+  const handleRefreshClick = () => {
+    location.reload();
+  };
 
   const Suggests = suggests ? (
     <Menu className={styles.suggests}>
@@ -133,16 +106,6 @@ const NavBar = ({ history, isLogin }) => {
     </Menu>
   ) : null;
 
-  const UserMenu = (
-    <Menu>
-      {!isLogin ? (
-        <Menu.Item onClick={handleLogin('login')}>login</Menu.Item>
-      ) : (
-        <Menu.Item onClick={handleLogin('logout')}>logout</Menu.Item>
-      )}
-    </Menu>
-  );
-
   const canGoBack = curIndx + length > 1;
   const canGoForward = curIndx < 0;
   return (
@@ -150,50 +113,39 @@ const NavBar = ({ history, isLogin }) => {
       <CustomIcon
         className={`${styles.icon} ${!canGoBack ? styles.inactivate : ''}`}
         onClick={canGoBack ? handleArrowClick(-1) : undefined}
-        type='icon-arrow-left'
+        type="icon-arrow-left"
       />
       <CustomIcon
         className={`${styles.icon} ${!canGoForward ? styles.inactivate : ''}`}
         onClick={canGoForward ? handleArrowClick(1) : undefined}
-        type='icon-arrow-right'
+        type="icon-arrow-right"
       />
-      {/* <CustomIcon
+      <CustomIcon
         className={styles.icon}
         onClick={handleRefreshClick}
-        type='icon-refresh'
-      /> */}
-      <Dropdown
-        visible={visible && !!suggests}
-        overlay={<div>{Suggests}</div>}
-        placement='bottomLeft'
-      >
-        <Search
-          className={styles.searchInput}
-          value={text}
-          size='small'
-          placeholder='搜索'
-          onFocus={handleFocus}
-          onBlur={handleBlur}
-          onChange={handleInputChange}
-          onPressEnter={handlePressEnter}
-          onSearch={handleSearchClick}
-          style={{ width: 200 }}
-        />
-      </Dropdown>
+        type="icon-refresh"
+      />
+
       <div className={styles.widget}>
-        <Dropdown overlay={UserMenu} trigger={['hover']}>
-          <Icon className={styles.icon} type='user' />
-        </Dropdown>
-        <Icon
+        {!isLogin && (
+          <span
+            className={styles.icon}
+            onClick={handleLogin('login')}
+            style={{ color: 'red' }}
+          >
+            未激活
+          </span>
+        )}
+        {/* <Icon
           className={styles.icon}
           onClick={handleWidgetIconClick('setting')}
-          type='setting'
-        />
+          type="setting"
+        /> */}
       </div>
     </div>
   );
 };
 
-export default connect(({ user: { isLogin } }) => {
-  return { isLogin };
-})(NavBar);
+export default connect(({ user }) => ({
+  isLogin: user.isLogin,
+}))(NavBar);

@@ -1,17 +1,17 @@
 const pageArr = [
-  { name: "find", icon: "global", routes: ["recommend", "rank", "category"] },
-  {
-    name: "my",
-    icon: "user",
-    routes: ["subscribed", "listened", "bought", "like"],
-  },
-  // "local",
-  // "download",
-  // "history",
+  'low',
+  'middle',
+  'real',
+  // { name: 'find', icon: 'global', routes: ['recommend', 'rank', 'category'] },
+  // {
+  //   name: 'my',
+  //   icon: 'user',
+  //   routes: ['subscribed', 'listened', 'bought', 'like'],
+  // },
 ];
 
 const routes = pageArr.map(route => {
-  if (typeof route === "object") {
+  if (typeof route === 'object') {
     const { name, icon, routes: subRoutes } = route;
     const newRoute = {
       path: `/${name}`,
@@ -26,8 +26,8 @@ const routes = pageArr.map(route => {
         };
       }),
     };
-    if (name === "my") {
-      newRoute.component = "../layouts/MyLayout";
+    if (name === 'my') {
+      newRoute.component = '../layouts/MyLayout';
     }
     return newRoute;
   }
@@ -38,35 +38,50 @@ const routes = pageArr.map(route => {
     component: `./${component}`,
   };
 });
-routes.unshift({ path: "/", redirect: "/find/recommend" });
+routes.unshift({ path: '/', redirect: '/low' });
 
 routes.push(
   {
-    path: "/login",
-    component: "./Login",
-  },
-  {
-    path: "/setting",
-    component: "./Setting",
-  },
-  {
-    path: "/search/:kw",
-    component: "./SearchResult",
-  },
-  {
-    path: "/category/:cat/:subCat",
-    component: "./CategoryDetail",
-  },
-  {
-    path: "/:category/:id",
-    component: "./AlbumDetail",
-  },
+    path: '/login',
+    component: './Login',
+  }
+  // {
+  //   path: '/setting',
+  //   component: './Setting',
+  // }
+  // {
+  //   path: '/search/:kw',
+  //   component: './SearchResult',
+  // },
+  // {
+  //   path: '/category/:cat/:subCat',
+  //   component: './CategoryDetail',
+  // },
+  // {
+  //   path: '/:category/:id',
+  //   component: './AlbumDetail',
+  // }
 );
 
 export default [
   {
-    path: "/",
-    component: "../layouts/BasicLayout",
-    routes,
+    path: '/',
+    component: '../layouts/BasicLayout',
+    routes: [
+      { path: '/', redirect: '/low' },
+      {
+        path: '/low',
+        name: 'low',
+        routes: [
+          { path: '/low', redirect: '/low/demo1' },
+          { path: '/low/demo1', name: 'demo1', component: `./Low/Demo1` },
+          { path: '/low/demo2', name: 'demo2', component: `./Low/Demo2` },
+          { path: '/low/rules', name: 'rules', component: `./Low/Rules` },
+        ],
+      },
+      { path: '/middle', name: 'middle', component: `./Middle` },
+      { path: '/real', name: 'real', component: `./Real` },
+      { path: '/login', component: './Login' },
+    ],
   },
 ];

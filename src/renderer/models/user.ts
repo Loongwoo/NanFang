@@ -8,10 +8,10 @@ export default {
   effects: {},
   reducers: {
     login(state) {
-      return { state, isLogin: true };
+      return { ...state, isLogin: true };
     },
     logout(state) {
-      return { state, isLogin: false };
+      return { ...state, isLogin: false };
     },
   },
 };

@@ -4,10 +4,9 @@ import { persistStore } from 'redux-persist';
 import { Layout, Spin, message } from 'antd';
 import SideBar from './components/SideBar';
 import NavBar from './components/NavBar';
-import Player from './components/Player';
 import styles from './BasicLayout.less';
 
-const { Header, Footer, Sider, Content } = Layout;
+const { Sider, Content } = Layout;
 
 message.config({
   top: 10,
@@ -15,7 +14,8 @@ message.config({
   maxCount: 1,
 });
 
-export const SIDE_BAR_WIDTH = 260;
+export const SIDE_BAR_WIDTH = 240;
+
 export default function(props) {
   return (
     <>
@@ -23,7 +23,7 @@ export default function(props) {
         persistor={persistStore(window.g_app._store)}
         loading={
           <div className={styles.spin}>
-            <Spin size='large' />
+            <Spin size="large" />
           </div>
         }
       >
@@ -31,16 +31,14 @@ export default function(props) {
           <Sider className={styles.sider} width={SIDE_BAR_WIDTH}>
             <SideBar {...props} />
           </Sider>
+
           <Layout className={styles.mainWrap}>
-            <div className={styles.navWrap}>
+            {/* <div className={styles.navWrap}>
               <NavBar {...props} />
-            </div>
+            </div> */}
             <Content className={styles.contentWrap}>{props.children}</Content>
           </Layout>
         </Layout>
-        <footer className={styles.playerWrap}>
-          <Player />
-        </footer>
       </PersistGate>
     </>
   );

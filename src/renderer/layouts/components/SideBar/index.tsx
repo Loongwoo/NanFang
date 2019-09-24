@@ -17,7 +17,7 @@ const SideBar = ({
   playTracks,
 }) => {
   const defaultSelectedKeys = [pathname.slice(1)];
-  const defaultOpenKeys = ['find', 'my'];
+  const defaultOpenKeys = ['low'];
   const [trackList, setTrackList] = useState([]);
   useEffect(() => {
     (async () => {
@@ -29,7 +29,7 @@ const SideBar = ({
         } = await exploreApi.getDailyListen();
 
         const res = data.dailyListenCategoryList.reduce((arr, item) => {
-          const trackArr = item.trackList.map((track) => {
+          const trackArr = item.trackList.map(track => {
             const { trackId } = track;
             return trackId;
           });
@@ -52,7 +52,7 @@ const SideBar = ({
           key={name}
           title={
             <span>
-              <Icon type={icon} />
+              {icon && <Icon type={icon} />}
               <span>
                 <FormattedMessage id={name} />
               </span>
@@ -78,25 +78,6 @@ const SideBar = ({
       );
     }
   });
-  const handlePlayDayListen = async () => {
-    try {
-      const rsp: { data: TracksData } = await getTracks(trackList);
-      const playlist = rsp.data.tracksForAudioPlay;
-      const info = {
-        albumId: '',
-        hasMore: false,
-        // pageNum,
-        // pageSize,
-        // sort,
-        currentTrack: playlist[0],
-        currentIndex: 0,
-        playlist,
-      };
-      playTracks(info);
-    } catch (e) {
-      // todo
-    }
-  };
 
   const dateArr = new Date().toDateString().split(' ');
   const day = dateArr[2];
@@ -105,15 +86,14 @@ const SideBar = ({
     <div className={styles.sidebar}>
       <div className={styles.widget}>
         <div className={styles.date}>
-          <div className={styles.playCon} onClick={handlePlayDayListen} />
           <span className={styles.month}> {month}</span>
           <span className={styles.day}>{day}</span>
         </div>
         <div className={styles.desc}>
           <ruby>
-            今日更新
-            <b> {trackList.length} </b>条<rp>(</rp>
-            <rt>每日必听</rt>
+            今日工单
+            <b> 9 </b>条<rp>(</rp>
+            <rt>工单系统</rt>
             <rp>)</rp>
           </ruby>
         </div>
@@ -123,7 +103,7 @@ const SideBar = ({
         style={{}}
         defaultSelectedKeys={defaultSelectedKeys}
         defaultOpenKeys={defaultOpenKeys}
-        mode='inline'
+        mode="inline"
         selectedKeys={defaultSelectedKeys}
       >
         {MenuItems}
@@ -133,7 +113,7 @@ const SideBar = ({
 };
 export default connect(
   null,
-  (dispatch) => {
+  dispatch => {
     return {
       playTracks(payload) {
         dispatch({ type: 'track/updateTrack', payload });
@@ -143,5 +123,5 @@ export default connect(
         });
       },
     };
-  },
+  }
 )(SideBar);

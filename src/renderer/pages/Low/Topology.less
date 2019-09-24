@@ -1,0 +1,45 @@
+.main {
+  border-right: 1px solid #eee;
+}
+
+.path1 {
+  stroke-dashoffset: 40;
+  stroke-dasharray: 10;
+  animation: dash 1s linear infinite;
+}
+
+.group {
+  margin: 30px auto;
+  max-width: 400px;
+  text-align: center;
+
+  .floors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    .item {
+      margin: 10px;
+      width: 60px;
+      height: 60px;
+      border-radius: 30px;
+      color: white;
+      font-size: 20px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .finish {
+    margin: 30px auto;
+  }
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
