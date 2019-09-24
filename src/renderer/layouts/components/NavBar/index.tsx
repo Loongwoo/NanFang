@@ -3,7 +3,6 @@ import { Menu, Dropdown, Input, Icon, Divider } from 'antd';
 import router from 'umi/router';
 import { debounce } from 'lodash';
 import { CustomIcon } from '@/components/CustomIcon';
-import { SuggestRspData, getSuggest } from '@/services/suggest';
 import styles from './index.less';
 import { connect } from 'dva';
 import checkUpdate from '@/utils/checkUpdate';
@@ -19,9 +18,6 @@ const NavBar = ({
   const { length, action } = history;
 
   const [curIndx, setCurIndx] = useState(0);
-  const [suggests, setSuggests] = useState(null);
-  const [text, setText] = useState('');
-  const [visible, setVisible] = useState(false);
 
   useEffect(() => {
     // todo fix when length <= 2 will cause some bugs
@@ -34,28 +30,6 @@ const NavBar = ({
   useEffect(() => {
     checkUpdate();
   }, []);
-
-  const fetchSuggests = debounce(async kw => {
-    if (!kw) {
-      setSuggests(null);
-      return;
-    }
-    const {
-      data: { result },
-    }: { data: SuggestRspData } = await getSuggest({ kw });
-    let suggests = [...result.albumResultList, ...result.queryResultList];
-    if (suggests.length < 1) {
-      suggests = null;
-    }
-    // todo (only support albumResult now)
-    setSuggests(suggests);
-  }, 200);
-
-  const handleRedirectSearch = kw => {
-    setText(kw);
-    setVisible(false);
-    router.push(`/search/${kw}`);
-  };
 
   const handleArrowClick = n => {
     return () => {
@@ -75,7 +49,7 @@ const NavBar = ({
       router.push({
         pathname: `/login`,
         query: {
-          redirect: '/my/subscribed',
+          redirect: '/low',
           type,
         },
       });
@@ -86,25 +60,6 @@ const NavBar = ({
   const handleRefreshClick = () => {
     location.reload();
   };
-
-  const Suggests = suggests ? (
-    <Menu className={styles.suggests}>
-      {suggests.map(({ highlightKeyword, keyword, id }) => {
-        return (
-          <Menu.Item key={id}>
-            <div
-              className={styles.suggestItem}
-              onClick={() => {
-                handleRedirectSearch(keyword);
-              }}
-            >
-              <span dangerouslySetInnerHTML={{ __html: highlightKeyword }} />
-            </div>
-          </Menu.Item>
-        );
-      })}
-    </Menu>
-  ) : null;
 
   const canGoBack = curIndx + length > 1;
   const canGoForward = curIndx < 0;

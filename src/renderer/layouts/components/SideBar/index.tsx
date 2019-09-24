@@ -2,45 +2,12 @@ import React, { useState, useEffect } from 'react';
 import { Menu, Icon } from 'antd';
 import { FormattedMessage } from 'umi-plugin-locale';
 import styles from './index.less';
-import exploreApi, { DayListenData } from '@/services/explore';
-import { connect } from 'dva';
-import { getTracks, TracksData } from '@/services/play';
-import { TrackRspData } from '@/services/track';
-import { PlayState } from '@/models/player';
 const SubMenu = Menu.SubMenu;
 
-const SideBar = ({
-  children,
-  history,
-  route: { routes },
-  location: { pathname },
-  playTracks,
-}) => {
+const SideBar = ({ history, route: { routes }, location: { pathname } }) => {
   const defaultSelectedKeys = [pathname.slice(1)];
   const defaultOpenKeys = ['low'];
-  const [trackList, setTrackList] = useState([]);
-  useEffect(() => {
-    (async () => {
-      try {
-        const {
-          data,
-        }: {
-          data: DayListenData;
-        } = await exploreApi.getDailyListen();
 
-        const res = data.dailyListenCategoryList.reduce((arr, item) => {
-          const trackArr = item.trackList.map(track => {
-            const { trackId } = track;
-            return trackId;
-          });
-          return [...arr, ...trackArr];
-        }, []);
-        setTrackList(res);
-      } catch (e) {
-        // todo
-      }
-    })();
-  }, []);
   const handleClick = ({ selectedKeys }: { selectedKeys: string[] }) => {
     history.push(`/${selectedKeys[0]}`);
   };
@@ -111,17 +78,4 @@ const SideBar = ({
     </div>
   );
 };
-export default connect(
-  null,
-  dispatch => {
-    return {
-      playTracks(payload) {
-        dispatch({ type: 'track/updateTrack', payload });
-        dispatch({
-          type: 'player/updateState',
-          payload: { playState: PlayState.PLAYING, played: 0.0 },
-        });
-      },
-    };
-  }
-)(SideBar);
+export default SideBar;

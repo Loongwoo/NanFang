@@ -1,8 +1,5 @@
 import { persistStore, persistReducer } from 'redux-persist';
-// import createElectronStorage from 'redux-persist-electron-storage';
 import storage from 'redux-persist/lib/storage';
-import changeBackground from './utils/changeBackground';
-import { updateTheme } from './utils/theme';
 
 const persistConfig = {
   timeout: 100, // you can define your time. But is required.
@@ -10,15 +7,15 @@ const persistConfig = {
   storage,
 };
 
-const persistEnhancer = () => (createStore) => (
+const persistEnhancer = () => createStore => (
   reducer,
   initialState,
-  enhancer,
+  enhancer
 ) => {
   const store = createStore(
     persistReducer(persistConfig, reducer),
     initialState,
-    enhancer,
+    enhancer
   );
   const persist = persistStore(store, null);
   return {
@@ -31,6 +28,3 @@ export const dva = {
     extraEnhancers: [persistEnhancer()],
   },
 };
-
-changeBackground({ isStart: true });
-updateTheme({ isStart: true });
