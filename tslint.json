@@ -20,7 +20,8 @@
     "no-namespace": false,
     "ban-types": false,
     "no-empty": false,
-    "arrow-parens": false
+    "arrow-parens": false,
+    "trailing-comma": false
   },
   "jsRules": {
     "max-line-length": {
