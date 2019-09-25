@@ -121,7 +121,13 @@ export default ({ status, target, onUpdate, style }) => {
           <path className={styles.path1} d="m700 40v15" />
           {/* 701 */}
           <rect x="685" y="55" width="30" height="55" />
-          <text x="700" y="81.5" transform="rotate(90,700,81.5)">
+          <text
+            x="700"
+            y="81.5"
+            transform="rotate(90,700,81.5)"
+            fill="green"
+            stroke="none"
+          >
             701
           </text>
 
@@ -129,14 +135,14 @@ export default ({ status, target, onUpdate, style }) => {
           <path className={styles.path1} d="m500 154h-60" />
 
           {/* Tr1-1 */}
-          <text x="410" y="120">
+          <text x="410" y="120" fill="green" stroke="none">
             Tr1-1
           </text>
           <circle cx="400" cy="154" r="20" />
           <circle cx="420" cy="154" r="20" />
 
           {/* Cb1-1 */}
-          <text x="440" y="210">
+          <text x="440" y="210" fill="green" stroke="none">
             Cb1-1
           </text>
           <rect x="485" y="183" width="30" height="55" />
@@ -148,7 +154,7 @@ export default ({ status, target, onUpdate, style }) => {
           <path className={styles.path1} d="m500 265h73" />
           <circle cx="593" cy="265" r="20" />
           <circle cx="613" cy="265" r="20" />
-          <text x="700" y="265">
+          <text x="700" y="265" fill="green" stroke="none">
             Tr1-2
           </text>
 
@@ -156,12 +162,12 @@ export default ({ status, target, onUpdate, style }) => {
           <path className={styles.path1} d="m500 328h73" />
           <circle cx="593" cy="328" r="20" />
           <circle cx="613" cy="328" r="20" />
-          <text x="700" y="328">
+          <text x="700" y="328" fill="green" stroke="none">
             Tr1-3
           </text>
 
           {/* Cb1-2 */}
-          <text x="440" y="377">
+          <text x="440" y="377" fill="green" stroke="none">
             Cb1-2
           </text>
           <rect x="485" y="350" width="30" height="55" />
@@ -169,14 +175,14 @@ export default ({ status, target, onUpdate, style }) => {
           {/* Cb1-3 */}
           <path className={styles.path1} d="m500 422h-55" />
           <rect x="390" y="407" width="55" height="30" />
-          <text x="350" y="422">
+          <text x="350" y="422" fill="green" stroke="none">
             Cb1-3
           </text>
 
           {/* Cb1-4 */}
           <path className={styles.path1} d="m500 405v40" />
           <rect x="473" y="445" width="55" height="30" />
-          <text x="570" y="460">
+          <text x="570" y="460" fill="green" stroke="none">
             Cb1-4
           </text>
 
@@ -184,7 +190,7 @@ export default ({ status, target, onUpdate, style }) => {
           <path className={styles.path1} d="m500 475v35" />
           <circle cx="500" cy="530" r="20" />
           <circle cx="500" cy="550" r="20" />
-          <text x="570" y="540">
+          <text x="570" y="540" fill="green" stroke="none">
             Tr1-4
           </text>
 
@@ -220,7 +226,12 @@ export default ({ status, target, onUpdate, style }) => {
                 }
               }}
             />
-            <text x="425" y="610">
+            <text
+              x="425"
+              y="610"
+              fill={status.FZX11 ? 'green' : 'red'}
+              stroke="none"
+            >
               FZX1-1
             </text>
           </g>
@@ -257,7 +268,12 @@ export default ({ status, target, onUpdate, style }) => {
                 }
               }}
             />
-            <text x="180" y="715">
+            <text
+              x="180"
+              y="715"
+              fill={status.FZX12 ? 'green' : 'red'}
+              stroke="none"
+            >
               FZX1-2
             </text>
           </g>
@@ -295,7 +311,12 @@ export default ({ status, target, onUpdate, style }) => {
                 }
               }}
             />
-            <text x="420" y="715">
+            <text
+              x="420"
+              y="715"
+              fill={status.FZX13 ? 'green' : 'red'}
+              stroke="none"
+            >
               FZX1-3
             </text>
           </g>
@@ -333,7 +354,12 @@ export default ({ status, target, onUpdate, style }) => {
                 }
               }}
             />
-            <text x="660" y="715">
+            <text
+              x="660"
+              y="715"
+              fill={status.FZX14 ? 'green' : 'red'}
+              stroke="none"
+            >
               FZX1-4
             </text>
           </g>
@@ -352,7 +378,12 @@ export default ({ status, target, onUpdate, style }) => {
               height="130"
               onClick={() => checkFloor('G1')}
             />
-            <text x="100" y="960">
+            <text
+              x="100"
+              y="960"
+              fill={status.G1 ? 'green' : 'red'}
+              stroke="none"
+            >
               G1
             </text>
           </g>
@@ -371,7 +402,12 @@ export default ({ status, target, onUpdate, style }) => {
               height="130"
               onClick={() => checkFloor('G2')}
             />
-            <text x="260" y="960">
+            <text
+              x="260"
+              y="960"
+              fill={status.G2 ? 'green' : 'red'}
+              stroke="none"
+            >
               G2
             </text>
           </g>
@@ -389,7 +425,12 @@ export default ({ status, target, onUpdate, style }) => {
               height="130"
               onClick={() => checkFloor('G3')}
             />
-            <text x="410" y="960">
+            <text
+              x="410"
+              y="960"
+              fill={status.G3 ? 'green' : 'red'}
+              stroke="none"
+            >
               G3
             </text>
           </g>
@@ -408,7 +449,12 @@ export default ({ status, target, onUpdate, style }) => {
               height="130"
               onClick={() => checkFloor('G4')}
             />
-            <text x="580" y="960">
+            <text
+              x="580"
+              y="960"
+              fill={status.G4 ? 'green' : 'red'}
+              stroke="none"
+            >
               G4
             </text>
           </g>
@@ -427,7 +473,12 @@ export default ({ status, target, onUpdate, style }) => {
               height="130"
               onClick={() => checkFloor('G5')}
             />
-            <text x="740" y="960">
+            <text
+              x="740"
+              y="960"
+              fill={status.G5 ? 'green' : 'red'}
+              stroke="none"
+            >
               G5
             </text>
           </g>
