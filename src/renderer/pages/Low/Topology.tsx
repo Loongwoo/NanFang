@@ -36,7 +36,10 @@ export default ({ status, target, onUpdate, style }) => {
                       title: `电表${key}有电`,
                       okText: '确定',
                       onOk: () => {
-                        setGStatus({ ...gStatus, [key]: true });
+                        setGStatus({
+                          ...gStatus,
+                          [key]: true,
+                        });
                       },
                     });
                   } else {
@@ -44,7 +47,10 @@ export default ({ status, target, onUpdate, style }) => {
                       title: `电表${key}停电了`,
                       okText: '确定',
                       onOk: () => {
-                        setGStatus({ ...gStatus, [key]: false });
+                        setGStatus({
+                          ...gStatus,
+                          [key]: false,
+                        });
                       },
                     });
                   }
@@ -65,7 +71,10 @@ export default ({ status, target, onUpdate, style }) => {
                 title: `楼房${selectedG}有电`,
                 okText: '确定',
                 onOk: () => {
-                  onUpdate({ key: selectedG, value: true });
+                  onUpdate({
+                    key: selectedG,
+                    value: true,
+                  });
                   setSelectedG(null);
                 },
               });
@@ -74,7 +83,10 @@ export default ({ status, target, onUpdate, style }) => {
                 title: `楼房${selectedG}停电了`,
                 okText: '确定',
                 onOk: () => {
-                  onUpdate({ key: selectedG, value: false });
+                  onUpdate({
+                    key: selectedG,
+                    value: false,
+                  });
                   setSelectedG(null);
                 },
               });

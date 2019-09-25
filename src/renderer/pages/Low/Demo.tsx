@@ -34,9 +34,8 @@ export default ({
   title,
 }) => {
   const [status, setStatus] = useState(initStatus(true));
-  const [current, setCurrent] = useState(0);
 
-  const updateStatus = v => setStatus({ ...status, ...v });
+  const [current, setCurrent] = useState(0);
 
   const finished = current === steps.length - 1;
 
@@ -61,19 +60,43 @@ export default ({
       if (key === 'FZX11') {
         setStatus(initStatus(false));
       } else if (key === 'FZX12') {
-        updateStatus({ FZX12: false, G1: false, G2: false });
+        setStatus({
+          ...status,
+          FZX12: false,
+          G1: false,
+          G2: false,
+        });
       } else if (key === 'FZX13') {
-        updateStatus({ FZX13: false, G3: false, G4: false });
+        setStatus({
+          ...status,
+          FZX13: false,
+          G3: false,
+          G4: false,
+        });
       } else if (key === 'FZX14') {
-        updateStatus({ FZX14: false, G5: false });
+        setStatus({
+          ...status,
+          FZX14: false,
+          G5: false,
+        });
       } else {
-        updateStatus({ [key]: value });
+        setStatus({
+          ...status,
+          [key]: value,
+        });
       }
     } else {
-      updateStatus({ [key]: value });
+      setStatus({
+        ...status,
+        [key]: value,
+      });
     }
 
-    onCurrent({ current, setCurrent, key });
+    onCurrent({
+      current,
+      setCurrent,
+      key,
+    });
   };
 
   return (
@@ -88,7 +111,10 @@ export default ({
             status={status}
             target={target}
             onUpdate={handleUpdate}
-            style={{ width: '100%', height: '100%' }}
+            style={{
+              width: '100%',
+              height: '100%',
+            }}
           />
         </div>
 
@@ -107,7 +133,12 @@ export default ({
 
           {finished && <h3 className={styles.result}>{result}</h3>}
 
-          <div style={{ margin: '0 auto 20px', textAlign: 'center' }}>
+          <div
+            style={{
+              margin: '0 auto 20px',
+              textAlign: 'center',
+            }}
+          >
             <Button
               type={current > 0 ? 'danger' : 'primary'}
               onClick={handleStart}
