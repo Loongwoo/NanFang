@@ -100,7 +100,8 @@
     "release": "yarn run build && electron-builder build",
     "patch": "yarn version --patch && git push origin master && git push origin --tags",
     "minor": "yarn version --minor && git push origin master && git push origin --tags",
-    "major": "yarn version --major && git push origin master && git push origin --tags"
+    "major": "yarn version --major && git push origin master && git push origin --tags",
+    "lines": "find src -name \"*.tsx\" -or -name \"*.ts\" -or -name \"*.less\" -or -name \"*.svg\" | xargs cat | wc -l"
   },
   "repository": "https://github.com/Loongwoo/NanFang",
   "keywords": [
