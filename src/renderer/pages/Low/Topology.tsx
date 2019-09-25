@@ -17,6 +17,61 @@ export default ({ status, target, onUpdate, style }) => {
 
   if (selectedG) {
     const hasElec = target[selectedG];
+
+    const handleRoom = key => {
+      if (hasElec) {
+        Modal.success({
+          title: `电表${key}有电`,
+          okText: '确定',
+          onOk: () => {
+            setGStatus({
+              ...gStatus,
+              [key]: true,
+            });
+          },
+        });
+      } else {
+        Modal.error({
+          title: `电表${key}停电了`,
+          okText: '确定',
+          onOk: () => {
+            setGStatus({
+              ...gStatus,
+              [key]: false,
+            });
+          },
+        });
+      }
+    };
+
+    const handleBack = () => {
+      if (hasElec) {
+        Modal.success({
+          title: `楼房${selectedG}有电`,
+          okText: '确定',
+          onOk: () => {
+            onUpdate({
+              key: selectedG,
+              value: true,
+            });
+            setSelectedG(null);
+          },
+        });
+      } else {
+        Modal.error({
+          title: `楼房${selectedG}停电了`,
+          okText: '确定',
+          onOk: () => {
+            onUpdate({
+              key: selectedG,
+              value: false,
+            });
+            setSelectedG(null);
+          },
+        });
+      }
+    };
+
     return (
       <div className={styles.group}>
         <h2 style={{ color: '#777' }}>{`楼房${selectedG}`}</h2>
@@ -30,31 +85,7 @@ export default ({ status, target, onUpdate, style }) => {
                 key={key}
                 className={styles.item}
                 style={{ border: `1px solid ${color}`, color }}
-                onClick={() => {
-                  if (hasElec) {
-                    Modal.success({
-                      title: `电表${key}有电`,
-                      okText: '确定',
-                      onOk: () => {
-                        setGStatus({
-                          ...gStatus,
-                          [key]: true,
-                        });
-                      },
-                    });
-                  } else {
-                    Modal.error({
-                      title: `电表${key}停电了`,
-                      okText: '确定',
-                      onOk: () => {
-                        setGStatus({
-                          ...gStatus,
-                          [key]: false,
-                        });
-                      },
-                    });
-                  }
-                }}
+                onClick={() => handleRoom(key)}
               >
                 {key}
               </div>
@@ -62,37 +93,7 @@ export default ({ status, target, onUpdate, style }) => {
           })}
         </div>
 
-        <Button
-          className={styles.finish}
-          type="primary"
-          onClick={() => {
-            if (hasElec) {
-              Modal.success({
-                title: `楼房${selectedG}有电`,
-                okText: '确定',
-                onOk: () => {
-                  onUpdate({
-                    key: selectedG,
-                    value: true,
-                  });
-                  setSelectedG(null);
-                },
-              });
-            } else {
-              Modal.error({
-                title: `楼房${selectedG}停电了`,
-                okText: '确定',
-                onOk: () => {
-                  onUpdate({
-                    key: selectedG,
-                    value: false,
-                  });
-                  setSelectedG(null);
-                },
-              });
-            }
-          }}
-        >
+        <Button className={styles.finish} type="primary" onClick={handleBack}>
           返回
         </Button>
       </div>
@@ -207,293 +208,288 @@ export default ({ status, target, onUpdate, style }) => {
           </text>
 
           {/* FZX1-1 */}
-          <g stroke={status.FZX11 ? 'green' : 'red'}>
-            <path
-              className={status.FZX11 ? styles.path1 : styles.path2}
-              d="m500 570v40"
-            />
-            <rect
-              x="473"
-              y="610"
-              width="55"
-              height="30"
-              onClick={() => {
-                const hasElec = target.FZX11;
-                if (hasElec) {
-                  Modal.success({
-                    title: '开关FZX11有电',
-                    okText: '确定',
-                    onOk: () => {
-                      onUpdate({ key: 'FZX11', value: true });
-                    },
-                  });
-                } else {
-                  Modal.error({
-                    title: `开关FZX11停电了`,
-                    okText: '确定',
-                    onOk: () => {
-                      onUpdate({ key: 'FZX11', value: false });
-                    },
-                  });
-                }
-              }}
-            />
-            <text
-              x="425"
-              y="610"
-              fill={status.FZX11 ? 'green' : 'red'}
-              stroke="none"
-            >
-              FZX1-1
-            </text>
-          </g>
+          <path
+            className={status.FZX11 ? styles.path1 : styles.path2}
+            d="m500 570v40"
+            stroke={status.FZX11 ? 'green' : 'red'}
+          />
+          <rect
+            x="473"
+            y="610"
+            width="55"
+            height="30"
+            stroke={status.FZX11 ? 'green' : 'red'}
+            onClick={() => {
+              const hasElec = target.FZX11;
+              if (hasElec) {
+                Modal.success({
+                  title: '开关FZX11有电',
+                  okText: '确定',
+                  onOk: () => {
+                    onUpdate({ key: 'FZX11', value: true });
+                  },
+                });
+              } else {
+                Modal.error({
+                  title: `开关FZX11停电了`,
+                  okText: '确定',
+                  onOk: () => {
+                    onUpdate({ key: 'FZX11', value: false });
+                  },
+                });
+              }
+            }}
+          />
+          <text
+            x="425"
+            y="610"
+            fill={status.FZX11 ? 'green' : 'red'}
+            stroke="none"
+          >
+            FZX1-1
+          </text>
 
           {/* FZX1-2 */}
-          <g stroke={status.FZX12 ? 'green' : 'red'}>
-            <path
-              className={status.FZX12 ? styles.path1 : styles.path2}
-              d="m473 625l-213 75"
-            />
-            <rect
-              x="233"
-              y="700"
-              width="55"
-              height="30"
-              onClick={() => {
-                const hasElec = target.FZX12;
-                if (hasElec) {
-                  Modal.success({
-                    title: '开关FZX12有电',
-                    okText: '确定',
-                    onOk: () => {
-                      onUpdate({ key: 'FZX12', value: true });
-                    },
-                  });
-                } else {
-                  Modal.error({
-                    title: `开关FZX12停电了`,
-                    okText: '确定',
-                    onOk: () => {
-                      onUpdate({ key: 'FZX12', value: false });
-                    },
-                  });
-                }
-              }}
-            />
-            <text
-              x="180"
-              y="715"
-              fill={status.FZX12 ? 'green' : 'red'}
-              stroke="none"
-            >
-              FZX1-2
-            </text>
-          </g>
+          <path
+            className={status.FZX12 ? styles.path1 : styles.path2}
+            d="m473 625l-213 75"
+            stroke={status.FZX12 ? 'green' : 'red'}
+          />
+          <rect
+            x="233"
+            y="700"
+            width="55"
+            height="30"
+            stroke={status.FZX12 ? 'green' : 'red'}
+            onClick={() => {
+              const hasElec = target.FZX12;
+              if (hasElec) {
+                Modal.success({
+                  title: '开关FZX12有电',
+                  okText: '确定',
+                  onOk: () => {
+                    onUpdate({ key: 'FZX12', value: true });
+                  },
+                });
+              } else {
+                Modal.error({
+                  title: `开关FZX12停电了`,
+                  okText: '确定',
+                  onOk: () => {
+                    onUpdate({ key: 'FZX12', value: false });
+                  },
+                });
+              }
+            }}
+          />
+          <text
+            x="180"
+            y="715"
+            fill={status.FZX12 ? 'green' : 'red'}
+            stroke="none"
+          >
+            FZX1-2
+          </text>
 
           {/* FZX1-3 */}
-          <g stroke={status.FZX13 ? 'green' : 'red'}>
-            <path
-              className={status.FZX13 ? styles.path1 : styles.path2}
-              d="M500 640v60"
-            />
-
-            <rect
-              x="473"
-              y="700"
-              width="55"
-              height="30"
-              onClick={() => {
-                const hasElec = target.FZX13;
-                if (hasElec) {
-                  Modal.success({
-                    title: '开关FZX13有电',
-                    okText: '确定',
-                    onOk: () => {
-                      onUpdate({ key: 'FZX13', value: true });
-                    },
-                  });
-                } else {
-                  Modal.error({
-                    title: `开关FZX13停电了`,
-                    okText: '确定',
-                    onOk: () => {
-                      onUpdate({ key: 'FZX13', value: false });
-                    },
-                  });
-                }
-              }}
-            />
-            <text
-              x="420"
-              y="715"
-              fill={status.FZX13 ? 'green' : 'red'}
-              stroke="none"
-            >
-              FZX1-3
-            </text>
-          </g>
+          <path
+            className={status.FZX13 ? styles.path1 : styles.path2}
+            d="M500 640v60"
+            stroke={status.FZX13 ? 'green' : 'red'}
+          />
+          <rect
+            x="473"
+            y="700"
+            width="55"
+            height="30"
+            stroke={status.FZX13 ? 'green' : 'red'}
+            onClick={() => {
+              const hasElec = target.FZX13;
+              if (hasElec) {
+                Modal.success({
+                  title: '开关FZX13有电',
+                  okText: '确定',
+                  onOk: () => {
+                    onUpdate({ key: 'FZX13', value: true });
+                  },
+                });
+              } else {
+                Modal.error({
+                  title: `开关FZX13停电了`,
+                  okText: '确定',
+                  onOk: () => {
+                    onUpdate({ key: 'FZX13', value: false });
+                  },
+                });
+              }
+            }}
+          />
+          <text
+            x="420"
+            y="715"
+            fill={status.FZX13 ? 'green' : 'red'}
+            stroke="none"
+          >
+            FZX1-3
+          </text>
 
           {/* FZX1-4 */}
-          <g stroke={status.FZX14 ? 'green' : 'red'}>
-            <path
-              className={status.FZX14 ? styles.path1 : styles.path2}
-              d="m527 625l213 75"
-            />
-
-            <rect
-              x="713"
-              y="700"
-              width="55"
-              height="30"
-              onClick={() => {
-                const hasElec = target.FZX14;
-                if (hasElec) {
-                  Modal.success({
-                    title: '开关FZX14有电',
-                    okText: '确定',
-                    onOk: () => {
-                      onUpdate({ key: 'FZX14', value: true });
-                    },
-                  });
-                } else {
-                  Modal.error({
-                    title: `开关FZX14停电了`,
-                    okText: '确定',
-                    onOk: () => {
-                      onUpdate({ key: 'FZX14', value: false });
-                    },
-                  });
-                }
-              }}
-            />
-            <text
-              x="660"
-              y="715"
-              fill={status.FZX14 ? 'green' : 'red'}
-              stroke="none"
-            >
-              FZX1-4
-            </text>
-          </g>
+          <path
+            className={status.FZX14 ? styles.path1 : styles.path2}
+            d="m527 625l213 75"
+            stroke={status.FZX14 ? 'green' : 'red'}
+          />
+          <rect
+            x="713"
+            y="700"
+            width="55"
+            height="30"
+            stroke={status.FZX14 ? 'green' : 'red'}
+            onClick={() => {
+              const hasElec = target.FZX14;
+              if (hasElec) {
+                Modal.success({
+                  title: '开关FZX14有电',
+                  okText: '确定',
+                  onOk: () => {
+                    onUpdate({ key: 'FZX14', value: true });
+                  },
+                });
+              } else {
+                Modal.error({
+                  title: `开关FZX14停电了`,
+                  okText: '确定',
+                  onOk: () => {
+                    onUpdate({ key: 'FZX14', value: false });
+                  },
+                });
+              }
+            }}
+          />
+          <text
+            x="660"
+            y="715"
+            fill={status.FZX14 ? 'green' : 'red'}
+            stroke="none"
+          >
+            FZX1-4
+          </text>
 
           {/* G1 */}
-          <g stroke={status.G1 ? 'green' : 'red'}>
-            <path
-              className={status.G1 ? styles.path1 : styles.path2}
-              d="m260 730l-160 70"
-            />
-
-            <rect
-              x="70"
-              y="800"
-              width="60"
-              height="130"
-              onClick={() => checkFloor('G1')}
-            />
-            <text
-              x="100"
-              y="960"
-              fill={status.G1 ? 'green' : 'red'}
-              stroke="none"
-            >
-              G1
-            </text>
-          </g>
+          <path
+            className={status.G1 ? styles.path1 : styles.path2}
+            d="m260 730l-160 70"
+            stroke={status.G1 ? 'green' : 'red'}
+          />
+          <rect
+            x="70"
+            y="800"
+            width="60"
+            height="130"
+            onClick={() => checkFloor('G1')}
+            stroke={status.G1 ? 'green' : 'red'}
+          />
+          <text
+            x="100"
+            y="960"
+            fill={status.G1 ? 'green' : 'red'}
+            stroke="none"
+          >
+            G1
+          </text>
 
           {/* G2 */}
-          <g stroke={status.G2 ? 'green' : 'red'}>
-            <path
-              className={status.G2 ? styles.path1 : styles.path2}
-              d="m260 730v70"
-            />
+          <path
+            className={status.G2 ? styles.path1 : styles.path2}
+            d="m260 730v70"
+            stroke={status.G2 ? 'green' : 'red'}
+          />
 
-            <rect
-              x="230"
-              y="800"
-              width="60"
-              height="130"
-              onClick={() => checkFloor('G2')}
-            />
-            <text
-              x="260"
-              y="960"
-              fill={status.G2 ? 'green' : 'red'}
-              stroke="none"
-            >
-              G2
-            </text>
-          </g>
+          <rect
+            x="230"
+            y="800"
+            width="60"
+            height="130"
+            onClick={() => checkFloor('G2')}
+            stroke={status.G2 ? 'green' : 'red'}
+          />
+          <text
+            x="260"
+            y="960"
+            fill={status.G2 ? 'green' : 'red'}
+            stroke="none"
+          >
+            G2
+          </text>
 
           {/* G3 */}
-          <g stroke={status.G3 ? 'green' : 'red'}>
-            <path
-              className={status.G3 ? styles.path1 : styles.path2}
-              d="m500 730l-80 70"
-            />
-            <rect
-              x="390"
-              y="800"
-              width="60"
-              height="130"
-              onClick={() => checkFloor('G3')}
-            />
-            <text
-              x="410"
-              y="960"
-              fill={status.G3 ? 'green' : 'red'}
-              stroke="none"
-            >
-              G3
-            </text>
-          </g>
+          <path
+            className={status.G3 ? styles.path1 : styles.path2}
+            d="m500 730l-80 70"
+            stroke={status.G3 ? 'green' : 'red'}
+          />
+          <rect
+            x="390"
+            y="800"
+            width="60"
+            height="130"
+            onClick={() => checkFloor('G3')}
+            stroke={status.G3 ? 'green' : 'red'}
+          />
+          <text
+            x="410"
+            y="960"
+            fill={status.G3 ? 'green' : 'red'}
+            stroke="none"
+          >
+            G3
+          </text>
 
           {/* G4 */}
-          <g stroke={status.G4 ? 'green' : 'red'}>
-            <path
-              className={status.G4 ? styles.path1 : styles.path2}
-              d="m500 730l80 70"
-            />
-
-            <rect
-              x="550"
-              y="800"
-              width="60"
-              height="130"
-              onClick={() => checkFloor('G4')}
-            />
-            <text
-              x="580"
-              y="960"
-              fill={status.G4 ? 'green' : 'red'}
-              stroke="none"
-            >
-              G4
-            </text>
-          </g>
+          <path
+            className={status.G4 ? styles.path1 : styles.path2}
+            d="m500 730l80 70"
+            stroke={status.G4 ? 'green' : 'red'}
+          />
+          <rect
+            x="550"
+            y="800"
+            width="60"
+            height="130"
+            onClick={() => checkFloor('G4')}
+            stroke={status.G4 ? 'green' : 'red'}
+          />
+          <text
+            x="580"
+            y="960"
+            fill={status.G4 ? 'green' : 'red'}
+            stroke="none"
+          >
+            G4
+          </text>
 
           {/* G5 */}
-          <g stroke={status.G5 ? 'green' : 'red'}>
-            <path
-              className={status.G5 ? styles.path1 : styles.path2}
-              d="m740 730v70"
-            />
-
-            <rect
-              x="710"
-              y="800"
-              width="60"
-              height="130"
-              onClick={() => checkFloor('G5')}
-            />
-            <text
-              x="740"
-              y="960"
-              fill={status.G5 ? 'green' : 'red'}
-              stroke="none"
-            >
-              G5
-            </text>
-          </g>
+          <path
+            className={status.G5 ? styles.path1 : styles.path2}
+            d="m740 730v70"
+            stroke={status.G5 ? 'green' : 'red'}
+          />
+          <rect
+            x="710"
+            y="800"
+            width="60"
+            height="130"
+            onClick={() => checkFloor('G5')}
+            stroke={status.G5 ? 'green' : 'red'}
+          />
+          <text
+            x="740"
+            y="960"
+            fill={status.G5 ? 'green' : 'red'}
+            stroke="none"
+          >
+            G5
+          </text>
         </g>
       </svg>
     </>
