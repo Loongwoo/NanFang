@@ -78,7 +78,7 @@ export default ({
 
   return (
     <MyLayout location={location}>
-      <marquee className={styles.marquee} behavior="behavior">
+      <marquee className={styles.marquee} behavior="scroll">
         {orders}
       </marquee>
 
@@ -107,14 +107,14 @@ export default ({
 
           {finished && <h3 className={styles.result}>{result}</h3>}
 
-          <Button
-            block
-            type={current > 0 ? 'danger' : 'primary'}
-            style={{ marginBottom: 20 }}
-            onClick={handleStart}
-          >
-            {current === 0 ? '开始' : finished ? '完成' : '停止'}
-          </Button>
+          <div style={{ margin: '0 auto 20px', textAlign: 'center' }}>
+            <Button
+              type={current > 0 ? 'danger' : 'primary'}
+              onClick={handleStart}
+            >
+              {current === 0 ? '开始' : finished ? '完成' : '停止'}
+            </Button>
+          </div>
         </div>
       </div>
     </MyLayout>

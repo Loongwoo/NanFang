@@ -19,7 +19,7 @@ export default ({ status, target, onUpdate, style }) => {
     const hasElec = target[selectedG];
     return (
       <div className={styles.group}>
-        <h2>{`楼房${selectedG}`}</h2>
+        <h2 style={{ color: '#777' }}>{`楼房${selectedG}`}</h2>
 
         <div className={styles.floors}>
           {Object.keys(gStatus).map(key => {
@@ -59,7 +59,6 @@ export default ({ status, target, onUpdate, style }) => {
         <Button
           className={styles.finish}
           type="primary"
-          size="large"
           onClick={() => {
             if (hasElec) {
               Modal.success({
