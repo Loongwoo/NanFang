@@ -38,11 +38,13 @@ export default ({
 
   const updateStatus = v => setStatus({ ...status, ...v });
 
+  const finished = current === steps.length - 1;
+
   const handleStart = () => {
     if (current > 0) {
       Modal.confirm({
-        title: "请问你确定要退出演示吗？",
-        okText: "退出",
+        title: finished ? "你确定要重新开始吗？" : "你确定要退出演示吗？",
+        okText: finished ? "重新开始" : "退出",
         cancelText: "继续",
         onOk: () => {
           setCurrent(0);
@@ -82,11 +84,6 @@ export default ({
 
       <div className={styles.content}>
         <div className={styles.topology}>
-          <h3 className={styles.title}>拓扑图</h3>
-          <div className={styles.legend}>
-            <div className={styles.l1}>绿色线条代表有电</div>
-            <div className={styles.l2}>红色线条代表停电</div>
-          </div>
           <Topology
             status={status}
             target={target}
@@ -108,9 +105,7 @@ export default ({
             ))}
           </Steps>
 
-          {current === steps.length - 1 && (
-            <h3 className={styles.result}>{result}</h3>
-          )}
+          {finished && <h3 className={styles.result}>{result}</h3>}
 
           <Button
             block
@@ -118,11 +113,7 @@ export default ({
             style={{ marginBottom: 20 }}
             onClick={handleStart}
           >
-            {current === 0
-              ? "开始"
-              : current === steps.length - 1
-              ? "完成"
-              : "停止"}
+            {current === 0 ? "开始" : finished ? "完成" : "停止"}
           </Button>
         </div>
       </div>

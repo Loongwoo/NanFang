@@ -57,6 +57,15 @@ const onCurrent = ({ current, setCurrent, key }) => {
 const title = "示例一";
 
 export default ({ location }) => {
-  const props = { location, orders, steps, result, target, onCurrent, title };
-  return <Demo {...props} />;
+  return (
+    <Demo
+      location={location}
+      orders={orders}
+      steps={steps}
+      result={result}
+      target={target}
+      onCurrent={onCurrent}
+      title={title}
+    />
+  );
 };
