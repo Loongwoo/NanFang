@@ -11,6 +11,9 @@ const genG = v => {
     }, {});
 };
 
+const successMsg = '恭喜你，电路正常！';
+const errorMsg = '很遗憾，停电了！';
+
 export default ({ status, target, onUpdate, style }) => {
   const [selectedG, setSelectedG] = useState(null);
   const [gStatus, setGStatus] = useState(genG(true));
@@ -21,7 +24,8 @@ export default ({ status, target, onUpdate, style }) => {
     const handleRoom = key => {
       if (hasElec) {
         Modal.success({
-          title: `电表${key}有电`,
+          title: `电表${key}`,
+          content: successMsg,
           okText: '确定',
           onOk: () => {
             setGStatus({
@@ -32,7 +36,8 @@ export default ({ status, target, onUpdate, style }) => {
         });
       } else {
         Modal.error({
-          title: `电表${key}停电了`,
+          title: `电表${key}`,
+          content: errorMsg,
           okText: '确定',
           onOk: () => {
             setGStatus({
@@ -47,7 +52,8 @@ export default ({ status, target, onUpdate, style }) => {
     const handleBack = () => {
       if (hasElec) {
         Modal.success({
-          title: `楼房${selectedG}有电`,
+          title: `楼房${selectedG}`,
+          content: successMsg,
           okText: '确定',
           onOk: () => {
             onUpdate({
@@ -59,7 +65,8 @@ export default ({ status, target, onUpdate, style }) => {
         });
       } else {
         Modal.error({
-          title: `楼房${selectedG}停电了`,
+          title: `楼房${selectedG}`,
+          content: errorMsg,
           okText: '确定',
           onOk: () => {
             onUpdate({
@@ -105,6 +112,35 @@ export default ({ status, target, onUpdate, style }) => {
     const gs = genG(value);
     setGStatus(gs);
     setSelectedG(floor);
+  };
+
+  const handleSwich = key => {
+    const hasElec = target[key];
+    if (hasElec) {
+      Modal.success({
+        title: `开关${key}`,
+        content: successMsg,
+        okText: '确定',
+        onOk: () => {
+          onUpdate({
+            key,
+            value: true,
+          });
+        },
+      });
+    } else {
+      Modal.error({
+        title: `开关${key}`,
+        content: errorMsg,
+        okText: '确定',
+        onOk: () => {
+          onUpdate({
+            key,
+            value: false,
+          });
+        },
+      });
+    }
   };
 
   return (
@@ -219,26 +255,7 @@ export default ({ status, target, onUpdate, style }) => {
             width="55"
             height="30"
             stroke={status.FZX11 ? 'green' : 'red'}
-            onClick={() => {
-              const hasElec = target.FZX11;
-              if (hasElec) {
-                Modal.success({
-                  title: '开关FZX11有电',
-                  okText: '确定',
-                  onOk: () => {
-                    onUpdate({ key: 'FZX11', value: true });
-                  },
-                });
-              } else {
-                Modal.error({
-                  title: `开关FZX11停电了`,
-                  okText: '确定',
-                  onOk: () => {
-                    onUpdate({ key: 'FZX11', value: false });
-                  },
-                });
-              }
-            }}
+            onClick={() => handleSwich('FZX11')}
           />
           <text
             x="425"
@@ -261,26 +278,7 @@ export default ({ status, target, onUpdate, style }) => {
             width="55"
             height="30"
             stroke={status.FZX12 ? 'green' : 'red'}
-            onClick={() => {
-              const hasElec = target.FZX12;
-              if (hasElec) {
-                Modal.success({
-                  title: '开关FZX12有电',
-                  okText: '确定',
-                  onOk: () => {
-                    onUpdate({ key: 'FZX12', value: true });
-                  },
-                });
-              } else {
-                Modal.error({
-                  title: `开关FZX12停电了`,
-                  okText: '确定',
-                  onOk: () => {
-                    onUpdate({ key: 'FZX12', value: false });
-                  },
-                });
-              }
-            }}
+            onClick={() => handleSwich('FZX12')}
           />
           <text
             x="180"
@@ -303,26 +301,7 @@ export default ({ status, target, onUpdate, style }) => {
             width="55"
             height="30"
             stroke={status.FZX13 ? 'green' : 'red'}
-            onClick={() => {
-              const hasElec = target.FZX13;
-              if (hasElec) {
-                Modal.success({
-                  title: '开关FZX13有电',
-                  okText: '确定',
-                  onOk: () => {
-                    onUpdate({ key: 'FZX13', value: true });
-                  },
-                });
-              } else {
-                Modal.error({
-                  title: `开关FZX13停电了`,
-                  okText: '确定',
-                  onOk: () => {
-                    onUpdate({ key: 'FZX13', value: false });
-                  },
-                });
-              }
-            }}
+            onClick={() => handleSwich('FZX13')}
           />
           <text
             x="420"
@@ -345,26 +324,7 @@ export default ({ status, target, onUpdate, style }) => {
             width="55"
             height="30"
             stroke={status.FZX14 ? 'green' : 'red'}
-            onClick={() => {
-              const hasElec = target.FZX14;
-              if (hasElec) {
-                Modal.success({
-                  title: '开关FZX14有电',
-                  okText: '确定',
-                  onOk: () => {
-                    onUpdate({ key: 'FZX14', value: true });
-                  },
-                });
-              } else {
-                Modal.error({
-                  title: `开关FZX14停电了`,
-                  okText: '确定',
-                  onOk: () => {
-                    onUpdate({ key: 'FZX14', value: false });
-                  },
-                });
-              }
-            }}
+            onClick={() => handleSwich('FZX14')}
           />
           <text
             x="660"
