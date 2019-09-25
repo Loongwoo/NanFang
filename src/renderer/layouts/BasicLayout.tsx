@@ -3,7 +3,7 @@ import { PersistGate } from 'redux-persist/integration/react';
 import { persistStore } from 'redux-persist';
 import { Layout, Spin, message } from 'antd';
 import SideBar from './components/SideBar';
-import NavBar from './components/NavBar';
+// import NavBar from './components/NavBar';
 import styles from './BasicLayout.less';
 
 const { Sider, Content } = Layout;

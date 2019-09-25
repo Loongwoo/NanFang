@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
-import { Modal, Button } from 'antd';
-import styles from './Topology.less';
+import React, { useEffect, useState } from "react";
+import { Modal, Button } from "antd";
+import styles from "./Topology.less";
 
 const genG = v => {
   return Array(20)
@@ -24,7 +24,7 @@ export default ({ status, target, onUpdate, style }) => {
         <div className={styles.floors}>
           {Object.keys(gStatus).map(key => {
             const value = gStatus[key];
-            const color = value ? 'green' : 'red';
+            const color = value ? "green" : "red";
             return (
               <div
                 key={key}
@@ -34,7 +34,7 @@ export default ({ status, target, onUpdate, style }) => {
                   if (hasElec) {
                     Modal.success({
                       title: `电表${key}有电`,
-                      okText: '确定',
+                      okText: "确定",
                       onOk: () => {
                         setGStatus({ ...gStatus, [key]: true });
                       },
@@ -42,7 +42,7 @@ export default ({ status, target, onUpdate, style }) => {
                   } else {
                     Modal.error({
                       title: `电表${key}停电了`,
-                      okText: '确定',
+                      okText: "确定",
                       onOk: () => {
                         setGStatus({ ...gStatus, [key]: false });
                       },
@@ -64,7 +64,7 @@ export default ({ status, target, onUpdate, style }) => {
             if (hasElec) {
               Modal.success({
                 title: `楼房${selectedG}有电`,
-                okText: '确定',
+                okText: "确定",
                 onOk: () => {
                   onUpdate({ key: selectedG, value: true });
                   setSelectedG(null);
@@ -73,7 +73,7 @@ export default ({ status, target, onUpdate, style }) => {
             } else {
               Modal.error({
                 title: `楼房${selectedG}停电了`,
-                okText: '确定',
+                okText: "确定",
                 onOk: () => {
                   onUpdate({ key: selectedG, value: false });
                   setSelectedG(null);
@@ -82,7 +82,7 @@ export default ({ status, target, onUpdate, style }) => {
             }
           }}
         >
-          完成
+          返回
         </Button>
       </div>
     );
@@ -100,7 +100,7 @@ export default ({ status, target, onUpdate, style }) => {
       className={styles.main}
       height="1000"
       width="1000"
-      viewBox="50 0 800 1000"
+      viewBox="0 0 800 1000"
       style={style}
     >
       <g
@@ -183,7 +183,7 @@ export default ({ status, target, onUpdate, style }) => {
         </text>
 
         {/* FZX1-1 */}
-        <g stroke={status.FZX11 ? 'green' : 'red'}>
+        <g stroke={status.FZX11 ? "green" : "red"}>
           <path className={styles.path1} d="m500 570v40" />
           <rect
             x="473"
@@ -194,18 +194,18 @@ export default ({ status, target, onUpdate, style }) => {
               const hasElec = target.FZX11;
               if (hasElec) {
                 Modal.success({
-                  title: '开关FZX11有电',
-                  okText: '确定',
+                  title: "开关FZX11有电",
+                  okText: "确定",
                   onOk: () => {
-                    onUpdate({ key: 'FZX11', value: true });
+                    onUpdate({ key: "FZX11", value: true });
                   },
                 });
               } else {
                 Modal.error({
                   title: `开关FZX11停电了`,
-                  okText: '确定',
+                  okText: "确定",
                   onOk: () => {
-                    onUpdate({ key: 'FZX11', value: false });
+                    onUpdate({ key: "FZX11", value: false });
                   },
                 });
               }
@@ -217,7 +217,7 @@ export default ({ status, target, onUpdate, style }) => {
         </g>
 
         {/* FZX1-2 */}
-        <g stroke={status.FZX11 && status.FZX12 ? 'green' : 'red'}>
+        <g stroke={status.FZX11 && status.FZX12 ? "green" : "red"}>
           <path className={styles.path1} d="m473 625l-213 75" />
           <rect
             x="233"
@@ -228,18 +228,18 @@ export default ({ status, target, onUpdate, style }) => {
               const hasElec = target.FZX12;
               if (hasElec) {
                 Modal.success({
-                  title: '开关FZX12有电',
-                  okText: '确定',
+                  title: "开关FZX12有电",
+                  okText: "确定",
                   onOk: () => {
-                    onUpdate({ key: 'FZX12', value: true });
+                    onUpdate({ key: "FZX12", value: true });
                   },
                 });
               } else {
                 Modal.error({
                   title: `开关FZX12停电了`,
-                  okText: '确定',
+                  okText: "确定",
                   onOk: () => {
-                    onUpdate({ key: 'FZX12', value: false });
+                    onUpdate({ key: "FZX12", value: false });
                   },
                 });
               }
@@ -251,7 +251,7 @@ export default ({ status, target, onUpdate, style }) => {
         </g>
 
         {/* FZX1-3 */}
-        <g stroke={status.FZX11 && status.FZX13 ? 'green' : 'red'}>
+        <g stroke={status.FZX11 && status.FZX13 ? "green" : "red"}>
           <path className={styles.path1} d="M500 640v60" />
           <rect
             x="473"
@@ -262,18 +262,18 @@ export default ({ status, target, onUpdate, style }) => {
               const hasElec = target.FZX13;
               if (hasElec) {
                 Modal.success({
-                  title: '开关FZX13有电',
-                  okText: '确定',
+                  title: "开关FZX13有电",
+                  okText: "确定",
                   onOk: () => {
-                    onUpdate({ key: 'FZX13', value: true });
+                    onUpdate({ key: "FZX13", value: true });
                   },
                 });
               } else {
                 Modal.error({
                   title: `开关FZX13停电了`,
-                  okText: '确定',
+                  okText: "确定",
                   onOk: () => {
-                    onUpdate({ key: 'FZX13', value: false });
+                    onUpdate({ key: "FZX13", value: false });
                   },
                 });
               }
@@ -285,7 +285,7 @@ export default ({ status, target, onUpdate, style }) => {
         </g>
 
         {/* FZX1-4 */}
-        <g stroke={status.FZX11 && status.FZX14 ? 'green' : 'red'}>
+        <g stroke={status.FZX11 && status.FZX14 ? "green" : "red"}>
           <path className={styles.path1} d="m527 625l213 75" />
           <rect
             x="713"
@@ -296,18 +296,18 @@ export default ({ status, target, onUpdate, style }) => {
               const hasElec = target.FZX14;
               if (hasElec) {
                 Modal.success({
-                  title: '开关FZX14有电',
-                  okText: '确定',
+                  title: "开关FZX14有电",
+                  okText: "确定",
                   onOk: () => {
-                    onUpdate({ key: 'FZX14', value: true });
+                    onUpdate({ key: "FZX14", value: true });
                   },
                 });
               } else {
                 Modal.error({
                   title: `开关FZX14停电了`,
-                  okText: '确定',
+                  okText: "确定",
                   onOk: () => {
-                    onUpdate({ key: 'FZX14', value: false });
+                    onUpdate({ key: "FZX14", value: false });
                   },
                 });
               }
@@ -319,14 +319,14 @@ export default ({ status, target, onUpdate, style }) => {
         </g>
 
         {/* G1 */}
-        <g stroke={status.FZX11 && status.FZX12 && status.G1 ? 'green' : 'red'}>
+        <g stroke={status.FZX11 && status.FZX12 && status.G1 ? "green" : "red"}>
           <path className={styles.path1} d="m260 730l-160 70" />
           <rect
             x="70"
             y="800"
             width="60"
             height="130"
-            onClick={() => checkFloor('G1')}
+            onClick={() => checkFloor("G1")}
           />
           <text x="100" y="960">
             G1
@@ -334,14 +334,14 @@ export default ({ status, target, onUpdate, style }) => {
         </g>
 
         {/* G2 */}
-        <g stroke={status.FZX11 && status.FZX12 && status.G2 ? 'green' : 'red'}>
+        <g stroke={status.FZX11 && status.FZX12 && status.G2 ? "green" : "red"}>
           <path className={styles.path1} d="m260 730v70" />
           <rect
             x="230"
             y="800"
             width="60"
             height="130"
-            onClick={() => checkFloor('G2')}
+            onClick={() => checkFloor("G2")}
           />
           <text x="260" y="960">
             G2
@@ -349,14 +349,14 @@ export default ({ status, target, onUpdate, style }) => {
         </g>
 
         {/* G3 */}
-        <g stroke={status.FZX11 && status.FZX13 && status.G3 ? 'green' : 'red'}>
+        <g stroke={status.FZX11 && status.FZX13 && status.G3 ? "green" : "red"}>
           <path className={styles.path1} d="m500 730l-80 70" />
           <rect
             x="390"
             y="800"
             width="60"
             height="130"
-            onClick={() => checkFloor('G3')}
+            onClick={() => checkFloor("G3")}
           />
           <text x="410" y="960">
             G3
@@ -364,14 +364,14 @@ export default ({ status, target, onUpdate, style }) => {
         </g>
 
         {/* G4 */}
-        <g stroke={status.FZX11 && status.FZX13 && status.G4 ? 'green' : 'red'}>
+        <g stroke={status.FZX11 && status.FZX13 && status.G4 ? "green" : "red"}>
           <path className={styles.path1} d="m500 730l80 70" />
           <rect
             x="550"
             y="800"
             width="60"
             height="130"
-            onClick={() => checkFloor('G4')}
+            onClick={() => checkFloor("G4")}
           />
           <text x="580" y="960">
             G4
@@ -379,14 +379,14 @@ export default ({ status, target, onUpdate, style }) => {
         </g>
 
         {/* G5 */}
-        <g stroke={status.FZX11 && status.FZX14 && status.G5 ? 'green' : 'red'}>
+        <g stroke={status.FZX11 && status.FZX14 && status.G5 ? "green" : "red"}>
           <path className={styles.path1} d="m740 730v70" />
           <rect
             x="710"
             y="800"
             width="60"
             height="130"
-            onClick={() => checkFloor('G5')}
+            onClick={() => checkFloor("G5")}
           />
           <text x="740" y="960">
             G5

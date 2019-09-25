@@ -153,8 +153,10 @@ function createWindow() {
 app.on('ready', () => {
   createWindow();
 
-  const menu = Menu.buildFromTemplate(template);
-  Menu.setApplicationMenu(menu);
+  if (isMac) {
+    const menu = Menu.buildFromTemplate(template);
+    Menu.setApplicationMenu(menu);
+  }
 });
 
 app.on('window-all-closed', () => {
