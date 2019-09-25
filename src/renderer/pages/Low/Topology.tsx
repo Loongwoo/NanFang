@@ -11,8 +11,11 @@ const genG = v => {
     }, {});
 };
 
-const successMsg = '恭喜你，电路正常！';
-const errorMsg = '很遗憾，停电了！';
+const elecMsg = v => (v ? '恭喜你，电路正常！' : '很遗憾，停电了！');
+
+const elecClr = v => (v ? 'green' : 'red');
+
+const elecPath = v => (v ? styles.path1 : styles.path2);
 
 export default ({ status, target, onUpdate, style }) => {
   const [selectedG, setSelectedG] = useState(null);
@@ -22,61 +25,26 @@ export default ({ status, target, onUpdate, style }) => {
     const hasElec = target[selectedG];
 
     const handleRoom = key => {
-      if (hasElec) {
-        Modal.success({
-          title: `电表${key}`,
-          content: successMsg,
-          okText: '确定',
-          onOk: () => {
-            setGStatus({
-              ...gStatus,
-              [key]: true,
-            });
-          },
-        });
-      } else {
-        Modal.error({
-          title: `电表${key}`,
-          content: errorMsg,
-          okText: '确定',
-          onOk: () => {
-            setGStatus({
-              ...gStatus,
-              [key]: false,
-            });
-          },
-        });
-      }
+      Modal[hasElec ? 'success' : 'error']({
+        title: `电表${key}`,
+        content: elecMsg(hasElec),
+        okText: '确定',
+        onOk: () => {
+          setGStatus({ ...gStatus, [key]: hasElec });
+        },
+      });
     };
 
     const handleBack = () => {
-      if (hasElec) {
-        Modal.success({
-          title: `楼房${selectedG}`,
-          content: successMsg,
-          okText: '确定',
-          onOk: () => {
-            onUpdate({
-              key: selectedG,
-              value: true,
-            });
-            setSelectedG(null);
-          },
-        });
-      } else {
-        Modal.error({
-          title: `楼房${selectedG}`,
-          content: errorMsg,
-          okText: '确定',
-          onOk: () => {
-            onUpdate({
-              key: selectedG,
-              value: false,
-            });
-            setSelectedG(null);
-          },
-        });
-      }
+      Modal[hasElec ? 'success' : 'error']({
+        title: `楼房${selectedG}`,
+        content: elecMsg(hasElec),
+        okText: '确定',
+        onOk: () => {
+          onUpdate({ key: selectedG, value: hasElec });
+          setSelectedG(null);
+        },
+      });
     };
 
     return (
@@ -85,8 +53,7 @@ export default ({ status, target, onUpdate, style }) => {
 
         <div className={styles.floors}>
           {Object.keys(gStatus).map(key => {
-            const value = gStatus[key];
-            const color = value ? 'green' : 'red';
+            const color = elecClr(gStatus[key]);
             return (
               <div
                 key={key}
@@ -115,32 +82,13 @@ export default ({ status, target, onUpdate, style }) => {
   };
 
   const handleSwich = key => {
-    const hasElec = target[key];
-    if (hasElec) {
-      Modal.success({
-        title: `开关${key}`,
-        content: successMsg,
-        okText: '确定',
-        onOk: () => {
-          onUpdate({
-            key,
-            value: true,
-          });
-        },
-      });
-    } else {
-      Modal.error({
-        title: `开关${key}`,
-        content: errorMsg,
-        okText: '确定',
-        onOk: () => {
-          onUpdate({
-            key,
-            value: false,
-          });
-        },
-      });
-    }
+    const value = target[key];
+    Modal[value ? 'success' : 'error']({
+      title: `开关${key}`,
+      content: elecMsg(value),
+      okText: '确定',
+      onOk: () => onUpdate({ key, value }),
+    });
   };
 
   return (
@@ -245,101 +193,81 @@ export default ({ status, target, onUpdate, style }) => {
 
           {/* FZX1-1 */}
           <path
-            className={status.FZX11 ? styles.path1 : styles.path2}
+            className={elecPath(status.FZX11)}
             d="m500 570v40"
-            stroke={status.FZX11 ? 'green' : 'red'}
+            stroke={elecClr(status.FZX11)}
           />
           <rect
             x="473"
             y="610"
             width="55"
             height="30"
-            stroke={status.FZX11 ? 'green' : 'red'}
+            stroke={elecClr(status.FZX11)}
             onClick={() => handleSwich('FZX11')}
           />
-          <text
-            x="425"
-            y="610"
-            fill={status.FZX11 ? 'green' : 'red'}
-            stroke="none"
-          >
+          <text x="425" y="610" fill={elecClr(status.FZX11)} stroke="none">
             FZX1-1
           </text>
 
           {/* FZX1-2 */}
           <path
-            className={status.FZX12 ? styles.path1 : styles.path2}
+            className={elecPath(status.FZX12)}
             d="m473 625l-213 75"
-            stroke={status.FZX12 ? 'green' : 'red'}
+            stroke={elecClr(status.FZX12)}
           />
           <rect
             x="233"
             y="700"
             width="55"
             height="30"
-            stroke={status.FZX12 ? 'green' : 'red'}
+            stroke={elecClr(status.FZX12)}
             onClick={() => handleSwich('FZX12')}
           />
-          <text
-            x="180"
-            y="715"
-            fill={status.FZX12 ? 'green' : 'red'}
-            stroke="none"
-          >
+          <text x="180" y="715" fill={elecClr(status.FZX12)} stroke="none">
             FZX1-2
           </text>
 
           {/* FZX1-3 */}
           <path
-            className={status.FZX13 ? styles.path1 : styles.path2}
+            className={elecPath(status.FZX13)}
             d="M500 640v60"
-            stroke={status.FZX13 ? 'green' : 'red'}
+            stroke={elecClr(status.FZX13)}
           />
           <rect
             x="473"
             y="700"
             width="55"
             height="30"
-            stroke={status.FZX13 ? 'green' : 'red'}
+            stroke={elecClr(status.FZX13)}
             onClick={() => handleSwich('FZX13')}
           />
-          <text
-            x="420"
-            y="715"
-            fill={status.FZX13 ? 'green' : 'red'}
-            stroke="none"
-          >
+          <text x="420" y="715" fill={elecClr(status.FZX13)} stroke="none">
             FZX1-3
           </text>
 
           {/* FZX1-4 */}
           <path
-            className={status.FZX14 ? styles.path1 : styles.path2}
+            className={elecPath(status.FZX14)}
             d="m527 625l213 75"
-            stroke={status.FZX14 ? 'green' : 'red'}
+            stroke={elecClr(status.FZX14)}
           />
           <rect
             x="713"
             y="700"
             width="55"
             height="30"
-            stroke={status.FZX14 ? 'green' : 'red'}
+            stroke={elecClr(status.FZX14)}
             onClick={() => handleSwich('FZX14')}
           />
-          <text
-            x="660"
-            y="715"
-            fill={status.FZX14 ? 'green' : 'red'}
-            stroke="none"
-          >
+          <text x="660" y="715" fill={elecClr(status.FZX14)} stroke="none">
             FZX1-4
           </text>
 
           {/* G1 */}
           <path
-            className={status.G1 ? styles.path1 : styles.path2}
+            className={elecPath(status.G1)}
             d="m260 730l-160 70"
-            stroke={status.G1 ? 'green' : 'red'}
+            stroke={elecClr(status.G1)}
           />
           <rect
             x="70"
@@ -347,22 +275,17 @@ export default ({ status, target, onUpdate, style }) => {
             width="60"
             height="130"
             onClick={() => checkFloor('G1')}
-            stroke={status.G1 ? 'green' : 'red'}
+            stroke={elecClr(status.G1)}
           />
-          <text
-            x="100"
-            y="960"
-            fill={status.G1 ? 'green' : 'red'}
-            stroke="none"
-          >
+          <text x="100" y="960" fill={elecClr(status.G1)} stroke="none">
             G1
           </text>
 
           {/* G2 */}
           <path
-            className={status.G2 ? styles.path1 : styles.path2}
+            className={elecPath(status.G2)}
             d="m260 730v70"
-            stroke={status.G2 ? 'green' : 'red'}
+            stroke={elecClr(status.G2)}
           />
 
           <rect
@@ -371,22 +294,17 @@ export default ({ status, target, onUpdate, style }) => {
             width="60"
             height="130"
             onClick={() => checkFloor('G2')}
-            stroke={status.G2 ? 'green' : 'red'}
+            stroke={elecClr(status.G2)}
           />
-          <text
-            x="260"
-            y="960"
-            fill={status.G2 ? 'green' : 'red'}
-            stroke="none"
-          >
+          <text x="260" y="960" fill={elecClr(status.G2)} stroke="none">
             G2
           </text>
 
           {/* G3 */}
           <path
-            className={status.G3 ? styles.path1 : styles.path2}
+            className={elecPath(status.G3)}
             d="m500 730l-80 70"
-            stroke={status.G3 ? 'green' : 'red'}
+            stroke={elecClr(status.G3)}
           />
           <rect
             x="390"
@@ -394,22 +312,17 @@ export default ({ status, target, onUpdate, style }) => {
             width="60"
             height="130"
             onClick={() => checkFloor('G3')}
-            stroke={status.G3 ? 'green' : 'red'}
+            stroke={elecClr(status.G3)}
           />
-          <text
-            x="410"
-            y="960"
-            fill={status.G3 ? 'green' : 'red'}
-            stroke="none"
-          >
+          <text x="410" y="960" fill={elecClr(status.G3)} stroke="none">
             G3
           </text>
 
           {/* G4 */}
           <path
-            className={status.G4 ? styles.path1 : styles.path2}
+            className={elecPath(status.G4)}
             d="m500 730l80 70"
-            stroke={status.G4 ? 'green' : 'red'}
+            stroke={elecClr(status.G4)}
           />
           <rect
             x="550"
@@ -417,22 +330,17 @@ export default ({ status, target, onUpdate, style }) => {
             width="60"
             height="130"
             onClick={() => checkFloor('G4')}
-            stroke={status.G4 ? 'green' : 'red'}
+            stroke={elecClr(status.G4)}
           />
-          <text
-            x="580"
-            y="960"
-            fill={status.G4 ? 'green' : 'red'}
-            stroke="none"
-          >
+          <text x="580" y="960" fill={elecClr(status.G4)} stroke="none">
             G4
           </text>
 
           {/* G5 */}
           <path
-            className={status.G5 ? styles.path1 : styles.path2}
+            className={elecPath(status.G5)}
             d="m740 730v70"
-            stroke={status.G5 ? 'green' : 'red'}
+            stroke={elecClr(status.G5)}
           />
           <rect
             x="710"
@@ -440,14 +348,9 @@ export default ({ status, target, onUpdate, style }) => {
             width="60"
             height="130"
             onClick={() => checkFloor('G5')}
-            stroke={status.G5 ? 'green' : 'red'}
+            stroke={elecClr(status.G5)}
           />
-          <text
-            x="740"
-            y="960"
-            fill={status.G5 ? 'green' : 'red'}
-            stroke="none"
-          >
+          <text x="740" y="960" fill={elecClr(status.G5)} stroke="none">
             G5
           </text>
         </g>

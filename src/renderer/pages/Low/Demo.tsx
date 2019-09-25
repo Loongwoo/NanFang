@@ -51,6 +51,7 @@ export default ({
         },
       });
     } else {
+      setStatus(initStatus(true));
       setCurrent(1);
     }
   };
@@ -92,11 +93,7 @@ export default ({
       });
     }
 
-    onCurrent({
-      current,
-      setCurrent,
-      key,
-    });
+    onCurrent({ current, setCurrent, key });
   };
 
   return (
