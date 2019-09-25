@@ -1,10 +1,8 @@
 import { app, BrowserWindow, Menu, systemPreferences } from 'electron';
-import * as electronReferer from 'electron-referer';
 import * as path from 'path';
 import * as url from 'url';
 
-electronReferer('https://www.ximalaya.com/');
-
+const isMac = 'darwin' === process.platform;
 const USER_AGENT =
   'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36'; // tslint:disable-line
 
@@ -15,26 +13,10 @@ const template = [
   {
     label: '编辑',
     submenu: [
-      {
-        label: '剪切',
-        accelerator: 'CmdOrCtrl+X',
-        role: 'cut',
-      },
-      {
-        label: '复制',
-        accelerator: 'CmdOrCtrl+C',
-        role: 'copy',
-      },
-      {
-        label: '粘贴',
-        accelerator: 'CmdOrCtrl+V',
-        role: 'paste',
-      },
-      {
-        label: '全选',
-        accelerator: 'CmdOrCtrl+A',
-        role: 'selectall',
-      },
+      { label: '剪切', accelerator: 'CmdOrCtrl+X', role: 'cut' },
+      { label: '复制', accelerator: 'CmdOrCtrl+C', role: 'copy' },
+      { label: '粘贴', accelerator: 'CmdOrCtrl+V', role: 'paste' },
+      { label: '全选', accelerator: 'CmdOrCtrl+A', role: 'selectall' },
     ],
   },
   {
@@ -59,7 +41,7 @@ const template = [
       {
         label: '切换全屏',
         accelerator: (() => {
-          if (process.platform === 'darwin') {
+          if (isMac) {
             return 'Ctrl+Command+F';
           } else {
             return 'F11';
@@ -74,7 +56,7 @@ const template = [
       {
         label: '切换开发者工具',
         accelerator: (() => {
-          if (process.platform === 'darwin') {
+          if (isMac) {
             return 'Alt+Command+I';
           } else {
             return 'Ctrl+Shift+I';
@@ -92,42 +74,22 @@ const template = [
     label: '窗口',
     role: 'window',
     submenu: [
-      {
-        label: '最小化',
-        accelerator: 'CmdOrCtrl+M',
-        role: 'minimize',
-      },
-      {
-        label: '关闭',
-        accelerator: 'CmdOrCtrl+W',
-        role: 'close',
-      },
-      {
-        label: '退出',
-        accelerator: 'Cmd+Q',
-        role: 'quit',
-      },
+      { label: '最小化', accelerator: 'CmdOrCtrl+M', role: 'minimize' },
+      { label: '关闭', accelerator: 'CmdOrCtrl+W', role: 'close' },
+      { label: '退出', accelerator: 'Cmd+Q', role: 'quit' },
     ],
   },
 ];
 
-if (process.platform === 'darwin') {
+if (isMac) {
   template.unshift({
     label: app.getName(),
     submenu: [
-      {
-        label: `关于 ${app.getName()}`,
-        role: 'about',
-        accelerator: '',
-        // click() {
-        //   dialog.showMessageBox(mainWindow, { message: 'hello world' });
-        // },
-      },
+      { label: `关于 ${app.getName()}`, role: 'about', accelerator: '' },
     ],
   });
 }
 
-const isMac = 'darwin' === process.platform;
 function createWindow() {
   const titleBarStyle = isMac ? 'hiddenInset' : 'default';
   mainWindow = new BrowserWindow({
@@ -137,7 +99,7 @@ function createWindow() {
     height: 715,
     backgroundColor: 'white',
     titleBarStyle,
-    title: '没有名字',
+    title: '南方电网',
     frame: !isMac,
     icon: path.join(__dirname, '../../build/icon.png'),
     show: true,
@@ -160,14 +122,14 @@ function createWindow() {
         pathname: path.join(__dirname, './dist/renderer/index.html'),
         protocol: 'file:',
         slashes: true,
-      })
+      }),
     );
   }
 
   if (isMac) {
     setTimeout(
       () => systemPreferences.isTrustedAccessibilityClient(true),
-      1000
+      1000,
     );
   }
 
@@ -196,7 +158,7 @@ app.on('ready', () => {
 });
 
 app.on('window-all-closed', () => {
-  if (process.platform !== 'darwin') {
+  if (isMac) {
     app.quit();
   }
 });
