@@ -157,7 +157,6 @@
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
       "prettier --write",
-      "tslint --fix",
       "git add -f"
     ],
     "*.{css,less,json}": [

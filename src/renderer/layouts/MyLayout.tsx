@@ -8,7 +8,7 @@ const MyLayout = ({ isLogin, children, location: { pathname } }) => {
   if (!isLogin) {
     const handleForward = () => {
       router.push({
-        pathname: `/login`,
+        pathname: '/login',
         query: {
           redirect: pathname,
         },
