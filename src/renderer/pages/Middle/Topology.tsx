@@ -2972,7 +2972,7 @@ export default ({ style }) => {
         <path d="m2420.8 1958.8v-162" stroke="#000" />
         <path d="m2778.3 1958.8v-162" stroke="#000" strokeWidth="3" />
         <text
-          fill="#f00"
+          fill="red"
           fontSize="36"
           textAnchor="middle"
           x="2714.2"
