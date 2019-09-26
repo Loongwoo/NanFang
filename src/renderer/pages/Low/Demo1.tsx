@@ -36,21 +36,15 @@ const target = {
 const onCurrent = ({ current, setCurrent, key }) => {
   if (current === 1 && key === 'G1') {
     setCurrent(2);
-    setTimeout(() => {
-      setCurrent(3);
-    }, 1000);
+    setTimeout(() => setCurrent(3), 1000);
   }
   if (current === 3 && key === 'FZX12') {
     setCurrent(4);
-    setTimeout(() => {
-      setCurrent(5);
-    }, 1000);
+    setTimeout(() => setCurrent(5), 1000);
   }
   if (current === 5 && key === 'G2') {
     setCurrent(6);
-    setTimeout(() => {
-      setCurrent(7);
-    }, 1000);
+    setTimeout(() => setCurrent(7), 1000);
   }
 };
 

@@ -11,7 +11,7 @@ const genG = v => {
     }, {});
 };
 
-const elecMsg = v => (v ? '恭喜你，电路正常！' : '很遗憾，停电了！');
+const elecMsg = v => (v ? '恭喜你，电路正常！' : '糟糕，停电了！');
 
 const elecClr = v => (v ? 'green' : 'red');
 
@@ -26,9 +26,9 @@ export default ({ status, target, onUpdate, style }) => {
 
     const handleRoom = key => {
       Modal[hasElec ? 'success' : 'error']({
-        title: `电表${key}`,
+        title: `电表-${key}`,
         content: elecMsg(hasElec),
-        okText: '确定',
+        okText: '知道了',
         onOk: () => {
           setGStatus({ ...gStatus, [key]: hasElec });
         },
@@ -37,9 +37,9 @@ export default ({ status, target, onUpdate, style }) => {
 
     const handleBack = () => {
       Modal[hasElec ? 'success' : 'error']({
-        title: `楼房${selectedG}`,
+        title: `楼房-${selectedG}`,
         content: elecMsg(hasElec),
-        okText: '确定',
+        okText: '知道了',
         onOk: () => {
           onUpdate({ key: selectedG, value: hasElec });
           setSelectedG(null);
@@ -83,10 +83,11 @@ export default ({ status, target, onUpdate, style }) => {
 
   const handleSwich = key => {
     const value = target[key];
+    const s = key.length - 1;
     Modal[value ? 'success' : 'error']({
-      title: `开关${key}`,
+      title: `开关-${key.slice(0, s)}-${key.slice(s)}`,
       content: elecMsg(value),
-      okText: '确定',
+      okText: '知道了',
       onOk: () => onUpdate({ key, value }),
     });
   };

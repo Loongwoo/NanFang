@@ -39,27 +39,19 @@ const target = {
 const onCurrent = ({ current, setCurrent, key }) => {
   if (current === 1 && (key === 'G3' || key === 'G4')) {
     setCurrent(2);
-    setTimeout(() => {
-      setCurrent(3);
-    }, 1000);
+    setTimeout(() => setCurrent(3), 1000);
   }
   if (current === 3 && key === 'FZX13') {
     setCurrent(4);
-    setTimeout(() => {
-      setCurrent(5);
-    }, 1000);
+    setTimeout(() => setCurrent(5), 1000);
   }
   if (current === 5 && key === 'FZX11') {
     setCurrent(6);
-    setTimeout(() => {
-      setCurrent(7);
-    }, 1000);
+    setTimeout(() => setCurrent(7), 1000);
   }
   if (current === 7 && (key === 'FZX12' || key === 'FZX14')) {
     setCurrent(8);
-    setTimeout(() => {
-      setCurrent(9);
-    }, 1000);
+    setTimeout(() => setCurrent(9), 1000);
   }
 };
 
