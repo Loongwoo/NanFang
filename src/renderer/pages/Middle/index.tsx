@@ -15,6 +15,7 @@ const result =
   '通知供电分局人员进行巡线排查故障：巡线起点为大信置业G专用配电站602；终点为大信置业D专用配电站603';
 
 export default ({ location }) => {
+  const [scale, setScale] = useState(1);
   const [current, setCurrent] = useState(0);
   const [status, setStatus] = useState(null);
 
@@ -45,12 +46,27 @@ export default ({ location }) => {
 
       <div className={styles.content}>
         <div className={styles.topology}>
-          <Topology
-            // status={status}
-            // target={target}
-            // onUpdate={handleUpdate}
-            style={{ width: '100%', height: '100%' }}
-          />
+          <div className={styles.main}>
+            <Topology
+              // status={status}
+              // target={target}
+              // onUpdate={handleUpdate}
+              style={{ width: `${100 * scale}%`, height: `${100 * scale}%` }}
+            />
+          </div>
+          <div className={styles.footer}>
+            {[1, 2, 3, 4].map(a => (
+              <Button
+                ghost={scale !== a}
+                type="primary"
+                shape="circle"
+                style={{ marginLeft: a > 1 ? 20 : 0 }}
+                onClick={() => setScale(a)}
+              >
+                {`${a}X`}
+              </Button>
+            ))}
+          </div>
         </div>
 
         <div className={styles.right}>
