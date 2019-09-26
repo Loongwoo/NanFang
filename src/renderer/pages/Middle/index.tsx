@@ -19,6 +19,51 @@ export default ({ location }) => {
   const [current, setCurrent] = useState(0);
   const [status, setStatus] = useState(null);
 
+  useEffect(() => {
+    const el = document.getElementById('main');
+    let started = false;
+    let eX = 0;
+    let eY = 0;
+    let sX = 0;
+    let sY = 0;
+
+    const handleDrag = e => {
+      const { type, clientX, clientY } = e;
+      const el = document.getElementById('main');
+      if (type === 'mousedown') {
+        started = true;
+        const { scrollTop, scrollLeft } = el;
+        eX = scrollTop;
+        eY = scrollLeft;
+        sX = clientX;
+        sY = clientY;
+      } else if (type === 'mouseup' || type === 'mouseout') {
+        started = false;
+      } else if (type === 'mousemove' && started) {
+        eX = eX - (clientY - sY);
+        eY = eY - (clientX - sX);
+        el.scrollTop = eX;
+        el.scrollLeft = eY;
+        sX = clientX;
+        sY = clientY;
+      }
+    };
+    if (el) {
+      el.addEventListener('mousedown', handleDrag, false);
+      el.addEventListener('mousemove', handleDrag, false);
+      el.addEventListener('mouseout', handleDrag, false);
+      el.addEventListener('mouseup', handleDrag, false);
+    }
+    return () => {
+      if (el) {
+        el.removeEventListener('mousedown', handleDrag, false);
+        el.removeEventListener('mousemove', handleDrag, false);
+        el.removeEventListener('mouseout', handleDrag, false);
+        el.removeEventListener('mouseup', handleDrag, false);
+      }
+    };
+  });
+
   const finished = current === steps.length - 1;
 
   const handleStart = () => {
@@ -46,7 +91,7 @@ export default ({ location }) => {
 
       <div className={styles.content}>
         <div className={styles.topology}>
-          <div className={styles.main}>
+          <div id="main" className={styles.main} style={{ cursor: 'pointer' }}>
             <Topology
               // status={status}
               // target={target}
