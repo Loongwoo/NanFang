@@ -5,7 +5,7 @@
     "interface-name": false,
     "object-literal-sort-keys": false,
     "max-line-length": {
-      "options": [120]
+      "options": [200]
     },
     "new-parens": true,
     "no-arg": true,
@@ -25,7 +25,7 @@
   },
   "jsRules": {
     "max-line-length": {
-      "options": [120]
+      "options": [200]
     },
     "object-literal-sort-keys": false
   },

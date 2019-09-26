@@ -99,7 +99,7 @@ function createWindow() {
     height: 715,
     backgroundColor: 'white',
     titleBarStyle,
-    title: '南方电网',
+    title: '配电网多源信息故障诊断模拟软件',
     frame: !isMac,
     icon: path.join(__dirname, '../../build/icon.png'),
     show: true,
@@ -122,14 +122,14 @@ function createWindow() {
         pathname: path.join(__dirname, './dist/renderer/index.html'),
         protocol: 'file:',
         slashes: true,
-      }),
+      })
     );
   }
 
   if (isMac) {
     setTimeout(
       () => systemPreferences.isTrustedAccessibilityClient(true),
-      1000,
+      1000
     );
   }
 
