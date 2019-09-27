@@ -6,6 +6,9 @@ import styles from './index.less';
 
 const { Step } = Steps;
 
+const StartLeft = 240;
+const StartTop = 44;
+
 const orders =
   '2019.10.3 21:43:21:225，大信置业G专用配电站602与大信置业D专用配电站603之间出现故障，开关大信置业G专用配电站602与大信置业D专用配电站603分开，隔离故障。';
 
@@ -24,35 +27,54 @@ export default ({ location }) => {
     let started = false;
     let eX = 0;
     let eY = 0;
-    let sX = 0;
-    let sY = 0;
 
     const handleDrag = e => {
+      if (scale === 1) {
+        return;
+      }
       const { type, clientX, clientY } = e;
       const el = document.getElementById('main');
       if (type === 'mousedown') {
+        const { scrollLeft, scrollTop } = el;
         started = true;
-        const { scrollTop, scrollLeft } = el;
-        eX = scrollTop;
-        eY = scrollLeft;
-        sX = clientX;
-        sY = clientY;
+        eY = scrollTop + clientY;
+        eX = scrollLeft + clientX;
       } else if (type === 'mouseup' || type === 'mouseout') {
         started = false;
       } else if (type === 'mousemove' && started) {
-        eX = eX - (clientY - sY);
-        eY = eY - (clientX - sX);
-        el.scrollTop = eX;
-        el.scrollLeft = eY;
-        sX = clientX;
-        sY = clientY;
+        el.scrollTop = eY - clientY;
+        el.scrollLeft = eX - clientX;
       }
     };
+
+    const doubleClick = e => {
+      if (scale === 8) {
+        setScale(1);
+        return;
+      }
+      const el = document.getElementById('main');
+      const { clientX, clientY } = e;
+      const { scrollTop, scrollLeft, scrollWidth: w1, scrollHeight: h1 } = el;
+      const rx = clientX - StartLeft;
+      const ry = clientY - StartTop;
+      const x = (scrollLeft + rx) / w1;
+      const y = (scrollTop + ry) / h1;
+
+      setScale(scale * 2);
+
+      const { scrollWidth: w2, scrollHeight: h2 } = el;
+      if (w1 !== w2 && h1 !== h2) {
+        el.scrollTop = h2 * y - ry;
+        el.scrollLeft = w2 * x - rx;
+      }
+    };
+
     if (el) {
       el.addEventListener('mousedown', handleDrag, false);
       el.addEventListener('mousemove', handleDrag, false);
       el.addEventListener('mouseout', handleDrag, false);
       el.addEventListener('mouseup', handleDrag, false);
+      el.addEventListener('dblclick', doubleClick, false);
     }
     return () => {
       if (el) {
@@ -60,6 +82,7 @@ export default ({ location }) => {
         el.removeEventListener('mousemove', handleDrag, false);
         el.removeEventListener('mouseout', handleDrag, false);
         el.removeEventListener('mouseup', handleDrag, false);
+        el.removeEventListener('dblclick', doubleClick, false);
       }
     };
   });
@@ -96,12 +119,16 @@ export default ({ location }) => {
               // status={status}
               // target={target}
               // onUpdate={handleUpdate}
-              style={{ width: `${100 * scale}%`, height: `${100 * scale}%` }}
+              style={{
+                width: `${100 * scale}%`,
+                height: `${100 * scale - 1}%`,
+              }}
             />
           </div>
           <div className={styles.footer}>
-            {[1, 2, 3, 4].map(a => (
+            {[1, 2, 4, 8].map(a => (
               <Button
+                key={a}
                 ghost={scale !== a}
                 type="primary"
                 shape="circle"
