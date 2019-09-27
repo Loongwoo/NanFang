@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Modal, Button } from 'antd';
-import styles from './Topology.less';
+import styles from './index.less';
 import textArray from './textArray';
 import useArray from './useArray';
 
@@ -241,6 +241,16 @@ export default ({ style }) => {
           <path d="m11 20.9v-13.9" stroke="#000" />
         </symbol>
 
+        {useArray.map((a, i) => (
+          <use key={i} {...a} />
+        ))}
+
+        {textArray.map(({ children, ...rest }, i) => (
+          <text key={i} {...rest}>
+            {children}
+          </text>
+        ))}
+
         {/* 莲塘变电站 */}
         <path
           d="m157.6 1749.3v-96.7h167.1v96.7z"
@@ -268,16 +278,6 @@ export default ({ style }) => {
           <path d="m1639.1 1218.8v-246h198v246z" />
           <path d="m1879.6 1214.8v-216h192v216z" />
         </g>
-
-        {useArray.map((a, i) => (
-          <use key={i} {...a} />
-        ))}
-
-        {textArray.map(({ children, ...rest }, i) => (
-          <text key={i} {...rest}>
-            {children}
-          </text>
-        ))}
 
         <g fill="none" stroke="#000">
           <path d="m988.6 892.3v35" />

@@ -5,6 +5,7 @@ export default [
     width: '12',
     height: '17.3',
     xlinkHref: '#b',
+    transform: 'scale(.81)',
   },
   {
     x: '433',
@@ -12,6 +13,7 @@ export default [
     width: '12',
     height: '17.3',
     xlinkHref: '#b',
+    transform: 'scale(.81)',
   },
   {
     x: '484.8',
@@ -19,6 +21,7 @@ export default [
     width: '12',
     height: '17.3',
     xlinkHref: '#b',
+    transform: 'scale(.81)',
   },
   {
     x: '593.4',
@@ -26,6 +29,7 @@ export default [
     width: '12',
     height: '17.3',
     xlinkHref: '#b',
+    transform: 'scale(.81)',
   },
   {
     x: '403.9',
@@ -33,6 +37,7 @@ export default [
     width: '12',
     height: '17.3',
     xlinkHref: '#b',
+    transform: 'scale(.81)',
   },
   {
     x: '603.9',
@@ -40,6 +45,7 @@ export default [
     width: '12',
     height: '17.3',
     xlinkHref: '#b',
+    transform: 'scale(.81)',
   },
   {
     x: '512.6',
@@ -47,6 +53,7 @@ export default [
     width: '12',
     height: '17.3',
     xlinkHref: '#b',
+    transform: 'scale(.81)',
   },
   {
     x: '2100.9',
@@ -54,6 +61,7 @@ export default [
     width: '12',
     height: '17.3',
     xlinkHref: '#b',
+    transform: 'scale(.81)',
   },
   {
     x: '1295.3',
@@ -61,6 +69,7 @@ export default [
     width: '12',
     height: '17.3',
     xlinkHref: '#b',
+    transform: 'scale(.81)',
   },
   {
     x: '1184.2',
@@ -68,6 +77,7 @@ export default [
     width: '12',
     height: '17.3',
     xlinkHref: '#b',
+    transform: 'scale(.81)',
   },
   {
     x: '1437.3',
@@ -75,6 +85,7 @@ export default [
     width: '12',
     height: '17.3',
     xlinkHref: '#b',
+    transform: 'scale(.81)',
   },
   {
     x: '1754.6',
@@ -82,6 +93,7 @@ export default [
     width: '12',
     height: '17.3',
     xlinkHref: '#b',
+    transform: 'scale(.81)',
   },
   {
     x: '1437.3',
@@ -89,6 +101,7 @@ export default [
     width: '12',
     height: '17.3',
     xlinkHref: '#b',
+    transform: 'scale(.81)',
   },
   {
     x: '1702.7',
@@ -96,6 +109,7 @@ export default [
     width: '12',
     height: '17.3',
     xlinkHref: '#b',
+    transform: 'scale(.81)',
   },
   {
     x: '1115.7',
@@ -103,6 +117,7 @@ export default [
     width: '12',
     height: '17.3',
     xlinkHref: '#b',
+    transform: 'scale(.81)',
   },
   {
     x: '2014.4',
@@ -110,6 +125,7 @@ export default [
     width: '12',
     height: '17.3',
     xlinkHref: '#b',
+    transform: 'scale(.81)',
   },
   {
     x: '2068.8',
@@ -117,6 +133,7 @@ export default [
     width: '12',
     height: '17.3',
     xlinkHref: '#b',
+    transform: 'scale(.81)',
   },
   {
     x: '2786.7',
@@ -124,6 +141,7 @@ export default [
     width: '12',
     height: '17.3',
     xlinkHref: '#b',
+    transform: 'scale(.81)',
   },
   {
     x: '3133.6',
@@ -131,6 +149,7 @@ export default [
     width: '12',
     height: '17.3',
     xlinkHref: '#b',
+    transform: 'scale(.81)',
   },
   {
     x: '3087.3',
@@ -138,6 +157,7 @@ export default [
     width: '12',
     height: '17.3',
     xlinkHref: '#b',
+    transform: 'scale(.81)',
   },
   {
     x: '488.5',
@@ -145,6 +165,7 @@ export default [
     width: '12',
     height: '17.3',
     xlinkHref: '#b',
+    transform: 'scale(.81)',
   },
   {
     x: '423.1',
@@ -152,6 +173,7 @@ export default [
     width: '12',
     height: '17.3',
     xlinkHref: '#b',
+    transform: 'scale(.81)',
   },
   {
     x: '550.2',
@@ -159,6 +181,7 @@ export default [
     width: '12',
     height: '17.3',
     xlinkHref: '#b',
+    transform: 'scale(.81)',
   },
   {
     x: '858.3',
@@ -166,6 +189,7 @@ export default [
     width: '12',
     height: '17.3',
     xlinkHref: '#b',
+    transform: 'scale(.81)',
   },
   {
     x: '2565.7',
@@ -173,6 +197,7 @@ export default [
     width: '12',
     height: '17.3',
     xlinkHref: '#b',
+    transform: 'scale(.81)',
   },
   {
     x: '2623.7',
@@ -180,6 +205,7 @@ export default [
     width: '12',
     height: '17.3',
     xlinkHref: '#b',
+    transform: 'scale(.81)',
   },
   {
     x: '2155.2',
@@ -187,6 +213,7 @@ export default [
     width: '12',
     height: '17.3',
     xlinkHref: '#b',
+    transform: 'scale(.81)',
   },
   {
     x: '1735.4',
@@ -194,6 +221,7 @@ export default [
     width: '12',
     height: '17.3',
     xlinkHref: '#b',
+    transform: 'scale(.81)',
   },
   {
     x: '1673.7',
@@ -201,6 +229,7 @@ export default [
     width: '12',
     height: '17.3',
     xlinkHref: '#b',
+    transform: 'scale(.81)',
   },
   {
     x: '1281.1',
@@ -208,6 +237,7 @@ export default [
     width: '12',
     height: '17.3',
     xlinkHref: '#b',
+    transform: 'scale(.81)',
   },
   {
     x: '2865.7',
@@ -215,6 +245,7 @@ export default [
     width: '12',
     height: '17.3',
     xlinkHref: '#b',
+    transform: 'scale(.81)',
   },
   {
     x: '2459.5',
@@ -222,6 +253,7 @@ export default [
     width: '12',
     height: '17.3',
     xlinkHref: '#b',
+    transform: 'scale(.81)',
   },
   {
     x: '2510.1',
@@ -229,6 +261,7 @@ export default [
     width: '12',
     height: '17.3',
     xlinkHref: '#b',
+    transform: 'scale(.81)',
   },
   {
     x: '1803.9',
@@ -236,6 +269,7 @@ export default [
     width: '12',
     height: '17.3',
     xlinkHref: '#b',
+    transform: 'scale(.81)',
   },
   {
     x: '2041.6',
@@ -243,6 +277,7 @@ export default [
     width: '12',
     height: '17.3',
     xlinkHref: '#b',
+    transform: 'scale(.81)',
   },
   {
     x: '2104.6',
@@ -250,6 +285,7 @@ export default [
     width: '12',
     height: '17.3',
     xlinkHref: '#b',
+    transform: 'scale(.81)',
   },
   {
     x: '2948.4',
@@ -257,6 +293,7 @@ export default [
     width: '12',
     height: '17.3',
     xlinkHref: '#b',
+    transform: 'scale(.81)',
   },
   {
     x: '2045.3',
@@ -264,6 +301,7 @@ export default [
     width: '12',
     height: '17.3',
     xlinkHref: '#b',
+    transform: 'scale(.81)',
   },
   {
     x: '2163.8',
@@ -271,6 +309,7 @@ export default [
     width: '12',
     height: '17.3',
     xlinkHref: '#b',
+    transform: 'scale(.81)',
   },
   {
     x: '2758.3',
@@ -278,6 +317,7 @@ export default [
     width: '12',
     height: '17.3',
     xlinkHref: '#b',
+    transform: 'scale(.81)',
   },
   {
     x: '2370',
@@ -285,6 +325,7 @@ export default [
     width: '12',
     height: '17.3',
     xlinkHref: '#b',
+    transform: 'scale(.81)',
   },
   {
     x: '3050.9',
@@ -292,6 +333,7 @@ export default [
     width: '12',
     height: '17.3',
     xlinkHref: '#b',
+    transform: 'scale(.81)',
   },
   {
     x: '2497.1',
@@ -299,6 +341,7 @@ export default [
     width: '12',
     height: '17.3',
     xlinkHref: '#b',
+    transform: 'scale(.81)',
   },
   {
     x: '2123.1',
@@ -306,6 +349,7 @@ export default [
     width: '12',
     height: '17.3',
     xlinkHref: '#b',
+    transform: 'scale(.81)',
   },
   {
     x: '640.2',
@@ -313,6 +357,7 @@ export default [
     width: '12',
     height: '17.3',
     xlinkHref: '#d',
+    transform: 'scale(.9)',
   },
   {
     x: '1136.8',
@@ -320,6 +365,7 @@ export default [
     width: '12',
     height: '17.3',
     xlinkHref: '#d',
+    transform: 'scale(.9)',
   },
   {
     x: '1092.4',
@@ -327,6 +373,7 @@ export default [
     width: '12',
     height: '17.3',
     xlinkHref: '#d',
+    transform: 'scale(.9)',
   },
   {
     x: '2916.8',
@@ -334,6 +381,7 @@ export default [
     width: '12',
     height: '17.3',
     xlinkHref: '#d',
+    transform: 'scale(.9)',
   },
   {
     x: '543.5',
@@ -341,6 +389,7 @@ export default [
     width: '12',
     height: '17.3',
     xlinkHref: '#d',
+    transform: 'scale(.9)',
   },
   {
     x: '599.1',
@@ -348,6 +397,7 @@ export default [
     width: '12',
     height: '17.3',
     xlinkHref: '#d',
+    transform: 'scale(.9)',
   },
   {
     x: '2158.5',
@@ -355,6 +405,7 @@ export default [
     width: '12',
     height: '17.3',
     xlinkHref: '#d',
+    transform: 'scale(.9)',
   },
   {
     x: '1827.9',
@@ -362,6 +413,7 @@ export default [
     width: '12',
     height: '17.3',
     xlinkHref: '#d',
+    transform: 'scale(.9)',
   },
   {
     x: '1883.5',
@@ -369,6 +421,7 @@ export default [
     width: '12',
     height: '17.3',
     xlinkHref: '#d',
+    transform: 'scale(.9)',
   },
   {
     x: '1389.1',
@@ -376,6 +429,7 @@ export default [
     width: '12',
     height: '17.3',
     xlinkHref: '#d',
+    transform: 'scale(.9)',
   },
   {
     x: '1444.6',
@@ -383,6 +437,7 @@ export default [
     width: '12',
     height: '17.3',
     xlinkHref: '#d',
+    transform: 'scale(.9)',
   },
   {
     x: '1030.2',
@@ -390,6 +445,7 @@ export default [
     width: '12',
     height: '17.3',
     xlinkHref: '#d',
+    transform: 'scale(.9)',
   },
   {
     x: '1107.9',
@@ -397,6 +453,7 @@ export default [
     width: '12',
     height: '17.3',
     xlinkHref: '#d',
+    transform: 'scale(.9)',
   },
   {
     x: '2526.3',
@@ -404,6 +461,7 @@ export default [
     width: '12',
     height: '17.3',
     xlinkHref: '#d',
+    transform: 'scale(.9)',
   },
   {
     x: '821.3',
@@ -411,6 +469,7 @@ export default [
     width: '12',
     height: '17.3',
     xlinkHref: '#d',
+    transform: 'scale(.9)',
   },
   {
     x: '316.3',
@@ -418,6 +477,7 @@ export default [
     width: '12',
     height: '17.3',
     xlinkHref: '#d',
+    transform: 'scale(.9)',
   },
   {
     x: '411.8',
@@ -425,6 +485,7 @@ export default [
     width: '12',
     height: '17.3',
     xlinkHref: '#d',
+    transform: 'scale(.9)',
   },
   {
     x: '489.6',
@@ -432,6 +493,7 @@ export default [
     width: '12',
     height: '17.3',
     xlinkHref: '#d',
+    transform: 'scale(.9)',
   },
   {
     x: '584.1',
@@ -439,6 +501,7 @@ export default [
     width: '12',
     height: '17.3',
     xlinkHref: '#d',
+    transform: 'scale(.9)',
   },
   {
     x: '1126.3',
@@ -446,6 +509,7 @@ export default [
     width: '12',
     height: '17.3',
     xlinkHref: '#d',
+    transform: 'scale(.9)',
   },
   {
     x: '1220.7',
@@ -453,6 +517,7 @@ export default [
     width: '12',
     height: '17.3',
     xlinkHref: '#d',
+    transform: 'scale(.9)',
   },
   {
     x: '1781.3',
@@ -460,6 +525,7 @@ export default [
     width: '12',
     height: '17.3',
     xlinkHref: '#d',
+    transform: 'scale(.9)',
   },
   {
     x: '1477.4',
@@ -467,6 +533,7 @@ export default [
     width: '12',
     height: '17.3',
     xlinkHref: '#d',
+    transform: 'scale(.9)',
   },
   {
     x: '1422.9',
@@ -474,6 +541,7 @@ export default [
     width: '12',
     height: '17.3',
     xlinkHref: '#d',
+    transform: 'scale(.9)',
   },
   {
     x: '1704.6',
@@ -481,6 +549,7 @@ export default [
     width: '12',
     height: '17.3',
     xlinkHref: '#d',
+    transform: 'scale(.9)',
   },
   {
     x: '1757.9',
@@ -488,6 +557,7 @@ export default [
     width: '12',
     height: '17.3',
     xlinkHref: '#d',
+    transform: 'scale(.9)',
   },
   {
     x: '2554.1',
@@ -495,6 +565,7 @@ export default [
     width: '12',
     height: '17.3',
     xlinkHref: '#d',
+    transform: 'scale(.9)',
   },
   {
     x: '2619.6',
@@ -502,6 +573,7 @@ export default [
     width: '12',
     height: '17.3',
     xlinkHref: '#d',
+    transform: 'scale(.9)',
   },
   {
     x: '2690.7',
@@ -509,6 +581,7 @@ export default [
     width: '12',
     height: '17.3',
     xlinkHref: '#d',
+    transform: 'scale(.9)',
   },
   {
     x: '2363.5',
@@ -516,6 +589,7 @@ export default [
     width: '12',
     height: '17.3',
     xlinkHref: '#d',
+    transform: 'scale(.9)',
   },
   {
     x: '1997.9',
@@ -523,6 +597,7 @@ export default [
     width: '12',
     height: '17.3',
     xlinkHref: '#d',
+    transform: 'scale(.9)',
   },
   {
     x: '1947.9',
@@ -530,6 +605,7 @@ export default [
     width: '12',
     height: '17.3',
     xlinkHref: '#d',
+    transform: 'scale(.9)',
   },
   {
     x: '1053.5',
@@ -537,6 +613,7 @@ export default [
     width: '12',
     height: '17.3',
     xlinkHref: '#d',
+    transform: 'scale(.9)',
   },
   {
     transform: 'matrix(-.9 0 0 -.9 2057.2 2112.8)',
@@ -756,6 +833,7 @@ export default [
     height: '37',
     width: '18.8',
     xlinkHref: '#o',
+    transform: 'scale(1.044)',
   },
   {
     x: '464.3',
@@ -763,6 +841,7 @@ export default [
     height: '37',
     width: '18.8',
     xlinkHref: '#o',
+    transform: 'scale(1.044)',
   },
   {
     x: '2218.6',
@@ -770,6 +849,7 @@ export default [
     height: '37',
     width: '18.8',
     xlinkHref: '#o',
+    transform: 'scale(1.044)',
   },
   {
     x: '2095.1',
@@ -777,6 +857,7 @@ export default [
     height: '37',
     width: '18.8',
     xlinkHref: '#o',
+    transform: 'scale(1.044)',
   },
   {
     x: '1625.3',
@@ -784,6 +865,7 @@ export default [
     height: '37',
     width: '18.8',
     xlinkHref: '#o',
+    transform: 'scale(1.044)',
   },
   {
     x: '1490.2',
@@ -791,6 +873,7 @@ export default [
     height: '37',
     width: '18.8',
     xlinkHref: '#o',
+    transform: 'scale(1.044)',
   },
   {
     x: '1682.7',
@@ -798,6 +881,7 @@ export default [
     height: '37',
     width: '18.8',
     xlinkHref: '#o',
+    transform: 'scale(1.044)',
   },
   {
     x: '1716.2',
@@ -805,6 +889,7 @@ export default [
     height: '37',
     width: '18.8',
     xlinkHref: '#o',
+    transform: 'scale(1.044)',
   },
   {
     x: '1753.6',
@@ -812,6 +897,7 @@ export default [
     height: '37',
     width: '18.8',
     xlinkHref: '#o',
+    transform: 'scale(1.044)',
   },
   {
     x: '2460',
@@ -819,6 +905,7 @@ export default [
     height: '37',
     width: '18.8',
     xlinkHref: '#o',
+    transform: 'scale(1.044)',
   },
   {
     x: '2497.4',
@@ -826,6 +913,7 @@ export default [
     height: '37',
     width: '18.8',
     xlinkHref: '#o',
+    transform: 'scale(1.044)',
   },
   {
     x: '2362.3',
@@ -833,6 +921,7 @@ export default [
     height: '37',
     width: '18.8',
     xlinkHref: '#o',
+    transform: 'scale(1.044)',
   },
   {
     x: '547.7',
@@ -840,6 +929,7 @@ export default [
     height: '37',
     width: '18.8',
     xlinkHref: '#n',
+    transform: 'scale(1.044)',
   },
   {
     x: '497.9',
@@ -847,6 +937,7 @@ export default [
     height: '37',
     width: '18.8',
     xlinkHref: '#n',
+    transform: 'scale(1.044)',
   },
   {
     x: '455.7',
@@ -854,6 +945,7 @@ export default [
     height: '37',
     width: '18.8',
     xlinkHref: '#n',
+    transform: 'scale(1.044)',
   },
   {
     x: '413.6',
@@ -861,6 +953,7 @@ export default [
     height: '37',
     width: '18.8',
     xlinkHref: '#n',
+    transform: 'scale(1.044)',
   },
   {
     x: '371.4',
@@ -868,6 +961,7 @@ export default [
     height: '37',
     width: '18.8',
     xlinkHref: '#n',
+    transform: 'scale(1.044)',
   },
   {
     x: '331.2',
@@ -875,6 +969,7 @@ export default [
     height: '37',
     width: '18.8',
     xlinkHref: '#n',
+    transform: 'scale(1.044)',
   },
   {
     x: '323.5',
@@ -882,6 +977,7 @@ export default [
     height: '37',
     width: '18.8',
     xlinkHref: '#n',
+    transform: 'scale(1.044)',
   },
   {
     x: '422.2',
@@ -889,6 +985,7 @@ export default [
     height: '37',
     width: '18.8',
     xlinkHref: '#n',
+    transform: 'scale(1.044)',
   },
   {
     x: '512.2',
@@ -896,6 +993,7 @@ export default [
     height: '37',
     width: '18.8',
     xlinkHref: '#n',
+    transform: 'scale(1.044)',
   },
   {
     x: '374.3',
@@ -903,6 +1001,7 @@ export default [
     height: '37',
     width: '18.8',
     xlinkHref: '#n',
+    transform: 'scale(1.044)',
   },
   {
     x: '1903.5',
@@ -910,6 +1009,7 @@ export default [
     height: '37',
     width: '18.8',
     xlinkHref: '#n',
+    transform: 'scale(1.044)',
   },
   {
     x: '1985.9',
@@ -917,6 +1017,7 @@ export default [
     height: '37',
     width: '18.8',
     xlinkHref: '#n',
+    transform: 'scale(1.044)',
   },
   {
     x: '1856.6',
@@ -924,6 +1025,7 @@ export default [
     height: '37',
     width: '18.8',
     xlinkHref: '#n',
+    transform: 'scale(1.044)',
   },
   {
     x: '1942.8',
@@ -931,6 +1033,7 @@ export default [
     height: '37',
     width: '18.8',
     xlinkHref: '#n',
+    transform: 'scale(1.044)',
   },
   {
     x: '2030.9',
@@ -938,6 +1041,7 @@ export default [
     height: '37',
     width: '18.8',
     xlinkHref: '#n',
+    transform: 'scale(1.044)',
   },
   {
     x: '2135.3',
@@ -945,6 +1049,7 @@ export default [
     height: '37',
     width: '18.8',
     xlinkHref: '#n',
+    transform: 'scale(1.044)',
   },
   {
     x: '2173.6',
@@ -952,6 +1057,7 @@ export default [
     height: '37',
     width: '18.8',
     xlinkHref: '#n',
+    transform: 'scale(1.044)',
   },
   {
     x: '2282.8',
@@ -959,6 +1065,7 @@ export default [
     height: '37',
     width: '18.8',
     xlinkHref: '#n',
+    transform: 'scale(1.044)',
   },
   {
     x: '463.9',
@@ -966,6 +1073,7 @@ export default [
     height: '37',
     width: '18.8',
     xlinkHref: '#n',
+    transform: 'scale(1.044)',
   },
   {
     x: '393',
@@ -973,6 +1081,7 @@ export default [
     height: '37',
     width: '18.8',
     xlinkHref: '#n',
+    transform: 'scale(1.044)',
   },
   {
     x: '350.8',
@@ -980,6 +1089,7 @@ export default [
     height: '37',
     width: '18.8',
     xlinkHref: '#n',
+    transform: 'scale(1.044)',
   },
   {
     x: '308.7',
@@ -987,6 +1097,7 @@ export default [
     height: '37',
     width: '18.8',
     xlinkHref: '#n',
+    transform: 'scale(1.044)',
   },
   {
     x: '268.5',
@@ -994,6 +1105,7 @@ export default [
     height: '37',
     width: '18.8',
     xlinkHref: '#n',
+    transform: 'scale(1.044)',
   },
   {
     x: '1674.1',
@@ -1001,6 +1113,7 @@ export default [
     height: '37',
     width: '18.8',
     xlinkHref: '#n',
+    transform: 'scale(1.044)',
   },
   {
     x: '1582.1',
@@ -1008,6 +1121,7 @@ export default [
     height: '37',
     width: '18.8',
     xlinkHref: '#n',
+    transform: 'scale(1.044)',
   },
   {
     x: '1531.4',
@@ -1015,6 +1129,7 @@ export default [
     height: '37',
     width: '18.8',
     xlinkHref: '#n',
+    transform: 'scale(1.044)',
   },
   {
     x: '1110.4',
@@ -1022,6 +1137,7 @@ export default [
     height: '37',
     width: '18.8',
     xlinkHref: '#n',
+    transform: 'scale(1.044)',
   },
   {
     x: '1166',
@@ -1029,6 +1145,7 @@ export default [
     height: '37',
     width: '18.8',
     xlinkHref: '#n',
+    transform: 'scale(1.044)',
   },
   {
     x: '1222.5',
@@ -1036,6 +1153,7 @@ export default [
     height: '37',
     width: '18.8',
     xlinkHref: '#n',
+    transform: 'scale(1.044)',
   },
   {
     x: '1269.4',
@@ -1043,6 +1161,7 @@ export default [
     height: '37',
     width: '18.8',
     xlinkHref: '#n',
+    transform: 'scale(1.044)',
   },
   {
     x: '1316.3',
@@ -1050,6 +1169,7 @@ export default [
     height: '37',
     width: '18.8',
     xlinkHref: '#n',
+    transform: 'scale(1.044)',
   },
   {
     x: '1356.6',
@@ -1057,6 +1177,7 @@ export default [
     height: '37',
     width: '18.8',
     xlinkHref: '#n',
+    transform: 'scale(1.044)',
   },
   {
     x: '1394.9',
@@ -1064,6 +1185,7 @@ export default [
     height: '37',
     width: '18.8',
     xlinkHref: '#n',
+    transform: 'scale(1.044)',
   },
   {
     x: '1465.3',
@@ -1071,6 +1193,7 @@ export default [
     height: '37',
     width: '18.8',
     xlinkHref: '#n',
+    transform: 'scale(1.044)',
   },
   {
     x: '1511.3',
@@ -1078,6 +1201,7 @@ export default [
     height: '37',
     width: '18.8',
     xlinkHref: '#n',
+    transform: 'scale(1.044)',
   },
   {
     x: '1558.2',
@@ -1085,6 +1209,7 @@ export default [
     height: '37',
     width: '18.8',
     xlinkHref: '#n',
+    transform: 'scale(1.044)',
   },
   {
     x: '1600.3',
@@ -1092,6 +1217,7 @@ export default [
     height: '37',
     width: '18.8',
     xlinkHref: '#n',
+    transform: 'scale(1.044)',
   },
   {
     x: '1642.5',
@@ -1099,6 +1225,7 @@ export default [
     height: '37',
     width: '18.8',
     xlinkHref: '#n',
+    transform: 'scale(1.044)',
   },
   {
     x: '2157.3',
@@ -1106,6 +1233,7 @@ export default [
     height: '37',
     width: '18.8',
     xlinkHref: '#n',
+    transform: 'scale(1.044)',
   },
   {
     x: '2197.6',
@@ -1113,6 +1241,7 @@ export default [
     height: '37',
     width: '18.8',
     xlinkHref: '#n',
+    transform: 'scale(1.044)',
   },
   {
     x: '2254.1',
@@ -1120,6 +1249,7 @@ export default [
     height: '37',
     width: '18.8',
     xlinkHref: '#n',
+    transform: 'scale(1.044)',
   },
   {
     x: '2315.4',
@@ -1127,6 +1257,7 @@ export default [
     height: '37',
     width: '18.8',
     xlinkHref: '#n',
+    transform: 'scale(1.044)',
   },
   {
     x: '2426.5',
@@ -1134,6 +1265,7 @@ export default [
     height: '37',
     width: '18.8',
     xlinkHref: '#n',
+    transform: 'scale(1.044)',
   },
   {
     x: '1207.5',
@@ -1141,6 +1273,7 @@ export default [
     height: '71.7',
     width: '34',
     xlinkHref: '#e',
+    transform: 'scale(.84)',
   },
   {
     x: '3114.6',
@@ -1148,6 +1281,7 @@ export default [
     height: '71.7',
     width: '34',
     xlinkHref: '#e',
+    transform: 'scale(.84)',
   },
   {
     x: '1898',
@@ -1155,6 +1289,7 @@ export default [
     height: '71.7',
     width: '34',
     xlinkHref: '#e',
+    transform: 'scale(.84)',
   },
   {
     x: '1443.8',
@@ -1162,6 +1297,7 @@ export default [
     height: '71.7',
     width: '34',
     xlinkHref: '#e',
+    transform: 'scale(.84)',
   },
   {
     x: '1514.1',
@@ -1169,6 +1305,7 @@ export default [
     height: '71.7',
     width: '34',
     xlinkHref: '#e',
+    transform: 'scale(.84)',
   },
   {
     x: '1572.4',
@@ -1176,6 +1313,7 @@ export default [
     height: '71.7',
     width: '34',
     xlinkHref: '#e',
+    transform: 'scale(.84)',
   },
   {
     x: '2521.8',
@@ -1183,6 +1321,7 @@ export default [
     height: '71.7',
     width: '34',
     xlinkHref: '#e',
+    transform: 'scale(.84)',
   },
   {
     x: '675.4',
@@ -1190,6 +1329,7 @@ export default [
     height: '71.7',
     width: '34',
     xlinkHref: '#i',
+    transform: 'scale(.84)',
   },
   {
     x: '613.5',
@@ -1197,6 +1337,7 @@ export default [
     height: '71.7',
     width: '34',
     xlinkHref: '#i',
+    transform: 'scale(.84)',
   },
   {
     x: '631.3',
@@ -1204,6 +1345,7 @@ export default [
     height: '71.7',
     width: '34',
     xlinkHref: '#i',
+    transform: 'scale(.84)',
   },
   {
     x: '571.8',
@@ -1211,6 +1353,7 @@ export default [
     height: '71.7',
     width: '34',
     xlinkHref: '#i',
+    transform: 'scale(.84)',
   },
   {
     x: '2302.1',
@@ -1218,6 +1361,7 @@ export default [
     height: '71.7',
     width: '34',
     xlinkHref: '#i',
+    transform: 'scale(.84)',
   },
   {
     x: '1948',
@@ -1225,6 +1369,7 @@ export default [
     height: '71.7',
     width: '34',
     xlinkHref: '#i',
+    transform: 'scale(.84)',
   },
   {
     x: '1477.7',
@@ -1232,6 +1377,7 @@ export default [
     height: '71.7',
     width: '34',
     xlinkHref: '#i',
+    transform: 'scale(.84)',
   },
   {
     x: '1093.2',
@@ -1239,6 +1385,7 @@ export default [
     height: '71.7',
     width: '34',
     xlinkHref: '#i',
+    transform: 'scale(.84)',
   },
   {
     x: '2696.2',
@@ -1246,6 +1393,7 @@ export default [
     height: '71.7',
     width: '34',
     xlinkHref: '#i',
+    transform: 'scale(.84)',
   },
   {
     x: '869.4',
@@ -1253,6 +1401,7 @@ export default [
     height: '71.7',
     width: '34',
     xlinkHref: '#i',
+    transform: 'scale(.84)',
   },
   {
     x: '1874.2',
@@ -1260,6 +1409,7 @@ export default [
     height: '71.7',
     width: '34',
     xlinkHref: '#i',
+    transform: 'scale(.84)',
   },
   {
     x: '1817',
@@ -1267,6 +1417,7 @@ export default [
     height: '71.7',
     width: '34',
     xlinkHref: '#i',
+    transform: 'scale(.84)',
   },
   {
     x: '2872.4',
@@ -1274,6 +1425,7 @@ export default [
     height: '71.7',
     width: '34',
     xlinkHref: '#i',
+    transform: 'scale(.84)',
   },
   {
     x: '2727.1',
@@ -1281,6 +1433,7 @@ export default [
     height: '71.7',
     width: '34',
     xlinkHref: '#i',
+    transform: 'scale(.84)',
   },
   {
     x: '2796.2',
@@ -1288,6 +1441,7 @@ export default [
     height: '71.7',
     width: '34',
     xlinkHref: '#i',
+    transform: 'scale(.84)',
   },
   {
     x: '2076.6',
@@ -1295,6 +1449,7 @@ export default [
     height: '71.7',
     width: '34',
     xlinkHref: '#i',
+    transform: 'scale(.84)',
   },
   {
     x: '2395.6',
@@ -1302,6 +1457,7 @@ export default [
     height: '71.7',
     width: '34',
     xlinkHref: '#i',
+    transform: 'scale(.84)',
   },
   {
     transform: 'matrix(-.84 0 0 -.84 4295.2 1859.8)',
@@ -1553,6 +1709,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '1340.5',
@@ -1560,6 +1717,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '3736.2',
@@ -1567,6 +1725,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '3557.7',
@@ -1574,6 +1733,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '486.2',
@@ -1581,6 +1741,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '880.5',
@@ -1588,6 +1749,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '809.1',
@@ -1595,6 +1757,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '734.8',
@@ -1602,6 +1765,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '672',
@@ -1609,6 +1773,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '609.1',
@@ -1616,6 +1781,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '546.2',
@@ -1623,6 +1789,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '937.7',
@@ -1630,6 +1797,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '399.1',
@@ -1637,6 +1805,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '474.8',
@@ -1644,6 +1813,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '622',
@@ -1651,6 +1821,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '684.8',
@@ -1658,6 +1829,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '756.2',
@@ -1665,6 +1837,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '550.5',
@@ -1672,6 +1845,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '3109.8',
@@ -1679,6 +1853,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '2831.2',
@@ -1686,6 +1861,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '2954.1',
@@ -1693,6 +1869,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '2761.2',
@@ -1700,6 +1877,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '2889.8',
@@ -1707,6 +1885,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '3021.2',
@@ -1714,6 +1893,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '2336.2',
@@ -1721,6 +1901,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '2407.7',
@@ -1728,6 +1909,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '2479.1',
@@ -1735,6 +1917,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '1772',
@@ -1742,6 +1925,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '1843.4',
@@ -1749,6 +1933,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '1922',
@@ -1756,6 +1941,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '1993.4',
@@ -1763,6 +1949,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '1467.7',
@@ -1770,6 +1957,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '1410.5',
@@ -1777,6 +1965,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '1310.5',
@@ -1784,6 +1973,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '3301.2',
@@ -1791,6 +1981,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '3177',
@@ -1798,6 +1989,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '3234.1',
@@ -1805,6 +1997,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '3471.2',
@@ -1812,6 +2005,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '3397',
@@ -1819,6 +2013,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '3117',
@@ -1826,6 +2021,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '1042',
@@ -1833,6 +2029,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '684.1',
@@ -1840,6 +2037,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '578.4',
@@ -1847,6 +2045,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '515.5',
@@ -1854,6 +2053,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '452.7',
@@ -1861,6 +2061,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '392.7',
@@ -1868,6 +2069,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '802.7',
@@ -1875,6 +2077,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '1355.5',
@@ -1882,6 +2085,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '1434.1',
@@ -1889,6 +2093,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '2489.1',
@@ -1896,6 +2101,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '2416.2',
@@ -1903,6 +2109,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '2352',
@@ -1910,6 +2117,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '2276.2',
@@ -1917,6 +2125,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '2214.8',
@@ -1924,6 +2133,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '2137.7',
@@ -1931,6 +2141,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '2135.5',
@@ -1938,6 +2149,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '1648.4',
@@ -1945,6 +2157,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '1731.2',
@@ -1952,6 +2165,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '1815.5',
@@ -1959,6 +2173,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '1885.5',
@@ -1966,6 +2181,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '1955.5',
@@ -1973,6 +2189,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '2015.5',
@@ -1980,6 +2197,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '2072.7',
@@ -1987,6 +2205,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '2677.7',
@@ -1994,6 +2213,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '2177.7',
@@ -2001,6 +2221,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '2246.2',
@@ -2008,6 +2229,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '2316.2',
@@ -2015,6 +2237,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '2379.1',
@@ -2022,6 +2245,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '2442',
@@ -2029,6 +2253,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '2502',
@@ -2036,6 +2261,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '2552',
@@ -2043,6 +2269,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '2607.7',
@@ -2050,6 +2277,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '3779.8',
@@ -2057,6 +2285,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '3209.8',
@@ -2064,6 +2293,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '3269.8',
@@ -2071,6 +2301,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '3354.1',
@@ -2078,6 +2309,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '3445.5',
@@ -2085,6 +2317,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '3515.5',
@@ -2092,6 +2325,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '3611.2',
@@ -2099,6 +2333,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '3661.2',
@@ -2106,6 +2341,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '3717',
@@ -2113,6 +2349,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '3024.8',
@@ -2120,6 +2357,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '2490.5',
@@ -2127,6 +2365,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '2727.7',
@@ -2134,6 +2373,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '2803.4',
@@ -2141,6 +2381,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '2873.4',
@@ -2148,6 +2389,7 @@ export default [
     height: '32',
     width: '23',
     xlinkHref: '#h',
+    transform: 'scale(.7)',
   },
   {
     x: '4970.3',
@@ -2155,6 +2397,7 @@ export default [
     height: '42',
     width: '37',
     xlinkHref: '#k',
+    transform: 'scale(.432)',
   },
   {
     x: '1553.6',
@@ -2162,6 +2405,7 @@ export default [
     height: '42',
     width: '37',
     xlinkHref: '#k',
+    transform: 'scale(.432)',
   },
   {
     x: '803.6',
@@ -2169,6 +2413,7 @@ export default [
     height: '42',
     width: '37',
     xlinkHref: '#k',
+    transform: 'scale(.432)',
   },
   {
     x: '926.3',
@@ -2176,6 +2421,7 @@ export default [
     height: '42',
     width: '37',
     xlinkHref: '#k',
+    transform: 'scale(.432)',
   },
   {
     x: '680.9',
@@ -2183,6 +2429,7 @@ export default [
     height: '42',
     width: '37',
     xlinkHref: '#k',
+    transform: 'scale(.432)',
   },
   {
     x: '4820.9',
@@ -2190,6 +2437,7 @@ export default [
     height: '42',
     width: '37',
     xlinkHref: '#k',
+    transform: 'scale(.432)',
   },
   {
     x: '5073.3',
@@ -2197,6 +2445,7 @@ export default [
     height: '42',
     width: '37',
     xlinkHref: '#k',
+    transform: 'scale(.432)',
   },
   {
     x: '4929.7',
@@ -2204,6 +2453,7 @@ export default [
     height: '42',
     width: '37',
     xlinkHref: '#k',
+    transform: 'scale(.432)',
   },
   {
     x: '3935.5',
@@ -2211,6 +2461,7 @@ export default [
     height: '42',
     width: '37',
     xlinkHref: '#k',
+    transform: 'scale(.432)',
   },
   {
     x: '4051.3',
@@ -2218,6 +2469,7 @@ export default [
     height: '42',
     width: '37',
     xlinkHref: '#k',
+    transform: 'scale(.432)',
   },
   {
     x: '3021.2',
@@ -2225,6 +2477,7 @@ export default [
     height: '42',
     width: '37',
     xlinkHref: '#k',
+    transform: 'scale(.432)',
   },
   {
     x: '3264.2',
@@ -2232,6 +2485,7 @@ export default [
     height: '42',
     width: '37',
     xlinkHref: '#k',
+    transform: 'scale(.432)',
   },
   {
     x: '2412.4',
@@ -2239,6 +2493,7 @@ export default [
     height: '42',
     width: '37',
     xlinkHref: '#k',
+    transform: 'scale(.432)',
   },
   {
     x: '5658.9',
@@ -2246,6 +2501,7 @@ export default [
     height: '42',
     width: '37',
     xlinkHref: '#k',
+    transform: 'scale(.432)',
   },
   {
     x: '1334.8',
@@ -2253,6 +2509,7 @@ export default [
     height: '42',
     width: '37',
     xlinkHref: '#k',
+    transform: 'scale(.432)',
   },
   {
     x: '2439',
@@ -2260,6 +2517,7 @@ export default [
     height: '42',
     width: '37',
     xlinkHref: '#k',
+    transform: 'scale(.432)',
   },
   {
     x: '3498',
@@ -2267,6 +2525,7 @@ export default [
     height: '42',
     width: '37',
     xlinkHref: '#k',
+    transform: 'scale(.432)',
   },
   {
     x: '3494.6',
@@ -2274,6 +2533,7 @@ export default [
     height: '42',
     width: '37',
     xlinkHref: '#k',
+    transform: 'scale(.432)',
   },
   {
     x: '4373',
@@ -2281,6 +2541,7 @@ export default [
     height: '42',
     width: '37',
     xlinkHref: '#k',
+    transform: 'scale(.432)',
   },
   {
     x: '6158.9',
@@ -2288,6 +2549,7 @@ export default [
     height: '42',
     width: '37',
     xlinkHref: '#k',
+    transform: 'scale(.432)',
   },
   {
     x: '4692.5',
@@ -2295,6 +2557,7 @@ export default [
     height: '42',
     width: '37',
     xlinkHref: '#k',
+    transform: 'scale(.432)',
   },
   {
     x: '3956.4',
@@ -2302,6 +2565,7 @@ export default [
     height: '42',
     width: '37',
     xlinkHref: '#k',
+    transform: 'scale(.432)',
   },
   {
     x: '4174',
@@ -2309,6 +2573,7 @@ export default [
     height: '42',
     width: '37',
     xlinkHref: '#k',
+    transform: 'scale(.432)',
   },
   {
     x: '3838.3',
@@ -2316,6 +2581,7 @@ export default [
     height: '42',
     width: '37',
     xlinkHref: '#k',
+    transform: 'scale(.432)',
   },
   {
     x: '4454',
@@ -2323,6 +2589,7 @@ export default [
     height: '42',
     width: '37',
     xlinkHref: '#k',
+    transform: 'scale(.432)',
   },
   {
     x: '4576.7',
@@ -2330,6 +2597,7 @@ export default [
     height: '42',
     width: '37',
     xlinkHref: '#k',
+    transform: 'scale(.432)',
   },
   {
     x: '590.3',
@@ -2337,6 +2605,7 @@ export default [
     height: '37',
     width: '16',
     xlinkHref: '#l',
+    transform: 'scale(.972)',
   },
   {
     x: '536.8',
@@ -2344,6 +2613,7 @@ export default [
     height: '37',
     width: '16',
     xlinkHref: '#l',
+    transform: 'scale(.972)',
   },
   {
     x: '491.6',
@@ -2351,6 +2621,7 @@ export default [
     height: '37',
     width: '16',
     xlinkHref: '#l',
+    transform: 'scale(.972)',
   },
   {
     x: '446.3',
@@ -2358,6 +2629,7 @@ export default [
     height: '37',
     width: '16',
     xlinkHref: '#l',
+    transform: 'scale(.972)',
   },
   {
     x: '401',
@@ -2365,6 +2637,7 @@ export default [
     height: '37',
     width: '16',
     xlinkHref: '#l',
+    transform: 'scale(.972)',
   },
   {
     x: '357.8',
@@ -2372,6 +2645,7 @@ export default [
     height: '37',
     width: '16',
     xlinkHref: '#l',
+    transform: 'scale(.972)',
   },
   {
     x: '682.9',
@@ -2379,6 +2653,7 @@ export default [
     height: '37',
     width: '16',
     xlinkHref: '#l',
+    transform: 'scale(.972)',
   },
   {
     x: '349.6',
@@ -2386,6 +2661,7 @@ export default [
     height: '37',
     width: '16',
     xlinkHref: '#l',
+    transform: 'scale(.972)',
   },
   {
     x: '455.6',
@@ -2393,6 +2669,7 @@ export default [
     height: '37',
     width: '16',
     xlinkHref: '#l',
+    transform: 'scale(.972)',
   },
   {
     x: '500.8',
@@ -2400,6 +2677,7 @@ export default [
     height: '37',
     width: '16',
     xlinkHref: '#l',
+    transform: 'scale(.972)',
   },
   {
     x: '552.3',
@@ -2407,6 +2685,7 @@ export default [
     height: '37',
     width: '16',
     xlinkHref: '#l',
+    transform: 'scale(.972)',
   },
   {
     x: '404.1',
@@ -2414,6 +2693,7 @@ export default [
     height: '37',
     width: '16',
     xlinkHref: '#l',
+    transform: 'scale(.972)',
   },
   {
     x: '295.1',
@@ -2421,6 +2701,7 @@ export default [
     height: '37',
     width: '16',
     xlinkHref: '#l',
+    transform: 'scale(.972)',
   },
   {
     x: '2046.6',
@@ -2428,6 +2709,7 @@ export default [
     height: '37',
     width: '16',
     xlinkHref: '#l',
+    transform: 'scale(.972)',
   },
   {
     x: '2135.1',
@@ -2435,6 +2717,7 @@ export default [
     height: '37',
     width: '16',
     xlinkHref: '#l',
+    transform: 'scale(.972)',
   },
   {
     x: '1996.2',
@@ -2442,6 +2725,7 @@ export default [
     height: '37',
     width: '16',
     xlinkHref: '#l',
+    transform: 'scale(.972)',
   },
   {
     x: '2088.8',
@@ -2449,6 +2733,7 @@ export default [
     height: '37',
     width: '16',
     xlinkHref: '#l',
+    transform: 'scale(.972)',
   },
   {
     x: '2247.2',
@@ -2456,6 +2741,7 @@ export default [
     height: '37',
     width: '16',
     xlinkHref: '#l',
+    transform: 'scale(.972)',
   },
   {
     x: '2183.4',
@@ -2463,6 +2749,7 @@ export default [
     height: '37',
     width: '16',
     xlinkHref: '#l',
+    transform: 'scale(.972)',
   },
   {
     x: '2295.6',
@@ -2470,6 +2757,7 @@ export default [
     height: '37',
     width: '16',
     xlinkHref: '#l',
+    transform: 'scale(.972)',
   },
   {
     x: '2336.7',
@@ -2477,6 +2765,7 @@ export default [
     height: '37',
     width: '16',
     xlinkHref: '#l',
+    transform: 'scale(.972)',
   },
   {
     x: '2454',
@@ -2484,6 +2773,7 @@ export default [
     height: '37',
     width: '16',
     xlinkHref: '#l',
+    transform: 'scale(.972)',
   },
   {
     x: '2507.5',
@@ -2491,6 +2781,7 @@ export default [
     height: '37',
     width: '16',
     xlinkHref: '#l',
+    transform: 'scale(.972)',
   },
   {
     x: '585.7',
@@ -2498,6 +2789,7 @@ export default [
     height: '37',
     width: '16',
     xlinkHref: '#l',
+    transform: 'scale(.972)',
   },
   {
     x: '500.3',
@@ -2505,6 +2797,7 @@ export default [
     height: '37',
     width: '16',
     xlinkHref: '#l',
+    transform: 'scale(.972)',
   },
   {
     x: '424.2',
@@ -2512,6 +2805,7 @@ export default [
     height: '37',
     width: '16',
     xlinkHref: '#l',
+    transform: 'scale(.972)',
   },
   {
     x: '378.9',
@@ -2519,6 +2813,7 @@ export default [
     height: '37',
     width: '16',
     xlinkHref: '#l',
+    transform: 'scale(.972)',
   },
   {
     x: '333.6',
@@ -2526,6 +2821,7 @@ export default [
     height: '37',
     width: '16',
     xlinkHref: '#l',
+    transform: 'scale(.972)',
   },
   {
     x: '290.4',
@@ -2533,6 +2829,7 @@ export default [
     height: '37',
     width: '16',
     xlinkHref: '#l',
+    transform: 'scale(.972)',
   },
   {
     x: '1547.1',
@@ -2540,6 +2837,7 @@ export default [
     height: '37',
     width: '16',
     xlinkHref: '#l',
+    transform: 'scale(.972)',
   },
   {
     x: '1800.2',
@@ -2547,6 +2845,7 @@ export default [
     height: '37',
     width: '16',
     xlinkHref: '#l',
+    transform: 'scale(.972)',
   },
   {
     x: '1701.4',
@@ -2554,6 +2853,7 @@ export default [
     height: '37',
     width: '16',
     xlinkHref: '#l',
+    transform: 'scale(.972)',
   },
   {
     x: '1646.9',
@@ -2561,6 +2861,7 @@ export default [
     height: '37',
     width: '16',
     xlinkHref: '#l',
+    transform: 'scale(.972)',
   },
   {
     x: '1545.6',
@@ -2568,6 +2869,7 @@ export default [
     height: '37',
     width: '16',
     xlinkHref: '#l',
+    transform: 'scale(.972)',
   },
   {
     x: '1194.8',
@@ -2575,6 +2877,7 @@ export default [
     height: '37',
     width: '16',
     xlinkHref: '#l',
+    transform: 'scale(.972)',
   },
   {
     x: '1254.4',
@@ -2582,6 +2885,7 @@ export default [
     height: '37',
     width: '16',
     xlinkHref: '#l',
+    transform: 'scale(.972)',
   },
   {
     x: '1315.1',
@@ -2589,6 +2893,7 @@ export default [
     height: '37',
     width: '16',
     xlinkHref: '#l',
+    transform: 'scale(.972)',
   },
   {
     x: '1365.5',
@@ -2596,6 +2901,7 @@ export default [
     height: '37',
     width: '16',
     xlinkHref: '#l',
+    transform: 'scale(.972)',
   },
   {
     x: '1416',
@@ -2603,6 +2909,7 @@ export default [
     height: '37',
     width: '16',
     xlinkHref: '#l',
+    transform: 'scale(.972)',
   },
   {
     x: '1459.2',
@@ -2610,6 +2917,7 @@ export default [
     height: '37',
     width: '16',
     xlinkHref: '#l',
+    transform: 'scale(.972)',
   },
   {
     x: '1500.3',
@@ -2617,6 +2925,7 @@ export default [
     height: '37',
     width: '16',
     xlinkHref: '#l',
+    transform: 'scale(.972)',
   },
   {
     x: '1936',
@@ -2624,6 +2933,7 @@ export default [
     height: '37',
     width: '16',
     xlinkHref: '#l',
+    transform: 'scale(.972)',
   },
   {
     x: '1575.9',
@@ -2631,6 +2941,7 @@ export default [
     height: '37',
     width: '16',
     xlinkHref: '#l',
+    transform: 'scale(.972)',
   },
   {
     x: '1625.3',
@@ -2638,6 +2949,7 @@ export default [
     height: '37',
     width: '16',
     xlinkHref: '#l',
+    transform: 'scale(.972)',
   },
   {
     x: '1675.7',
@@ -2645,6 +2957,7 @@ export default [
     height: '37',
     width: '16',
     xlinkHref: '#l',
+    transform: 'scale(.972)',
   },
   {
     x: '1721',
@@ -2652,6 +2965,7 @@ export default [
     height: '37',
     width: '16',
     xlinkHref: '#l',
+    transform: 'scale(.972)',
   },
   {
     x: '1766.3',
@@ -2659,6 +2973,7 @@ export default [
     height: '37',
     width: '16',
     xlinkHref: '#l',
+    transform: 'scale(.972)',
   },
   {
     x: '2729.7',
@@ -2666,6 +2981,7 @@ export default [
     height: '37',
     width: '16',
     xlinkHref: '#l',
+    transform: 'scale(.972)',
   },
   {
     x: '2319.2',
@@ -2673,6 +2989,7 @@ export default [
     height: '37',
     width: '16',
     xlinkHref: '#l',
+    transform: 'scale(.972)',
   },
   {
     x: '2362.5',
@@ -2680,6 +2997,7 @@ export default [
     height: '37',
     width: '16',
     xlinkHref: '#l',
+    transform: 'scale(.972)',
   },
   {
     x: '2423.2',
@@ -2687,6 +3005,7 @@ export default [
     height: '37',
     width: '16',
     xlinkHref: '#l',
+    transform: 'scale(.972)',
   },
   {
     x: '2489',
@@ -2694,6 +3013,7 @@ export default [
     height: '37',
     width: '16',
     xlinkHref: '#l',
+    transform: 'scale(.972)',
   },
   {
     x: '2608.3',
@@ -2701,6 +3021,7 @@ export default [
     height: '37',
     width: '16',
     xlinkHref: '#l',
+    transform: 'scale(.972)',
   },
   {
     x: '641.8',
@@ -2708,6 +3029,7 @@ export default [
     height: '37',
     width: '16',
     xlinkHref: '#m',
+    transform: 'scale(.972)',
   },
   {
     x: '1602.7',
@@ -2715,6 +3037,7 @@ export default [
     height: '37',
     width: '16',
     xlinkHref: '#m',
+    transform: 'scale(.972)',
   },
   {
     x: '1747.7',
@@ -2722,6 +3045,7 @@ export default [
     height: '37',
     width: '16',
     xlinkHref: '#m',
+    transform: 'scale(.972)',
   },
   {
     x: '2252.4',
@@ -2729,6 +3053,7 @@ export default [
     height: '37',
     width: '16',
     xlinkHref: '#m',
+    transform: 'scale(.972)',
   },
   {
     x: '2385.1',
@@ -2736,6 +3061,7 @@ export default [
     height: '37',
     width: '16',
     xlinkHref: '#m',
+    transform: 'scale(.972)',
   },
   {
     x: '1809.5',
@@ -2743,6 +3069,7 @@ export default [
     height: '37',
     width: '16',
     xlinkHref: '#m',
+    transform: 'scale(.972)',
   },
   {
     x: '1845.5',
@@ -2750,6 +3077,7 @@ export default [
     height: '37',
     width: '16',
     xlinkHref: '#m',
+    transform: 'scale(.972)',
   },
   {
     x: '1885.6',
@@ -2757,6 +3085,7 @@ export default [
     height: '37',
     width: '16',
     xlinkHref: '#m',
+    transform: 'scale(.972)',
   },
   {
     x: '2539.4',
@@ -2764,6 +3093,7 @@ export default [
     height: '37',
     width: '16',
     xlinkHref: '#m',
+    transform: 'scale(.972)',
   },
   {
     x: '2644.3',
@@ -2771,6 +3101,7 @@ export default [
     height: '37',
     width: '16',
     xlinkHref: '#m',
+    transform: 'scale(.972)',
   },
   {
     x: '2684.5',
@@ -2778,6 +3109,7 @@ export default [
     height: '37',
     width: '16',
     xlinkHref: '#m',
+    transform: 'scale(.972)',
   },
   {
     x: '720.5',
@@ -2785,6 +3117,7 @@ export default [
     height: '27',
     width: '19',
     xlinkHref: '#p',
+    transform: 'scale(.92)',
   },
   {
     x: '769.4',
@@ -2792,6 +3125,7 @@ export default [
     height: '27',
     width: '19',
     xlinkHref: '#p',
+    transform: 'scale(.92)',
   },
   {
     x: '797.7',
@@ -2799,6 +3133,7 @@ export default [
     height: '27',
     width: '19',
     xlinkHref: '#p',
+    transform: 'scale(.92)',
   },
   {
     x: '831.3',
@@ -2806,6 +3141,7 @@ export default [
     height: '27',
     width: '19',
     xlinkHref: '#p',
+    transform: 'scale(.92)',
   },
   {
     x: '860.7',
@@ -2813,6 +3149,7 @@ export default [
     height: '27',
     width: '19',
     xlinkHref: '#p',
+    transform: 'scale(.92)',
   },
   {
     x: '2648.2',
@@ -2820,6 +3157,7 @@ export default [
     height: '27',
     width: '19',
     xlinkHref: '#p',
+    transform: 'scale(.92)',
   },
   {
     x: '2691.7',
@@ -2827,6 +3165,7 @@ export default [
     height: '27',
     width: '19',
     xlinkHref: '#p',
+    transform: 'scale(.92)',
   },
   {
     x: '2717.8',
@@ -2834,6 +3173,7 @@ export default [
     height: '27',
     width: '19',
     xlinkHref: '#p',
+    transform: 'scale(.92)',
   },
   {
     x: '617.8',
@@ -2841,6 +3181,7 @@ export default [
     height: '27',
     width: '19',
     xlinkHref: '#p',
+    transform: 'scale(.92)',
   },
   {
     x: '689.5',
@@ -2848,6 +3189,7 @@ export default [
     height: '27',
     width: '19',
     xlinkHref: '#p',
+    transform: 'scale(.92)',
   },
   {
     x: '662.3',
@@ -2855,6 +3197,7 @@ export default [
     height: '27',
     width: '19',
     xlinkHref: '#p',
+    transform: 'scale(.92)',
   },
   {
     x: '1633.5',
@@ -2862,6 +3205,7 @@ export default [
     height: '27',
     width: '19',
     xlinkHref: '#p',
+    transform: 'scale(.92)',
   },
   {
     x: '1562.9',
@@ -2869,6 +3213,7 @@ export default [
     height: '27',
     width: '19',
     xlinkHref: '#p',
+    transform: 'scale(.92)',
   },
   {
     x: '1562.9',
@@ -2876,6 +3221,7 @@ export default [
     height: '27',
     width: '19',
     xlinkHref: '#p',
+    transform: 'scale(.92)',
   },
   {
     x: '1709.1',
@@ -2883,6 +3229,7 @@ export default [
     height: '27',
     width: '19',
     xlinkHref: '#p',
+    transform: 'scale(.92)',
   },
   {
     x: '1681.9',
@@ -2890,6 +3237,7 @@ export default [
     height: '27',
     width: '19',
     xlinkHref: '#p',
+    transform: 'scale(.92)',
   },
   {
     x: '1631.9',
@@ -2897,6 +3245,7 @@ export default [
     height: '27',
     width: '19',
     xlinkHref: '#p',
+    transform: 'scale(.92)',
   },
   {
     x: '2105.3',
@@ -2904,6 +3253,7 @@ export default [
     height: '27',
     width: '19',
     xlinkHref: '#p',
+    transform: 'scale(.92)',
   },
   {
     x: '2077',
@@ -2911,6 +3261,7 @@ export default [
     height: '27',
     width: '19',
     xlinkHref: '#p',
+    transform: 'scale(.92)',
   },
   {
     x: '2044.4',
@@ -2918,6 +3269,7 @@ export default [
     height: '27',
     width: '19',
     xlinkHref: '#p',
+    transform: 'scale(.92)',
   },
   {
     x: '2943.8',
@@ -2925,6 +3277,7 @@ export default [
     height: '27',
     width: '19',
     xlinkHref: '#p',
+    transform: 'scale(.92)',
   },
   {
     x: '2910.2',
@@ -2932,6 +3285,7 @@ export default [
     height: '27',
     width: '19',
     xlinkHref: '#p',
+    transform: 'scale(.92)',
   },
   {
     x: '2883',
@@ -2939,6 +3293,7 @@ export default [
     height: '27',
     width: '19',
     xlinkHref: '#p',
+    transform: 'scale(.92)',
   },
   {
     x: '733.6',
@@ -2946,6 +3301,7 @@ export default [
     height: '22',
     width: '20',
     xlinkHref: '#q',
+    transform: 'scale(.902)',
   },
   {
     x: '2940.2',
@@ -2953,6 +3309,7 @@ export default [
     height: '22',
     width: '20',
     xlinkHref: '#q',
+    transform: 'scale(.902)',
   },
   {
     x: '2700.7',
@@ -2960,6 +3317,7 @@ export default [
     height: '22',
     width: '20',
     xlinkHref: '#q',
+    transform: 'scale(.902)',
   },
   {
     x: '628.8',
@@ -2967,6 +3325,7 @@ export default [
     height: '22',
     width: '20',
     xlinkHref: '#q',
+    transform: 'scale(.902)',
   },
   {
     x: '1663.6',
@@ -2974,6 +3333,7 @@ export default [
     height: '22',
     width: '20',
     xlinkHref: '#q',
+    transform: 'scale(.902)',
   },
   {
     x: '2084.5',
@@ -2981,6 +3341,7 @@ export default [
     height: '22',
     width: '20',
     xlinkHref: '#q',
+    transform: 'scale(.902)',
   },
   {
     x: '1665.3',
@@ -2988,6 +3349,7 @@ export default [
     height: '22',
     width: '20',
     xlinkHref: '#q',
+    transform: 'scale(.902)',
   },
   {
     x: '296.8',
@@ -2995,6 +3357,7 @@ export default [
     height: '25.1',
     width: '12',
     xlinkHref: '#r',
+    transform: 'scale(.902)',
   },
   {
     x: '2400.3',
@@ -3002,6 +3365,7 @@ export default [
     height: '25.1',
     width: '12',
     xlinkHref: '#r',
+    transform: 'scale(.902)',
   },
   {
     transform: 'matrix(-.902 0 0 -.902 1434.2 2187)',
@@ -3166,6 +3530,7 @@ export default [
     height: '21.9',
     width: '22',
     xlinkHref: '#s',
+    transform: 'scale(1.2)',
   },
   {
     x: '1122.8',
@@ -3173,6 +3538,7 @@ export default [
     height: '21.9',
     width: '22',
     xlinkHref: '#s',
+    transform: 'scale(1.2)',
   },
   {
     x: '1164.5',
@@ -3180,6 +3546,7 @@ export default [
     height: '21.9',
     width: '22',
     xlinkHref: '#s',
+    transform: 'scale(1.2)',
   },
   {
     x: '857.8',
@@ -3187,6 +3554,7 @@ export default [
     height: '21.9',
     width: '22',
     xlinkHref: '#s',
+    transform: 'scale(1.2)',
   },
   {
     x: '572',
@@ -3194,6 +3562,7 @@ export default [
     height: '21.9',
     width: '22',
     xlinkHref: '#s',
+    transform: 'scale(1.2)',
   },
   {
     x: '867.4',
@@ -3201,6 +3570,7 @@ export default [
     height: '21.9',
     width: '22',
     xlinkHref: '#s',
+    transform: 'scale(1.2)',
   },
   {
     x: '1371.2',
@@ -3208,6 +3578,7 @@ export default [
     height: '21.9',
     width: '22',
     xlinkHref: '#s',
+    transform: 'scale(1.2)',
   },
   {
     x: '1413.7',
@@ -3215,6 +3586,7 @@ export default [
     height: '21.9',
     width: '22',
     xlinkHref: '#s',
+    transform: 'scale(1.2)',
   },
   {
     x: '1592.8',
@@ -3222,6 +3594,7 @@ export default [
     height: '21.9',
     width: '22',
     xlinkHref: '#s',
+    transform: 'scale(1.2)',
   },
   {
     x: '1637',
@@ -3229,5 +3602,6 @@ export default [
     height: '21.9',
     width: '22',
     xlinkHref: '#s',
+    transform: 'scale(1.2)',
   },
 ];
