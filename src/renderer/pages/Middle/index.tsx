@@ -24,6 +24,7 @@ export default ({ location }) => {
 
   useEffect(() => {
     const el = document.getElementById('main');
+
     let started = false;
     let eX = 0;
     let eY = 0;
@@ -63,10 +64,8 @@ export default ({ location }) => {
       setScale(scale * 2);
 
       const { scrollWidth: w2, scrollHeight: h2 } = el;
-      if (w1 !== w2 && h1 !== h2) {
-        el.scrollTop = h2 * y - ry;
-        el.scrollLeft = w2 * x - rx;
-      }
+      el.scrollTop = h2 * y - ry;
+      el.scrollLeft = w2 * x - rx;
     };
 
     if (el) {
@@ -106,6 +105,38 @@ export default ({ location }) => {
     }
   };
 
+  const handleScale = s => {
+    const el = document.getElementById('main');
+    const {
+      scrollTop,
+      scrollLeft,
+      clientWidth,
+      clientHeight,
+      scrollWidth: w1,
+      scrollHeight: h1,
+    } = el;
+    const x = (scrollLeft + clientWidth / 2) / w1;
+    const y = (scrollTop + clientHeight / 2) / h1;
+
+    setScale(s);
+
+    const recovery = () => {
+      const {
+        clientHeight: ch2,
+        clientWidth: cw2,
+        scrollWidth: w2,
+        scrollHeight: h2,
+      } = el;
+      if (w1 !== w2 && h1 !== h2) {
+        el.scrollTop = h2 * y - ch2 / 2;
+        el.scrollLeft = w2 * x - cw2 / 2;
+      } else {
+        setTimeout(recovery, 100);
+      }
+    };
+    setTimeout(recovery, 100);
+  };
+
   return (
     <MyLayout location={location}>
       <marquee className={styles.marquee} behavior="scroll">
@@ -133,7 +164,7 @@ export default ({ location }) => {
                 type="primary"
                 shape="circle"
                 style={{ marginLeft: a > 1 ? 20 : 0 }}
-                onClick={() => setScale(a)}
+                onClick={() => handleScale(a)}
               >
                 {`${a}X`}
               </Button>

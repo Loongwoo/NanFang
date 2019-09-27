@@ -3,9 +3,24 @@ import { Modal, Button } from 'antd';
 import styles from './Topology.less';
 
 export default ({ style }) => {
+  useEffect(() => {
+    const el = document.getElementById('topology');
+
+    const arr = el.getElementsByTagName('text');
+    console.log('arr', arr);
+    const res = Array.from(arr).map(a => {
+      const key = Object.keys(a).filter(
+        b => b.indexOf('__reactEventHandlers') !== -1
+      )[0];
+      return a[key];
+    });
+    console.log('res', JSON.stringify(res));
+  });
+
   return (
     <>
       <svg
+        id="topology"
         width="2866"
         height="2027"
         viewBox="0 0 2866 2027"
@@ -225,12 +240,7 @@ export default ({ style }) => {
           <path d="m11 20.9v-13.9" stroke="#000" />
         </symbol>
 
-        <path
-          d="m0 0h2866v2027h-2866z"
-          fill="#fff"
-          stroke="#fff"
-          strokeWidth="4"
-        />
+        {/* 莲塘变电站 */}
         <path
           d="m157.6 1749.3v-96.7h167.1v96.7z"
           fill="none"
@@ -1116,88 +1126,6 @@ export default ({ style }) => {
           <use x="1413.7" y="838.7" height="21.9" width="22" xlinkHref="#s" />
           <use x="1592.8" y="860.3" height="21.9" width="22" xlinkHref="#s" />
           <use x="1637" y="860.3" height="21.9" width="22" xlinkHref="#s" />
-        </g>
-
-        <g fill="none" stroke="#000">
-          <path d="m988.6 892.3v35" />
-          <path d="m1028.6 953.3v-61" />
-          <path d="m2535.6 607.3v75h35v-70" />
-          <path d="m485.6 1145.3v-66" />
-          <path d="m671.6 1042.3v39" />
-          <path d="m716.6 1127.3v18" />
-          <path d="m716.6 1145.3h-231" />
-          <path d="m742.6 1057.3v93" />
-          <path d="m742.6 1150.3h-301" />
-          <path d="m441.6 1150.3v-71" />
-          <path d="m773.6 1127.3v30" />
-          <path d="m773.6 1157.3h-376" />
-          <path d="m397.6 1157.3v-78" />
-          <path d="m800.6 1057.3v108" />
-          <path d="m800.6 1165.3-445 1" />
-          <path d="m355.6 1166.3v-87" />
-          <path d="m347.6 626.3h-96" />
-          <path d="m347.6 581.3v45" />
-          <path d="m251.6 626.3v-75" />
-          <path d="m400.6 581.3v55" />
-          <path d="m400.6 636.3h-164" />
-          <path d="m236.6 636.3v-85" />
-          <path d="m294.6 544.3h-21" />
-          <path d="m273.6 544.3v6" />
-          <path d="m2130.1 548.8v41" />
-          <path d="m2130.1 589.8h105" />
-          <path d="m2235.1 589.8v-72" />
-          <path d="m2083.1 548.8v51" />
-          <path d="m2083.1 599.8h172" />
-          <path d="m2255.1 599.8v-82" />
-          <path d="m2192.1 512.8h-22" />
-          <path d="m2170.1 512.8v5" />
-          <path d="m2326.1 249.3v-50" />
-          <path d="m2486.1 205.3-1 43" />
-          <path d="m2485.1 249.3h-159" />
-          <path d="m2509.1 207.3v53" />
-          <path d="m2509.1 260.3h-270" />
-          <path d="m2239.1 260.3v-61" />
-          <path d="m494.1 234.8v-63" />
-          <path d="m643.1 220.8v18" />
-          <path d="m618.1 233.8-124 1" />
-          <path d="m618.1 151.8v82" />
-          <path d="m577.1 135.8v38" />
-          <path d="m643.1 238.8h-310" />
-          <path d="m333.1 238.8-1-67" />
-          <path d="m964.1 158.8h5" strokeWidth="3" />
-          <path d="m1750.6 250.8 7.1-.1-.1-69.9" />
-          <path d="m1446.6 250.8h304" />
-          <path d="m1446.6 228.8v22" />
-          <path d="m1706.6 242.8v-62" />
-          <path d="m1473.6 242.8h233" />
-          <path d="m1473.6 170.8v72" />
-          <path d="m1446.6 170.8h27" />
-          <path d="m1446.6 158.8v12" />
-          <path d="m1511.6 143.8v39" />
-          <path d="m1384.1 1099.3v-72" />
-          <path d="m1581.1 1098.3-197 1" />
-          <path d="m1581.1 1005.3v93" />
-          <path d="m1426.1 1093.3v-66" />
-          <path d="m1556.1 1093.3h-130" />
-          <path d="m1556.1 1075.3v18" />
-          <path d="m1510.1 991.3v38" />
-          <path d="m1889.6 1417.3v39" />
-          <path d="m1919.6 1503.3v29" />
-          <path d="m1919.6 1532.3h-239" />
-          <path d="m1680.6 1532.3v-78" />
-          <path d="m1945.6 1434.3v107" />
-          <path d="m1945.6 1541.3h-309" />
-          <path d="m1636.6 1541.3v-87" />
-          <path d="m2661.1 1031.3v39" />
-          <path d="m2686.1 1102.3v45" />
-          <path d="m2686.1 1147.3h-211" />
-          <path d="m2475.1 1147.3 1-79" />
-          <path d="m2717.1 1098.3v56" />
-          <path d="m2717.1 1154.3h-455" />
-          <path d="m2262.1 1154.3v-86" />
-          <path d="m2067.6 1349.8v45" />
-          <path d="m2067.6 1394.8h25" />
-          <path d="m2092.6 1394.8v-45" />
         </g>
 
         <text fontSize="14" x="202.6" y="1015.8">
@@ -2733,244 +2661,221 @@ export default ({ style }) => {
           置业D专用配电站602开关。
         </text>
 
-        <a xlinkHref="莲塘变电站.svg">
-          <text fontSize="18" textAnchor="middle" x="241.1" y="1746.8">
-            莲塘变电站
-          </text>
-        </a>
+        {/* <a xlinkHref="莲塘变电站.svg"> */}
+        <text fontSize="18" textAnchor="middle" x="241.1" y="1746.8">
+          莲塘变电站
+        </text>
+        {/* </a> */}
 
-        <a xlinkHref="华捷变电站_705_FEDR.svg">
-          <text
-            fill="#f00"
-            fontSize="12"
-            textAnchor="middle"
-            x="2402.9"
-            y="265.1"
-          >
-            由华捷变
-          </text>
-          <text
-            fill="#f00"
-            fontSize="12"
-            textAnchor="middle"
-            x="2402.9"
-            y="277.4"
-          >
-            电站-华捷
-          </text>
-          <text
-            fill="#f00"
-            fontSize="12"
-            textAnchor="middle"
-            x="2402.9"
-            y="289.8"
-          >
-            孙文线705
-          </text>
-          <text
-            fill="#f00"
-            fontSize="12"
-            textAnchor="middle"
-            x="2402.9"
-            y="302.1"
-          >
-            宝丽阁12
-          </text>
-          <text
-            fill="#f00"
-            fontSize="12"
-            textAnchor="middle"
-            x="2402.9"
-            y="314.5"
-          >
-            幢公用配
-          </text>
-          <text
-            fill="#f00"
-            fontSize="12"
-            textAnchor="middle"
-            x="2402.9"
-            y="326.9"
-          >
-            电站
-          </text>
-          <text
-            fill="#f00"
-            fontSize="12"
-            textAnchor="middle"
-            x="2402.9"
-            y="339.2"
-          >
-            宝丽阁12
-          </text>
-          <text
-            fill="#f00"
-            fontSize="12"
-            textAnchor="middle"
-            x="2402.9"
-            y="351.6"
-          >
-            幢公用配
-          </text>
-          <text
-            fill="#f00"
-            fontSize="12"
-            textAnchor="middle"
-            x="2402.9"
-            y="363.9"
-          >
-            电站G01柜
-          </text>
-          <text
-            fill="#f00"
-            fontSize="12"
-            textAnchor="middle"
-            x="2402.9"
-            y="376.3"
-          >
-            柜601开关
-          </text>
-          <text
-            fill="#f00"
-            fontSize="12"
-            textAnchor="middle"
-            x="2402.9"
-            y="388.7"
-          >
-            引入
-          </text>
-        </a>
+        {/* <a xlinkHref="华捷变电站_705_FEDR.svg"> */}
+        <text
+          fill="#f00"
+          fontSize="12"
+          textAnchor="middle"
+          x="2402.9"
+          y="265.1"
+        >
+          由华捷变
+        </text>
+        <text
+          fill="#f00"
+          fontSize="12"
+          textAnchor="middle"
+          x="2402.9"
+          y="277.4"
+        >
+          电站-华捷
+        </text>
+        <text
+          fill="#f00"
+          fontSize="12"
+          textAnchor="middle"
+          x="2402.9"
+          y="289.8"
+        >
+          孙文线705
+        </text>
+        <text
+          fill="#f00"
+          fontSize="12"
+          textAnchor="middle"
+          x="2402.9"
+          y="302.1"
+        >
+          宝丽阁12
+        </text>
+        <text
+          fill="#f00"
+          fontSize="12"
+          textAnchor="middle"
+          x="2402.9"
+          y="314.5"
+        >
+          幢公用配
+        </text>
+        <text
+          fill="#f00"
+          fontSize="12"
+          textAnchor="middle"
+          x="2402.9"
+          y="326.9"
+        >
+          电站
+        </text>
+        <text
+          fill="#f00"
+          fontSize="12"
+          textAnchor="middle"
+          x="2402.9"
+          y="339.2"
+        >
+          宝丽阁12
+        </text>
+        <text
+          fill="#f00"
+          fontSize="12"
+          textAnchor="middle"
+          x="2402.9"
+          y="351.6"
+        >
+          幢公用配
+        </text>
+        <text
+          fill="#f00"
+          fontSize="12"
+          textAnchor="middle"
+          x="2402.9"
+          y="363.9"
+        >
+          电站G01柜
+        </text>
+        <text
+          fill="#f00"
+          fontSize="12"
+          textAnchor="middle"
+          x="2402.9"
+          y="376.3"
+        >
+          柜601开关
+        </text>
+        <text
+          fill="#f00"
+          fontSize="12"
+          textAnchor="middle"
+          x="2402.9"
+          y="388.7"
+        >
+          引入
+        </text>
+        {/* </a> */}
 
-        <a xlinkHref="华捷变电站_705_FEDR.svg">
-          <text fill="#f00" fontSize="12" x="2173.8" y="271.1">
-            由华捷变
-          </text>
-          <text fill="#f00" fontSize="12" x="2173.8" y="283.5">
-            电站-华捷
-          </text>
-          <text fill="#f00" fontSize="12" x="2173.8" y="295.8">
-            孙文线705
-          </text>
-          <text fill="#f00" fontSize="12" x="2173.8" y="308.2">
-            宝金阁公
-          </text>
-          <text fill="#f00" fontSize="12" x="2173.8" y="320.5">
-            用配电站
-          </text>
-          <text fill="#f00" fontSize="12" x="2173.8" y="332.9">
-            G06柜602
-          </text>
-          <text fill="#f00" fontSize="12" x="2173.8" y="345.3">
-            开关引入
-          </text>
-        </a>
-        <a xlinkHref="华捷变电站_722_FEDR.svg">
-          <text fill="#f00" fontSize="12" x="1635.5" y="264">
-            由华捷变
-          </text>
-          <text fill="#f00" fontSize="12" x="1635.5" y="276.3">
-            电站-华捷
-          </text>
-          <text fill="#f00" fontSize="12" x="1635.5" y="288.7">
-            岐头线722
-          </text>
-          <text fill="#f00" fontSize="12" x="1635.5" y="301">
-            天明花园B
-          </text>
-          <text fill="#f00" fontSize="12" x="1635.5" y="313.4">
-            区第十一
-          </text>
-          <text fill="#f00" fontSize="12" x="1635.5" y="325.8">
-            幢公用配
-          </text>
-          <text fill="#f00" fontSize="12" x="1635.5" y="338.1">
-            电站
-          </text>
-          <text fill="#f00" fontSize="12" x="1635.5" y="350.5">
-            G01柜601
-          </text>
-          <text fill="#f00" fontSize="12" x="1635.5" y="362.8">
-            开关引入
-          </text>
-        </a>
-        <a xlinkHref="华捷变电站_722_FEDR.svg">
-          <text fill="#f00" fontSize="12" x="1732.1" y="266.6">
-            由华捷变
-          </text>
-          <text fill="#f00" fontSize="12" x="1732.1" y="278.9">
-            电站-华捷
-          </text>
-          <text fill="#f00" fontSize="12" x="1732.1" y="291.3">
-            岐头线722
-          </text>
-          <text fill="#f00" fontSize="12" x="1732.1" y="303.7">
-            天明花园A
-          </text>
-          <text fill="#f00" fontSize="12" x="1732.1" y="316">
-            区二十三
-          </text>
-          <text fill="#f00" fontSize="12" x="1732.1" y="328.4">
-            幢公用配
-          </text>
-          <text fill="#f00" fontSize="12" x="1732.1" y="340.7">
-            电站
-          </text>
-          <text fill="#f00" fontSize="12" x="1732.1" y="353.1">
-            G06柜603
-          </text>
-          <text fill="#f00" fontSize="12" x="1732.1" y="365.5">
-            开关引入
-          </text>
-        </a>
-        <a xlinkHref="华捷变电站_722_FEDR.svg">
-          <text fill="#f00" fontSize="12" x="2452.2" y="1169.2">
-            由华捷变
-          </text>
-          <text fill="#f00" fontSize="12" x="2452.2" y="1181.6">
-            电站-华捷
-          </text>
-          <text fill="#f00" fontSize="12" x="2452.2" y="1193.9">
-            岐头线722
-          </text>
-          <text fill="#f00" fontSize="12" x="2452.2" y="1206.3">
-            岐头线公
-          </text>
-          <text fill="#f00" fontSize="12" x="2452.2" y="1218.6">
-            用电缆分
-          </text>
-          <text fill="#f00" fontSize="12" x="2452.2" y="1231">
-            接箱
-          </text>
-          <text fill="#f00" fontSize="12" x="2452.2" y="1243.4">
-            G04柜604
-          </text>
-          <text fill="#f00" fontSize="12" x="2452.2" y="1255.7">
-            开关引入
-          </text>
-        </a>
-        <path d="m69.3 52.3h2725" stroke="#f00" strokeWidth="6" />
-        <path d="m69.3 52.3v1923.5" stroke="#f00" strokeWidth="6" />
-        <path d="m2794.3 1975.8v-1923.5" stroke="#f00" strokeWidth="6" />
-        <path d="m69.3 1975.8h2725" stroke="#f00" strokeWidth="6" />
-        <circle
-          cx="2714.2"
-          cy="1895.8"
-          fill="none"
-          r="36"
-          stroke="#f00"
-          strokeWidth="2"
-        />
-        <path d="m2024.3 1796.8h754" stroke="#000" strokeWidth="3" />
-        <path d="m2024.3 1842.3h754" stroke="#000" />
-        <path d="m2024.3 1881.3h754" stroke="#000" />
-        <path d="m2024.3 1920.3h754" stroke="#000" />
-        <path d="m2024.3 1959.3h754" stroke="#000" strokeWidth="3" />
-        <path d="m2024.3 1958.8v-162.5" stroke="#000" strokeWidth="3" />
-        <path d="m2102.3 1958.8v-117" stroke="#000" />
-        <path d="m2232.3 1958.8v-117" stroke="#000" />
-        <path d="m2310.3 1958.8v-117" stroke="#000" />
-        <path d="m2420.8 1958.8v-162" stroke="#000" />
-        <path d="m2778.3 1958.8v-162" stroke="#000" strokeWidth="3" />
+        {/* <a xlinkHref="华捷变电站_705_FEDR.svg"> */}
+        <text fill="#f00" fontSize="12" x="2173.8" y="271.1">
+          由华捷变
+        </text>
+        <text fill="#f00" fontSize="12" x="2173.8" y="283.5">
+          电站-华捷
+        </text>
+        <text fill="#f00" fontSize="12" x="2173.8" y="295.8">
+          孙文线705
+        </text>
+        <text fill="#f00" fontSize="12" x="2173.8" y="308.2">
+          宝金阁公
+        </text>
+        <text fill="#f00" fontSize="12" x="2173.8" y="320.5">
+          用配电站
+        </text>
+        <text fill="#f00" fontSize="12" x="2173.8" y="332.9">
+          G06柜602
+        </text>
+        <text fill="#f00" fontSize="12" x="2173.8" y="345.3">
+          开关引入
+        </text>
+        {/* </a> */}
+        {/* <a xlinkHref="华捷变电站_722_FEDR.svg"> */}
+        <text fill="#f00" fontSize="12" x="1635.5" y="264">
+          由华捷变
+        </text>
+        <text fill="#f00" fontSize="12" x="1635.5" y="276.3">
+          电站-华捷
+        </text>
+        <text fill="#f00" fontSize="12" x="1635.5" y="288.7">
+          岐头线722
+        </text>
+        <text fill="#f00" fontSize="12" x="1635.5" y="301">
+          天明花园B
+        </text>
+        <text fill="#f00" fontSize="12" x="1635.5" y="313.4">
+          区第十一
+        </text>
+        <text fill="#f00" fontSize="12" x="1635.5" y="325.8">
+          幢公用配
+        </text>
+        <text fill="#f00" fontSize="12" x="1635.5" y="338.1">
+          电站
+        </text>
+        <text fill="#f00" fontSize="12" x="1635.5" y="350.5">
+          G01柜601
+        </text>
+        <text fill="#f00" fontSize="12" x="1635.5" y="362.8">
+          开关引入
+        </text>
+        {/* </a> */}
+        {/* <a xlinkHref="华捷变电站_722_FEDR.svg"> */}
+        <text fill="#f00" fontSize="12" x="1732.1" y="266.6">
+          由华捷变
+        </text>
+        <text fill="#f00" fontSize="12" x="1732.1" y="278.9">
+          电站-华捷
+        </text>
+        <text fill="#f00" fontSize="12" x="1732.1" y="291.3">
+          岐头线722
+        </text>
+        <text fill="#f00" fontSize="12" x="1732.1" y="303.7">
+          天明花园A
+        </text>
+        <text fill="#f00" fontSize="12" x="1732.1" y="316">
+          区二十三
+        </text>
+        <text fill="#f00" fontSize="12" x="1732.1" y="328.4">
+          幢公用配
+        </text>
+        <text fill="#f00" fontSize="12" x="1732.1" y="340.7">
+          电站
+        </text>
+        <text fill="#f00" fontSize="12" x="1732.1" y="353.1">
+          G06柜603
+        </text>
+        <text fill="#f00" fontSize="12" x="1732.1" y="365.5">
+          开关引入
+        </text>
+        {/* </a> */}
+        {/* <a xlinkHref="华捷变电站_722_FEDR.svg"> */}
+        <text fill="#f00" fontSize="12" x="2452.2" y="1169.2">
+          由华捷变
+        </text>
+        <text fill="#f00" fontSize="12" x="2452.2" y="1181.6">
+          电站-华捷
+        </text>
+        <text fill="#f00" fontSize="12" x="2452.2" y="1193.9">
+          岐头线722
+        </text>
+        <text fill="#f00" fontSize="12" x="2452.2" y="1206.3">
+          岐头线公
+        </text>
+        <text fill="#f00" fontSize="12" x="2452.2" y="1218.6">
+          用电缆分
+        </text>
+        <text fill="#f00" fontSize="12" x="2452.2" y="1231">
+          接箱
+        </text>
+        <text fill="#f00" fontSize="12" x="2452.2" y="1243.4">
+          G04柜604
+        </text>
+        <text fill="#f00" fontSize="12" x="2452.2" y="1255.7">
+          开关引入
+        </text>
+        {/* </a> */}
         <text
           fill="red"
           fontSize="36"
@@ -3031,7 +2936,114 @@ export default ({ style }) => {
         <text fontSize="20" textAnchor="middle" x="2599.5" y="1866.8">
           莲塘变电站
         </text>
-        <g fill="none" stroke="#000" strokeDasharray="5 2 5 2" strokeWidth="2">
+
+        <g fill="none" stroke="#000">
+          <path d="m988.6 892.3v35" />
+          <path d="m1028.6 953.3v-61" />
+          <path d="m2535.6 607.3v75h35v-70" />
+          <path d="m485.6 1145.3v-66" />
+          <path d="m671.6 1042.3v39" />
+          <path d="m716.6 1127.3v18" />
+          <path d="m716.6 1145.3h-231" />
+          <path d="m742.6 1057.3v93" />
+          <path d="m742.6 1150.3h-301" />
+          <path d="m441.6 1150.3v-71" />
+          <path d="m773.6 1127.3v30" />
+          <path d="m773.6 1157.3h-376" />
+          <path d="m397.6 1157.3v-78" />
+          <path d="m800.6 1057.3v108" />
+          <path d="m800.6 1165.3-445 1" />
+          <path d="m355.6 1166.3v-87" />
+          <path d="m347.6 626.3h-96" />
+          <path d="m347.6 581.3v45" />
+          <path d="m251.6 626.3v-75" />
+          <path d="m400.6 581.3v55" />
+          <path d="m400.6 636.3h-164" />
+          <path d="m236.6 636.3v-85" />
+          <path d="m294.6 544.3h-21" />
+          <path d="m273.6 544.3v6" />
+          <path d="m2130.1 548.8v41" />
+          <path d="m2130.1 589.8h105" />
+          <path d="m2235.1 589.8v-72" />
+          <path d="m2083.1 548.8v51" />
+          <path d="m2083.1 599.8h172" />
+          <path d="m2255.1 599.8v-82" />
+          <path d="m2192.1 512.8h-22" />
+          <path d="m2170.1 512.8v5" />
+          <path d="m2326.1 249.3v-50" />
+          <path d="m2486.1 205.3-1 43" />
+          <path d="m2485.1 249.3h-159" />
+          <path d="m2509.1 207.3v53" />
+          <path d="m2509.1 260.3h-270" />
+          <path d="m2239.1 260.3v-61" />
+          <path d="m494.1 234.8v-63" />
+          <path d="m643.1 220.8v18" />
+          <path d="m618.1 233.8-124 1" />
+          <path d="m618.1 151.8v82" />
+          <path d="m577.1 135.8v38" />
+          <path d="m643.1 238.8h-310" />
+          <path d="m333.1 238.8-1-67" />
+          <path d="m964.1 158.8h5" strokeWidth="3" />
+          <path d="m1750.6 250.8 7.1-.1-.1-69.9" />
+          <path d="m1446.6 250.8h304" />
+          <path d="m1446.6 228.8v22" />
+          <path d="m1706.6 242.8v-62" />
+          <path d="m1473.6 242.8h233" />
+          <path d="m1473.6 170.8v72" />
+          <path d="m1446.6 170.8h27" />
+          <path d="m1446.6 158.8v12" />
+          <path d="m1511.6 143.8v39" />
+          <path d="m1384.1 1099.3v-72" />
+          <path d="m1581.1 1098.3-197 1" />
+          <path d="m1581.1 1005.3v93" />
+          <path d="m1426.1 1093.3v-66" />
+          <path d="m1556.1 1093.3h-130" />
+          <path d="m1556.1 1075.3v18" />
+          <path d="m1510.1 991.3v38" />
+          <path d="m1889.6 1417.3v39" />
+          <path d="m1919.6 1503.3v29" />
+          <path d="m1919.6 1532.3h-239" />
+          <path d="m1680.6 1532.3v-78" />
+          <path d="m1945.6 1434.3v107" />
+          <path d="m1945.6 1541.3h-309" />
+          <path d="m1636.6 1541.3v-87" />
+          <path d="m2661.1 1031.3v39" />
+          <path d="m2686.1 1102.3v45" />
+          <path d="m2686.1 1147.3h-211" />
+          <path d="m2475.1 1147.3 1-79" />
+          <path d="m2717.1 1098.3v56" />
+          <path d="m2717.1 1154.3h-455" />
+          <path d="m2262.1 1154.3v-86" />
+          <path d="m2067.6 1349.8v45" />
+          <path d="m2067.6 1394.8h25" />
+          <path d="m2092.6 1394.8v-45" />
+        </g>
+
+        <path d="m69.3 52.3h2725" stroke="#f00" strokeWidth="6" />
+        <path d="m69.3 52.3v1923.5" stroke="#f00" strokeWidth="6" />
+        <path d="m2794.3 1975.8v-1923.5" stroke="#f00" strokeWidth="6" />
+        <path d="m69.3 1975.8h2725" stroke="#f00" strokeWidth="6" />
+        <circle
+          cx="2714.2"
+          cy="1895.8"
+          fill="none"
+          r="36"
+          stroke="#f00"
+          strokeWidth="2"
+        />
+        <path d="m2024.3 1796.8h754" stroke="#000" strokeWidth="3" />
+        <path d="m2024.3 1842.3h754" stroke="#000" />
+        <path d="m2024.3 1881.3h754" stroke="#000" />
+        <path d="m2024.3 1920.3h754" stroke="#000" />
+        <path d="m2024.3 1959.3h754" stroke="#000" strokeWidth="3" />
+        <path d="m2024.3 1958.8v-162.5" stroke="#000" strokeWidth="3" />
+        <path d="m2102.3 1958.8v-117" stroke="#000" />
+        <path d="m2232.3 1958.8v-117" stroke="#000" />
+        <path d="m2310.3 1958.8v-117" stroke="#000" />
+        <path d="m2420.8 1958.8v-162" stroke="#000" />
+        <path d="m2778.3 1958.8v-162" stroke="#000" strokeWidth="3" />
+
+        <g fill="none" stroke="red" strokeDasharray="5 2 5 2" strokeWidth="2">
           <path d="m1434.6 368.8v-271h361v271z" stroke="#f0f" />
           <path d="m2216.6 1301.8v-316h533v316z" stroke="#f0f" />
           <path d="m2149.6 410.8v-294h371v294z" stroke="#f0f" />
@@ -3090,7 +3102,7 @@ export default ({ style }) => {
           </g>
         </g>
 
-        <g fill="none" stroke="#000" strokeWidth="3">
+        <g fill="none" stroke="green" strokeWidth="3">
           <path d="m906.6 892.3h49" />
           <path d="m986.6 892.3h44" />
           <path d="m2503.6 607.3h34" />
