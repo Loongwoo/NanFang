@@ -251,18 +251,22 @@ export default ({ style }) => {
           </text>
         ))}
 
-        {/* 莲塘变电站 */}
-        <path
-          d="m157.6 1749.3v-96.7h167.1v96.7z"
-          fill="none"
-          stroke="#000"
-          strokeWidth="2"
-        />
+        {/* 外框 */}
+        <g fill="none" stroke="#f00" strokeWidth="6">
+          <path d="m69.3 52.3h2725" />
+          <path d="m69.3 52.3v1923.5" />
+          <path d="m2794.3 1975.8v-1923.5" />
+          <path d="m69.3 1975.8h2725" />
+
+          <circle cx="2714.2" cy="1895.8" r="36" strokeWidth="2" />
+        </g>
 
         <g fill="none" stroke="#141414" strokeWidth="2">
+          <path d="m157.6 1749.3v-96.7h167.1v96.7z" />
           <path d="m860.1 1151.3v-271h223v271z" />
+          {/* 大信D段专用电房 */}
           <path d="m2450.6 845.8v-250h235v250z" />
-          <path d="m2128.6 1015.8v-119h56v119z" strokeWidth="1" />
+          <path d="m2128.6 1015.8v-119h56v119z" />
           <path d="m313.6 1293.8v-297h499v297z" />
           <path d="m224.6 794.8v-296h390v296z" />
           <path d="m1902.6 747.8v-281h364v281z" />
@@ -272,11 +276,21 @@ export default ({ style }) => {
           <path d="m680.6 751.8v-246h109v246z" />
           <path d="m243.6 347.8v-259h411v259z" />
           <path d="m909.6 279.8v-135h306v135z" />
+          {/* 大信置业G专用配电站 */}
           <path d="m1126.6 1243.8v-299h466v299z" />
+          {/* 大信置业专用配电站 */}
           <path d="m1462.6 1666.8v-296h495v296z" />
-          <path d="m2008.6 1582.8v-245h179v245z" strokeWidth="1" />
+          {/* 万城大信充电桩专用箱变 */}
+          <path d="m2008.6 1582.8v-245h179v245z" />
           <path d="m1639.1 1218.8v-246h198v246z" />
           <path d="m1879.6 1214.8v-216h192v216z" />
+        </g>
+
+        <g fill="none" stroke="#f0f" strokeDasharray="5 2 5 2" strokeWidth="2">
+          <path d="m1434.6 368.8v-271h361v271z" />
+          {/* 大信置业D专用配电站 */}
+          <path d="m2216.6 1301.8v-316h533v316z" />
+          <path d="m2149.6 410.8v-294h371v294z" />
         </g>
 
         <g fill="none" stroke="#000">
@@ -361,43 +375,20 @@ export default ({ style }) => {
           <path d="m2092.6 1394.8v-45" />
         </g>
 
-        <path d="m69.3 52.3h2725" stroke="#f00" strokeWidth="6" />
-        <path d="m69.3 52.3v1923.5" stroke="#f00" strokeWidth="6" />
-        <path d="m2794.3 1975.8v-1923.5" stroke="#f00" strokeWidth="6" />
-        <path d="m69.3 1975.8h2725" stroke="#f00" strokeWidth="6" />
-        <circle
-          cx="2714.2"
-          cy="1895.8"
-          fill="none"
-          r="36"
-          stroke="#f00"
-          strokeWidth="2"
-        />
-        <path d="m2024.3 1796.8h754" stroke="#000" strokeWidth="3" />
-        <path d="m2024.3 1842.3h754" stroke="#000" />
-        <path d="m2024.3 1881.3h754" stroke="#000" />
-        <path d="m2024.3 1920.3h754" stroke="#000" />
-        <path d="m2024.3 1959.3h754" stroke="#000" strokeWidth="3" />
-        <path d="m2024.3 1958.8v-162.5" stroke="#000" strokeWidth="3" />
-        <path d="m2102.3 1958.8v-117" stroke="#000" />
-        <path d="m2232.3 1958.8v-117" stroke="#000" />
-        <path d="m2310.3 1958.8v-117" stroke="#000" />
-        <path d="m2420.8 1958.8v-162" stroke="#000" />
-        <path d="m2778.3 1958.8v-162" stroke="#000" strokeWidth="3" />
-
-        <g fill="none" stroke="red" strokeDasharray="5 2 5 2" strokeWidth="2">
-          <path d="m1434.6 368.8v-271h361v271z" stroke="#f0f" />
-          <path d="m2216.6 1301.8v-316h533v316z" stroke="#f0f" />
-          <path d="m2149.6 410.8v-294h371v294z" stroke="#f0f" />
-
+        <g fill="none" stroke="#000" strokeDasharray="5 2 5 2" strokeWidth="2">
           <path d="m397.6 1090.8v63m0 0a3.5 3.5 0 0 0 0 7v1m0 0a3.5 3.5 0 0 0 0 7v172h-201v-928h136v-69m0 0a8 8 0 0 1 0-16v-81m0 0a8 8 0 0 1 0-16v-47" />
           <path d="m494.6 183.8v47m0 0a8 8 0 0 0 0 16v81m0 0a8 8 0 0 0 0 16v20m0 0a8 8 0 0 0 0 16v2h1212v-128m0 0a3.5 3.5 0 0 1 0-7v-1m0 0a3.5 3.5 0 0 1 0-7v-46" />
           <path d="m420.6 183.8v51m0 0a4 4 0 0 0 0 8v80m0 0a4 4 0 0 0 0 8v1m0 0a4 4 0 0 0 0 8v32h634v-43m0 0a8 8 0 1 1 0-16v-37m0 0a8 8 0 1 1 0-16v-54" />
           <path d="m964.6 205.8v115h205v-77" />
           <path d="m485.6 1090.8v52.5m0 0a2 2 0 0 0 0 4v1m0 0a2 2 0 0 0 0 4v3m0 0a2 2 0 0 0 0 4v4m0 0a2 2 0 0 0 0 4v134.5h941v-195.5m0 0a8 8 0 1 1 0-16v-51.5" />
           <path d="m1169.6 1038.8v213h-261v-313" />
+          {/* 大信置业专用配电站 602 */}
           <path d="m1384.6 1038.8v255m0 0a8 8 0 1 0 0 16v365h252v-125.5m0 0a8 8 0 1 1 0-16v-66.5" />
+          {/* 万城大信充电桩专用箱变 */}
+          <path d="m1724.6 1466.8v61.5m0 0a4 4 0 1 0 0 8v1m0 0a4 4 0 1 0 0 8v129.5h303v-278" />
+          {/* 大信置业D专用配电站 602 */}
           <path d="m1680.6 1466.8v62m0 0a4 4 0 1 0 0 8v1m0 0a4 4 0 1 0 0 8v155h582v-621" />
+          {/* 大信D段专用电房 */}
           <path d="m2543.6 1079.8v64.5m0 0a3 3 0 0 0 0 6v1m0 0a3 3 0 0 0 0 6v152.5h234v-435h-272v-221" />
           <path d="m355.6 1090.8v66.5m0 0a8 8 0 0 0 0 16v128.5h-70v-427h115v-38m0 0a8 8 0 0 1 0-16v-176.5m0 0a8 8 0 0 1 0-16v-35.5" />
           <path d="m450.6 592.8v210h250v-238" />
@@ -409,7 +400,6 @@ export default ({ style }) => {
           <path d="m2038.6 560.8v245h-628v-247" />
           <path d="m1466.6 1038.8v52.5m0 0a2 2 0 1 0 0 4v1m0 0a2 2 0 1 0 0 4v151.5h192v-220" />
           <path d="m1709.6 1031.8v195h215v-169" />
-          <path d="m1724.6 1466.8v61.5m0 0a4 4 0 1 0 0 8v1m0 0a4 4 0 1 0 0 8v129.5h303v-278" />
           <path d="m1977.6 1045.8v177h170v-229" />
 
           <g strokeWidth="1">
@@ -444,7 +434,7 @@ export default ({ style }) => {
           </g>
         </g>
 
-        <g fill="none" stroke="green" strokeWidth="3">
+        <g fill="none" stroke="#000" strokeWidth="3">
           <path d="m906.6 892.3h49" />
           <path d="m986.6 892.3h44" />
           <path d="m2503.6 607.3h34" />
@@ -467,6 +457,20 @@ export default ({ style }) => {
           <path d="m2092.6 1349.8h40" />
           <path d="m1658.6 984.8h147" />
           <path d="m1922.6 1010.8h106" />
+        </g>
+
+        <g stroke="#000">
+          <path d="m2024.3 1796.8h754" strokeWidth="3" />
+          <path d="m2024.3 1842.3h754" />
+          <path d="m2024.3 1881.3h754" />
+          <path d="m2024.3 1920.3h754" />
+          <path d="m2024.3 1959.3h754" strokeWidth="3" />
+          <path d="m2024.3 1958.8v-162.5" strokeWidth="3" />
+          <path d="m2102.3 1958.8v-117" />
+          <path d="m2232.3 1958.8v-117" />
+          <path d="m2310.3 1958.8v-117" />
+          <path d="m2420.8 1958.8v-162" />
+          <path d="m2778.3 1958.8v-162" strokeWidth="3" />
         </g>
       </svg>
     </>

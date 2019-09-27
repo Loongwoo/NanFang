@@ -12,7 +12,19 @@ const StartTop = 44;
 const orders =
   '2019.10.3 21:43:21:225，大信置业G专用配电站602与大信置业D专用配电站603之间出现故障，开关大信置业G专用配电站602与大信置业D专用配电站603分开，隔离故障。';
 
-const steps = ['点击开始', '得到结论'];
+const steps = [
+  '点击开始',
+  '弹框确认告警信息',
+  '召测万城大信充电桩专用箱变电表信息',
+  '确认万城大信充电桩专用箱变电表有电',
+  '大信置业G专用配电站602合位',
+  '召测大信D段专用电房电表信息',
+  '确认大信D段专用电房电表有电',
+  '大信置业D专用配电站603开关分位',
+  '点击告警确认',
+  '合并工单：大信置业G专用配电站602与大信置业D专用配电站603之间公变报修95598工单合并',
+  '得到结论',
+];
 
 const result =
   '通知供电分局人员进行巡线排查故障：巡线起点为大信置业G专用配电站602；终点为大信置业D专用配电站603';
@@ -40,11 +52,17 @@ export default ({ location }) => {
         started = true;
         eY = scrollTop + clientY;
         eX = scrollLeft + clientX;
-      } else if (type === 'mouseup' || type === 'mouseout') {
+      } else if (type === 'mouseup') {
         started = false;
       } else if (type === 'mousemove' && started) {
         el.scrollTop = eY - clientY;
         el.scrollLeft = eX - clientX;
+        const px = clientX - StartLeft;
+        const py = clientY - StartTop;
+        const { clientWidth: w1, clientHeight: h1 } = el;
+        if (px <= 5 || py <= 5 || px >= w1 - 5 || py >= h1 - 5) {
+          started = false;
+        }
       }
     };
 
@@ -71,7 +89,6 @@ export default ({ location }) => {
     if (el) {
       el.addEventListener('mousedown', handleDrag, false);
       el.addEventListener('mousemove', handleDrag, false);
-      el.addEventListener('mouseout', handleDrag, false);
       el.addEventListener('mouseup', handleDrag, false);
       el.addEventListener('dblclick', doubleClick, false);
     }
@@ -79,7 +96,6 @@ export default ({ location }) => {
       if (el) {
         el.removeEventListener('mousedown', handleDrag, false);
         el.removeEventListener('mousemove', handleDrag, false);
-        el.removeEventListener('mouseout', handleDrag, false);
         el.removeEventListener('mouseup', handleDrag, false);
         el.removeEventListener('dblclick', doubleClick, false);
       }
@@ -100,12 +116,24 @@ export default ({ location }) => {
         },
       });
     } else {
-      setStatus(null);
       setCurrent(1);
+      setStatus(null);
+
+      Modal.warning({
+        title: '告警',
+        okText: orders,
+        cancelText: '好的',
+        onOk: () => {
+          setCurrent(2);
+        },
+      });
     }
   };
 
   const handleScale = s => {
+    if (scale === s) {
+      return;
+    }
     const el = document.getElementById('main');
     const {
       scrollTop,
