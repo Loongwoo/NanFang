@@ -14,7 +14,14 @@ export default [
           { path: '/low/rules', name: 'rules', component: `./Low/Rules` },
         ],
       },
-      { path: '/middle', name: 'middle', component: `./Middle` },
+      {
+        path: '/middle',
+        name: 'middle',
+        routes: [
+          { path: '/middle', redirect: '/middle/liantang' },
+          { path: '/middle/liantang', name: 'liantang', component: `./Middle` },
+        ],
+      },
       { path: '/real', name: 'real', component: `./Real` },
       { path: '/login', component: './Login' },
     ],
