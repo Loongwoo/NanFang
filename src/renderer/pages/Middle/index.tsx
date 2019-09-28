@@ -13,17 +13,29 @@ const orders =
   '2019.10.3 21:43:21:225，大信置业G专用配电站602与大信置业D专用配电站603之间出现故障，开关大信置业G专用配电站602与大信置业D专用配电站603分开，隔离故障。';
 
 const steps = [
-  '点击开始',
-  '弹框确认告警信息',
-  '召测万城大信充电桩专用箱变电表信息',
-  '确认万城大信充电桩专用箱变电表有电',
-  '大信置业G专用配电站602合位',
-  '召测大信D段专用电房电表信息',
-  '确认大信D段专用电房电表有电',
-  '大信置业D专用配电站603开关分位',
-  '点击告警确认',
-  '合并工单：大信置业G专用配电站602与大信置业D专用配电站603之间公变报修95598工单合并',
-  '得到结论',
+  { title: '点击开始', description: '弹框确认告警信息' },
+  {
+    title: '召测万城大信充电桩专用箱变电表',
+    description: '确认其有电，得出大信置业G专用配电站602合位',
+  },
+  {
+    title: '召测大信D段专用电房电表信息',
+    description: '确认其没电，得出大信置业D专用配电站603开关分位',
+  },
+  {
+    title: '弹框更新告警信息',
+    description: '大信置业G专用配电站602合位，大信置业D专用配电站603开关分位',
+  },
+  {
+    title: '合并工单',
+    description:
+      '大信置业G专用配电站602与大信置业D专用配电站603之间公变报修95598工单合并',
+  },
+  {
+    title: '得到结论',
+    description:
+      '通知供电分局人员进行巡线排查故障：巡线起点为大信置业G专用配电站602；终点为大信置业D专用配电站603',
+  },
 ];
 
 const result =
@@ -121,8 +133,8 @@ export default ({ location }) => {
 
       Modal.warning({
         title: '告警',
-        okText: orders,
-        cancelText: '好的',
+        content: orders,
+        okText: '好的',
         onOk: () => {
           setCurrent(2);
         },
@@ -207,8 +219,8 @@ export default ({ location }) => {
             current={current}
             style={{ marginTop: 16 }}
           >
-            {steps.map((desc, i) => (
-              <Step key={i} description={desc} />
+            {steps.map((item, i) => (
+              <Step key={i} {...item} />
             ))}
           </Steps>
 

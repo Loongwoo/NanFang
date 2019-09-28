@@ -5,19 +5,6 @@ import textArray from './textArray';
 import useArray from './useArray';
 
 export default ({ style }) => {
-  useEffect(() => {
-    // const el = document.getElementById('topology');
-    // const arr = el.getElementsByTagName('use');
-    // console.log('arr', arr);
-    // const res = Array.from(arr).map(a => {
-    //   const key = Object.keys(a).filter(
-    //     b => b.indexOf('__reactEventHandlers') !== -1
-    //   )[0];
-    //   return a[key];
-    // });
-    // console.log('res', JSON.stringify(res));
-  });
-
   return (
     <>
       <svg
@@ -261,11 +248,167 @@ export default ({ style }) => {
           <circle cx="2714.2" cy="1895.8" r="36" strokeWidth="2" />
         </g>
 
+        {/* 大信置业G专用配电站 602 */}
+        <path
+          d="m1126.6 1243.8v-299h466v299z"
+          fill="none"
+          stroke="#141414"
+          strokeWidth="2"
+        />
+        <use
+          x="1316.3"
+          y="914.2"
+          height="37"
+          width="18.8"
+          // xlinkHref="#n"
+          xlinkHref="#o"
+          transform="scale(1.044)"
+          stroke="#0f0"
+        />
+        <use
+          x="1416"
+          y="1021.4"
+          height="37"
+          width="16"
+          // xlinkHref="#l"
+          xlinkHref="#m"
+          transform="scale(.972)"
+        />
+
+        {/* 大信置业专用配电站 601 */}
+        <path
+          d="m1462.6 1666.8v-296h495v296z"
+          fill="none"
+          stroke="#141414"
+          strokeWidth="2"
+        />
+        <path
+          d="m1384.6 1038.8v255m0 0a8 8 0 1 0 0 16v365h252v-125.5m0 0a8 8 0 1 1 0-16v-66.5"
+          fill="none"
+          stroke="#000"
+          strokeDasharray="5 2 5 2"
+          strokeWidth="2"
+        />
+        <use
+          x="1558.2"
+          y="1323.2"
+          height="37"
+          width="18.8"
+          xlinkHref="#n"
+          transform="scale(1.044)"
+        />
+        <use
+          x="1675.7"
+          y="1460.7"
+          height="37"
+          width="16"
+          xlinkHref="#l"
+          transform="scale(.972)"
+        />
+        {/* 大信置业专用配电站 602 */}
+        <use
+          x="1600.3"
+          y="1323.2"
+          height="37"
+          width="18.8"
+          xlinkHref="#n"
+          transform="scale(1.044)"
+        />
+        <use
+          x="1721"
+          y="1460.7"
+          height="37"
+          width="16"
+          xlinkHref="#l"
+          transform="scale(.972)"
+        />
+        {/* 大信置业专用配电站 603 */}
+        <use
+          x="1642.5"
+          y="1323.2"
+          height="37"
+          width="18.8"
+          xlinkHref="#n"
+          transform="scale(1.044)"
+        />
+        <use
+          x="1766.3"
+          y="1460.7"
+          height="37"
+          width="16"
+          xlinkHref="#l"
+          transform="scale(.972)"
+        />
+
+        {/* 万城大信充电桩专用箱变 */}
+        <path
+          d="m2008.6 1582.8v-245h179v245z"
+          fill="none"
+          stroke="#141414"
+          strokeWidth="2"
+        />
+        <path
+          d="m1724.6 1466.8v61.5m0 0a4 4 0 1 0 0 8v1m0 0a4 4 0 1 0 0 8v129.5h303v-278"
+          fill="none"
+          stroke="#000"
+          strokeDasharray="5 2 5 2"
+          strokeWidth="2"
+        />
+        <use x="2019.4" y="1348.8" height="37" width="16.3" xlinkHref="#g" />
+        <use x="2123.5" y="1348.8" height="37" width="18.2" xlinkHref="#j" />
+
+        {/* 大信置业D专用配电站 603 */}
+        <path
+          d="m2216.6 1301.8v-316h533v316z"
+          fill="none"
+          stroke="#f0f"
+          strokeDasharray="5 2 5 2"
+          strokeWidth="2"
+        />
+        <path
+          d="m1680.6 1466.8v62m0 0a4 4 0 1 0 0 8v1m0 0a4 4 0 1 0 0 8v155h582v-621"
+          fill="none"
+          stroke="#000"
+          strokeDasharray="5 2 5 2"
+          strokeWidth="2"
+        />
+        <use
+          x="2426.5"
+          y="953.5"
+          height="37"
+          width="18.8"
+          // xlinkHref="#n"
+          xlinkHref="#o"
+          transform="scale(1.044)"
+        />
+        <use
+          x="2608.3"
+          y="1063.6"
+          height="37"
+          width="16"
+          // xlinkHref="#l"
+          xlinkHref="#m"
+          transform="scale(.972)"
+        />
+
+        {/* 大信D段专用电房 */}
+        <path
+          d="m2450.6 845.8v-250h235v250z"
+          fill="none"
+          stroke="#141414"
+          strokeWidth="2"
+        />
+        <path
+          d="m2543.6 1079.8v64.5m0 0a3 3 0 0 0 0 6v1m0 0a3 3 0 0 0 0 6v152.5h234v-435h-272v-221"
+          fill="none"
+          stroke="#000"
+          strokeDasharray="5 2 5 2"
+          strokeWidth="2"
+        />
+        <use x="2497.4" y="606.3" height="37" width="16.3" xlinkHref="#g" />
+        <use x="2622.4" y="611.3" height="37" width="16.3" xlinkHref="#g" />
+
         <g fill="none" stroke="#141414" strokeWidth="2">
-          <path d="m157.6 1749.3v-96.7h167.1v96.7z" />
-          <path d="m860.1 1151.3v-271h223v271z" />
-          {/* 大信D段专用电房 */}
-          <path d="m2450.6 845.8v-250h235v250z" />
           <path d="m2128.6 1015.8v-119h56v119z" />
           <path d="m313.6 1293.8v-297h499v297z" />
           <path d="m224.6 794.8v-296h390v296z" />
@@ -276,21 +419,15 @@ export default ({ style }) => {
           <path d="m680.6 751.8v-246h109v246z" />
           <path d="m243.6 347.8v-259h411v259z" />
           <path d="m909.6 279.8v-135h306v135z" />
-          {/* 大信置业G专用配电站 */}
-          <path d="m1126.6 1243.8v-299h466v299z" />
-          {/* 大信置业专用配电站 */}
-          <path d="m1462.6 1666.8v-296h495v296z" />
-          {/* 万城大信充电桩专用箱变 */}
-          <path d="m2008.6 1582.8v-245h179v245z" />
           <path d="m1639.1 1218.8v-246h198v246z" />
           <path d="m1879.6 1214.8v-216h192v216z" />
+          <path d="m157.6 1749.3v-96.7h167.1v96.7z" />
+          <path d="m860.1 1151.3v-271h223v271z" />
         </g>
 
         <g fill="none" stroke="#f0f" strokeDasharray="5 2 5 2" strokeWidth="2">
-          <path d="m1434.6 368.8v-271h361v271z" />
-          {/* 大信置业D专用配电站 */}
-          <path d="m2216.6 1301.8v-316h533v316z" />
           <path d="m2149.6 410.8v-294h371v294z" />
+          <path d="m1434.6 368.8v-271h361v271z" />
         </g>
 
         <g fill="none" stroke="#000">
@@ -382,14 +519,6 @@ export default ({ style }) => {
           <path d="m964.6 205.8v115h205v-77" />
           <path d="m485.6 1090.8v52.5m0 0a2 2 0 0 0 0 4v1m0 0a2 2 0 0 0 0 4v3m0 0a2 2 0 0 0 0 4v4m0 0a2 2 0 0 0 0 4v134.5h941v-195.5m0 0a8 8 0 1 1 0-16v-51.5" />
           <path d="m1169.6 1038.8v213h-261v-313" />
-          {/* 大信置业专用配电站 602 */}
-          <path d="m1384.6 1038.8v255m0 0a8 8 0 1 0 0 16v365h252v-125.5m0 0a8 8 0 1 1 0-16v-66.5" />
-          {/* 万城大信充电桩专用箱变 */}
-          <path d="m1724.6 1466.8v61.5m0 0a4 4 0 1 0 0 8v1m0 0a4 4 0 1 0 0 8v129.5h303v-278" />
-          {/* 大信置业D专用配电站 602 */}
-          <path d="m1680.6 1466.8v62m0 0a4 4 0 1 0 0 8v1m0 0a4 4 0 1 0 0 8v155h582v-621" />
-          {/* 大信D段专用电房 */}
-          <path d="m2543.6 1079.8v64.5m0 0a3 3 0 0 0 0 6v1m0 0a3 3 0 0 0 0 6v152.5h234v-435h-272v-221" />
           <path d="m355.6 1090.8v66.5m0 0a8 8 0 0 0 0 16v128.5h-70v-427h115v-38m0 0a8 8 0 0 1 0-16v-176.5m0 0a8 8 0 0 1 0-16v-35.5" />
           <path d="m450.6 592.8v210h250v-238" />
           <path d="m347.6 592.8v29.5m0 0a4.5 4.5 0 0 0 0 9v1m0 0a4.5 4.5 0 0 0 0 9v187.5h1736v-268" />
