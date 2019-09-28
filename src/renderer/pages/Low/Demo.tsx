@@ -23,6 +23,7 @@ export default ({
   target,
   onCurrent,
   title,
+  nexts,
 }) => {
   const [status, setStatus] = useState(initStatus(true));
   const [current, setCurrent] = useState(0);
@@ -91,9 +92,19 @@ export default ({
             current={current}
             style={{ marginTop: 16 }}
           >
-            {steps.map((desc, i) => (
-              <Step key={i} description={desc} />
-            ))}
+            {steps.map((desc, i) => [
+              <Step key={i} description={desc} />,
+              nexts && nexts.findIndex(a => a === i) !== -1 && current === i ? (
+                <div style={{ marginBottom: 10, textAlign: 'center' }}>
+                  <Button
+                    type={'primary'}
+                    onClick={() => setCurrent(current + 1)}
+                  >
+                    下一步
+                  </Button>
+                </div>
+              ) : null,
+            ])}
           </Steps>
 
           {finished && <h3 className={styles.result}>{result}</h3>}

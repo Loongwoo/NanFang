@@ -4,7 +4,7 @@ import styles from './index.less';
 import textArray from './textArray';
 import useArray from './useArray';
 
-export default ({ style }) => {
+export default ({ current, onCurrent, style }) => {
   return (
     <>
       <svg
@@ -120,6 +120,21 @@ export default ({ style }) => {
             d="m5.6 45 .7.7 1 .9 1.3 1 1.4.8 1.8.7 1.7.6 2.3.4h2l2.1-.2 2.2-.6 1.8-.61.5-1.1 1.4-1 1-1 .8-.8-1.4-1.4-1.7-1.3-2-1.1-2.2-.8-2.5-.5-2.2-.2-2.3.3-1.9.5-2.2.9-1.8 1.1-1.4 1.2-1.3 1.3z"
             stroke="#000"
           />
+        </symbol>
+
+        <symbol id="t" preserveAspectRatio="xMidYMid" viewBox="0 0 18.2 37">
+          <use x="9.1" xlinkHref="#a" y="1" />
+          <use x="9.1" xlinkHref="#a" y="36" />
+          <path
+            d="m9.6 22.3-2.2-6.4-3.4 1.2 2.3 6.5z"
+            fill="none"
+            stroke="#0f0"
+          />
+          <path d="m9.1 36v-10" stroke="#0f0" />
+          <path d="m9.1 11v-10" stroke="#0f0" />
+          <circle cx="9.2" cy="13.1" fill="none" r="2" stroke="#0f0" />
+          <path d="m4.1 11h10" stroke="#0f0" />
+          <path d="m9.1 26.1-5.1-14.6" stroke="#0f0" />
         </symbol>
 
         <symbol id="j" preserveAspectRatio="xMidYMid" viewBox="0 0 18.2 37">
@@ -252,16 +267,16 @@ export default ({ style }) => {
         <path
           d="m1126.6 1243.8v-299h466v299z"
           fill="none"
-          stroke="#141414"
-          strokeWidth="2"
+          stroke={current >= 2 ? '#0f0' : '#f00'}
+          strokeWidth={current >= 2 ? 4 : 2}
+          className={current === 0 ? styles.blinkYellow : undefined}
         />
         <use
           x="1316.3"
           y="914.2"
           height="37"
           width="18.8"
-          // xlinkHref="#n"
-          xlinkHref="#o"
+          xlinkHref={current > 1 ? '#o' : '#n'}
           transform="scale(1.044)"
           stroke="#0f0"
         />
@@ -270,8 +285,7 @@ export default ({ style }) => {
           y="1021.4"
           height="37"
           width="16"
-          // xlinkHref="#l"
-          xlinkHref="#m"
+          xlinkHref={current > 1 ? '#m' : '#l'}
           transform="scale(.972)"
         />
 
@@ -279,22 +293,30 @@ export default ({ style }) => {
         <path
           d="m1462.6 1666.8v-296h495v296z"
           fill="none"
-          stroke="#141414"
-          strokeWidth="2"
+          stroke="#f00"
+          strokeWidth={current > 4 ? 4 : 2}
+          className={
+            current === 0
+              ? styles.blinkYellow
+              : current > 4
+              ? styles.blinkRed
+              : undefined
+          }
         />
         <path
           d="m1384.6 1038.8v255m0 0a8 8 0 1 0 0 16v365h252v-125.5m0 0a8 8 0 1 1 0-16v-66.5"
           fill="none"
-          stroke="#000"
+          stroke={current > 1 ? '#0f0' : '#000'}
           strokeDasharray="5 2 5 2"
-          strokeWidth="2"
+          strokeWidth={current >= 2 ? 4 : 2}
+          className={current >= 2 ? styles.path1 : undefined}
         />
         <use
           x="1558.2"
           y="1323.2"
           height="37"
           width="18.8"
-          xlinkHref="#n"
+          xlinkHref={current > 1 ? '#o' : '#n'}
           transform="scale(1.044)"
         />
         <use
@@ -302,7 +324,7 @@ export default ({ style }) => {
           y="1460.7"
           height="37"
           width="16"
-          xlinkHref="#l"
+          xlinkHref={current > 1 ? '#m' : '#l'}
           transform="scale(.972)"
         />
         {/* 大信置业专用配电站 602 */}
@@ -328,7 +350,7 @@ export default ({ style }) => {
           y="1323.2"
           height="37"
           width="18.8"
-          xlinkHref="#n"
+          xlinkHref={current > 1 ? '#o' : '#n'}
           transform="scale(1.044)"
         />
         <use
@@ -336,7 +358,7 @@ export default ({ style }) => {
           y="1460.7"
           height="37"
           width="16"
-          xlinkHref="#l"
+          xlinkHref={current > 1 ? '#m' : '#l'}
           transform="scale(.972)"
         />
 
@@ -344,41 +366,72 @@ export default ({ style }) => {
         <path
           d="m2008.6 1582.8v-245h179v245z"
           fill="none"
-          stroke="#141414"
-          strokeWidth="2"
+          stroke={current >= 2 ? '#0f0' : '#141414'}
+          strokeWidth={current >= 2 ? 4 : 2}
+          className={current === 1 ? styles.blinkBlue : undefined}
+          onClick={() => {
+            Modal.success({
+              title: '万城大信充电桩专用箱变',
+              content: '恭喜你，该电表有电',
+              okText: '知道了',
+              onOk: () => {
+                onCurrent(2);
+              },
+            });
+          }}
         />
         <path
           d="m1724.6 1466.8v61.5m0 0a4 4 0 1 0 0 8v1m0 0a4 4 0 1 0 0 8v129.5h303v-278"
           fill="none"
-          stroke="#000"
+          stroke={current > 1 ? '#0f0' : '#000'}
           strokeDasharray="5 2 5 2"
-          strokeWidth="2"
+          strokeWidth={current >= 2 ? 4 : 2}
+          className={current >= 2 ? styles.path1 : undefined}
         />
-        <use x="2019.4" y="1348.8" height="37" width="16.3" xlinkHref="#g" />
-        <use x="2123.5" y="1348.8" height="37" width="18.2" xlinkHref="#j" />
+        <use
+          x="2019.4"
+          y="1348.8"
+          height="37"
+          width="16.3"
+          xlinkHref={current > 1 ? '#f' : '#g'}
+        />
+        <use
+          x="2123.5"
+          y="1348.8"
+          height="37"
+          width="18.2"
+          xlinkHref={current > 1 ? '#t' : '#j'}
+        />
 
         {/* 大信置业D专用配电站 603 */}
         <path
           d="m2216.6 1301.8v-316h533v316z"
           fill="none"
-          stroke="#f0f"
+          stroke="#f00"
           strokeDasharray="5 2 5 2"
-          strokeWidth="2"
+          strokeWidth={current > 4 ? 4 : 2}
+          className={
+            current === 0
+              ? styles.blinkYellow
+              : current > 4
+              ? styles.blinkRed
+              : undefined
+          }
         />
         <path
           d="m1680.6 1466.8v62m0 0a4 4 0 1 0 0 8v1m0 0a4 4 0 1 0 0 8v155h582v-621"
           fill="none"
-          stroke="#000"
+          stroke={current > 3 ? '#f00' : '#000'}
           strokeDasharray="5 2 5 2"
-          strokeWidth="2"
+          strokeWidth={current > 4 ? 4 : 2}
+          className={current > 4 ? styles.blinkRed : undefined}
         />
         <use
           x="2426.5"
           y="953.5"
           height="37"
           width="18.8"
-          // xlinkHref="#n"
-          xlinkHref="#o"
+          xlinkHref="#n"
           transform="scale(1.044)"
         />
         <use
@@ -386,8 +439,7 @@ export default ({ style }) => {
           y="1063.6"
           height="37"
           width="16"
-          // xlinkHref="#l"
-          xlinkHref="#m"
+          xlinkHref="#l"
           transform="scale(.972)"
         />
 
@@ -396,17 +448,33 @@ export default ({ style }) => {
           d="m2450.6 845.8v-250h235v250z"
           fill="none"
           stroke="#141414"
-          strokeWidth="2"
+          strokeWidth={current === 4 ? 4 : 2}
+          className={
+            current === 3
+              ? styles.blinkBlue
+              : current === 4
+              ? styles.blinkRed
+              : undefined
+          }
+          onClick={() => {
+            Modal.error({
+              title: '大信D段专用电房',
+              content: '糟糕，停电了',
+              okText: '知道了',
+              onOk: () => {
+                onCurrent(4);
+              },
+            });
+          }}
         />
         <path
           d="m2543.6 1079.8v64.5m0 0a3 3 0 0 0 0 6v1m0 0a3 3 0 0 0 0 6v152.5h234v-435h-272v-221"
           fill="none"
-          stroke="#000"
+          stroke={current > 3 ? '#f00' : '#000'}
           strokeDasharray="5 2 5 2"
-          strokeWidth="2"
+          strokeWidth={current === 4 ? 4 : 2}
+          className={current === 4 ? styles.blinkRed : undefined}
         />
-        <use x="2497.4" y="606.3" height="37" width="16.3" xlinkHref="#g" />
-        <use x="2622.4" y="611.3" height="37" width="16.3" xlinkHref="#g" />
 
         <g fill="none" stroke="#141414" strokeWidth="2">
           <path d="m2128.6 1015.8v-119h56v119z" />

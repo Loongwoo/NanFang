@@ -10,41 +10,27 @@ const StartLeft = 240;
 const StartTop = 44;
 
 const orders =
-  '2019.10.3 21:43:21:225，大信置业G专用配电站602与大信置业D专用配电站603之间出现故障，开关大信置业G专用配电站602与大信置业D专用配电站603分开，隔离故障。';
+  '2019-10-3 21:43:21:225，大信置业G专用配电站602与大信置业D专用配电站603之间出现故障，开关大信置业G专用配电站602与大信置业D专用配电站603分开，隔离故障。';
 
 const steps = [
-  { title: '点击开始', description: '弹框确认告警信息' },
-  {
-    title: '召测万城大信充电桩专用箱变电表',
-    description: '确认其有电，得出大信置业G专用配电站602合位',
-  },
-  {
-    title: '召测大信D段专用电房电表信息',
-    description: '确认其没电，得出大信置业D专用配电站603开关分位',
-  },
-  {
-    title: '弹框更新告警信息',
-    description: '大信置业G专用配电站602合位，大信置业D专用配电站603开关分位',
-  },
-  {
-    title: '合并工单',
-    description:
-      '大信置业G专用配电站602与大信置业D专用配电站603之间公变报修95598工单合并',
-  },
-  {
-    title: '得到结论',
-    description:
-      '通知供电分局人员进行巡线排查故障：巡线起点为大信置业G专用配电站602；终点为大信置业D专用配电站603',
-  },
+  '点击开始',
+  '召测万城大信充电桩专用箱变电表',
+  '大信置业G专用配电站602合位',
+  '召测大信D段专用电房电表信息',
+  '大信置业D专用配电站603开关分位',
+  '更新告警信息',
+  '合并工单',
+  '得到结论',
 ];
 
+const nexts = [2, 4, 5, 6];
+
 const result =
-  '通知供电分局人员进行巡线排查故障：巡线起点为大信置业G专用配电站602；终点为大信置业D专用配电站603';
+  '通知供电分局人员进行巡线排查故障：巡线起点为大信置业专用配电站602；终点为大信置业D专用配电站603';
 
 export default ({ location }) => {
   const [scale, setScale] = useState(1);
   const [current, setCurrent] = useState(0);
-  const [status, setStatus] = useState(null);
 
   useEffect(() => {
     const el = document.getElementById('main');
@@ -124,19 +110,15 @@ export default ({ location }) => {
         cancelText: '继续',
         onOk: () => {
           setCurrent(0);
-          setStatus(null);
         },
       });
     } else {
-      setCurrent(1);
-      setStatus(null);
-
       Modal.warning({
         title: '告警',
         content: orders,
-        okText: '好的',
+        okText: '知道了',
         onOk: () => {
-          setCurrent(2);
+          setCurrent(1);
         },
       });
     }
@@ -177,6 +159,24 @@ export default ({ location }) => {
     setTimeout(recovery, 100);
   };
 
+  const handleNext = () => {
+    setCurrent(current + 1);
+    if (current === 4) {
+      Modal.warning({
+        title: '告警',
+        content: '大信置业G专用配电站602合位，大信置业D专用配电站603开关分位',
+        okText: '知道了',
+      });
+    } else if (current === 5) {
+      Modal.info({
+        title: '合并工单',
+        content:
+          '大信置业G专用配电站602与大信置业D专用配电站603之间公变报修95598工单合并',
+        okText: '知道了',
+      });
+    }
+  };
+
   return (
     <MyLayout location={location}>
       <marquee className={styles.marquee} behavior="scroll">
@@ -187,9 +187,8 @@ export default ({ location }) => {
         <div className={styles.topology}>
           <div id="main" className={styles.main} style={{ cursor: 'pointer' }}>
             <Topology
-              // status={status}
-              // target={target}
-              // onUpdate={handleUpdate}
+              current={current}
+              onCurrent={setCurrent}
               style={{
                 width: `${100 * scale}%`,
                 height: `${100 * scale - 1}%`,
@@ -219,14 +218,21 @@ export default ({ location }) => {
             current={current}
             style={{ marginTop: 16 }}
           >
-            {steps.map((item, i) => (
-              <Step key={i} {...item} />
-            ))}
+            {steps.map((desc, i) => [
+              <Step key={i} description={desc} />,
+              nexts && nexts.findIndex(a => a === i) !== -1 && current === i ? (
+                <div style={{ marginBottom: 10, textAlign: 'center' }}>
+                  <Button type={'primary'} onClick={handleNext}>
+                    下一步
+                  </Button>
+                </div>
+              ) : null,
+            ])}
           </Steps>
 
           {finished && <h3 className={styles.result}>{result}</h3>}
 
-          <div style={{ margin: '0 auto 20px', textAlign: 'center' }}>
+          <div style={{ marginBottom: 20, textAlign: 'center' }}>
             <Button
               type={current > 0 ? 'danger' : 'primary'}
               onClick={handleStart}
