@@ -23,7 +23,7 @@ const steps = [
   '得到结论',
 ];
 
-const nexts = [2, 4, 5, 6];
+const nexts = [2, 4, 5];
 
 const result =
   '通知供电分局人员进行巡线排查故障：巡线起点为大信置业专用配电站602；终点为大信置业D专用配电站603';
@@ -173,6 +173,7 @@ export default ({ location }) => {
         content:
           '大信置业G专用配电站602与大信置业D专用配电站603之间公变报修95598工单合并',
         okText: '知道了',
+        onOk: () => setCurrent(7),
       });
     }
   };
