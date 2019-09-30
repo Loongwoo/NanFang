@@ -48,6 +48,15 @@
         <circle cx="8.1" cy="14.3" fill="none" r="2" stroke="#f00"/>
         <path d="m8.2 24.4-3.9-12.3" stroke="#f00"/>
     </symbol>
+    <symbol id="t" preserveAspectRatio="xMidYMid" viewBox="0 0 16.3 37">
+        <use x="8.1" xlink:href="#a" y="1"/>
+        <use x="8.1" xlink:href="#a" y="36"/>
+        <path d="m8.1 36v-11" stroke="#0f0"/>
+        <path d="m8.1 12v-11" stroke="#0f0"/>
+        <path d="m4.1 12h8.1" stroke="#0f0"/>
+        <circle cx="8.1" cy="14.3" fill="none" r="2" stroke="#0f0"/>
+        <path d="m8.2 24.4-3.9-12.3" stroke="#0f0"/>
+    </symbol>
     <symbol id="h" preserveAspectRatio="xMidYMid" viewBox="0 0 23 32">
         <use x="22" xlink:href="#a" y="1"/>
         <path d="m7 7v-6" stroke="#000"/>

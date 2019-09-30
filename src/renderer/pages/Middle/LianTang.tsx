@@ -1,15 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import FlowPage from '@/components/FlowPage';
+import { Modal } from 'antd';
+import liantang from '@/assets/liantang.svg';
 import {
   addClkEvt,
   rmvClkEvt,
   setStroke,
   showModal,
+  blinkRed,
   blinkYellow,
   clearChild,
+  setHref,
+  setSW,
 } from '@/utils/svgUtils';
-import { Modal } from 'antd';
-import liantang from '@/assets/liantang.svg';
 
 const warnings =
   '2019-10-3 21:43:21:225，大信置业G专用配电站602与大信置业D专用配电站603之间出现故障，开关大信置业G专用配电站602与大信置业D专用配电站603分开，隔离故障。';
@@ -25,8 +28,6 @@ const steps = [
   '得到结论',
 ];
 
-const nexts = [2, 4, 5];
-
 const result =
   '通知供电分局人员进行巡线排查故障：巡线起点为大信置业专用配电站602；终点为大信置业D专用配电站603';
 
@@ -35,29 +36,54 @@ export default ({ location }) => {
 
   useEffect(() => {
     if (current >= 2) {
-      setStroke('rect-g', 'green');
-      setStroke('rect-c', 'green');
-      setStroke('line-x', 'green', true);
-      setStroke('line-c', 'green', true);
+      setStroke('rect-g', '#0f0');
+      setStroke('rect-c', '#0f0');
+      setStroke('line-x', '#0f0', true);
+      setStroke('line-c', '#0f0', true);
+      setHref('g-602', '#o');
+      setHref('g-6024', '#m');
+      setHref('c-601', '#f');
+      setHref('c-801', '#t');
     }
     if (current >= 4) {
-      setStroke('rect-f', 'red');
-      setStroke('line-f', 'red', true);
+      setStroke('rect-f', '#f00');
+      setStroke('line-f', '#f00', true);
+    }
+    if (current >= 5) {
+      setStroke('rect-x', '#f00');
+      setStroke('rect-d', '#f00');
+      setStroke('line-d', '#f00');
+      blinkRed('rect-x', 'stroke');
+      blinkRed('rect-d', 'stroke');
+      setSW('rect-x', 4);
+      setSW('rect-d', 4);
     }
 
     if (current === 0) {
-      load(true);
-
       setStroke('rect-g', '#000');
       setStroke('rect-c', '#000');
-      setStroke('line-x', '#000');
-      setStroke('line-c', '#000');
+      setStroke('line-x', '#000', false);
+      setStroke('line-c', '#000', false);
+      setHref('g-602', '#n');
+      setHref('g-6024', '#l');
+      setHref('c-601', '#g');
+      setHref('c-801', '#j');
 
       setStroke('rect-f', '#000');
-      setStroke('line-f', '#000');
+      setStroke('line-f', '#000', false);
+
+      setStroke('rect-x', '#000');
+      setStroke('rect-d', '#f0f');
+      setStroke('line-d', '#000');
+      clearChild('rect-x');
+      clearChild('rect-d');
+      setSW('rect-x', 2);
+      setSW('rect-d', 2);
 
       rmvClkEvt('rect-c', cClick);
       rmvClkEvt('rect-f', fClick);
+
+      load(true);
     } else if (current === 1) {
       load(false);
       addClkEvt('rect-c', cClick);
@@ -125,7 +151,7 @@ export default ({ location }) => {
       svg={{ lengend: false, src: liantang, onLoad: () => load(true) }}
       title="莲塘天明线706"
       steps={steps}
-      nexts={nexts}
+      nexts={[2, 4, 5]}
       result={result}
       current={current}
       changeCurrent={setCurrent}

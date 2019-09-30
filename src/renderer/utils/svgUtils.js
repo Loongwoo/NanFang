@@ -9,22 +9,22 @@ export const showModal = ({ value, ...rest }) =>
     ...rest,
   });
 
-export const blinkBlue = id => blink(id, 0, 0, 255, 0.5);
+export const blinkBlue = (id, n = 'fill') => blink(id, 0, 0, 255, 0.8, n);
 
-export const blinkYellow = id => blink(id, 255, 255, 0, 0.5);
+export const blinkYellow = (id, n = 'fill') => blink(id, 255, 255, 0, 0.8, n);
 
-export const blinkRed = id => blink(id, 255, 0, 0, 0.5);
+export const blinkRed = (id, n = 'fill') => blink(id, 255, 0, 0, 0.8, n);
 
 export const getEl = o =>
   typeof o === 'string' ? document.getElementById(o) : o;
 
-export const blink = (id, r, g, b, a) => {
+export const blink = (id, r, g, b, a, n) => {
   const el = getEl(id);
   if (el) {
     const values = `rgba(${r}, ${g}, ${b}, ${a});rgba(${r}, ${g}, ${b}, 0);rgba(${r}, ${g}, ${b}, ${a})`;
     const animate = document.createElementNS(xmlns, 'animate');
     animate.setAttributeNS(null, 'id', 'blink-yellow');
-    animate.setAttributeNS(null, 'attributeName', 'fill');
+    animate.setAttributeNS(null, 'attributeName', n);
     animate.setAttributeNS(null, 'dur', '1s');
     animate.setAttributeNS(null, 'repeatCount', 'indefinite');
     animate.setAttributeNS(null, 'keyTimes', '0;0.5;1');
@@ -34,7 +34,7 @@ export const blink = (id, r, g, b, a) => {
   }
 };
 
-export const dashGreen = id => {
+export const dashAnimate = id => {
   const el = getEl(id);
   if (el) {
     const animate = document.createElementNS(xmlns, 'animate');
@@ -81,9 +81,23 @@ export const setStroke = (id, color, dash) => {
     el.setAttribute('stroke', color);
 
     if (dash) {
-      dashGreen(el);
+      dashAnimate(el);
     } else {
       clearChild(el);
     }
+  }
+};
+
+export const setHref = (id, href) => {
+  const el = document.getElementById(id);
+  if (el) {
+    el.setAttribute('xlink:href', href);
+  }
+};
+
+export const setSW = (id, width) => {
+  const el = document.getElementById(id);
+  if (el) {
+    el.setAttribute('stroke-width', width);
   }
 };
