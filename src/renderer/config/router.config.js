@@ -11,7 +11,7 @@ export default [
           { path: '/low', redirect: '/low/demo1' },
           { path: '/low/demo1', name: 'demo1', component: `./Low/Demo3` },
           { path: '/low/demo2', name: 'demo2', component: `./Low/Demo4` },
-          { path: '/low/rules', name: 'rules', component: `./Low/Rules` },
+          // { path: '/low/rules', name: 'rules', component: `./Low/Rules` },
         ],
       },
       {
@@ -26,7 +26,7 @@ export default [
           },
         ],
       },
-      { path: '/real', name: 'real', component: `./Real` },
+      // { path: '/real', name: 'real', component: `./Real` },
       { path: '/login', component: './Login' },
     ],
   },

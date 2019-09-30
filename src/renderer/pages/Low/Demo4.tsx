@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import FlowPage from '@/components/FlowPage';
 import Building from '@/components/Building';
 import { addClkEvt, rmvClkEvt, setStroke, showModal } from '@/utils/svgUtils';
+import Low from '@/assets/low.svg';
 
 const warnings = [
   '工单1：楼栋G3用户7报修故障；',
@@ -23,8 +24,6 @@ const steps = [
   '确认开关FZX1-2或FZX1-4有电',
   '得出结论',
 ];
-
-const src = 'https://kast.oss-cn-hangzhou.aliyuncs.com/images/svg/low.svg';
 
 const result = 'FZX1-1至FZX1-3段故障，工单1-5合并为同一抢修工单';
 
@@ -112,7 +111,7 @@ export default ({ location }) => {
     <FlowPage
       location={location}
       warnings={warnings}
-      svg={{ title: '拓扑图', src, child }}
+      svg={{ title: '拓扑图', src: Low, child }}
       title="示例二"
       steps={steps}
       result={result}

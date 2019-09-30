@@ -9,6 +9,7 @@ import {
   clearChild,
 } from '@/utils/svgUtils';
 import { Modal } from 'antd';
+import liantang from '@/assets/liantang.svg';
 
 const warnings =
   '2019-10-3 21:43:21:225，大信置业G专用配电站602与大信置业D专用配电站603之间出现故障，开关大信置业G专用配电站602与大信置业D专用配电站603分开，隔离故障。';
@@ -23,8 +24,6 @@ const steps = [
   '合并工单',
   '得到结论',
 ];
-
-const src = 'https://kast.oss-cn-hangzhou.aliyuncs.com/images/svg/liantang.svg';
 
 const nexts = [2, 4, 5];
 
@@ -123,7 +122,7 @@ export default ({ location }) => {
     <FlowPage
       location={location}
       warnings={warnings}
-      svg={{ lengend: false, src, onLoad: () => load(true) }}
+      svg={{ lengend: false, src: liantang, onLoad: () => load(true) }}
       title="莲塘天明线706"
       steps={steps}
       nexts={nexts}

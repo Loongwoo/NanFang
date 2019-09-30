@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Button } from 'antd';
-import SVG from 'react-inlinesvg';
+import SVG from '@/components/ReactSVG';
 import styles from './index.less';
 import Loading from '../Loading';
 
@@ -123,8 +123,11 @@ export default ({ src, title, lengend = true, child, onLoad }) => {
         >
           <SVG
             src={src}
-            loader={() => <Loading />}
+            loader={<Loading />}
             onLoad={onLoad}
+            onError={e => {
+              console.log('svg', e);
+            }}
             style={{
               width: `${100 * scale}%`,
               height: `${100 * scale - 1}%`,
