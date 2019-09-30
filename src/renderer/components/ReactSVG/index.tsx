@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import convert from 'react-from-dom';
+import convert from '@/components/react-from-dom';
 
 import {
   canUseDOM,
