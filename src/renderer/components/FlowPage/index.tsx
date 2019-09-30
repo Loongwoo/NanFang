@@ -13,7 +13,7 @@ export default ({
   steps = [],
   result,
   title,
-  nexts,
+  nexts = [],
   current,
   changeCurrent,
 }) => {
