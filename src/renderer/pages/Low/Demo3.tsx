@@ -43,39 +43,34 @@ export default ({ location }) => {
       rmvClkEvt('rect-g2', g2Click);
     } else if (current === 1) {
       addClkEvt('rect-g1', g1Click);
+    } else if (current === 2) {
+      setBuildin(null);
+      rmvClkEvt('rect-g1', g1Click);
     } else if (current === 3) {
       addClkEvt('rect-f2', f2Click);
+    } else if (current === 4) {
+      rmvClkEvt('rect-f2', f2Click);
     } else if (current === 5) {
       addClkEvt('rect-g2', g2Click);
+    } else if (current === 6) {
+      setBuildin(null);
+      rmvClkEvt('rect-g2', g2Click);
     }
   });
 
-  const g1Click = () => {
-    const onFinish = () => {
-      setCurrent(2);
-      setBuildin(null);
-      setTimeout(() => setCurrent(3), 200);
-    };
-    setBuildin({ name: 'G1', value: false, onFinish });
+  const handleOk = v => {
+    setCurrent(v);
+    setTimeout(() => setCurrent(v + 1), 200);
   };
 
-  const f2Click = () => {
-    const onOk = () => {
-      rmvClkEvt('rect-f2', f2Click);
-      setCurrent(4);
-      setTimeout(() => setCurrent(5), 200);
-    };
-    showModal({ title: '开关FZX1-2', value: true, onOk });
-  };
+  const g1Click = () =>
+    setBuildin({ name: 'G1', value: false, onOk: () => handleOk(2) });
 
-  const g2Click = () => {
-    const onFinish = () => {
-      setCurrent(6);
-      setBuildin(null);
-      setTimeout(() => setCurrent(7), 200);
-    };
-    setBuildin({ name: 'G2', value: true, onFinish });
-  };
+  const f2Click = () =>
+    showModal({ title: '开关FZX1-2', value: true, onOk: () => handleOk(4) });
+
+  const g2Click = () =>
+    setBuildin({ name: 'G2', value: true, onOk: () => handleOk(6) });
 
   const child = buildin ? <Building {...buildin} /> : null;
 

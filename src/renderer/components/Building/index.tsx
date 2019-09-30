@@ -12,7 +12,7 @@ const genG = v => {
     }, {});
 };
 
-export default ({ name, value, onFinish }) => {
+export default ({ name, value, onOk }) => {
   const [status, setStatus] = useState(genG(true));
   const [times, setTimes] = useState(0);
 
@@ -27,7 +27,7 @@ export default ({ name, value, onFinish }) => {
     if (times === 0) {
       message.warn('请先召测任意一个房间的电表');
     } else {
-      showModal({ title: `楼房-${name}`, value, onOk: onFinish });
+      showModal({ title: `楼房-${name}`, value, onOk });
     }
   };
 

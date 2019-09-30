@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import FlowPage from '@/components/FlowPage';
-import Building from '@/components/Building';
 import {
   addClkEvt,
   rmvClkEvt,
@@ -48,7 +47,7 @@ export default ({ location }) => {
     }
 
     if (current === 0) {
-      onLoad(true);
+      load(true);
 
       setStroke('rect-g', '#000');
       setStroke('rect-c', '#000');
@@ -61,7 +60,7 @@ export default ({ location }) => {
       rmvClkEvt('rect-c', cClick);
       rmvClkEvt('rect-f', fClick);
     } else if (current === 1) {
-      onLoad(false);
+      load(false);
       addClkEvt('rect-c', cClick);
     } else if (current === 2) {
       rmvClkEvt('rect-c', cClick);
@@ -86,32 +85,29 @@ export default ({ location }) => {
     }
   });
 
-  const cClick = () => {
+  const cClick = () =>
     showModal({
       title: '万城大信充电桩专用箱变',
       value: true,
       onOk: () => setCurrent(2),
     });
-  };
 
-  const fClick = () => {
+  const fClick = () =>
     showModal({
       title: '大信D段专用电房',
       value: false,
       onOk: () => setCurrent(4),
     });
-  };
 
-  const handleReady = () => {
+  const handleReady = () =>
     Modal.warning({
       title: '告警',
       content: warnings,
       okText: '知道了',
       onOk: () => setCurrent(1),
     });
-  };
 
-  const onLoad = v => {
+  const load = v => {
     if (v) {
       blinkYellow('rect-g');
       blinkYellow('rect-x');
@@ -127,7 +123,7 @@ export default ({ location }) => {
     <FlowPage
       location={location}
       warnings={warnings}
-      svg={{ lengend: false, src, onLoad: () => onLoad(true) }}
+      svg={{ lengend: false, src, onLoad: () => load(true) }}
       title="莲塘天明线706"
       steps={steps}
       nexts={nexts}

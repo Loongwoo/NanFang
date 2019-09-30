@@ -16,7 +16,7 @@ export default ({
   nexts = [],
   current,
   changeCurrent,
-  readyStart,
+  readyStart = null,
 }) => {
   const finished = current === steps.length - 1;
 
