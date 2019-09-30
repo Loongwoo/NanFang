@@ -18,11 +18,11 @@ export default [
         path: '/middle',
         name: 'middle',
         routes: [
-          { path: '/middle', redirect: '/middle/liantang' },
+          { path: '/middle', redirect: '/middle/blank' },
           {
             path: '/middle/liantang',
             name: 'liantang',
-            component: `./Middle/LianTang`,
+            component: './Middle/Blank',
           },
         ],
       },
