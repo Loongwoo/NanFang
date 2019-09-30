@@ -16,6 +16,7 @@ export default ({
   nexts = [],
   current,
   changeCurrent,
+  readyStart,
 }) => {
   const finished = current === steps.length - 1;
 
@@ -27,6 +28,8 @@ export default ({
         cancelText: '继续',
         onOk: () => changeCurrent(0),
       });
+    } else if (readyStart) {
+      readyStart();
     } else {
       changeCurrent(1);
     }

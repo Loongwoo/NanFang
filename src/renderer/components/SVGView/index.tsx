@@ -8,7 +8,7 @@ const StartLeft = 240;
 const StartTop = 44;
 const ScaleArray = [1, 2, 4, 8];
 
-export default ({ src, title, lengend = true, child }) => {
+export default ({ src, title, lengend = true, child, onLoad }) => {
   const [scale, setScale] = useState(1);
 
   useEffect(() => {
@@ -124,6 +124,7 @@ export default ({ src, title, lengend = true, child }) => {
           <SVG
             src={src}
             loader={() => <Loading />}
+            onLoad={onLoad}
             style={{
               width: `${100 * scale}%`,
               height: `${100 * scale - 1}%`,

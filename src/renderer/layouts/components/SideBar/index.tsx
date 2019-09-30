@@ -6,7 +6,7 @@ const SubMenu = Menu.SubMenu;
 
 const SideBar = ({ history, route: { routes }, location: { pathname } }) => {
   const defaultSelectedKeys = [pathname.slice(1)];
-  const defaultOpenKeys = ['low'];
+  const defaultOpenKeys = ['low', 'middle'];
 
   const handleClick = ({ selectedKeys }: { selectedKeys: string[] }) => {
     history.push(`/${selectedKeys[0]}`);
