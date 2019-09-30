@@ -8,22 +8,15 @@ const { Step } = Steps;
 
 export default ({
   location,
-  warnings = ['test'],
-  middle = undefined,
+  warnings,
+  svg,
   steps = [],
-  result = 'hhh',
-  title = 'title',
-  nexts = [],
-  currentChanged,
+  result,
+  title,
+  nexts,
+  current,
+  changeCurrent,
 }) => {
-  const [current, setCurrent] = useState(0);
-
-  useEffect(() => {
-    if (currentChanged) {
-      currentChanged({ current, setCurrent });
-    }
-  });
-
   const finished = current === steps.length - 1;
 
   const handleStart = () => {
@@ -32,12 +25,10 @@ export default ({
         title: finished ? '你确定要重新开始吗？' : '你确定要退出演示吗？',
         okText: finished ? '重新开始' : '退出',
         cancelText: '继续',
-        onOk: () => {
-          setCurrent(0);
-        },
+        onOk: () => changeCurrent(0),
       });
     } else {
-      setCurrent(1);
+      changeCurrent(1);
     }
   };
 
@@ -50,7 +41,9 @@ export default ({
       )}
 
       <div className={styles.content}>
-        <div className={styles.svgView}>{middle}</div>
+        <div className={styles.svgView}>
+          <SVGView {...svg} />
+        </div>
 
         <div className={styles.right}>
           {title && <h3 className={styles.title}>{title}</h3>}
@@ -67,7 +60,7 @@ export default ({
                 <div style={{ marginBottom: 10, textAlign: 'center' }}>
                   <Button
                     type={'primary'}
-                    onClick={() => setCurrent(current + 1)}
+                    onClick={() => changeCurrent(current + 1)}
                   >
                     下一步
                   </Button>

@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Button } from 'antd';
 import SVG from 'react-inlinesvg';
-import classNames from 'classnames';
 import styles from './index.less';
 import Loading from '../Loading';
 
@@ -9,7 +8,7 @@ const StartLeft = 240;
 const StartTop = 44;
 const ScaleArray = [1, 2, 4, 8];
 
-export default ({ className, src, title, lengend }) => {
+export default ({ src, title, lengend = true, child }) => {
   const [scale, setScale] = useState(1);
 
   useEffect(() => {
@@ -114,39 +113,51 @@ export default ({ className, src, title, lengend }) => {
   };
 
   return (
-    <div className={classNames(className, styles.main)}>
-      <div
-        id="svg-container"
-        className={styles.svgContainer}
-        style={{ cursor: 'pointer' }}
-      >
-        <SVG
-          src={src}
-          loader={() => <Loading />}
-          style={{
-            width: `${100 * scale}%`,
-            height: `${100 * scale - 1}%`,
-          }}
-        />
-      </div>
+    <div className={styles.main}>
+      {child}
+      {!child && (
+        <div
+          id="svg-container"
+          className={styles.svgContainer}
+          style={{ cursor: 'pointer' }}
+        >
+          <SVG
+            src={src}
+            loader={() => <Loading />}
+            style={{
+              width: `${100 * scale}%`,
+              height: `${100 * scale - 1}%`,
+            }}
+          />
+        </div>
+      )}
 
-      {title && <h3 className={styles.title}>{title}</h3>}
-      {lengend && <div className={styles.legend}>{lengend}</div>}
+      {title && !child && <h3 className={styles.title}>{title}</h3>}
+      {lengend && !child && (
+        <div className={styles.legend}>
+          <div style={{ color: 'green', marginBottom: 5 }}>
+            绿色线条代表有电
+          </div>
+          <div style={{ color: 'red' }}>红色线条代表停电</div>
+        </div>
+      )}
 
-      <div className={styles.footer}>
-        {ScaleArray.map(a => (
-          <Button
-            key={a}
-            ghost={scale !== a}
-            type="primary"
-            shape="circle"
-            style={{ marginLeft: a > 1 ? 20 : 0 }}
-            onClick={() => handleScale(a)}
-          >
-            {`${a}X`}
-          </Button>
-        ))}
-      </div>
+      {!child && (
+        <div className={styles.footer}>
+          {ScaleArray.map(a => (
+            <Button
+              key={a}
+              ghost={scale !== a}
+              type="primary"
+              shape="circle"
+              style={{ marginLeft: a > 1 ? 20 : 0 }}
+              onClick={() => handleScale(a)}
+            >
+              {`${a}X`}
+            </Button>
+          ))}
+        </div>
+      )}
     </div>
   );
 };
