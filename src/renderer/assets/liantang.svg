@@ -1,0 +1,1583 @@
+<svg height="2027" viewBox="0 0 2866 2027" width="2866"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <symbol id="a" preserveAspectRatio="xMidYMid">
+        <circle r="1" visibility="hidden"/>
+    </symbol>
+    <symbol id="b" preserveAspectRatio="xMidYMid" viewBox="0 0 12 17.3">
+        <use x="6" xlink:href="#a" y="1"/>
+        <use x="6" xlink:href="#a" y="16"/>
+        <path d="m5 16 5-8h-10z" stroke="#000"/>
+        <path d="m6 7.6v-6.6" stroke="#000"/>
+    </symbol>
+    <symbol id="c" preserveAspectRatio="xMidYMid" viewBox="0 0 14.2 36.7">
+        <use x="7.1" xlink:href="#a" y=".4"/>
+        <use x="7.1" xlink:href="#a" y="35.4"/>
+        <path d="m2.3 8.5h10v20h-10z" fill="#f00" stroke="#ffb0b0"/>
+        <path d="m12 31-6 4-5-4" fill="none" stroke="#ffb0b0"/>
+        <path d="m12 5-6-4-5 4" fill="none" stroke="#ffb0b0"/>
+        <path d="m7.1 8.4-.1-7.4" stroke="#ffb0b0"/>
+        <path d="m7 35.7.1-7.3" stroke="#ffb0b0"/>
+    </symbol>
+    <symbol id="d" preserveAspectRatio="xMidYMid" viewBox="0 0 12 17.3">
+        <use x="6" xlink:href="#a" y="1"/>
+        <use x="6" xlink:href="#a" y="16"/>
+        <path d="m5 16 5-8h-10z" stroke="#000"/>
+        <path d="m6 7.6v-6.6" stroke="#000"/>
+    </symbol>
+    <symbol id="e" preserveAspectRatio="xMidYMid" viewBox="0 0 34 71.7">
+        <use x="17" xlink:href="#a" y="1"/>
+        <circle cx="17" cy="34.7" fill="none" r="16" stroke="#000" stroke-width="2"/>
+        <circle cx="17" cy="54.7" fill="none" r="16" stroke="#000" stroke-width="2"/>
+        <path d="m17 19v-18" stroke="#000" stroke-width="2"/>
+    </symbol>
+    <symbol id="f" preserveAspectRatio="xMidYMid" viewBox="0 0 16.3 37">
+        <use x="8.1" xlink:href="#a" y="1"/>
+        <use x="8.1" xlink:href="#a" y="36"/>
+        <path d="m8.1 36v-11" stroke="#0f0"/>
+        <path d="m8.1 12v-11" stroke="#0f0"/>
+        <path d="m4.1 12h8.1" stroke="#0f0"/>
+        <circle cx="8.1" cy="14.3" fill="none" r="2" stroke="#0f0"/>
+        <path d="m8.1 24.6-7.1-12.1" stroke="#0f0"/>
+    </symbol>
+    <symbol id="g" preserveAspectRatio="xMidYMid" viewBox="0 0 16.3 37">
+        <use x="8.1" xlink:href="#a" y="1"/>
+        <use x="8.1" xlink:href="#a" y="36"/>
+        <path d="m8.1 36v-11" stroke="#f00"/>
+        <path d="m8.1 12v-11" stroke="#f00"/>
+        <path d="m4.1 12h8.1" stroke="#f00"/>
+        <circle cx="8.1" cy="14.3" fill="none" r="2" stroke="#f00"/>
+        <path d="m8.2 24.4-3.9-12.3" stroke="#f00"/>
+    </symbol>
+    <symbol id="h" preserveAspectRatio="xMidYMid" viewBox="0 0 23 32">
+        <use x="22" xlink:href="#a" y="1"/>
+        <path d="m7 7v-6" stroke="#000"/>
+        <path d="m5 7h4" stroke="#000"/>
+        <path d="m7 17-.1 8" stroke="#000"/>
+        <path d="m2 25.5h10" stroke="#000"/>
+        <path d="m4 28.2h6" stroke="#000"/>
+        <path d="m5 31h4" stroke="#000"/>
+        <path d="m1.5 6.9 5.2 9" stroke="#000"/>
+        <path d="m7 1h15" stroke="#000"/>
+    </symbol>
+    <symbol id="i" preserveAspectRatio="xMidYMid" viewBox="0 0 34 71.7">
+        <use x="17" xlink:href="#a" y="1"/>
+        <path d="m17 19v-18" stroke="#000" stroke-width="2"/>
+        <circle cx="17" cy="34.7" fill="none" r="16" stroke="#000" stroke-width="2"/>
+        <circle cx="17" cy="54.7" fill="none" r="16" stroke="#000" stroke-width="2"/>
+        <path d="m5.6 45 .7.7 1 .9 1.3 1 1.4.8 1.8.7 1.7.6 2.3.4h2l2.1-.2 2.2-.6 1.8-.6 1.5-1.1 1.4-1 1-1 .8-.8-1.4-1.4-1.7-1.3-2-1.1-2.2-.8-2.5-.5-2.2-.2-2.3.3-1.9.5-2.2.9-1.8 1.1-1.4 1.2-1.3 1.3z" stroke="#000"/>
+    </symbol>
+    <symbol id="j" preserveAspectRatio="xMidYMid" viewBox="0 0 18.2 37">
+        <use x="9.1" xlink:href="#a" y="1"/>
+        <use x="9.1" xlink:href="#a" y="36"/>
+        <path d="m9.6 22.3-2.2-6.4-3.4 1.2 2.3 6.5z" fill="none" stroke="#f00"/>
+        <path d="m9.1 36v-10" stroke="#f00"/>
+        <path d="m9.1 11v-10" stroke="#f00"/>
+        <circle cx="9.2" cy="13.1" fill="none" r="2" stroke="#f00"/>
+        <path d="m4.1 11h10" stroke="#f00"/>
+        <path d="m9.1 26.1-5.1-14.6" stroke="#f00"/>
+    </symbol>
+    <symbol id="k" preserveAspectRatio="xMidYMid" viewBox="0 0 37 42">
+        <use x="1" xlink:href="#a" y="1"/>
+        <use x="1" xlink:href="#a" y="41"/>
+        <path d="m30 1v12" stroke="#000"/>
+        <path d="m30 29v6" stroke="#000"/>
+        <path d="m24 35h12" stroke="#000"/>
+        <path d="m27 38h6" stroke="#000"/>
+        <path d="m28 41h4" stroke="#000"/>
+        <path d="m26 9h8v20h-8z" fill="none" stroke="#000"/>
+        <path d="m29 19 2-6h-4z" stroke="#000"/>
+        <path d="m1 1h29" stroke="#000"/>
+    </symbol>
+    <symbol id="l" preserveAspectRatio="xMidYMid" viewBox="0 0 16 37">
+        <use x="8" xlink:href="#a" y="1"/>
+        <use x="8" xlink:href="#a" y="36"/>
+        <path d="m8 25v11" stroke="#f00"/>
+        <path d="m5.5 12h5" stroke="#f00"/>
+        <path d="m8 12v-11" stroke="#f00"/>
+        <path d="m8.2 25.3-3.6-14" stroke="#f00"/>
+    </symbol>
+    <symbol id="m" preserveAspectRatio="xMidYMid" viewBox="0 0 16 37">
+        <use x="8" xlink:href="#a" y="1"/>
+        <use x="8" xlink:href="#a" y="36"/>
+        <path d="m8 25v11" stroke="#0f0"/>
+        <path d="m5.5 12h5" stroke="#0f0"/>
+        <path d="m8 12v-11" stroke="#0f0"/>
+        <path d="m8.2 25.3-7.2-13.3" stroke="#0f0"/>
+    </symbol>
+    <symbol id="n" preserveAspectRatio="xMidYMid" viewBox="0 0 18.8 37">
+        <use x="9.4" xlink:href="#a" y="1"/>
+        <use x="9.4" xlink:href="#a" y="36"/>
+        <path d="m9.4 36v-11" stroke="#f00"/>
+        <path d="m9.4 12v-11" stroke="#f00"/>
+        <path d="m6.4 9.7 6 5" stroke="#f00"/>
+        <path d="m9.5 24.6-4.4-14" stroke="#f00"/>
+        <path d="m6.6 14.7 5.6-5" stroke="#f00"/>
+        <path d="m3.3 16.9 1.5 4.6 3-.9-1.4-4.6z" fill="#f00" stroke="#f00"/>
+    </symbol>
+    <symbol id="o" preserveAspectRatio="xMidYMid" viewBox="0 0 18.8 37">
+        <use x="9.4" xlink:href="#a" y="1"/>
+        <use x="9.4" xlink:href="#a" y="36"/>
+        <path d="m9.4 36v-11" stroke="#0f0"/>
+        <path d="m9.4 12v-11" stroke="#0f0"/>
+        <path d="m6.4 9.7 6 5" stroke="#0f0"/>
+        <path d="m9.5 25.2-7.1-12.2" stroke="#0f0"/>
+        <path d="m6.6 14.7 5.6-5" stroke="#0f0"/>
+        <path d="m1 19.1 2.5 4.2 3.5-1.8-2.6-4.4z" fill="#0ff" stroke="#0f0"/>
+    </symbol>
+    <symbol id="p" preserveAspectRatio="xMidYMid" viewBox="0 0 19 27">
+        <use x="9.5" xlink:href="#a" y="1"/>
+        <use x="9.5" xlink:href="#a" y="26"/>
+        <path d="m9.5 1v4.3" stroke="#000"/>
+        <path d="m6 5.5v15.6h7l.1-15.5z" fill="none" stroke="#000"/>
+        <path d="m9.5 6v15" stroke="#000"/>
+        <path d="m9.5 21.1v4.9" stroke="#000"/>
+    </symbol>
+    <symbol id="q" preserveAspectRatio="xMidYMid" viewBox="0 0 20 22">
+        <use x="10" xlink:href="#a" y="1"/>
+        <path d="m10 1v5" stroke="#000"/>
+        <circle cx="10" cy="11" fill="none" r="5" stroke="#000"/>
+        <circle cx="6" cy="16" fill="none" r="5" stroke="#000"/>
+        <circle cx="14" cy="16" fill="none" r="5" stroke="#000"/>
+    </symbol>
+    <symbol id="r" preserveAspectRatio="xMidYMid" viewBox="0 0 12 25.1">
+        <use x="6" xlink:href="#a" y="1"/>
+        <path d="m3 9 3 5 3-5" fill="none" stroke="#000"/>
+        <path d="m3 17 3 5 3-5" fill="none" stroke="#000"/>
+        <path d="m6 1v5" stroke="#000"/>
+        <circle cx="6" cy="11" fill="none" r="5" stroke="#000"/>
+        <circle cx="6" cy="19.1" fill="none" r="5" stroke="#000"/>
+    </symbol>
+    <symbol id="s" preserveAspectRatio="xMidYMid" viewBox="0 0 22 21.9">
+        <use x="11" xlink:href="#a" y="10.9"/>
+        <circle cx="10.9" cy="10.9" fill="none" r="8" stroke="#000"/>
+        <path d="m9 7h4l-2-6z" stroke="#000"/>
+        <path d="m1 11h20" stroke="#000"/>
+        <path d="m11 20.9v-13.9" stroke="#000"/>
+    </symbol>
+    <path d="m0 0h2866v2027h-2866z" fill="#fff" stroke="#fff" stroke-width="4"/>
+    <path d="m157.6 1749.3v-96.7h167.1v96.7z" fill="none" stroke="#000" stroke-width="2"/>
+    <path d="m860.1 1151.3v-271h223v271z" fill="none" stroke="#141414" stroke-width="2"/>
+    <path id="rect-f" d="m2450.6 845.8v-250h235v250z" fill="none" stroke="#141414" stroke-width="2"/>
+    <path d="m2128.6 1015.8v-119h56v119z" fill="none" stroke="#141414"/>
+    <path d="m313.6 1293.8v-297h499v297z" fill="none" stroke="#141414" stroke-width="2"/>
+    <path d="m224.6 794.8v-296h390v296z" fill="none" stroke="#141414" stroke-width="2"/>
+    <path d="m1902.6 747.8v-281h364v281z" fill="none" stroke="#141414" stroke-width="2"/>
+    <path d="m1595.6 747.8v-246h189v246z" fill="none" stroke="#141414" stroke-width="2"/>
+    <path d="m1210.6 745.8v-246h234v246z" fill="none" stroke="#141414" stroke-width="2"/>
+    <path d="m885.6 757.8v-258h191v258z" fill="none" stroke="#141414" stroke-width="2"/>
+    <path d="m2149.6 410.8v-294h371v294z" fill="none" stroke="#f0f" stroke-dasharray="5 2 5 2" stroke-width="2"/>
+    <path d="m680.6 751.8v-246h109v246z" fill="none" stroke="#141414" stroke-width="2"/>
+    <path d="m243.6 347.8v-259h411v259z" fill="none" stroke="#141414" stroke-width="2"/>
+    <path d="m909.6 279.8v-135h306v135z" fill="none" stroke="#141414" stroke-width="2"/>
+    <path d="m1434.6 368.8v-271h361v271z" fill="none" stroke="#f0f" stroke-dasharray="5 2 5 2" stroke-width="2"/>
+    <path id="rect-g" d="m1126.6 1243.8v-299h466v299z" fill="none" stroke="#141414" stroke-width="2"/>
+    <path id="rect-x" d="m1462.6 1666.8v-296h495v296z" fill="none" stroke="#141414" stroke-width="2"/>
+    <path id="rect-d" d="m2216.6 1301.8v-316h533v316z" fill="none" stroke="#f0f" stroke-dasharray="5 2 5 2" stroke-width="2"/>
+    <path id="rect-c" d="m2008.6 1582.8v-245h179v245z" fill="none" stroke="#141414"/>
+    <path d="m1639.1 1218.8v-246h198v246z" fill="none" stroke="#141414" stroke-width="2"/>
+    <path d="m1879.6 1214.8v-216h192v216z" fill="none" stroke="#141414" stroke-width="2"/>
+    <use height="17.3" transform="scale(.81)" width="12" x="539.1" xlink:href="#b" y="1331.4"/>
+    <use height="17.3" transform="scale(.81)" width="12" x="433" xlink:href="#b" y="1331.4"/>
+    <use height="17.3" transform="scale(.81)" width="12" x="484.8" xlink:href="#b" y="1331.4"/>
+    <use height="17.3" transform="scale(.81)" width="12" x="593.4" xlink:href="#b" y="1331.4"/>
+    <use height="17.3" transform="scale(.81)" width="12" x="403.9" xlink:href="#b" y="211.1"/>
+    <use height="17.3" transform="scale(.81)" width="12" x="603.9" xlink:href="#b" y="211.1"/>
+    <use height="17.3" transform="scale(.81)" width="12" x="512.6" xlink:href="#b" y="211.1"/>
+    <use height="17.3" transform="scale(.81)" width="12" x="2100.9" xlink:href="#b" y="222.2"/>
+    <use height="17.3" transform="scale(.81)" width="12" x="1295.3" xlink:href="#b" y="238.2"/>
+    <use height="17.3" transform="scale(.81)" width="12" x="1184.2" xlink:href="#b" y="238.2"/>
+    <use height="17.3" transform="scale(.81)" width="12" x="1437.3" xlink:href="#b" y="285.1"/>
+    <use height="17.3" transform="scale(.81)" width="12" x="1754.6" xlink:href="#b" y="1267.2"/>
+    <use height="17.3" transform="scale(.81)" width="12" x="1437.3" xlink:href="#b" y="1267.2"/>
+    <use height="17.3" transform="scale(.81)" width="12" x="1702.7" xlink:href="#b" y="1267.2"/>
+    <use height="17.3" transform="scale(.81)" width="12" x="1115.7" xlink:href="#b" y="1143.8"/>
+    <use height="17.3" transform="scale(.81)" width="12" x="2014.4" xlink:href="#b" y="1794.4"/>
+    <use height="17.3" transform="scale(.81)" width="12" x="2068.8" xlink:href="#b" y="1794.4"/>
+    <use height="17.3" transform="scale(.81)" width="12" x="2786.7" xlink:href="#b" y="1317.8"/>
+    <use height="17.3" transform="scale(.81)" width="12" x="3133.6" xlink:href="#b" y="1317.8"/>
+    <use height="17.3" transform="scale(.81)" width="12" x="3087.3" xlink:href="#b" y="791.9"/>
+    <use height="17.3" transform="scale(.81)" width="12" x="488.5" xlink:href="#b" y="716.6"/>
+    <use height="17.3" transform="scale(.81)" width="12" x="423.1" xlink:href="#b" y="716.6"/>
+    <use height="17.3" transform="scale(.81)" width="12" x="550.2" xlink:href="#b" y="716.6"/>
+    <use height="17.3" transform="scale(.81)" width="12" x="858.3" xlink:href="#b" y="681.4"/>
+    <use height="17.3" transform="scale(.81)" width="12" x="2565.7" xlink:href="#b" y="676.5"/>
+    <use height="17.3" transform="scale(.81)" width="12" x="2623.7" xlink:href="#b" y="676.5"/>
+    <use height="17.3" transform="scale(.81)" width="12" x="2155.2" xlink:href="#b" y="676.5"/>
+    <use height="17.3" transform="scale(.81)" width="12" x="1735.4" xlink:href="#b" y="674"/>
+    <use height="17.3" transform="scale(.81)" width="12" x="1673.7" xlink:href="#b" y="674"/>
+    <use height="17.3" transform="scale(.81)" width="12" x="1281.1" xlink:href="#b" y="674"/>
+    <use height="17.3" transform="scale(.81)" width="12" x="2865.7" xlink:href="#b" y="245"/>
+    <use height="17.3" transform="scale(.81)" width="12" x="2459.5" xlink:href="#b" y="676.5"/>
+    <use height="17.3" transform="scale(.81)" width="12" x="2510.1" xlink:href="#b" y="676.5"/>
+    <use height="17.3" transform="scale(.9)" width="12" x="1053.5" xlink:href="#d" y="1029.3"/>
+    <use height="17.3" transform="matrix(-.9 0 0 -.9 2057.2 2112.8)" width="12" x="1136.9" xlink:href="#d" y="1165.1"/>
+    <use height="17.3" transform="scale(.9)" width="12" x="1136.8" xlink:href="#d" y="1058.2"/>
+    <use height="17.3" transform="scale(.9)" width="12" x="1092.4" xlink:href="#d" y="1029.3"/>
+    <use height="17.3" transform="scale(.9)" width="12" x="2916.8" xlink:href="#d" y="718.2"/>
+    <use height="17.3" transform="matrix(-.9 0 0 -.9 5261.2 1500.8)" width="12" x="2916.9" xlink:href="#d" y="825.1"/>
+    <use height="17.3" transform="scale(.81)" width="12" x="1803.9" xlink:href="#b" y="1267.2"/>
+    <use height="17.3" transform="scale(.81)" width="12" x="2041.6" xlink:href="#b" y="1258"/>
+    <use height="17.3" transform="scale(.81)" width="12" x="2104.6" xlink:href="#b" y="1258"/>
+    <use height="17.3" transform="scale(.81)" width="12" x="2370" xlink:href="#b" y="1290.1"/>
+    <use height="17.3" transform="matrix(.89986293 -.01570717 .01570717 .89986293 -18.876158 9.406483)" width="12" x="582.4" xlink:href="#d" y="1198.2"/>
+    <use height="17.3" transform="scale(.9)" width="12" x="640.2" xlink:href="#d" y="1198.2"/>
+    <use height="17.3" transform="matrix(-.9 0 0 -.9 1163.2 2364.8)" width="12" x="640.2" xlink:href="#d" y="1305.1"/>
+    <use height="17.3" transform="matrix(-.9 0 0 -.9 1059.2 2398.8)" width="12" x="582.5" xlink:href="#d" y="1324"/>
+    <use height="17.3" transform="scale(.9)" width="12" x="543.5" xlink:href="#d" y="644.8"/>
+    <use height="17.3" transform="scale(.9)" width="12" x="599.1" xlink:href="#d" y="644.8"/>
+    <use height="17.3" transform="matrix(-.9 0 0 -.9 989.2 1368.8)" width="12" x="543.6" xlink:href="#d" y="751.7"/>
+    <use height="17.3" transform="matrix(-.9 0 0 -.9 1089.2 1368.8)" width="12" x="599.1" xlink:href="#d" y="751.7"/>
+    <use height="17.3" transform="scale(.9)" width="12" x="2158.5" xlink:href="#d" y="608.7"/>
+    <use height="17.3" transform="matrix(-.9 0 0 -.9 3896.2 1303.8)" width="12" x="2158.6" xlink:href="#d" y="715.6"/>
+    <use height="17.3" transform="scale(.9)" width="12" x="1827.9" xlink:href="#d" y="608.7"/>
+    <use height="17.3" transform="scale(.9)" width="12" x="1883.5" xlink:href="#d" y="608.7"/>
+    <use height="17.3" transform="matrix(-.9 0 0 -.9 3301.2 1303.8)" width="12" x="1828" xlink:href="#d" y="715.6"/>
+    <use height="17.3" transform="scale(.9)" width="12" x="1389.1" xlink:href="#d" y="606.5"/>
+    <use height="17.3" transform="scale(.9)" width="12" x="1444.6" xlink:href="#d" y="606.5"/>
+    <use height="17.3" transform="matrix(-.9 0 0 -.9 2511.2 1299.8)" width="12" x="1389.1" xlink:href="#d" y="713.4"/>
+    <use height="17.3" transform="scale(.9)" width="12" x="1030.2" xlink:href="#d" y="606.5"/>
+    <use height="17.3" transform="scale(.9)" width="12" x="1107.9" xlink:href="#d" y="606.5"/>
+    <use height="17.3" transform="matrix(-.9 0 0 -.9 1865.2 1299.8)" width="12" x="1030.2" xlink:href="#d" y="713.4"/>
+    <use height="17.3" transform="matrix(-.9 0 0 -.9 4558.2 604.8)" width="12" x="2526.4" xlink:href="#d" y="327.3"/>
+    <use height="17.3" transform="scale(.9)" width="12" x="2526.3" xlink:href="#d" y="220.4"/>
+    <use height="17.3" transform="scale(.81)" width="12" x="2948.4" xlink:href="#b" y="245"/>
+    <use height="17.3" transform="scale(.81)" width="12" x="2758.3" xlink:href="#b" y="245"/>
+    <use height="17.3" transform="scale(.9)" width="12" x="821.3" xlink:href="#d" y="613.2"/>
+    <use height="17.3" transform="matrix(-.9 0 0 -.9 1489.2 1311.8)" width="12" x="821.4" xlink:href="#d" y="720.1"/>
+    <use height="17.3" transform="scale(.9)" width="12" x="316.3" xlink:href="#d" y="189.8"/>
+    <use height="17.3" transform="scale(.9)" width="12" x="411.8" xlink:href="#d" y="189.8"/>
+    <use height="17.3" transform="scale(.9)" width="12" x="489.6" xlink:href="#d" y="338.7"/>
+    <use height="17.3" transform="scale(.9)" width="12" x="584.1" xlink:href="#d" y="338.7"/>
+    <use height="17.3" transform="scale(.9)" width="12" x="1126.3" xlink:href="#d" y="214.3"/>
+    <use height="17.3" transform="scale(.9)" width="12" x="1220.7" xlink:href="#d" y="262.1"/>
+    <use height="17.3" transform="matrix(-.9 0 0 -.9 3217.2 567.8)" width="12" x="1781.4" xlink:href="#d" y="306.7"/>
+    <use height="17.3" transform="scale(.9)" width="12" x="1781.3" xlink:href="#d" y="199.8"/>
+    <use height="17.3" transform="scale(.81)" width="12" x="2045.3" xlink:href="#b" y="222.2"/>
+    <use height="17.3" transform="scale(.81)" width="12" x="2163.8" xlink:href="#b" y="222.2"/>
+    <use height="17.3" transform="scale(.9)" width="12" x="1477.4" xlink:href="#d" y="1140.4"/>
+    <use height="17.3" transform="scale(.9)" width="12" x="1422.9" xlink:href="#d" y="1140.4"/>
+    <use height="17.3" transform="matrix(.89986293 -.01570717 .01570717 .89986293 -17.862401 21.571616)" width="12" x="1357.4" xlink:href="#d" y="1140.4"/>
+    <use height="17.3" transform="matrix(-.9 0 0 -.9 2672.2 2258.8)" width="12" x="1478.6" xlink:href="#d" y="1246.2"/>
+    <use height="17.3" transform="matrix(-.9 0 0 -.9 2572.2 2266.8)" width="12" x="1423" xlink:href="#d" y="1250.6"/>
+    <use height="17.3" transform="matrix(-.89986293 .01570717 -.01570717 -.89986293 2473.698394 2257.212361)" width="12" x="1357.3" xlink:href="#d" y="1257.3"/>
+    <use height="17.3" transform="scale(.9)" width="12" x="1704.6" xlink:href="#d" y="1614.8"/>
+    <use height="17.3" transform="scale(.9)" width="12" x="1757.9" xlink:href="#d" y="1614.8"/>
+    <use height="17.3" transform="matrix(-.89986293 .01570717 -.01570717 -.89986293 3107.945752 3087.677368)" width="12" x="1705.7" xlink:href="#d" y="1721.7"/>
+    <use height="17.3" transform="matrix(-.9 0 0 -.9 3177.2 3120.8)" width="12" x="1759.1" xlink:href="#d" y="1725.1"/>
+    <use height="17.3" transform="scale(.81)" width="12" x="2123.1" xlink:href="#b" y="1794.4"/>
+    <use height="17.3" transform="scale(.9)" width="12" x="2554.1" xlink:href="#d" y="1186"/>
+    <use height="17.3" transform="scale(.9)" width="12" x="2619.6" xlink:href="#d" y="1186"/>
+    <use height="17.3" transform="scale(.9)" width="12" x="2690.7" xlink:href="#d" y="1186"/>
+    <use height="17.3" transform="matrix(-.9 0 0 -.9 4726.2 2350.8)" width="12" x="2619.7" xlink:href="#d" y="1297.3"/>
+    <use height="17.3" transform="matrix(-.9 0 0 -.9 4610.2 2342.8)" width="12" x="2555.2" xlink:href="#d" y="1292.8"/>
+    <use height="17.3" transform="matrix(-.9 0 0 -.9 4854.2 2342.8)" width="12" x="2690.8" xlink:href="#d" y="1292.8"/>
+    <use height="17.3" transform="scale(.81)" width="12" x="3050.9" xlink:href="#b" y="1317.8"/>
+    <use height="17.3" transform="scale(.81)" width="12" x="2497.1" xlink:href="#b" y="1708.6"/>
+    <use height="17.3" transform="scale(.9)" width="12" x="2363.5" xlink:href="#d" y="1537.6"/>
+    <use height="17.3" transform="matrix(-.9 0 0 -.9 4265.2 2975.8)" width="12" x="2363.6" xlink:href="#d" y="1644.5"/>
+    <use height="17.3" transform="matrix(-.9 0 0 -.9 3517.2 2245.8)" width="12" x="1948" xlink:href="#d" y="1239"/>
+    <use height="17.3" transform="scale(.9)" width="12" x="1997.9" xlink:href="#d" y="1132.1"/>
+    <use height="17.3" transform="scale(.9)" width="12" x="1947.9" xlink:href="#d" y="1132.1"/>
+    <use height="36.7" transform="matrix(0 -1 1 0 -1488.3 1913.3)" width="14.2" x="205.4" xlink:href="#c" y="1682.4"/>
+    <use height="37" transform="scale(1.044)" width="18.8" x="595.6" xlink:href="#o" y="964"/>
+    <use height="37" transform="scale(1.044)" width="18.8" x="547.7" xlink:href="#n" y="964"/>
+    <use height="37" transform="scale(1.044)" width="18.8" x="497.9" xlink:href="#n" y="964"/>
+    <use height="37" transform="scale(1.044)" width="18.8" x="455.7" xlink:href="#n" y="964"/>
+    <use height="37" transform="scale(1.044)" width="18.8" x="413.6" xlink:href="#n" y="964"/>
+    <use height="37" transform="scale(1.044)" width="18.8" x="371.4" xlink:href="#n" y="964"/>
+    <use height="37" transform="scale(1.044)" width="18.8" x="331.2" xlink:href="#n" y="964"/>
+    <use height="37" transform="scale(1.044)" width="18.8" x="323.5" xlink:href="#n" y="487"/>
+    <use height="37" transform="scale(1.044)" width="18.8" x="422.2" xlink:href="#n" y="487"/>
+    <use height="37" transform="scale(1.044)" width="18.8" x="464.3" xlink:href="#o" y="487"/>
+    <use height="37" transform="scale(1.044)" width="18.8" x="512.2" xlink:href="#n" y="487"/>
+    <use height="37" transform="scale(1.044)" width="18.8" x="374.3" xlink:href="#n" y="487"/>
+    <use height="37" transform="scale(1.044)" width="18.8" x="1903.5" xlink:href="#n" y="455.9"/>
+    <use height="37" transform="scale(1.044)" width="18.8" x="1985.9" xlink:href="#n" y="455.9"/>
+    <use height="37" transform="scale(1.044)" width="18.8" x="1856.6" xlink:href="#n" y="455.9"/>
+    <use height="37" transform="scale(1.044)" width="18.8" x="1942.8" xlink:href="#n" y="455.9"/>
+    <use height="37" transform="scale(1.044)" width="18.8" x="2030.9" xlink:href="#n" y="455.9"/>
+    <use height="37" transform="scale(1.044)" width="18.8" x="2218.6" xlink:href="#o" y="121.1"/>
+    <use height="37" transform="scale(1.044)" width="18.8" x="2135.3" xlink:href="#n" y="121.1"/>
+    <use height="37" transform="scale(1.044)" width="18.8" x="2173.6" xlink:href="#n" y="121.1"/>
+    <use height="37" transform="scale(1.044)" width="18.8" x="2282.8" xlink:href="#n" y="121.1"/>
+    <use height="37" transform="scale(1.044)" width="18.8" x="2095.1" xlink:href="#o" y="121.1"/>
+    <use height="37" transform="scale(1.044)" width="18.8" x="463.9" xlink:href="#n" y="94.8"/>
+    <use height="37" transform="scale(1.044)" width="18.8" x="393" xlink:href="#n" y="94.8"/>
+    <use height="37" transform="scale(1.044)" width="18.8" x="350.8" xlink:href="#n" y="94.8"/>
+    <use height="37" transform="scale(1.044)" width="18.8" x="308.7" xlink:href="#n" y="94.8"/>
+    <use height="37" transform="scale(1.044)" width="18.8" x="268.5" xlink:href="#n" y="94.8"/>
+    <use height="37" transform="scale(1.044)" width="18.8" x="1674.1" xlink:href="#n" y="103.4"/>
+    <use height="37" transform="scale(1.044)" width="18.8" x="1625.3" xlink:href="#o" y="103.4"/>
+    <use height="37" transform="scale(1.044)" width="18.8" x="1582.1" xlink:href="#n" y="103.4"/>
+    <use height="37" transform="scale(1.044)" width="18.8" x="1531.4" xlink:href="#n" y="103.4"/>
+    <use height="37" transform="scale(1.044)" width="18.8" x="1490.2" xlink:href="#o" y="103.4"/>
+    <use height="37" transform="scale(1.044)" width="18.8" x="1110.4" xlink:href="#n" y="914.2"/>
+    <use height="37" transform="scale(1.044)" width="18.8" x="1166" xlink:href="#n" y="914.2"/>
+    <use height="37" transform="scale(1.044)" width="18.8" x="1222.5" xlink:href="#n" y="914.2"/>
+    <use height="37" transform="scale(1.044)" width="18.8" x="1269.4" xlink:href="#n" y="914.2"/>
+    <use height="37" transform="scale(1.044)" width="18.8" x="1316.3" xlink:href="#n" y="914.2" id="g-602" />
+    <use height="37" transform="scale(1.044)" width="18.8" x="1356.6" xlink:href="#n" y="914.2"/>
+    <use height="37" transform="scale(1.044)" width="18.8" x="1394.9" xlink:href="#n" y="914.2"/>
+    <use height="37" transform="scale(1.044)" width="18.8" x="1465.3" xlink:href="#n" y="1323.2"/>
+    <use height="37" transform="scale(1.044)" width="18.8" x="1511.3" xlink:href="#n" y="1323.2"/>
+    <use height="37" transform="scale(1.044)" width="18.8" x="1558.2" xlink:href="#n" y="1323.2" id="x-601" />
+    <use height="37" transform="scale(1.044)" width="18.8" x="1600.3" xlink:href="#n" y="1323.2" id="x-602" />
+    <use height="37" transform="scale(1.044)" width="18.8" x="1642.5" xlink:href="#n" y="1323.2" id="x-603" />
+    <use height="37" transform="scale(1.044)" width="18.8" x="1682.7" xlink:href="#o" y="1323.2"/>
+    <use height="37" transform="scale(1.044)" width="18.8" x="1716.2" xlink:href="#o" y="1323.2"/>
+    <use height="37" transform="scale(1.044)" width="18.8" x="1753.6" xlink:href="#o" y="1323.2"/>
+    <use height="37" transform="scale(1.044)" width="18.8" x="2157.3" xlink:href="#n" y="953.5"/>
+    <use height="37" transform="scale(1.044)" width="18.8" x="2197.6" xlink:href="#n" y="953.5"/>
+    <use height="37" transform="scale(1.044)" width="18.8" x="2254.1" xlink:href="#n" y="953.5"/>
+    <use height="37" transform="scale(1.044)" width="18.8" x="2315.4" xlink:href="#n" y="953.5"/>
+    <use height="37" transform="scale(1.044)" width="18.8" x="2362.3" xlink:href="#o" y="953.5"/>
+    <use height="37" transform="scale(1.044)" width="18.8" x="2426.5" xlink:href="#n" y="953.5" id="d-603" />
+    <use height="37" transform="scale(1.044)" width="18.8" x="2460" xlink:href="#o" y="953.5"/>
+    <use height="37" transform="scale(1.044)" width="18.8" x="2497.4" xlink:href="#o" y="953.5"/>
+    <use height="71.7" transform="scale(.84)" width="34" x="1207.5" xlink:href="#e" y="1264.3"/>
+    <use height="71.7" transform="scale(.84)" width="34" x="3114.6" xlink:href="#e" y="900"/>
+    <use height="71.7" transform="matrix(-.84 0 0 -.84 4295.2 1859.8)" width="34" x="2539.6" xlink:href="#i" y="1071.2"/>
+    <use height="71.7" transform="scale(.84)" width="34" x="675.4" xlink:href="#i" y="1414.3"/>
+    <use height="71.7" transform="scale(.84)" width="34" x="613.5" xlink:href="#i" y="1434.5"/>
+    <use height="71.7" transform="scale(.84)" width="34" x="631.3" xlink:href="#i" y="821.5"/>
+    <use height="71.7" transform="scale(.84)" width="34" x="571.8" xlink:href="#i" y="821.5"/>
+    <use height="71.7" transform="scale(.84)" width="34" x="2302.1" xlink:href="#i" y="782.8"/>
+    <use height="71.7" transform="scale(.84)" width="34" x="1948" xlink:href="#i" y="782.8"/>
+    <use height="71.7" transform="scale(.84)" width="34" x="1477.7" xlink:href="#i" y="780.4"/>
+    <use height="71.7" transform="scale(.84)" width="34" x="1093.2" xlink:href="#i" y="780.4"/>
+    <use height="71.7" transform="scale(.84)" width="34" x="2696.2" xlink:href="#i" y="366.7"/>
+    <use height="71.7" transform="scale(.84)" width="34" x="869.4" xlink:href="#i" y="787.5"/>
+    <use height="71.7" transform="matrix(-.84 0 0 -.84 892.2 551.8)" width="34" x="514" xlink:href="#i" y="292.6"/>
+    <use height="71.7" transform="matrix(-.84 0 0 -.84 1062.2 551.8)" width="34" x="615.2" xlink:href="#i" y="292.6"/>
+    <use height="71.7" transform="matrix(-.84 0 0 -.84 2208.2 415.8)" width="34" x="1297.4" xlink:href="#i" y="211.7"/>
+    <use height="71.7" transform="matrix(-.84 0 0 -.84 2338.2 405.8)" width="34" x="1374.8" xlink:href="#i" y="205.7"/>
+    <use height="71.7" transform="scale(.84)" width="34" x="1898" xlink:href="#e" y="345.9"/>
+    <use height="71.7" transform="scale(.84)" width="34" x="1443.8" xlink:href="#e" y="1363.1"/>
+    <use height="71.7" transform="scale(.84)" width="34" x="1514.1" xlink:href="#e" y="1356"/>
+    <use height="71.7" transform="scale(.84)" width="34" x="1572.4" xlink:href="#e" y="1352.4"/>
+    <use height="71.7" transform="scale(.84)" width="34" x="1874.2" xlink:href="#i" y="1864.3"/>
+    <use height="71.7" transform="scale(.84)" width="34" x="1817" xlink:href="#i" y="1860.7"/>
+    <use height="71.7" transform="scale(.84)" width="34" x="2872.4" xlink:href="#i" y="1402.4"/>
+    <use height="71.7" transform="scale(.84)" width="34" x="2727.1" xlink:href="#i" y="1401.2"/>
+    <use height="71.7" transform="scale(.84)" width="34" x="2796.2" xlink:href="#i" y="1406"/>
+    <use height="71.7" transform="scale(.84)" width="34" x="2521.8" xlink:href="#e" y="1778"/>
+    <use height="71.7" transform="scale(.84)" width="34" x="2076.6" xlink:href="#i" y="1343.5"/>
+    <use height="71.7" transform="scale(.84)" width="34" x="2395.6" xlink:href="#i" y="1338.7"/>
+    <use height="37" width="16.3" x="900.4" xlink:href="#g" y="891.3"/>
+    <use height="37" width="16.3" x="945.4" xlink:href="#g" y="891.3"/>
+    <use height="37" width="16.3" x="2497.4" xlink:href="#g" y="606.3"/>
+    <use height="37" width="16.3" x="2622.4" xlink:href="#g" y="611.3"/>
+    <use height="37" transform="matrix(-1 0 0 -1 4295.2 1952.6)" width="18.2" x="2138.5" xlink:href="#j" y="957.8"/>
+    <use height="37" width="16.3" x="1642.4" xlink:href="#g" y="512.8"/>
+    <use height="37" width="16.3" x="1692.4" xlink:href="#f" y="512.8"/>
+    <use height="37" width="16.3" x="1742.4" xlink:href="#g" y="512.8"/>
+    <use height="37" width="16.3" x="1247.4" xlink:href="#g" y="510.8"/>
+    <use height="37" width="16.3" x="1352.4" xlink:href="#g" y="510.8"/>
+    <use height="37" width="16.3" x="1402.4" xlink:href="#g" y="510.8"/>
+    <use height="37" width="16.3" x="1297.4" xlink:href="#f" y="510.8"/>
+    <use height="37" width="16.3" x="994.4" xlink:href="#f" y="510.8"/>
+    <use height="37" width="16.3" x="1034.4" xlink:href="#g" y="510.8"/>
+    <use height="37" width="16.3" x="924.4" xlink:href="#g" y="510.8"/>
+    <use height="37" width="16.3" x="691.4" xlink:href="#g" y="516.8"/>
+    <use height="37" width="16.3" x="736.4" xlink:href="#g" y="516.8"/>
+    <use height="37" width="16.3" x="955.9" xlink:href="#g" y="157.8"/>
+    <use height="37" width="16.3" x="1010.9" xlink:href="#g" y="157.8"/>
+    <use height="37" width="16.3" x="1045.9" xlink:href="#g" y="157.8"/>
+    <use height="37" width="16.3" x="2019.4" xlink:href="#g" y="1348.8" id="c-601" />
+    <use height="37" width="18.2" x="2123.5" xlink:href="#j" y="1348.8" id="c-801" />
+    <use height="37" width="16.3" x="1650.4" xlink:href="#g" y="983.8"/>
+    <use height="37" width="16.3" x="1701.4" xlink:href="#g" y="983.8"/>
+    <use height="37" width="16.3" x="1750.4" xlink:href="#g" y="983.8"/>
+    <use height="37" width="16.3" x="1795.4" xlink:href="#f" y="983.8"/>
+    <use height="37" width="16.3" x="1916.4" xlink:href="#g" y="1009.8"/>
+    <use height="37" width="16.3" x="1969.4" xlink:href="#g" y="1009.8"/>
+    <use height="37" width="18.2" x="2017.5" xlink:href="#j" y="1009.8"/>
+    <g transform="scale(.7)">
+        <use height="32" width="23" x="1276.2" xlink:href="#h" y="1323.7"/>
+        <use height="32" width="23" x="1340.5" xlink:href="#h" y="1323.7"/>
+        <use height="32" width="23" x="3736.2" xlink:href="#h" y="923.7"/>
+        <use height="32" width="23" x="3557.7" xlink:href="#h" y="916.5"/>
+        <use height="32" width="23" x="486.2" xlink:href="#h" y="1540.8"/>
+        <use height="32" width="23" x="880.5" xlink:href="#h" y="1540.8"/>
+        <use height="32" width="23" x="809.1" xlink:href="#h" y="1540.8"/>
+        <use height="32" width="23" x="734.8" xlink:href="#h" y="1540.8"/>
+        <use height="32" width="23" x="672" xlink:href="#h" y="1540.8"/>
+        <use height="32" width="23" x="609.1" xlink:href="#h" y="1540.8"/>
+        <use height="32" width="23" x="546.2" xlink:href="#h" y="1540.8"/>
+        <use height="32" width="23" x="937.7" xlink:href="#h" y="1487.9"/>
+        <use height="32" width="23" x="399.1" xlink:href="#h" y="776.5"/>
+        <use height="32" width="23" x="474.8" xlink:href="#h" y="829.4"/>
+        <use height="32" width="23" x="622" xlink:href="#h" y="829.4"/>
+        <use height="32" width="23" x="684.8" xlink:href="#h" y="829.4"/>
+        <use height="32" width="23" x="756.2" xlink:href="#h" y="829.4"/>
+        <use height="32" width="23" x="550.5" xlink:href="#h" y="829.4"/>
+        <use height="32" width="23" x="3109.8" xlink:href="#h" y="731.5"/>
+        <use height="32" width="23" x="2831.2" xlink:href="#h" y="782.9"/>
+        <use height="32" width="23" x="2954.1" xlink:href="#h" y="782.9"/>
+        <use height="32" width="23" x="2761.2" xlink:href="#h" y="782.9"/>
+        <use height="32" width="23" x="2889.8" xlink:href="#h" y="782.9"/>
+        <use height="32" width="23" x="3021.2" xlink:href="#h" y="782.9"/>
+        <use height="32" width="23" x="2336.2" xlink:href="#h" y="782.9"/>
+        <use height="32" width="23" x="2407.7" xlink:href="#h" y="782.9"/>
+        <use height="32" width="23" x="2479.1" xlink:href="#h" y="782.9"/>
+        <use height="32" width="23" x="1772" xlink:href="#h" y="780.1"/>
+        <use height="32" width="23" x="1843.4" xlink:href="#h" y="780.1"/>
+        <use height="32" width="23" x="1922" xlink:href="#h" y="780.1"/>
+        <use height="32" width="23" x="1993.4" xlink:href="#h" y="780.1"/>
+        <use height="32" width="23" x="1467.7" xlink:href="#h" y="780.1"/>
+        <use height="32" width="23" x="1410.5" xlink:href="#h" y="780.1"/>
+        <use height="32" width="23" x="1310.5" xlink:href="#h" y="780.1"/>
+        <use height="32" width="23" x="3301.2" xlink:href="#h" y="283.7"/>
+        <use height="32" width="23" x="3177" xlink:href="#h" y="283.7"/>
+        <use height="32" width="23" x="3234.1" xlink:href="#h" y="283.7"/>
+        <use height="32" width="23" x="3471.2" xlink:href="#h" y="230.8"/>
+        <use height="32" width="23" x="3397" xlink:href="#h" y="283.7"/>
+        <use height="32" width="23" x="3117" xlink:href="#h" y="283.7"/>
+        <use height="32" width="23" x="1042" xlink:href="#h" y="788.7"/>
+        <use height="32" width="23" x="684.1" xlink:href="#h" y="244.4"/>
+        <use height="32" width="23" x="578.4" xlink:href="#h" y="244.4"/>
+        <use height="32" width="23" x="515.5" xlink:href="#h" y="244.4"/>
+        <use height="32" width="23" x="452.7" xlink:href="#h" y="244.4"/>
+        <use height="32" width="23" x="392.7" xlink:href="#h" y="244.4"/>
+        <use height="32" width="23" x="802.7" xlink:href="#h" y="191.5"/>
+        <use height="32" width="23" x="1355.5" xlink:href="#h" y="275.8"/>
+        <use height="32" width="23" x="1434.1" xlink:href="#h" y="275.8"/>
+        <use height="32" width="23" x="2489.1" xlink:href="#h" y="257.2"/>
+        <use height="32" width="23" x="2416.2" xlink:href="#h" y="257.2"/>
+        <use height="32" width="23" x="2352" xlink:href="#h" y="257.2"/>
+        <use height="32" width="23" x="2276.2" xlink:href="#h" y="257.2"/>
+        <use height="32" width="23" x="2214.8" xlink:href="#h" y="257.2"/>
+        <use height="32" width="23" x="2137.7" xlink:href="#h" y="204.4"/>
+        <use height="32" width="23" x="2135.5" xlink:href="#h" y="1413.7"/>
+        <use height="32" width="23" x="1648.4" xlink:href="#h" y="1466.5"/>
+        <use height="32" width="23" x="1731.2" xlink:href="#h" y="1466.5"/>
+        <use height="32" width="23" x="1815.5" xlink:href="#h" y="1466.5"/>
+        <use height="32" width="23" x="1885.5" xlink:href="#h" y="1466.5"/>
+        <use height="32" width="23" x="1955.5" xlink:href="#h" y="1466.5"/>
+        <use height="32" width="23" x="2015.5" xlink:href="#h" y="1466.5"/>
+        <use height="32" width="23" x="2072.7" xlink:href="#h" y="1466.5"/>
+        <use height="32" width="23" x="2677.7" xlink:href="#h" y="2023.7"/>
+        <use height="32" width="23" x="2177.7" xlink:href="#h" y="2076.5"/>
+        <use height="32" width="23" x="2246.2" xlink:href="#h" y="2076.5"/>
+        <use height="32" width="23" x="2316.2" xlink:href="#h" y="2076.5"/>
+        <use height="32" width="23" x="2379.1" xlink:href="#h" y="2076.5"/>
+        <use height="32" width="23" x="2442" xlink:href="#h" y="2076.5"/>
+        <use height="32" width="23" x="2502" xlink:href="#h" y="2076.5"/>
+        <use height="32" width="23" x="2552" xlink:href="#h" y="2076.5"/>
+        <use height="32" width="23" x="2607.7" xlink:href="#h" y="2076.5"/>
+        <use height="32" width="23" x="3779.8" xlink:href="#h" y="1472.2"/>
+        <use height="32" width="23" x="3209.8" xlink:href="#h" y="1525.1"/>
+        <use height="32" width="23" x="3269.8" xlink:href="#h" y="1525.1"/>
+        <use height="32" width="23" x="3354.1" xlink:href="#h" y="1525.1"/>
+        <use height="32" width="23" x="3445.5" xlink:href="#h" y="1525.1"/>
+        <use height="32" width="23" x="3515.5" xlink:href="#h" y="1525.1"/>
+        <use height="32" width="23" x="3611.2" xlink:href="#h" y="1525.1"/>
+        <use height="32" width="23" x="3661.2" xlink:href="#h" y="1525.1"/>
+        <use height="32" width="23" x="3717" xlink:href="#h" y="1525.1"/>
+        <use height="32" width="23" x="3024.8" xlink:href="#h" y="1977.2"/>
+        <use height="32" width="23" x="2490.5" xlink:href="#h" y="1455.8"/>
+        <use height="32" width="23" x="2727.7" xlink:href="#h" y="1492.9"/>
+        <use height="32" width="23" x="2803.4" xlink:href="#h" y="1492.9"/>
+        <use height="32" width="23" x="2873.4" xlink:href="#h" y="1492.9"/>
+    </g>
+    <use height="42" transform="scale(.432)" width="37" x="4970.3" xlink:href="#k" y="2299.4"/>
+    <use height="42" transform="scale(.432)" width="37" x="1553.6" xlink:href="#k" y="2411.6"/>
+    <use height="42" transform="scale(.432)" width="37" x="803.6" xlink:href="#k" y="1344.5"/>
+    <use height="42" transform="scale(.432)" width="37" x="926.3" xlink:href="#k" y="1344.5"/>
+    <use height="42" transform="scale(.432)" width="37" x="680.9" xlink:href="#k" y="1258.9"/>
+    <use height="42" transform="scale(.432)" width="37" x="4820.9" xlink:href="#k" y="1269.3"/>
+    <use height="42" transform="scale(.432)" width="37" x="5073.3" xlink:href="#k" y="1186"/>
+    <use height="42" transform="scale(.432)" width="37" x="4929.7" xlink:href="#k" y="1269.3"/>
+    <use height="42" transform="scale(.432)" width="37" x="3935.5" xlink:href="#k" y="1269.3"/>
+    <use height="42" transform="scale(.432)" width="37" x="4051.3" xlink:href="#k" y="1269.3"/>
+    <use height="42" transform="scale(.432)" width="37" x="3021.2" xlink:href="#k" y="1264.7"/>
+    <use height="42" transform="scale(.432)" width="37" x="3264.2" xlink:href="#k" y="1264.7"/>
+    <use height="42" transform="scale(.432)" width="37" x="2412.4" xlink:href="#k" y="1264.7"/>
+    <use height="42" transform="scale(.432)" width="37" x="5658.9" xlink:href="#k" y="374.6"/>
+    <use height="42" transform="scale(.432)" width="37" x="1334.8" xlink:href="#k" y="311"/>
+    <use height="42" transform="scale(.432)" width="37" x="2439" xlink:href="#k" y="447.5"/>
+    <use height="42" transform="scale(.432)" width="37" x="3498" xlink:href="#k" y="331.8"/>
+    <use height="42" transform="scale(.432)" width="37" x="3494.6" xlink:href="#k" y="2291.3"/>
+    <use height="42" transform="scale(.432)" width="37" x="4373" xlink:href="#k" y="3279.7"/>
+    <use height="42" transform="scale(.432)" width="37" x="6158.9" xlink:href="#k" y="2386.2"/>
+    <use height="42" transform="scale(.432)" width="37" x="4692.5" xlink:href="#k" y="3204.5"/>
+    <use height="42" transform="scale(.432)" width="37" x="3956.4" xlink:href="#k" y="2359.6"/>
+    <use height="42" transform="scale(.432)" width="37" x="4174" xlink:href="#k" y="2359.6"/>
+    <use height="42" transform="scale(.432)" width="37" x="3838.3" xlink:href="#k" y="2359.6"/>
+    <use height="42" transform="scale(.432)" width="37" x="4454" xlink:href="#k" y="2419.7"/>
+    <use height="42" transform="scale(.432)" width="37" x="4576.7" xlink:href="#k" y="2419.7"/>
+    <use height="37" transform="scale(.972)" width="16" x="641.8" xlink:href="#m" y="1074.9"/>
+    <use height="37" transform="scale(.972)" width="16" x="590.3" xlink:href="#l" y="1074.9"/>
+    <use height="37" transform="scale(.972)" width="16" x="536.8" xlink:href="#l" y="1074.9"/>
+    <use height="37" transform="scale(.972)" width="16" x="491.6" xlink:href="#l" y="1074.9"/>
+    <use height="37" transform="scale(.972)" width="16" x="446.3" xlink:href="#l" y="1074.9"/>
+    <use height="37" transform="scale(.972)" width="16" x="401" xlink:href="#l" y="1074.9"/>
+    <use height="37" transform="scale(.972)" width="16" x="357.8" xlink:href="#l" y="1074.9"/>
+    <use height="37" transform="scale(.972)" width="16" x="682.9" xlink:href="#l" y="1036.8"/>
+    <use height="37" transform="scale(.972)" width="16" x="349.6" xlink:href="#l" y="562.5"/>
+    <use height="37" transform="scale(.972)" width="16" x="455.6" xlink:href="#l" y="562.5"/>
+    <use height="37" transform="scale(.972)" width="16" x="500.8" xlink:href="#l" y="562.5"/>
+    <use height="37" transform="scale(.972)" width="16" x="552.3" xlink:href="#l" y="562.5"/>
+    <use height="37" transform="scale(.972)" width="16" x="404.1" xlink:href="#l" y="562.5"/>
+    <use height="37" transform="scale(.972)" width="16" x="295.1" xlink:href="#l" y="524.5"/>
+    <use height="37" transform="scale(.972)" width="16" x="2046.6" xlink:href="#l" y="529.1"/>
+    <use height="37" transform="scale(.972)" width="16" x="2135.1" xlink:href="#l" y="529.1"/>
+    <use height="37" transform="scale(.972)" width="16" x="1996.2" xlink:href="#l" y="529.1"/>
+    <use height="37" transform="scale(.972)" width="16" x="2088.8" xlink:href="#l" y="529.1"/>
+    <use height="37" transform="scale(.972)" width="16" x="2247.2" xlink:href="#l" y="492.1"/>
+    <use height="37" transform="scale(.972)" width="16" x="2183.4" xlink:href="#l" y="529.1"/>
+    <use height="37" transform="scale(.972)" width="16" x="2385.1" xlink:href="#m" y="169.5"/>
+    <use height="37" transform="scale(.972)" width="16" x="2295.6" xlink:href="#l" y="169.5"/>
+    <use height="37" transform="scale(.972)" width="16" x="2336.7" xlink:href="#l" y="169.5"/>
+    <use height="37" transform="scale(.972)" width="16" x="2454" xlink:href="#l" y="169.5"/>
+    <use height="37" transform="scale(.972)" width="16" x="2507.5" xlink:href="#l" y="131.5"/>
+    <use height="37" transform="scale(.972)" width="16" x="2252.4" xlink:href="#m" y="169.5"/>
+    <use height="37" transform="scale(.972)" width="16" x="585.7" xlink:href="#l" y="103.2"/>
+    <use height="37" transform="scale(.972)" width="16" x="500.3" xlink:href="#l" y="141.2"/>
+    <use height="37" transform="scale(.972)" width="16" x="424.2" xlink:href="#l" y="141.2"/>
+    <use height="37" transform="scale(.972)" width="16" x="378.9" xlink:href="#l" y="141.2"/>
+    <use height="37" transform="scale(.972)" width="16" x="333.6" xlink:href="#l" y="141.2"/>
+    <use height="37" transform="scale(.972)" width="16" x="290.4" xlink:href="#l" y="141.2"/>
+    <use height="37" transform="scale(.972)" width="16" x="1547.1" xlink:href="#l" y="112.4"/>
+    <use height="37" transform="scale(.972)" width="16" x="1800.2" xlink:href="#l" y="150.5"/>
+    <use height="37" transform="scale(.972)" width="16" x="1747.7" xlink:href="#m" y="150.5"/>
+    <use height="37" transform="scale(.972)" width="16" x="1701.4" xlink:href="#l" y="150.5"/>
+    <use height="37" transform="scale(.972)" width="16" x="1646.9" xlink:href="#l" y="150.5"/>
+    <use height="37" transform="scale(.972)" width="16" x="1602.7" xlink:href="#m" y="150.5"/>
+    <use height="37" transform="scale(.972)" width="16" x="1545.6" xlink:href="#l" y="983.3"/>
+    <use height="37" transform="scale(.972)" width="16" x="1194.8" xlink:href="#l" y="1021.4"/>
+    <use height="37" transform="scale(.972)" width="16" x="1254.4" xlink:href="#l" y="1021.4"/>
+    <use height="37" transform="scale(.972)" width="16" x="1315.1" xlink:href="#l" y="1021.4"/>
+    <use height="37" transform="scale(.972)" width="16" x="1365.5" xlink:href="#l" y="1021.4"/>
+    <use height="37" transform="scale(.972)" width="16" x="1416" xlink:href="#l" y="1021.4" id="g-6024" />
+    <use height="37" transform="scale(.972)" width="16" x="1459.2" xlink:href="#l" y="1021.4"/>
+    <use height="37" transform="scale(.972)" width="16" x="1500.3" xlink:href="#l" y="1021.4"/>
+    <use height="37" transform="scale(.972)" width="16" x="1936" xlink:href="#l" y="1422.6"/>
+    <use height="37" transform="scale(.972)" width="16" x="1575.9" xlink:href="#l" y="1460.7"/>
+    <use height="37" transform="scale(.972)" width="16" x="1625.3" xlink:href="#l" y="1460.7"/>
+    <use height="37" transform="scale(.972)" width="16" x="1675.7" xlink:href="#l" y="1460.7" id="x-6014" />
+    <use height="37" transform="scale(.972)" width="16" x="1721" xlink:href="#l" y="1460.7" id="x-6024" />
+    <use height="37" transform="scale(.972)" width="16" x="1766.3" xlink:href="#l" y="1460.7" id="x-6034" />
+    <use height="37" transform="scale(.972)" width="16" x="1809.5" xlink:href="#m" y="1460.7"/>
+    <use height="37" transform="scale(.972)" width="16" x="1845.5" xlink:href="#m" y="1460.7"/>
+    <use height="37" transform="scale(.972)" width="16" x="1885.6" xlink:href="#m" y="1460.7"/>
+    <use height="37" transform="scale(.972)" width="16" x="2729.7" xlink:href="#l" y="1025.5"/>
+    <use height="37" transform="scale(.972)" width="16" x="2319.2" xlink:href="#l" y="1063.6"/>
+    <use height="37" transform="scale(.972)" width="16" x="2362.5" xlink:href="#l" y="1063.6"/>
+    <use height="37" transform="scale(.972)" width="16" x="2423.2" xlink:href="#l" y="1063.6"/>
+    <use height="37" transform="scale(.972)" width="16" x="2489" xlink:href="#l" y="1063.6"/>
+    <use height="37" transform="scale(.972)" width="16" x="2539.4" xlink:href="#m" y="1063.6"/>
+    <use height="37" transform="scale(.972)" width="16" x="2608.3" xlink:href="#l" y="1063.6" id="d-6034" />
+    <use height="37" transform="scale(.972)" width="16" x="2644.3" xlink:href="#m" y="1063.6"/>
+    <use height="37" transform="scale(.972)" width="16" x="2684.5" xlink:href="#m" y="1063.6"/>
+    <use height="27" transform="scale(.92)" width="19" x="720.5" xlink:href="#p" y="1174.3"/>
+    <use height="27" transform="scale(.92)" width="19" x="769.4" xlink:href="#p" y="1199.3"/>
+    <use height="27" transform="scale(.92)" width="19" x="797.7" xlink:href="#p" y="1123.2"/>
+    <use height="27" transform="scale(.92)" width="19" x="831.3" xlink:href="#p" y="1199.3"/>
+    <use height="27" transform="scale(.92)" width="19" x="860.7" xlink:href="#p" y="1123.2"/>
+    <use height="27" transform="scale(.92)" width="19" x="2648.2" xlink:href="#p" y="175.4"/>
+    <use height="27" transform="scale(.92)" width="19" x="2691.7" xlink:href="#p" y="197.1"/>
+    <use height="27" transform="scale(.92)" width="19" x="2717.8" xlink:href="#p" y="199.3"/>
+    <use height="27" transform="scale(.92)" width="19" x="617.8" xlink:href="#p" y="189"/>
+    <use height="27" transform="scale(.92)" width="19" x="689.5" xlink:href="#p" y="214"/>
+    <use height="27" transform="scale(.92)" width="19" x="662.3" xlink:href="#p" y="139"/>
+    <use height="27" transform="scale(.92)" width="19" x="1633.5" xlink:href="#p" y="197.7"/>
+    <use height="27" transform="scale(.92)" width="19" x="1562.9" xlink:href="#p" y="222.7"/>
+    <use height="27" transform="scale(.92)" width="19" x="1562.9" xlink:href="#p" y="146.6"/>
+    <use height="27" transform="scale(.92)" width="19" x="1709.1" xlink:href="#p" y="1066.7"/>
+    <use height="27" transform="scale(.92)" width="19" x="1681.9" xlink:href="#p" y="1142.8"/>
+    <use height="27" transform="scale(.92)" width="19" x="1631.9" xlink:href="#p" y="1118.9"/>
+    <use height="27" transform="scale(.92)" width="19" x="2105.3" xlink:href="#p" y="1533"/>
+    <use height="27" transform="scale(.92)" width="19" x="2077" xlink:href="#p" y="1608"/>
+    <use height="27" transform="scale(.92)" width="19" x="2044.4" xlink:href="#p" y="1581.9"/>
+    <use height="27" transform="scale(.92)" width="19" x="2943.8" xlink:href="#p" y="1167.8"/>
+    <use height="27" transform="scale(.92)" width="19" x="2910.2" xlink:href="#p" y="1172.1"/>
+    <use height="27" transform="scale(.92)" width="19" x="2883" xlink:href="#p" y="1162.3"/>
+    <use height="22" transform="scale(.902)" width="20" x="733.6" xlink:href="#q" y="1224.2"/>
+    <use height="25.1" transform="matrix(-.902 0 0 -.902 1434.2 2187)" width="12" x="789.4" xlink:href="#r" y="1200.3"/>
+    <use height="25.1" transform="matrix(-.902 0 0 -.902 1486.2 2049)" width="12" x="818.3" xlink:href="#r" y="1123.8"/>
+    <use height="25.1" transform="matrix(-.902 0 0 -.902 1548.2 2187)" width="12" x="852.6" xlink:href="#r" y="1200.3"/>
+    <use height="25.1" transform="matrix(-.902 0 0 -.902 1602.2 2047)" width="12" x="882.6" xlink:href="#r" y="1122.7"/>
+    <use height="25.1" transform="matrix(-.902 0 0 -.902 504.2 1081)" width="12" x="273.7" xlink:href="#r" y="587"/>
+    <use height="25.1" transform="matrix(-.902 0 0 -.902 474.2 1081)" width="12" x="257" xlink:href="#r" y="587"/>
+    <use height="25.1" transform="scale(.902)" width="12" x="296.8" xlink:href="#r" y="609.7"/>
+    <use height="25.1" transform="matrix(-.902 0 0 -.902 4511.2 1014)" width="12" x="2495.8" xlink:href="#r" y="549.8"/>
+    <use height="25.1" transform="matrix(-.902 0 0 -.902 4471.2 1014)" width="12" x="2473.6" xlink:href="#r" y="549.8"/>
+    <use height="25.1" transform="scale(.902)" width="12" x="2400.3" xlink:href="#r" y="572.5"/>
+    <use height="25.1" transform="matrix(-.902 0 0 -.902 4971.2 345)" width="12" x="2750.9" xlink:href="#r" y="178.8"/>
+    <use height="25.1" transform="matrix(-.902 0 0 -.902 5019.2 347)" width="12" x="2777.5" xlink:href="#r" y="179.9"/>
+    <use height="22" transform="scale(.902)" width="20" x="2700.7" xlink:href="#q" y="204.9"/>
+    <use height="22" transform="scale(.902)" width="20" x="628.8" xlink:href="#q" y="217.7"/>
+    <use height="25.1" transform="matrix(-.902 0 0 -.902 1287.2 374)" width="12" x="707.9" xlink:href="#r" y="194.9"/>
+    <use height="25.1" transform="matrix(-.902 0 0 -.902 1237.2 236)" width="12" x="680.2" xlink:href="#r" y="118.4"/>
+    <use height="22" transform="scale(.902)" width="20" x="1665.3" xlink:href="#q" y="227.6"/>
+    <use height="25.1" transform="matrix(-.902 0 0 -.902 2894.2 390)" width="12" x="1599.1" xlink:href="#r" y="203.8"/>
+    <use height="25.1" transform="matrix(-.902 0 0 -.902 2894.2 250)" width="12" x="1599.1" xlink:href="#r" y="126.1"/>
+    <use height="25.1" transform="matrix(-.902 0 0 -.902 3163.2 1945)" width="12" x="1748.3" xlink:href="#r" y="1066.1"/>
+    <use height="25.1" transform="matrix(-.902 0 0 -.902 3113.2 2083)" width="12" x="1720.5" xlink:href="#r" y="1142.7"/>
+    <use height="22" transform="scale(.902)" width="20" x="1663.6" xlink:href="#q" y="1166.5"/>
+    <use height="25.1" transform="matrix(-.902 0 0 -.902 3892.2 2801)" width="12" x="2152.5" xlink:href="#r" y="1540.8"/>
+    <use height="25.1" transform="matrix(-.902 0 0 -.902 3840.2 2939)" width="12" x="2123.7" xlink:href="#r" y="1617.4"/>
+    <use height="22" transform="scale(.902)" width="20" x="2084.5" xlink:href="#q" y="1640.1"/>
+    <use height="25.1" transform="matrix(-.902 0 0 -.902 5435.2 2129)" width="12" x="3008.2" xlink:href="#r" y="1168.2"/>
+    <use height="25.1" transform="matrix(-.902 0 0 -.902 5373.2 2137)" width="12" x="2973.9" xlink:href="#r" y="1172.6"/>
+    <use height="22" transform="scale(.902)" width="20" x="2940.2" xlink:href="#q" y="1212"/>
+    <use height="21.9" transform="scale(1.2)" width="22" x="1447.8" xlink:href="#s" y="446.2"/>
+    <use height="21.9" transform="scale(1.2)" width="22" x="1122.8" xlink:href="#s" y="444.5"/>
+    <use height="21.9" transform="scale(1.2)" width="22" x="1164.5" xlink:href="#s" y="444.5"/>
+    <use height="21.9" transform="scale(1.2)" width="22" x="857.8" xlink:href="#s" y="444.5"/>
+    <use height="21.9" transform="scale(1.2)" width="22" x="572" xlink:href="#s" y="449.5"/>
+    <use height="21.9" transform="scale(1.2)" width="22" x="867.4" xlink:href="#s" y="150.3"/>
+    <use height="21.9" transform="scale(1.2)" width="22" x="1371.2" xlink:href="#s" y="838.7"/>
+    <use height="21.9" transform="scale(1.2)" width="22" x="1413.7" xlink:href="#s" y="838.7"/>
+    <use height="21.9" transform="scale(1.2)" width="22" x="1592.8" xlink:href="#s" y="860.3"/>
+    <use height="21.9" transform="scale(1.2)" width="22" x="1637" xlink:href="#s" y="860.3"/>
+    <g fill="none">
+        <path d="m988.6 892.3v35" stroke="#000"/>
+        <path d="m1028.6 953.3v-61" stroke="#000"/>
+        <path d="m2535.6 607.3v75h35v-70" stroke="#000"/>
+        <path d="m485.6 1145.3v-66" stroke="#000"/>
+        <path d="m671.6 1042.3v39" stroke="#000"/>
+        <path d="m716.6 1127.3v18" stroke="#000"/>
+        <path d="m716.6 1145.3h-231" stroke="#000"/>
+        <path d="m742.6 1057.3v93" stroke="#000"/>
+        <path d="m742.6 1150.3h-301" stroke="#000"/>
+        <path d="m441.6 1150.3v-71" stroke="#000"/>
+        <path d="m773.6 1127.3v30" stroke="#000"/>
+        <path d="m773.6 1157.3h-376" stroke="#000"/>
+        <path d="m397.6 1157.3v-78" stroke="#000"/>
+        <path d="m800.6 1057.3v108" stroke="#000"/>
+        <path d="m800.6 1165.3-445 1" stroke="#000"/>
+        <path d="m355.6 1166.3v-87" stroke="#000"/>
+        <path d="m347.6 626.3h-96" stroke="#000"/>
+        <path d="m347.6 581.3v45" stroke="#000"/>
+        <path d="m251.6 626.3v-75" stroke="#000"/>
+        <path d="m400.6 581.3v55" stroke="#000"/>
+        <path d="m400.6 636.3h-164" stroke="#000"/>
+        <path d="m236.6 636.3v-85" stroke="#000"/>
+        <path d="m294.6 544.3h-21" stroke="#000"/>
+        <path d="m273.6 544.3v6" stroke="#000"/>
+        <path d="m2130.1 548.8v41" stroke="#000"/>
+        <path d="m2130.1 589.8h105" stroke="#000"/>
+        <path d="m2235.1 589.8v-72" stroke="#000"/>
+        <path d="m2083.1 548.8v51" stroke="#000"/>
+        <path d="m2083.1 599.8h172" stroke="#000"/>
+        <path d="m2255.1 599.8v-82" stroke="#000"/>
+        <path d="m2192.1 512.8h-22" stroke="#000"/>
+        <path d="m2170.1 512.8v5" stroke="#000"/>
+        <path d="m2326.1 249.3v-50" stroke="#000"/>
+        <path d="m2486.1 205.3-1 43" stroke="#000"/>
+        <path d="m2485.1 249.3h-159" stroke="#000"/>
+        <path d="m2509.1 207.3v53" stroke="#000"/>
+        <path d="m2509.1 260.3h-270" stroke="#000"/>
+        <path d="m2239.1 260.3v-61" stroke="#000"/>
+        <path d="m494.1 234.8v-63" stroke="#000"/>
+        <path d="m643.1 220.8v18" stroke="#000"/>
+        <path d="m618.1 233.8-124 1" stroke="#000"/>
+        <path d="m618.1 151.8v82" stroke="#000"/>
+        <path d="m577.1 135.8v38" stroke="#000"/>
+        <path d="m643.1 238.8h-310" stroke="#000"/>
+        <path d="m333.1 238.8-1-67" stroke="#000"/>
+        <path d="m964.1 158.8h5" stroke="#000" stroke-width="3"/>
+        <path d="m1750.6 250.8 7.1-.1-.1-69.9" stroke="#000"/>
+        <path d="m1446.6 250.8h304" stroke="#000"/>
+        <path d="m1446.6 228.8v22" stroke="#000"/>
+        <path d="m1706.6 242.8v-62" stroke="#000"/>
+        <path d="m1473.6 242.8h233" stroke="#000"/>
+        <path d="m1473.6 170.8v72" stroke="#000"/>
+        <path d="m1446.6 170.8h27" stroke="#000"/>
+        <path d="m1446.6 158.8v12" stroke="#000"/>
+        <path d="m1511.6 143.8v39" stroke="#000"/>
+        <path d="m1384.1 1099.3v-72" stroke="#000"/>
+        <path d="m1581.1 1098.3-197 1" stroke="#000"/>
+        <path d="m1581.1 1005.3v93" stroke="#000"/>
+        <path d="m1426.1 1093.3v-66" stroke="#000"/>
+        <path d="m1556.1 1093.3h-130" stroke="#000"/>
+        <path d="m1556.1 1075.3v18" stroke="#000"/>
+        <path d="m1510.1 991.3v38" stroke="#000"/>
+        <path d="m1889.6 1417.3v39" stroke="#000"/>
+        <path d="m1919.6 1503.3v29" stroke="#000"/>
+        <path d="m1919.6 1532.3h-239" stroke="#000"/>
+        <path d="m1680.6 1532.3v-78" stroke="#000"/>
+        <path d="m1945.6 1434.3v107" stroke="#000"/>
+        <path d="m1945.6 1541.3h-309" stroke="#000"/>
+        <path d="m1636.6 1541.3v-87" stroke="#000"/>
+        <path d="m2661.1 1031.3v39" stroke="#000"/>
+        <path d="m2686.1 1102.3v45" stroke="#000"/>
+        <path d="m2686.1 1147.3h-211" stroke="#000"/>
+        <path d="m2475.1 1147.3 1-79" stroke="#000"/>
+        <path d="m2717.1 1098.3v56" stroke="#000"/>
+        <path d="m2717.1 1154.3h-455" stroke="#000"/>
+        <path d="m2262.1 1154.3v-86" stroke="#000"/>
+        <path d="m2067.6 1349.8v45" stroke="#000"/>
+        <path d="m2067.6 1394.8h25" stroke="#000"/>
+        <path d="m2092.6 1394.8v-45" stroke="#000"/>
+    </g>
+    <text x="447.6" y="1109.3"/>
+    <text x="361.6" y="1109.3"/>
+    <text x="403.6" y="1109.3"/>
+    <text x="491.6" y="1109.3"/>
+    <text font-family="KaiTi" font-size="14" x="202.6" y="1015.8">8段</text>
+    <text font-family="KaiTi" font-size="14" x="202.6" y="1030.2">YJV22</text>
+    <text font-family="KaiTi" font-size="14" x="202.6" y="1044.6">218m</text>
+    <text font-family="KaiTi" font-size="14" x="202.6" y="1059">300mm²</text>
+    <text x="338.1" y="201.8"/>
+    <text x="500.1" y="177.8"/>
+    <text x="426.1" y="177.8"/>
+    <text font-family="KaiTi" font-size="14" x="1711.6" y="385.8">YJV22</text>
+    <text font-family="KaiTi" font-size="14" x="1711.6" y="400.2">335m</text>
+    <text font-family="KaiTi" font-size="14" x="1711.6" y="414.6">300mm²</text>
+    <text x="1712.6" y="210.8"/>
+    <text font-family="KaiTi" font-size="14" x="425.6" y="387.8">YJV22</text>
+    <text font-family="KaiTi" font-size="14" x="425.6" y="402.2">150m</text>
+    <text font-family="KaiTi" font-size="14" x="425.6" y="416.6">240mm²</text>
+    <text x="1048.1" y="207.8"/>
+    <text x="968.1" y="199.8"/>
+    <text x="1175.1" y="245.8"/>
+    <text font-family="KaiTi" font-size="14" x="1099.6" y="342.3">YJV22</text>
+    <text font-family="KaiTi" font-size="14" x="1099.6" y="356.7">15m</text>
+    <text font-family="KaiTi" font-size="14" x="1099.6" y="371.1">50mm²</text>
+    <text font-family="KaiTi" font-size="14" x="490.6" y="1318.5">5段</text>
+    <text font-family="KaiTi" font-size="14" x="490.6" y="1332.9">YJV22</text>
+    <text font-family="KaiTi" font-size="14" x="490.6" y="1347.4">580m</text>
+    <text font-family="KaiTi" font-size="14" x="490.6" y="1361.8">300mm²</text>
+    <text x="1432.1" y="1057.3"/>
+    <text x="1175.1" y="1057.3"/>
+    <text x="1390.1" y="1057.3"/>
+    <text font-family="KaiTi" font-size="14" x="913.6" y="1190.7">YJV22</text>
+    <text font-family="KaiTi" font-size="14" x="913.6" y="1205.1">47m</text>
+    <text font-family="KaiTi" font-size="14" x="913.6" y="1219.5">300mm²</text>
+    <text x="914.6" y="957.3"/>
+    <text font-family="KaiTi" font-size="14" x="1389.6" y="1398.3">6段</text>
+    <text font-family="KaiTi" font-size="14" x="1389.6" y="1412.7">YJV22</text>
+    <text font-family="KaiTi" font-size="14" x="1389.6" y="1427.1">168m</text>
+    <text font-family="KaiTi" font-size="14" x="1389.6" y="1441.5">300mm²</text>
+    <text x="1642.6" y="1484.3"/>
+    <text x="1686.6" y="1484.3"/>
+    <text font-family="KaiTi" font-size="14" x="2270.6" y="1379.3">7段</text>
+    <text font-family="KaiTi" font-size="14" x="2270.6" y="1393.7">YJV22</text>
+    <text font-family="KaiTi" font-size="14" x="2270.6" y="1408.1">215m</text>
+    <text font-family="KaiTi" font-size="14" x="2270.6" y="1422.5">240mm²</text>
+    <text x="2268.1" y="1098.3"/>
+    <text x="2549.1" y="1098.3"/>
+    <text font-family="KaiTi" font-size="14" x="2548.6" y="1325.5">YJV22</text>
+    <text font-family="KaiTi" font-size="14" x="2548.6" y="1339.9">45m</text>
+    <text font-family="KaiTi" font-size="14" x="2548.6" y="1354.4">70mm²</text>
+    <text x="2511.6" y="648.3"/>
+    <text font-family="KaiTi" font-size="14" x="290.6" y="906.5">2段</text>
+    <text font-family="KaiTi" font-size="14" x="290.6" y="920.9">YJV22</text>
+    <text font-family="KaiTi" font-size="14" x="290.6" y="935.4">71m</text>
+    <text font-family="KaiTi" font-size="14" x="290.6" y="949.8">240mm²</text>
+    <text x="406.6" y="611.3"/>
+    <text x="353.6" y="611.3"/>
+    <text x="456.6" y="611.3"/>
+    <text font-family="KaiTi" font-size="14" x="710.6" y="776.9">YJV22</text>
+    <text font-family="KaiTi" font-size="14" x="710.6" y="791.3">100m</text>
+    <text font-family="KaiTi" font-size="14" x="710.6" y="805.8">120mm²</text>
+    <text x="706.1" y="582.8"/>
+    <text font-family="KaiTi" font-size="14" x="2093.6" y="780.8">3段</text>
+    <text font-family="KaiTi" font-size="14" x="2093.6" y="795.2">YJV22</text>
+    <text font-family="KaiTi" font-size="14" x="2093.6" y="809.6">169m</text>
+    <text font-family="KaiTi" font-size="14" x="2093.6" y="824">240mm²</text>
+    <text x="2087.1" y="554.8"/>
+    <text x="2134.1" y="554.8"/>
+    <text x="1754.6" y="554.8"/>
+    <text x="1414.6" y="552.8"/>
+    <text x="1366.6" y="576.8"/>
+    <text font-family="KaiTi" font-size="14" x="1137.4" y="740.1">YJV22</text>
+    <text font-family="KaiTi" font-size="14" x="1137.4" y="754.5">107m</text>
+    <text font-family="KaiTi" font-size="14" x="1137.4" y="769">240mm²</text>
+    <text x="1046.6" y="552.8"/>
+    <text font-family="KaiTi" font-size="14" x="2339.6" y="483.8">4段</text>
+    <text font-family="KaiTi" font-size="14" x="2339.6" y="498.2">YJV22</text>
+    <text font-family="KaiTi" font-size="14" x="2339.6" y="512.6">278m</text>
+    <text font-family="KaiTi" font-size="14" x="2339.6" y="527">300mm²</text>
+    <text x="2332.1" y="229.3"/>
+    <text font-family="KaiTi" font-size="16" x="2366.2" y="1598.8">运行变压器数量：25台 15600kVA</text>
+    <text font-family="KaiTi" font-size="16" x="2366.2" y="1618.8">公变数量：19台 11820kVA</text>
+    <text font-family="KaiTi" font-size="16" x="2366.2" y="1638.8">专变数量：6台 3780kVA</text>
+    <text font-family="KaiTi" font-size="16" x="2366.2" y="1658.8">线路总长度：5.353km</text>
+    <text font-family="KaiTi" font-size="16" x="2366.2" y="1678.8">电缆长度： 5.353km</text>
+    <text font-family="KaiTi" font-size="16" x="2366.2" y="1698.8">导线长度： 0.000km</text>
+    <text font-family="KaiTi" font-size="16" x="2366.2" y="1718.8">混凝土杆：0基 铁塔：0基 钢管杆：0基</text>
+    <text font-family="KaiTi" font-size="16" x="2366.2" y="1738.8">开关房：0座 户外开关箱：0台 电缆分接箱：0台</text>
+    <text font-family="KaiTi" font-size="16" x="2366.2" y="1758.8">配电房：19座 箱变：2台 台变：0台</text>
+    <text font-family="KaiTi" font-size="16" x="2366.2" y="1778.8">柱上开关：0台 高压柜：102面</text>
+    <text x="314.8" y="260.9"/>
+    <text font-family="KaiTi" font-size="14" text-anchor="middle" x="218.2" y="1694.8">706</text>
+    <text font-family="KaiTi" font-size="16" text-anchor="middle" x="241.1" y="1679.8">莲塘天明线706(706)</text>
+    <text font-family="KaiTi" font-size="14" x="446.6" y="1419.9">1段</text>
+    <text font-family="KaiTi" font-size="14" x="446.6" y="1434.3">YJV22</text>
+    <text font-family="KaiTi" font-size="14" x="446.6" y="1448.7">1200m</text>
+    <text font-family="KaiTi" font-size="14" x="446.6" y="1463.1">300mm²</text>
+    <text x="2003.1" y="578.8"/>
+    <text x="2044.1" y="578.8"/>
+    <text font-family="KaiTi" font-size="14" x="1822.6" y="774.3">YJV22</text>
+    <text font-family="KaiTi" font-size="14" x="1822.6" y="788.7">88m</text>
+    <text font-family="KaiTi" font-size="14" x="1822.6" y="803.1">240mm²</text>
+    <text font-family="KaiTi" font-size="14" x="2043.6" y="773.3">YJV22</text>
+    <text font-family="KaiTi" font-size="14" x="2043.6" y="787.7">331m</text>
+    <text font-family="KaiTi" font-size="14" x="2043.6" y="802.1">240mm²</text>
+    <text fill="#f00" font-family="SimSun" font-size="14" x="2229" y="111.3">★</text>
+    <text fill="#f00" font-family="SimSun" font-size="14" x="1471" y="90">★</text>
+    <text font-family="KaiTi" font-size="12" x="1033.6" y="1008.1">YJV22</text>
+    <text font-family="KaiTi" font-size="12" x="1033.6" y="1020.4">8m</text>
+    <text font-family="KaiTi" font-size="12" x="958.6" y="979.8">YJV22</text>
+    <text font-family="KaiTi" font-size="12" x="958.6" y="992.1">8m</text>
+    <text x="959.6" y="933.3"/>
+    <text x="1022.6" y="1061.3"/>
+    <text x="1034.6" y="959.3"/>
+    <text x="994.6" y="933.3"/>
+    <text font-family="KaiTi" font-size="12" text-anchor="middle" x="1028.6" y="1135.6">SG10-630/10</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="middle" x="1028.6" y="1147.9">0320002002064560</text>
+    <text font-family="KaiTi" font-size="12" x="914.7" y="915.8">G1</text>
+    <text x="914.7" y="927.8"/>
+    <text font-family="KaiTi" font-size="12" x="959.7" y="915.8">G2</text>
+    <text x="959.7" y="903.8"/>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="894.3" y="943.8">G140</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="939.3" y="943.8">G240</text>
+    <text font-family="KaiTi" font-size="18" text-anchor="middle" x="971.6" y="875.8">大信置业新电房</text>
+    <text font-family="SimSun" font-size="14" x="1183.7" y="399">9段</text>
+    <text fill="#00f" font-family="SimSun" font-size="10" x="1703.2" y="142.6">开环点）</text>
+    <text fill="#00f" font-family="SimSun" font-size="10" x="2330.8" y="160.7">开环点）</text>
+    <text fill="#00f" font-family="SimSun" font-size="9" x="2483.7" y="1030.4">开环点）</text>
+    <text font-family="KaiTi" font-size="12" x="2635.6" y="702.1">YJV22</text>
+    <text font-family="KaiTi" font-size="12" x="2635.6" y="714.4">10m</text>
+    <text x="2636.6" y="653.3"/>
+    <text x="2636.6" y="755.3"/>
+    <text font-family="KaiTi" font-size="12" text-anchor="middle" x="2630.6" y="829.6">SGB10-630/10</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="middle" x="2630.6" y="841.9">0320002002188311</text>
+    <text font-family="KaiTi" font-size="12" x="2511.7" y="630.8">601</text>
+    <text x="2511.7" y="642.8"/>
+    <text font-family="KaiTi" font-size="12" x="2636.7" y="635.8">801</text>
+    <text x="2636.7" y="623.8"/>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="2616.2" y="663.8">80140</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="2491.2" y="658.8">60140</text>
+    <text font-family="KaiTi" font-size="18" text-anchor="middle" x="2555.6" y="591.8">大信D段专用电房</text>
+    <text x="1472.1" y="1039.3"/>
+    <text font-family="KaiTi" font-size="14" x="1471.6" y="1268">YJV22-3*150</text>
+    <text font-family="KaiTi" font-size="14" x="1471.6" y="1282.4">475m</text>
+    <text font-family="KaiTi" font-size="14" x="1471.6" y="1296.9">150mm²</text>
+    <text x="1652.6" y="1025.8"/>
+    <text x="1703.6" y="1025.8"/>
+    <text font-family="KaiTi" font-size="14" x="1714.6" y="1241.3">YJV22</text>
+    <text font-family="KaiTi" font-size="14" x="1714.6" y="1255.7">155m</text>
+    <text font-family="KaiTi" font-size="14" x="1714.6" y="1270.1">50mm²</text>
+    <text x="1928.6" y="1051.8"/>
+    <text font-family="KaiTi" font-size="12" transform="matrix(0 1 -1 0 3069.6 -1268.4)" x="2169" y="900.6">ZGS13-Z-630/10</text>
+    <text font-family="KaiTi" font-size="12" x="2154.7" y="982.3">801</text>
+    <text x="2140.6" y="982.3"/>
+    <text font-family="KaiTi" font-size="18" text-anchor="middle" x="2158.7" y="885.2">基边乡1号公用箱变</text>
+    <text fill="#f00" font-family="SimSun" font-size="33" x="1177.3" y="1781.1">正常方式开环点：</text>
+    <text fill="#f00" font-family="SimSun" font-size="33" x="1177.3" y="1836.4">1、大信置业D专用配电站10kV天明线602开关；</text>
+    <text fill="#f00" font-family="SimSun" font-size="33" x="1177.3" y="1891.6">2、宝怡阁公用配电站10kV孙文线602开关；</text>
+    <text fill="#f00" font-family="SimSun" font-size="33" x="1177.3" y="1946.9">3、天明花园B区第六幢公用配电站10kV岐头线603开关。</text>
+    <text font-family="KaiTi" font-size="12" x="530.9" y="1124.7">YJV22</text>
+    <text font-family="KaiTi" font-size="12" x="530.9" y="1137.1">12m</text>
+    <text font-family="KaiTi" font-size="12" x="585" y="1124.7">YJV22</text>
+    <text font-family="KaiTi" font-size="12" x="585" y="1137.1">12m</text>
+    <text x="535.6" y="1093.3"/>
+    <text x="587.6" y="1093.3"/>
+    <text x="585.6" y="1195.3"/>
+    <text x="523.6" y="1204.3"/>
+    <text font-family="KaiTi" font-size="12" text-anchor="middle" x="581.6" y="1261.6">#1(停运)</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="middle" x="581.6" y="1273.9">S11-M-630/10</text>
+    <text font-family="KaiTi" font-size="12" x="493.2" y="1265.9">#2</text>
+    <text font-family="KaiTi" font-size="12" x="493.2" y="1278.2">S11-630</text>
+    <text font-family="KaiTi" font-size="12" x="493.2" y="1290.6">2002026623</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="353.7" y="1113">60140</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="637.2" y="1113.9">60540</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="579.7" y="1114.5">80140</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="528.3" y="1113">80240</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="482.7" y="1113.5">60440</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="438.2" y="1114.5">60340</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="395.2" y="1113">60240</text>
+    <text font-family="KaiTi" font-size="8" text-anchor="end" x="669.8" y="1076.5">61PT40</text>
+    <text font-family="KaiTi" font-size="12" x="630.9" y="1067.7">6054</text>
+    <text font-family="KaiTi" font-size="12" x="586.1" y="1068.8">8014</text>
+    <text font-family="KaiTi" font-size="12" x="534.1" y="1068.8">8024</text>
+    <text font-family="KaiTi" font-size="12" x="490.1" y="1068.8">6044</text>
+    <text font-family="KaiTi" font-size="12" x="446.1" y="1068.8">6034</text>
+    <text font-family="KaiTi" font-size="12" x="402.1" y="1068.8">6024</text>
+    <text font-family="KaiTi" font-size="12" x="360.1" y="1068.8">6014</text>
+    <text font-family="KaiTi" font-size="12" x="676.1" y="1031.8">61PT</text>
+    <text font-family="KaiTi" font-size="12" x="636.6" y="1031.8">605</text>
+    <text x="636.6" y="1043.8"/>
+    <text font-family="KaiTi" font-size="12" x="586.6" y="1031.8">801</text>
+    <text x="586.6" y="1043.8"/>
+    <text font-family="KaiTi" font-size="12" x="534.6" y="1031.8">802</text>
+    <text x="534.6" y="1043.8"/>
+    <text font-family="KaiTi" font-size="12" x="490.6" y="1031.8">604</text>
+    <text x="490.6" y="1043.8"/>
+    <text font-family="KaiTi" font-size="12" x="446.6" y="1031.8">603</text>
+    <text x="446.6" y="1043.8"/>
+    <text font-family="KaiTi" font-size="12" x="402.6" y="1031.8">602</text>
+    <text x="402.6" y="1043.8"/>
+    <text font-family="KaiTi" font-size="12" x="360.6" y="1031.8">601</text>
+    <text x="360.6" y="1043.8"/>
+    <text x="676.9" y="1098.8"/>
+    <text x="721.9" y="1121.8"/>
+    <text x="747.9" y="1051.8"/>
+    <text x="778.9" y="1121.8"/>
+    <text x="805.9" y="1051.8"/>
+    <text font-family="KaiTi" font-size="18" text-anchor="middle" x="563.1" y="992.8">建设花园2号公用配电站</text>
+    <text font-family="KaiTi" font-size="12" x="549.9" y="628">YJV22</text>
+    <text font-family="KaiTi" font-size="12" x="549.9" y="640.3">10m</text>
+    <text font-family="KaiTi" font-size="12" x="549.9" y="652.7">70mm²</text>
+    <text font-family="KaiTi" font-size="12" x="499.9" y="633.4">YJV22</text>
+    <text font-family="KaiTi" font-size="12" x="499.9" y="645.8">10m</text>
+    <text font-family="KaiTi" font-size="12" x="499.9" y="658.1">70mm²</text>
+    <text x="500.6" y="595.3"/>
+    <text x="550.6" y="587.3"/>
+    <text x="500.6" y="689.3"/>
+    <text x="550.6" y="689.3"/>
+    <text font-family="KaiTi" font-size="12" text-anchor="middle" x="572.5" y="752.9">#2</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="middle" x="572.5" y="765.3">SCB11-630/10</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="middle" x="572.5" y="777.6">2002026615</text>
+    <text font-family="KaiTi" font-size="12" x="458" y="765.6">#1(停运)</text>
+    <text font-family="KaiTi" font-size="12" x="458" y="777.9">SCB11-630/10</text>
+    <text font-family="KaiTi" font-size="12" x="458" y="790.3">2002091328</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="301.4" y="589.6">61PT40</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="342.1" y="617.1">60140</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="443.9" y="620.4">60340</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="491.5" y="619.6">80140</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="537.1" y="616.7">80240</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="394.3" y="619.2">60240</text>
+    <text font-family="KaiTi" font-size="12" x="352.6" y="533.8">601</text>
+    <text x="352.6" y="545.8"/>
+    <text font-family="KaiTi" font-size="12" x="455.6" y="533.8">603</text>
+    <text x="455.6" y="545.8"/>
+    <text font-family="KaiTi" font-size="12" x="499.6" y="533.8">801</text>
+    <text x="499.6" y="545.8"/>
+    <text font-family="KaiTi" font-size="12" x="549.6" y="533.8">802</text>
+    <text x="549.6" y="521.8"/>
+    <text font-family="KaiTi" font-size="12" x="405.6" y="533.8">602</text>
+    <text x="405.6" y="545.8"/>
+    <text font-family="KaiTi" font-size="12" x="352.1" y="570.8">6014</text>
+    <text font-family="KaiTi" font-size="12" x="455.1" y="570.8">6034</text>
+    <text font-family="KaiTi" font-size="12" x="499.1" y="570.8">8014</text>
+    <text font-family="KaiTi" font-size="12" x="549.1" y="570.8">8024</text>
+    <text font-family="KaiTi" font-size="12" x="405.1" y="570.8">6024</text>
+    <text font-family="KaiTi" font-size="12" x="299.1" y="533.8">61PT</text>
+    <text font-family="KaiTi" font-size="18" text-anchor="middle" x="419.6" y="494.8">建设花园1号公用配电站</text>
+    <text font-family="KaiTi" font-size="12" x="1950.6" y="615.5">YJV22</text>
+    <text font-family="KaiTi" font-size="12" x="1950.6" y="627.9">10m</text>
+    <text font-family="KaiTi" font-size="12" x="1950.6" y="640.3">70mm²</text>
+    <text x="1954.1" y="562.8"/>
+    <text x="1954.1" y="656.8"/>
+    <text font-family="KaiTi" font-size="12" text-anchor="middle" x="1948.1" y="731.1">SCB11-500/10</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="middle" x="1948.1" y="743.4">2002026605</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="2207.2" y="550.7">61PT40</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="1991.8" y="583.4">60140</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="2073.2" y="584.4">60340</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="1943.2" y="583.4">80140</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="2030.7" y="584.1">60240</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="2122.5" y="590.9">60440</text>
+    <text font-family="KaiTi" font-size="12" x="2002.1" y="501.3">601</text>
+    <text x="2002.1" y="513.3"/>
+    <text font-family="KaiTi" font-size="12" x="2088.1" y="501.3">603</text>
+    <text x="2088.1" y="513.3"/>
+    <text font-family="KaiTi" font-size="12" x="1953.1" y="501.3">801</text>
+    <text x="1953.1" y="513.3"/>
+    <text font-family="KaiTi" font-size="12" x="2043.1" y="501.3">602</text>
+    <text x="2043.1" y="513.3"/>
+    <text font-family="KaiTi" font-size="12" x="2135.1" y="501.3">604</text>
+    <text x="2135.1" y="513.3"/>
+    <text font-family="KaiTi" font-size="12" x="2001.6" y="538.3">6014</text>
+    <text font-family="KaiTi" font-size="12" x="2087.6" y="538.3">6034</text>
+    <text font-family="KaiTi" font-size="12" x="1952.6" y="538.3">8014</text>
+    <text font-family="KaiTi" font-size="12" x="2042.6" y="538.3">6024</text>
+    <text font-family="KaiTi" font-size="12" x="2196.6" y="502.3">61PT</text>
+    <text font-family="KaiTi" font-size="12" x="2134.6" y="539.5">6044</text>
+    <text font-family="KaiTi" font-size="18" text-anchor="middle" x="2084.6" y="462.8">宝兴阁2号A座公用配电站</text>
+    <text font-family="KaiTi" font-size="12" x="1655.6" y="597.4">YJV22</text>
+    <text font-family="KaiTi" font-size="12" x="1655.6" y="609.8">12m</text>
+    <text font-family="KaiTi" font-size="12" x="1655.6" y="622.1">50mm²</text>
+    <text x="1656.6" y="562.8"/>
+    <text x="1704.6" y="554.8"/>
+    <text x="1656.6" y="656.8"/>
+    <text font-family="KaiTi" font-size="12" text-anchor="middle" x="1650.6" y="731.1">S11-M.R-500/10</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="middle" x="1650.6" y="743.4">2002115186</text>
+    <text font-family="KaiTi" font-size="12" x="1656.7" y="537.3">801</text>
+    <text x="1656.7" y="549.3"/>
+    <text font-family="KaiTi" font-size="12" x="1706.7" y="537.3">601</text>
+    <text x="1691.4" y="537.3"/>
+    <text font-family="KaiTi" font-size="12" x="1756.7" y="537.3">602</text>
+    <text x="1756.7" y="525.3"/>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="1636.2" y="565.3">80140</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="1685.9" y="565.3">60140</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="1746.2" y="585.3">60240</text>
+    <text font-family="KaiTi" font-size="18" text-anchor="middle" x="1690.1" y="497.8">宝兴阁3号A座公用配电站</text>
+    <text font-family="KaiTi" font-size="12" x="1255.6" y="605.4">YJV22</text>
+    <text font-family="KaiTi" font-size="12" x="1255.6" y="617.8">12m</text>
+    <text font-family="KaiTi" font-size="12" x="1255.6" y="630.1">50mm²</text>
+    <text x="1261.6" y="560.8"/>
+    <text x="1309.6" y="552.8"/>
+    <text x="1261.6" y="654.8"/>
+    <text font-family="KaiTi" font-size="12" text-anchor="middle" x="1255.6" y="729.1">S11-M-500/10</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="middle" x="1255.6" y="741.4">2002026370</text>
+    <text font-family="KaiTi" font-size="12" x="1261.7" y="535.3">801</text>
+    <text x="1261.7" y="547.3"/>
+    <text font-family="KaiTi" font-size="12" x="1366.7" y="535.3">602</text>
+    <text x="1366.7" y="547.3"/>
+    <text font-family="KaiTi" font-size="12" x="1416.7" y="535.3">603</text>
+    <text x="1416.7" y="523.3"/>
+    <text font-family="KaiTi" font-size="12" x="1311.7" y="535.3">601</text>
+    <text x="1296.4" y="535.3"/>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="1251.2" y="583.3">80140</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="1300.9" y="583.3">60140</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="1356.2" y="583.3">60240</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="1406.2" y="583.3">60340</text>
+    <text font-family="KaiTi" font-size="18" text-anchor="middle" x="1327.6" y="495.8">城市花园宝华阁2号C座公用配电站</text>
+    <text font-family="KaiTi" font-size="8" x="937.6" y="612.3">YJV22-8.7/15kV -3×70mm2</text>
+    <text font-family="KaiTi" font-size="8" x="937.6" y="620.9">8m</text>
+    <text font-family="KaiTi" font-size="8" x="937.6" y="629.5">70mm²</text>
+    <text x="938.6" y="560.8"/>
+    <text x="1008.6" y="560.8"/>
+    <text x="938.6" y="654.8"/>
+    <text font-family="KaiTi" font-size="12" text-anchor="middle" x="932.6" y="728.9">#1</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="middle" x="932.6" y="741.3">SCB11-1000/10</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="middle" x="932.6" y="753.6">2002026382</text>
+    <text font-family="KaiTi" font-size="12" x="1008.7" y="535.3">601</text>
+    <text x="1008.7" y="547.3"/>
+    <text font-family="KaiTi" font-size="12" x="1048.7" y="535.3">602</text>
+    <text x="1048.7" y="523.3"/>
+    <text font-family="KaiTi" font-size="12" x="938.7" y="535.3">801</text>
+    <text x="938.7" y="547.3"/>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="1037.2" y="581.9">60240</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="997.2" y="581.5">60140</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="926.1" y="582.6">80140</text>
+    <text font-family="KaiTi" font-size="18" text-anchor="middle" x="996.1" y="495.8">城市花园宝华阁4号B座公用配电站</text>
+    <text font-family="KaiTi" font-size="12" x="2286.7" y="288.9">YJV22</text>
+    <text font-family="KaiTi" font-size="12" x="2286.7" y="301.3">12m</text>
+    <text font-family="KaiTi" font-size="12" x="2286.7" y="313.6">50mm²</text>
+    <text x="2285.1" y="307.3"/>
+    <text x="2285.1" y="229.3"/>
+    <text font-family="KaiTi" font-size="12" x="2235.1" y="383.3">S11-M-630/10</text>
+    <text font-family="KaiTi" font-size="12" x="2235.1" y="395.7">2002055138</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="2322.9" y="234.2">60340</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="2234.8" y="235.4">60240</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="2276.5" y="234.8">80140</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="2434.7" y="199.4">61PT40</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="2415.6" y="233.1">60440</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="2193.9" y="235.4">60140</text>
+    <text x="2450.4" y="159.8"/>
+    <text x="2490.4" y="199.8"/>
+    <text x="2514.4" y="201.8"/>
+    <text font-family="KaiTi" font-size="12" x="2331.1" y="151.8">603(常开)</text>
+    <text x="2331.1" y="127.8"/>
+    <text font-family="KaiTi" font-size="8" x="2240" y="151.3">602</text>
+    <text x="2244.1" y="151.8"/>
+    <text font-family="KaiTi" font-size="12" x="2284.1" y="151.8">801</text>
+    <text x="2284.1" y="163.8"/>
+    <text font-family="KaiTi" font-size="12" x="2398.1" y="151.8">604</text>
+    <text x="2398.1" y="127.8"/>
+    <text font-family="KaiTi" font-size="12" x="2202.1" y="151.8">601</text>
+    <text x="2202.1" y="127.8"/>
+    <text font-family="KaiTi" font-size="12" x="2330.6" y="188.8">6034</text>
+    <text font-family="KaiTi" font-size="12" x="2243.6" y="188.8">6024</text>
+    <text font-family="KaiTi" font-size="12" x="2283.6" y="188.8">8014</text>
+    <text font-family="KaiTi" font-size="12" x="2396.3" y="185.7">6044</text>
+    <text font-family="KaiTi" font-size="12" x="2449.6" y="152.5">61PT</text>
+    <text font-family="KaiTi" font-size="12" x="2201.6" y="188.8">6014</text>
+    <text x="2399.1" y="205.3"/>
+    <text x="2245.1" y="229.3"/>
+    <text font-family="KaiTi" font-size="18" text-anchor="middle" x="2320.1" y="112.8">宝怡阁公用配电站</text>
+    <text font-family="KaiTi" font-size="12" x="749.6" y="601.4">YJV22</text>
+    <text font-family="KaiTi" font-size="12" x="749.6" y="613.8">10m</text>
+    <text font-family="KaiTi" font-size="12" x="749.6" y="626.1">50mm²</text>
+    <text x="750.6" y="558.8"/>
+    <text x="750.6" y="660.8"/>
+    <text font-family="KaiTi" font-size="12" text-anchor="middle" x="744.6" y="735.1">S11-M-630/10</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="middle" x="744.6" y="747.4">2002083055</text>
+    <text font-family="KaiTi" font-size="12" x="705.7" y="541.3">601</text>
+    <text x="705.7" y="553.3"/>
+    <text font-family="KaiTi" font-size="12" x="750.7" y="541.3">801</text>
+    <text x="750.7" y="529.3"/>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="741.1" y="588.7">80140</text>
+    <text font-family="KaiTi" font-size="18" text-anchor="middle" x="735.1" y="501.8">天门泊花园公用配电站</text>
+    <text font-family="KaiTi" font-size="12" x="379.3" y="309.6">YJV22</text>
+    <text font-family="KaiTi" font-size="12" x="379.3" y="322">10m</text>
+    <text font-family="KaiTi" font-size="12" x="295.9" y="317.3">YJV22</text>
+    <text font-family="KaiTi" font-size="12" x="295.9" y="329.7">10m</text>
+    <text x="296.1" y="185.8"/>
+    <text x="382.1" y="185.8"/>
+    <text x="452.1" y="319.8"/>
+    <text x="537.1" y="319.8"/>
+    <text font-family="KaiTi" font-size="10" transform="matrix(0 1 -1 0 733.1 -230.3)" x="481.7" y="251.4">#2</text>
+    <text font-family="KaiTi" font-size="10" transform="matrix(0 1 -1 0 722.8 -220)" x="471.4" y="251.4">S9-630/10</text>
+    <text font-family="KaiTi" font-size="10" transform="matrix(0 1 -1 0 712.5 -209.7)" x="461.1" y="251.4">2002029546</text>
+    <text font-family="KaiTi" font-size="12" x="546.7" y="261.7">#1</text>
+    <text font-family="KaiTi" font-size="12" x="546.7" y="274.1">SBH15-M-630/10</text>
+    <text font-family="KaiTi" font-size="12" x="546.7" y="286.4">2002029541</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="489" y="207.5">60340</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="418.3" y="207.5">60240</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="373.5" y="205.8">80240</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="323.6" y="207.5">60140</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="284.5" y="206.3">80140</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="562.8" y="151.3">61PT40</text>
+    <text x="582.4" y="192.3"/>
+    <text x="648.4" y="215.3"/>
+    <text x="623.4" y="146.3"/>
+    <text font-family="KaiTi" font-size="12" x="581.6" y="124.3">61PT</text>
+    <text font-family="KaiTi" font-size="12" x="498.6" y="161.3">6034</text>
+    <text font-family="KaiTi" font-size="12" x="424.6" y="161.3">6024</text>
+    <text font-family="KaiTi" font-size="12" x="380.6" y="161.3">8024</text>
+    <text font-family="KaiTi" font-size="12" x="336.6" y="161.3">6014</text>
+    <text font-family="KaiTi" font-size="12" x="294.6" y="161.3">8014</text>
+    <text font-family="KaiTi" font-size="12" x="499.1" y="124.3">603</text>
+    <text x="499.1" y="100.3"/>
+    <text font-family="KaiTi" font-size="12" x="425.1" y="124.3">602</text>
+    <text x="425.1" y="100.3"/>
+    <text font-family="KaiTi" font-size="12" x="381.1" y="124.3">802</text>
+    <text x="381.1" y="100.3"/>
+    <text font-family="KaiTi" font-size="12" x="337.1" y="124.3">601</text>
+    <text x="337.1" y="100.3"/>
+    <text font-family="KaiTi" font-size="12" x="295.1" y="124.3">801</text>
+    <text x="295.1" y="100.3"/>
+    <text font-family="KaiTi" font-size="18" text-anchor="middle" x="449.1" y="84.8">天明花园D区公用配电站</text>
+    <text font-family="KaiTi" font-size="12" x="983" y="242.3">YJV22</text>
+    <text font-family="KaiTi" font-size="12" x="983" y="254.7">15m</text>
+    <text x="1023.1" y="199.8"/>
+    <text x="1110.1" y="250.8"/>
+    <text font-family="KaiTi" font-size="12" transform="matrix(0 1 -1 0 1328.8 -971.6)" x="1150.2" y="178.6">#1</text>
+    <text font-family="KaiTi" font-size="12" transform="matrix(0 1 -1 0 1316.5 -959.3)" x="1137.9" y="178.6">S9-630/10</text>
+    <text font-family="KaiTi" font-size="12" transform="matrix(0 1 -1 0 1304.1 -946.9)" x="1125.5" y="178.6">2002091809</text>
+    <text font-family="KaiTi" font-size="12" transform="matrix(0 1 -1 0 1385.8 -1038.2)" x="1212" y="173.8">#2</text>
+    <text font-family="KaiTi" font-size="12" transform="matrix(0 1 -1 0 1373.4 -1025.8)" x="1199.6" y="173.8">S9-630/10</text>
+    <text font-family="KaiTi" font-size="12" transform="matrix(0 1 -1 0 1361.1 -1013.5)" x="1187.3" y="173.8">2002083065</text>
+    <text font-family="KaiTi" font-size="12" x="970.2" y="182.3">802</text>
+    <text x="970.2" y="194.3"/>
+    <text font-family="KaiTi" font-size="12" x="1025.2" y="182.3">801</text>
+    <text x="1025.2" y="194.3"/>
+    <text font-family="KaiTi" font-size="12" x="1060.2" y="182.3">601</text>
+    <text x="1060.2" y="170.3"/>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="949.8" y="210.3">80240</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="1004.8" y="210.3">80140</text>
+    <text font-family="KaiTi" font-size="18" text-anchor="middle" x="1055.1" y="140.8">新城豪庭公用配电站</text>
+    <text font-family="KaiTi" font-size="12" x="1540.5" y="264.6">YJV22-3*70</text>
+    <text font-family="KaiTi" font-size="12" x="1540.5" y="276.9">15m</text>
+    <text font-family="KaiTi" font-size="12" x="1540.5" y="289.3">70mm²</text>
+    <text x="1614.6" y="288.8"/>
+    <text x="1614.6" y="194.8"/>
+    <text font-family="KaiTi" font-size="12" text-anchor="middle" x="1593.6" y="363.9">SCB11-1000/10</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="1755.6" y="215.4">60440</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="1702.6" y="216.1">60340</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="1657" y="215.4">60240</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="1599.2" y="217.1">80140</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="1559" y="216.1">60140</text>
+    <text font-family="KaiTi" font-size="10" text-anchor="end" x="1508.3" y="178.1">61PT40</text>
+    <text x="1516.9" y="200.3"/>
+    <text x="1451.9" y="223.3"/>
+    <text x="1451.9" y="153.3"/>
+    <text font-family="KaiTi" font-size="12" x="1516.1" y="133.3">61PT</text>
+    <text font-family="KaiTi" font-size="12" x="1762.1" y="170.3">6044</text>
+    <text font-family="KaiTi" font-size="12" x="1711.1" y="170.3">6034</text>
+    <text font-family="KaiTi" font-size="12" x="1666.1" y="170.3">6024</text>
+    <text font-family="KaiTi" font-size="12" x="1613.1" y="170.3">8014</text>
+    <text font-family="KaiTi" font-size="12" x="1570.1" y="170.3">6014</text>
+    <text font-family="KaiTi" font-size="12" x="1762.6" y="133.3">604</text>
+    <text x="1762.6" y="121.3"/>
+    <text font-family="KaiTi" font-size="8" x="1713.1" y="132.6">603(常开)</text>
+    <text x="1711.6" y="133.3"/>
+    <text font-family="KaiTi" font-size="12" x="1666.6" y="133.3">602</text>
+    <text x="1666.6" y="109.3"/>
+    <text font-family="KaiTi" font-size="12" x="1613.6" y="133.3">801</text>
+    <text x="1613.6" y="109.3"/>
+    <text font-family="KaiTi" font-size="12" x="1570.6" y="133.3">601</text>
+    <text x="1570.6" y="109.3"/>
+    <text x="1665.6" y="186.8"/>
+    <text x="1763.6" y="186.8"/>
+    <text font-family="KaiTi" font-size="18" text-anchor="middle" x="1611.6" y="93.8">天明花园B区第六幢公用配电站</text>
+    <text font-family="KaiTi" font-size="12" x="1232.1" y="1082.1">YJV22</text>
+    <text font-family="KaiTi" font-size="12" x="1232.1" y="1094.4">15m</text>
+    <text font-family="KaiTi" font-size="12" x="1291.1" y="1082.1">YJV22</text>
+    <text font-family="KaiTi" font-size="12" x="1291.1" y="1094.4">12m</text>
+    <text font-family="KaiTi" font-size="12" x="1340.1" y="1082.1">YJV22</text>
+    <text font-family="KaiTi" font-size="12" x="1340.1" y="1094.4">10m</text>
+    <text x="1341.1" y="1041.3"/>
+    <text x="1292.1" y="1041.3"/>
+    <text x="1233.1" y="1041.3"/>
+    <text x="1330.1" y="1134.3"/>
+    <text x="1292.1" y="1138.3"/>
+    <text x="1233.1" y="1144.3"/>
+    <text font-family="KaiTi" font-size="12" text-anchor="middle" x="1213.4" y="1214.6">#3</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="middle" x="1213.4" y="1227">SG10-630/10</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="middle" x="1213.4" y="1239.3">2002091379</text>
+    <text font-family="KaiTi" font-size="12" x="1248.9" y="1200.4">#2</text>
+    <text font-family="KaiTi" font-size="12" x="1248.9" y="1212.8">SG10-630/10</text>
+    <text font-family="KaiTi" font-size="12" x="1248.9" y="1225.1">2002031788</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="middle" x="1350.4" y="1208.8">#1</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="middle" x="1350.4" y="1221.2">SG10-630/10</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="middle" x="1350.4" y="1233.5">2002031520</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="1507.9" y="1026.3">61PT40</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="1166.9" y="1061.5">60140</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="1225.8" y="1062.4">80340</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="1284.8" y="1061.5">80240</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="1331.8" y="1061.3">80140</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="1380.1" y="1061.9">60240</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="1423.4" y="1060.9">60340</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="1463.4" y="1062.7">60440</text>
+    <text x="1586.4" y="999.8"/>
+    <text x="1561.4" y="1069.8"/>
+    <text x="1515.4" y="1047.8"/>
+    <text font-family="KaiTi" font-size="12" x="1174.1" y="979.8">601</text>
+    <text x="1174.1" y="955.8"/>
+    <text font-family="KaiTi" font-size="12" x="1232.1" y="979.8">803</text>
+    <text x="1232.1" y="955.8"/>
+    <text font-family="KaiTi" font-size="12" x="1291.1" y="979.8">802</text>
+    <text x="1291.1" y="955.8"/>
+    <text font-family="KaiTi" font-size="12" x="1340.1" y="979.8">801</text>
+    <text x="1340.1" y="955.8"/>
+    <text font-family="KaiTi" font-size="12" x="1389.1" y="979.8">602</text>
+    <text x="1389.1" y="955.8"/>
+    <text font-family="KaiTi" font-size="12" x="1431.1" y="979.8">603</text>
+    <text x="1431.1" y="955.8"/>
+    <text font-family="KaiTi" font-size="12" x="1471.1" y="979.8">604</text>
+    <text x="1471.1" y="955.8"/>
+    <text font-family="KaiTi" font-size="12" x="1514.6" y="979.8">61PT</text>
+    <text font-family="KaiTi" font-size="12" x="1173.6" y="1016.8">6014</text>
+    <text font-family="KaiTi" font-size="12" x="1231.6" y="1016.8">8034</text>
+    <text font-family="KaiTi" font-size="12" x="1290.6" y="1016.8">8024</text>
+    <text font-family="KaiTi" font-size="12" x="1339.6" y="1016.8">8014</text>
+    <text font-family="KaiTi" font-size="12" x="1388.6" y="1016.8">6024</text>
+    <text font-family="KaiTi" font-size="12" x="1430.6" y="1016.8">6034</text>
+    <text font-family="KaiTi" font-size="12" x="1468.3" y="1017.1">6044</text>
+    <text font-family="KaiTi" font-size="18" text-anchor="middle" x="1372.1" y="940.8">大信置业G专用配电站</text>
+    <text font-family="KaiTi" font-size="12" x="1545.6" y="1509.1">YJV22</text>
+    <text font-family="KaiTi" font-size="12" x="1545.6" y="1521.4">17m</text>
+    <text font-family="KaiTi" font-size="12" x="1592.6" y="1502.9">YJV22</text>
+    <text font-family="KaiTi" font-size="12" x="1592.6" y="1515.3">15m</text>
+    <text font-family="KaiTi" font-size="12" x="1592.6" y="1527.6">50mm²</text>
+    <text x="1545.6" y="1484.3"/>
+    <text x="1593.6" y="1484.3"/>
+    <text x="1546.6" y="1562.3"/>
+    <text x="1594.6" y="1565.3"/>
+    <text font-family="KaiTi" font-size="12" text-anchor="middle" x="1588.1" y="1637.3">#1</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="middle" x="1588.1" y="1649.7">SG10-630/10</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="middle" x="1588.1" y="1662">2002031502</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="1539.5" y="1638.3">#2</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="1539.5" y="1650.7">SG10-630/10</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="1539.5" y="1663.1">2002031507</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="1887.6" y="1453.9">61PT40</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="1535.7" y="1488.8">80240</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="1583.4" y="1488.7">80140</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="1631.3" y="1488.9">60140</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="1675.5" y="1490.5">60240</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="1718.7" y="1489.3">60340</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="1761.9" y="1488.9">60440</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="1799.7" y="1488.1">60540</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="1838.7" y="1488.5">60640</text>
+    <text x="1950.9" y="1428.8"/>
+    <text x="1924.9" y="1497.8"/>
+    <text x="1894.9" y="1473.8"/>
+    <text font-family="KaiTi" font-size="12" x="1544.6" y="1406.8">802</text>
+    <text x="1544.6" y="1418.8"/>
+    <text font-family="KaiTi" font-size="12" x="1592.6" y="1406.8">801</text>
+    <text x="1592.6" y="1418.8"/>
+    <text font-family="KaiTi" font-size="12" x="1641.6" y="1406.8">601</text>
+    <text x="1641.6" y="1418.8"/>
+    <text font-family="KaiTi" font-size="12" x="1685.6" y="1406.8">602</text>
+    <text x="1685.6" y="1418.8"/>
+    <text font-family="KaiTi" font-size="12" x="1726.3" y="1407.9">603</text>
+    <text x="1729.6" y="1406.8"/>
+    <text font-family="KaiTi" font-size="12" x="1771.6" y="1406.8">604</text>
+    <text x="1771.6" y="1418.8"/>
+    <text font-family="KaiTi" font-size="12" x="1806.6" y="1406.8">605</text>
+    <text x="1806.6" y="1418.8"/>
+    <text font-family="KaiTi" font-size="12" x="1845.6" y="1406.8">606</text>
+    <text x="1845.6" y="1418.8"/>
+    <text font-family="KaiTi" font-size="12" x="1894.1" y="1406.8">61PT</text>
+    <text font-family="KaiTi" font-size="12" x="1544.1" y="1443.8">8024</text>
+    <text font-family="KaiTi" font-size="12" x="1592.1" y="1443.8">8014</text>
+    <text font-family="KaiTi" font-size="12" x="1641.1" y="1443.8">6014</text>
+    <text font-family="KaiTi" font-size="12" x="1685.1" y="1443.8">6024</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="1755.8" y="1443.7">6034</text>
+    <text font-family="KaiTi" font-size="12" x="1771.1" y="1443.8">6044</text>
+    <text font-family="KaiTi" font-size="12" x="1806.1" y="1443.8">6054</text>
+    <text font-family="KaiTi" font-size="12" x="1841.6" y="1444.4">6064</text>
+    <text font-family="KaiTi" font-size="18" text-anchor="middle" x="1720.1" y="1366.8">大信置业专用配电站</text>
+    <text x="1730.6" y="1484.3"/>
+    <text font-family="KaiTi" font-size="12" x="2432.1" y="1123.1">YJV22</text>
+    <text font-family="KaiTi" font-size="12" x="2432.1" y="1135.4">11m</text>
+    <text font-family="KaiTi" font-size="12" x="2368.1" y="1123.1">YJV22</text>
+    <text font-family="KaiTi" font-size="12" x="2368.1" y="1135.4">14m</text>
+    <text font-family="KaiTi" font-size="12" x="2309.1" y="1123.1">YJV22</text>
+    <text font-family="KaiTi" font-size="12" x="2309.1" y="1135.4">17m</text>
+    <text x="2310.1" y="1074.3"/>
+    <text x="2369.1" y="1074.3"/>
+    <text x="2433.1" y="1080.3"/>
+    <text x="2369.1" y="1180.3"/>
+    <text x="2311.1" y="1176.3"/>
+    <text x="2433.1" y="1176.3"/>
+    <text font-family="KaiTi" font-size="12" text-anchor="middle" x="2430.6" y="1256">#1</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="middle" x="2430.6" y="1268.4">SG10-630/10</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="middle" x="2430.6" y="1280.8">2002031792</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="middle" x="2302" y="1252.2">#3</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="middle" x="2302" y="1264.5">SG10-630/10</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="middle" x="2302" y="1276.9">2002031795</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="middle" x="2366.1" y="1273.5">#2</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="middle" x="2366.1" y="1285.8">SG10-630/10</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="middle" x="2366.1" y="1298.2">2002031793</text>
+    <text font-family="KaiTi" font-size="8" text-anchor="end" x="2658.4" y="1063.3">61PT40</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="2257.3" y="1102.9">60140</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="2300.2" y="1102.2">80340</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="2360.4" y="1103.3">80240</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="2423.2" y="1102.9">80140</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="2470.1" y="1102.2">60240</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="2536.4" y="1103.6">60340</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="2579.7" y="1103.6">60440</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="2620.2" y="1104.1">60540</text>
+    <text x="2717.4" y="1092.8"/>
+    <text x="2691.4" y="1096.8"/>
+    <text x="2666.4" y="1087.8"/>
+    <text font-family="KaiTi" font-size="12" x="2267.1" y="1020.8">601</text>
+    <text x="2267.1" y="996.8"/>
+    <text font-family="KaiTi" font-size="12" x="2309.1" y="1020.8">803</text>
+    <text x="2309.1" y="996.8"/>
+    <text font-family="KaiTi" font-size="12" x="2368.1" y="1020.8">802</text>
+    <text x="2368.1" y="996.8"/>
+    <text font-family="KaiTi" font-size="12" x="2432.1" y="1020.8">801</text>
+    <text x="2432.1" y="996.8"/>
+    <text fill="#f00" font-family="KaiTi" font-size="12" x="2481.1" y="1020.8">602(常开)</text>
+    <text x="2481.1" y="996.8"/>
+    <text font-family="KaiTi" font-size="12" x="2548.1" y="1020.8">603</text>
+    <text x="2548.1" y="996.8"/>
+    <text font-family="KaiTi" font-size="12" x="2583.1" y="1020.8">604</text>
+    <text x="2583.1" y="996.8"/>
+    <text font-family="KaiTi" font-size="12" x="2622.1" y="1020.8">605</text>
+    <text x="2622.1" y="996.8"/>
+    <text font-family="KaiTi" font-size="12" x="2665.6" y="1020.8">61PT</text>
+    <text font-family="KaiTi" font-size="12" x="2266.6" y="1057.8">6014</text>
+    <text font-family="KaiTi" font-size="12" x="2308.6" y="1057.8">8034</text>
+    <text font-family="KaiTi" font-size="12" x="2367.6" y="1057.8">8024</text>
+    <text font-family="KaiTi" font-size="12" x="2431.6" y="1057.8">8014</text>
+    <text font-family="KaiTi" font-size="12" x="2480.6" y="1057.8">6024</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="2574.1" y="1058.1">6034</text>
+    <text font-family="KaiTi" font-size="12" x="2582.6" y="1057.8">6044</text>
+    <text font-family="KaiTi" font-size="10" x="2618.4" y="1055.6">6054</text>
+    <text x="2482.1" y="1098.3"/>
+    <text font-family="KaiTi" font-size="18" text-anchor="middle" x="2507.1" y="981.8">大信置业D专用配电站</text>
+    <text font-family="KaiTi" font-size="14" x="2034.6" y="1614">YJV22</text>
+    <text font-family="KaiTi" font-size="14" x="2034.6" y="1628.4">312m</text>
+    <text font-family="KaiTi" font-size="14" x="2034.6" y="1642.9">70mm²</text>
+    <text x="2033.6" y="1414.8"/>
+    <text font-family="KaiTi" font-size="12" x="2137.6" y="1433.4">YJV22</text>
+    <text font-family="KaiTi" font-size="12" x="2137.6" y="1445.8">5m</text>
+    <text font-family="KaiTi" font-size="12" x="2137.6" y="1458.1">70mm²</text>
+    <text font-family="KaiTi" font-size="12" x="2033.7" y="1373.3">601</text>
+    <text x="2033.7" y="1349.3"/>
+    <text font-family="KaiTi" font-size="12" x="2139.6" y="1373.3">801</text>
+    <text x="2139.6" y="1361.3"/>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="2128.2" y="1421.3">80140</text>
+    <text x="2138.6" y="1390.8"/>
+    <text x="2138.6" y="1492.8"/>
+    <text font-family="KaiTi" font-size="12" text-anchor="middle" x="2132.6" y="1567.1">SCB11-630kVA</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="middle" x="2132.6" y="1579.4">0320000163648112</text>
+    <text font-family="KaiTi" font-size="18" text-anchor="middle" x="2098.1" y="1333.8">万城大信充电桩专用箱变</text>
+    <text font-family="KaiTi" font-size="12" x="1763.6" y="1074.6">YJV22</text>
+    <text font-family="KaiTi" font-size="12" x="1763.6" y="1086.9">15m</text>
+    <text x="1764.6" y="1127.8"/>
+    <text x="1809.6" y="1049.8"/>
+    <text x="1764.6" y="1047.8"/>
+    <text font-family="KaiTi" font-size="12" text-anchor="middle" x="1758.6" y="1202.1">#2</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="middle" x="1758.6" y="1214.4">S11-M-500/10</text>
+    <text font-family="KaiTi" font-size="12" x="1664.7" y="1008.3">601</text>
+    <text x="1664.7" y="984.3"/>
+    <text font-family="KaiTi" font-size="12" x="1715.7" y="1008.3">602</text>
+    <text x="1715.7" y="984.3"/>
+    <text font-family="KaiTi" font-size="12" x="1764.7" y="1008.3">801</text>
+    <text x="1764.7" y="984.3"/>
+    <text font-family="KaiTi" font-size="12" x="1809.7" y="1008.3">603</text>
+    <text x="1809.7" y="996.3"/>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="1757.5" y="1054.9">80140</text>
+    <text font-family="KaiTi" font-size="18" text-anchor="middle" x="1738.6" y="968.8">基边乡#2公用配电站</text>
+    <text font-family="KaiTi" font-size="12" x="2031.6" y="1085.6">YJV22</text>
+    <text font-family="KaiTi" font-size="12" x="2031.6" y="1097.9">0.01m</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="middle" x="2026.6" y="1198.1">#1</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="middle" x="2026.6" y="1210.4">S11-M-630/10</text>
+    <text font-family="KaiTi" font-size="12" x="1930.7" y="1034.3">601</text>
+    <text x="1930.7" y="1010.3"/>
+    <text font-family="KaiTi" font-size="12" x="1983.7" y="1034.3">602</text>
+    <text x="1983.7" y="1010.3"/>
+    <text font-family="KaiTi" font-size="12" x="2033.6" y="1034.3">801</text>
+    <text x="2033.6" y="1022.3"/>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="1919.9" y="1080.8">60140</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="1973.7" y="1080.8">60240</text>
+    <text font-family="KaiTi" font-size="12" text-anchor="end" x="2023.5" y="1080.8">80140</text>
+    <text font-family="KaiTi" font-size="18" text-anchor="middle" x="1975.6" y="994.8">基边乡#1公用配电站</text>
+    <text font-family="KaiTi" font-size="14" x="1982.6" y="1238.3">YJV22</text>
+    <text font-family="KaiTi" font-size="14" x="1982.6" y="1252.7">16m</text>
+    <text font-family="KaiTi" font-size="14" x="1982.6" y="1267.1">70mm²</text>
+    <text fill="#f0f" font-family="SimSun" font-size="12" x="2323.7" y="173.7">自动转供）</text>
+    <text fill="#f0f" font-family="SimSun" font-size="12" x="2471.6" y="1043.1">自动转供）</text>
+    <text fill="#f0f" font-family="SimSun" font-size="9" x="1705.2" y="152.3">自动转供）</text>
+    <text fill="#f0f" font-family="SimSun" font-size="30" x="100.7" y="1811.8">具备智能分布式保护和馈线自动化功能，当GOOSE通信异常或通信中断，</text>
+    <text fill="#f0f" font-family="SimSun" font-size="30" x="100.7" y="1849.3">全线自动切换至馈线自动化。在智能分布式功能下，环网组具备自转电功能；</text>
+    <text fill="#f0f" font-family="SimSun" font-size="30" x="100.7" y="1886.8">在就地型馈线自动化功能下，不具备自转电功能。转供优先级由高到低，分别</text>
+    <text fill="#f0f" font-family="SimSun" font-size="30" x="100.7" y="1924.3">为：宝怡阁公用配电站603开关、天明花园B区第六幢公用配电站603开关、大信</text>
+    <text fill="#f0f" font-family="SimSun" font-size="30" x="100.7" y="1961.8">置业D专用配电站602开关。</text>
+    <a xlink:href="莲塘变电站.svg">
+        <text font-family="KaiTi" font-size="18" text-anchor="middle" x="241.1" y="1746.8">莲塘变电站</text>
+    </a>
+    <a xlink:href="华捷变电站_705_FEDR.svg">
+        <text fill="#f00" font-family="KaiTi" font-size="12" text-anchor="middle" x="2402.9" y="265.1">由华捷变</text>
+        <text fill="#f00" font-family="KaiTi" font-size="12" text-anchor="middle" x="2402.9" y="277.4">电站-华捷</text>
+        <text fill="#f00" font-family="KaiTi" font-size="12" text-anchor="middle" x="2402.9" y="289.8">孙文线705</text>
+        <text fill="#f00" font-family="KaiTi" font-size="12" text-anchor="middle" x="2402.9" y="302.1">宝丽阁12</text>
+        <text fill="#f00" font-family="KaiTi" font-size="12" text-anchor="middle" x="2402.9" y="314.5">幢公用配</text>
+        <text fill="#f00" font-family="KaiTi" font-size="12" text-anchor="middle" x="2402.9" y="326.9">电站</text>
+        <text fill="#f00" font-family="KaiTi" font-size="12" text-anchor="middle" x="2402.9" y="339.2">宝丽阁12</text>
+        <text fill="#f00" font-family="KaiTi" font-size="12" text-anchor="middle" x="2402.9" y="351.6">幢公用配</text>
+        <text fill="#f00" font-family="KaiTi" font-size="12" text-anchor="middle" x="2402.9" y="363.9">电站G01柜</text>
+        <text fill="#f00" font-family="KaiTi" font-size="12" text-anchor="middle" x="2402.9" y="376.3">柜601开关</text>
+        <text fill="#f00" font-family="KaiTi" font-size="12" text-anchor="middle" x="2402.9" y="388.7">引入</text>
+    </a>
+    <a xlink:href="华捷变电站_705_FEDR.svg">
+        <text fill="#f00" font-family="KaiTi" font-size="12" x="2173.8" y="271.1">由华捷变</text>
+        <text fill="#f00" font-family="KaiTi" font-size="12" x="2173.8" y="283.5">电站-华捷</text>
+        <text fill="#f00" font-family="KaiTi" font-size="12" x="2173.8" y="295.8">孙文线705</text>
+        <text fill="#f00" font-family="KaiTi" font-size="12" x="2173.8" y="308.2">宝金阁公</text>
+        <text fill="#f00" font-family="KaiTi" font-size="12" x="2173.8" y="320.5">用配电站</text>
+        <text fill="#f00" font-family="KaiTi" font-size="12" x="2173.8" y="332.9">G06柜602</text>
+        <text fill="#f00" font-family="KaiTi" font-size="12" x="2173.8" y="345.3">开关引入</text>
+    </a>
+    <a xlink:href="华捷变电站_722_FEDR.svg">
+        <text fill="#f00" font-family="KaiTi" font-size="12" x="1635.5" y="264">由华捷变</text>
+        <text fill="#f00" font-family="KaiTi" font-size="12" x="1635.5" y="276.3">电站-华捷</text>
+        <text fill="#f00" font-family="KaiTi" font-size="12" x="1635.5" y="288.7">岐头线722</text>
+        <text fill="#f00" font-family="KaiTi" font-size="12" x="1635.5" y="301">天明花园B</text>
+        <text fill="#f00" font-family="KaiTi" font-size="12" x="1635.5" y="313.4">区第十一</text>
+        <text fill="#f00" font-family="KaiTi" font-size="12" x="1635.5" y="325.8">幢公用配</text>
+        <text fill="#f00" font-family="KaiTi" font-size="12" x="1635.5" y="338.1">电站</text>
+        <text fill="#f00" font-family="KaiTi" font-size="12" x="1635.5" y="350.5">G01柜601</text>
+        <text fill="#f00" font-family="KaiTi" font-size="12" x="1635.5" y="362.8">开关引入</text>
+    </a>
+    <a xlink:href="华捷变电站_722_FEDR.svg">
+        <text fill="#f00" font-family="KaiTi" font-size="12" x="1732.1" y="266.6">由华捷变</text>
+        <text fill="#f00" font-family="KaiTi" font-size="12" x="1732.1" y="278.9">电站-华捷</text>
+        <text fill="#f00" font-family="KaiTi" font-size="12" x="1732.1" y="291.3">岐头线722</text>
+        <text fill="#f00" font-family="KaiTi" font-size="12" x="1732.1" y="303.7">天明花园A</text>
+        <text fill="#f00" font-family="KaiTi" font-size="12" x="1732.1" y="316">区二十三</text>
+        <text fill="#f00" font-family="KaiTi" font-size="12" x="1732.1" y="328.4">幢公用配</text>
+        <text fill="#f00" font-family="KaiTi" font-size="12" x="1732.1" y="340.7">电站</text>
+        <text fill="#f00" font-family="KaiTi" font-size="12" x="1732.1" y="353.1">G06柜603</text>
+        <text fill="#f00" font-family="KaiTi" font-size="12" x="1732.1" y="365.5">开关引入</text>
+    </a>
+    <a xlink:href="华捷变电站_722_FEDR.svg">
+        <text fill="#f00" font-family="KaiTi" font-size="12" x="2452.2" y="1169.2">由华捷变</text>
+        <text fill="#f00" font-family="KaiTi" font-size="12" x="2452.2" y="1181.6">电站-华捷</text>
+        <text fill="#f00" font-family="KaiTi" font-size="12" x="2452.2" y="1193.9">岐头线722</text>
+        <text fill="#f00" font-family="KaiTi" font-size="12" x="2452.2" y="1206.3">岐头线公</text>
+        <text fill="#f00" font-family="KaiTi" font-size="12" x="2452.2" y="1218.6">用电缆分</text>
+        <text fill="#f00" font-family="KaiTi" font-size="12" x="2452.2" y="1231">接箱</text>
+        <text fill="#f00" font-family="KaiTi" font-size="12" x="2452.2" y="1243.4">G04柜604</text>
+        <text fill="#f00" font-family="KaiTi" font-size="12" x="2452.2" y="1255.7">开关引入</text>
+    </a>
+    <path d="m69.3 52.3h2725" stroke="#f00" stroke-width="6"/>
+    <path d="m69.3 52.3v1923.5" stroke="#f00" stroke-width="6"/>
+    <path d="m2794.3 1975.8v-1923.5" stroke="#f00" stroke-width="6"/>
+    <path d="m69.3 1975.8h2725" stroke="#f00" stroke-width="6"/>
+    <circle cx="2714.2" cy="1895.8" fill="none" r="36" stroke="#f00" stroke-width="2"/>
+    <path d="m2024.3 1796.8h754" stroke="#000" stroke-width="3"/>
+    <path d="m2024.3 1842.3h754" stroke="#000"/>
+    <path d="m2024.3 1881.3h754" stroke="#000"/>
+    <path d="m2024.3 1920.3h754" stroke="#000"/>
+    <path d="m2024.3 1959.3h754" stroke="#000" stroke-width="3"/>
+    <path d="m2024.3 1958.8v-162.5" stroke="#000" stroke-width="3"/>
+    <path d="m2102.3 1958.8v-117" stroke="#000"/>
+    <path d="m2232.3 1958.8v-117" stroke="#000"/>
+    <path d="m2310.3 1958.8v-117" stroke="#000"/>
+    <path d="m2420.8 1958.8v-162" stroke="#000"/>
+    <path d="m2778.3 1958.8v-162" stroke="#000" stroke-width="3"/>
+    <text fill="#f00" font-family="KaiTi" font-size="36" text-anchor="middle" x="2714.2" y="1909.8">1/1</text>
+    <text font-family="KaiTi" font-size="22" text-anchor="middle" x="2222.5" y="1824.5">石岐供电分局</text>
+    <text font-family="KaiTi" font-size="22" text-anchor="middle" x="2599.5" y="1824.5">石岐供电分局</text>
+    <text font-family="KaiTi" font-size="20" text-anchor="middle" x="2063.2" y="1866.8">绘 图</text>
+    <text font-family="KaiTi" font-size="20" text-anchor="middle" x="2167.2" y="1866.8">吴群体</text>
+    <text font-family="KaiTi" font-size="20" text-anchor="middle" x="2271.2" y="1866.8">日 期</text>
+    <text font-family="KaiTi" font-size="20" text-anchor="middle" x="2365.5" y="1866.8">2019-9-16</text>
+    <text font-family="KaiTi" font-size="20" text-anchor="middle" x="2063.2" y="1905.8">审 核</text>
+    <text font-family="KaiTi" font-size="20" text-anchor="middle" x="2167.2" y="1905.8">吴群体</text>
+    <text font-family="KaiTi" font-size="20" text-anchor="middle" x="2271.2" y="1905.8">日 期</text>
+    <text font-family="KaiTi" font-size="20" text-anchor="middle" x="2365.5" y="1905.8">2019-9-16</text>
+    <text font-family="KaiTi" font-size="20" text-anchor="middle" x="2063.2" y="1944.8">发 布</text>
+    <text font-family="KaiTi" font-size="20" text-anchor="middle" x="2167.2" y="1944.8">史小靖</text>
+    <text font-family="KaiTi" font-size="20" text-anchor="middle" x="2271.2" y="1944.8">日 期</text>
+    <text font-family="KaiTi" font-size="20" text-anchor="middle" x="2365.5" y="1944.8">2019-9-16</text>
+    <text font-family="KaiTi" font-size="20" text-anchor="middle" x="2599.5" y="1944.8">更新日期：2019-9-16</text>
+    <text font-family="KaiTi" font-size="20" text-anchor="middle" x="2599.5" y="1905.8">莲塘天明线706</text>
+    <text font-family="KaiTi" font-size="20" text-anchor="middle" x="2599.5" y="1866.8">莲塘变电站</text>
+    <path d="m397.6 1090.8v63m0 0a3.5 3.5 0 0 0 0 7v1m0 0a3.5 3.5 0 0 0 0 7v172h-201v-928h136v-69m0 0a8 8 0 0 1 0-16v-81m0 0a8 8 0 0 1 0-16v-47" fill="none" stroke="#000" stroke-dasharray="5 2 5 2" stroke-width="2"/>
+    <path d="m494.6 183.8v47m0 0a8 8 0 0 0 0 16v81m0 0a8 8 0 0 0 0 16v20m0 0a8 8 0 0 0 0 16v2h1212v-128m0 0a3.5 3.5 0 0 1 0-7v-1m0 0a3.5 3.5 0 0 1 0-7v-46" fill="none" stroke="#000" stroke-dasharray="5 2 5 2" stroke-width="2"/>
+    <path d="m420.6 183.8v51m0 0a4 4 0 0 0 0 8v80m0 0a4 4 0 0 0 0 8v1m0 0a4 4 0 0 0 0 8v32h634v-43m0 0a8 8 0 1 1 0-16v-37m0 0a8 8 0 1 1 0-16v-54" fill="none" stroke="#000" stroke-dasharray="5 2 5 2" stroke-width="2"/>
+    <path d="m964.6 205.8v115h205v-77" fill="none" stroke="#000" stroke-dasharray="5 2 5 2" stroke-width="2"/>
+    <path d="m485.6 1090.8v52.5m0 0a2 2 0 0 0 0 4v1m0 0a2 2 0 0 0 0 4v3m0 0a2 2 0 0 0 0 4v4m0 0a2 2 0 0 0 0 4v134.5h941v-195.5m0 0a8 8 0 1 1 0-16v-51.5" fill="none" stroke="#000" stroke-dasharray="5 2 5 2" stroke-width="2"/>
+    <path d="m1169.6 1038.8v213h-261v-313" fill="none" stroke="#000" stroke-dasharray="5 2 5 2" stroke-width="2"/>
+    <path id="line-x" d="m1384.6 1038.8v255m0 0a8 8 0 1 0 0 16v365h252v-125.5m0 0a8 8 0 1 1 0-16v-66.5" fill="none" stroke="#000" stroke-dasharray="5 2 5 2" stroke-width="2"/>
+    <path id="line-d" d="m1680.6 1466.8v62m0 0a4 4 0 1 0 0 8v1m0 0a4 4 0 1 0 0 8v155h582v-621" fill="none" stroke="#000" stroke-dasharray="5 2 5 2" stroke-width="2"/>
+    <path id="line-f" d="m2543.6 1079.8v64.5m0 0a3 3 0 0 0 0 6v1m0 0a3 3 0 0 0 0 6v152.5h234v-435h-272v-221" fill="none" stroke="#000" stroke-dasharray="5 2 5 2" stroke-width="2"/>
+    <path d="m355.6 1090.8v66.5m0 0a8 8 0 0 0 0 16v128.5h-70v-427h115v-38m0 0a8 8 0 0 1 0-16v-176.5m0 0a8 8 0 0 1 0-16v-35.5" fill="none" stroke="#000" stroke-dasharray="5 2 5 2" stroke-width="2"/>
+    <path d="m450.6 592.8v210h250v-238" fill="none" stroke="#000" stroke-dasharray="5 2 5 2" stroke-width="2"/>
+    <path d="m347.6 592.8v29.5m0 0a4.5 4.5 0 0 0 0 9v1m0 0a4.5 4.5 0 0 0 0 9v187.5h1736v-268" fill="none" stroke="#000" stroke-dasharray="5 2 5 2" stroke-width="2"/>
+    <path d="m1360.6 558.8v217h-318v-217" fill="none" stroke="#000" stroke-dasharray="5 2 5 2" stroke-width="2"/>
+    <path d="m2130.6 560.8v31m0 0a8 8 0 0 0 0 16v148h196v-487.5m0 0a8 8 0 0 1 0-16v-41.5" fill="none" stroke="#000" stroke-dasharray="5 2 5 2" stroke-width="2"/>
+    <path d="m228.6 1700.8h213v-532.5m0 0a3 3 0 0 1 0-6v-2m0 0a3 3 0 0 1 0-6v-1m0 0a3 3 0 0 1 0-6v-56.5" fill="none" stroke="#000" stroke-dasharray="5 2 5 2" stroke-width="2"/>
+    <path d="m1997.6 560.8v195h-247v-195" fill="none" stroke="#000" stroke-dasharray="5 2 5 2" stroke-width="2"/>
+    <path d="m2038.6 560.8v245h-628v-247" fill="none" stroke="#000" stroke-dasharray="5 2 5 2" stroke-width="2"/>
+    <path d="m1028.6 968.3v80" fill="none" stroke="#000" stroke-dasharray="5 2 5 2"/>
+    <path d="m953.6 942.3v25h35v-25" fill="none" stroke="#000" stroke-dasharray="5 2 5 2"/>
+    <path d="m2630.6 662.3v80" fill="none" stroke="#000" stroke-dasharray="5 2 5 2"/>
+    <path d="m1466.6 1038.8v52.5m0 0a2 2 0 1 0 0 4v1m0 0a2 2 0 1 0 0 4v151.5h192v-220" fill="none" stroke="#000" stroke-dasharray="5 2 5 2" stroke-width="2"/>
+    <path d="m1709.6 1031.8v195h215v-169" fill="none" stroke="#000" stroke-dasharray="5 2 5 2" stroke-width="2"/>
+    <path d="m529.6 1094.3v97" fill="none" stroke="#000" stroke-dasharray="5 2 5 2"/>
+    <path d="m581.6 1094.3v80" fill="none" stroke="#000" stroke-dasharray="5 2 5 2"/>
+    <path d="m544.6 596.3v80" fill="none" stroke="#000" stroke-dasharray="5 2 5 2"/>
+    <path d="m494.6 596.3v80" fill="none" stroke="#000" stroke-dasharray="5 2 5 2"/>
+    <path d="m1948.1 563.8v80" fill="none" stroke="#000" stroke-dasharray="5 2 5 2"/>
+    <path d="m1650.6 563.8v80" fill="none" stroke="#000" stroke-dasharray="5 2 5 2"/>
+    <path d="m1255.6 561.8v80" fill="none" stroke="#000" stroke-dasharray="5 2 5 2"/>
+    <path d="m932.6 561.8v80" fill="none" stroke="#000" stroke-dasharray="5 2 5 2"/>
+    <path d="m2279.1 214.3v80" fill="none" stroke="#000" stroke-dasharray="5 2 5 2"/>
+    <path d="m744.6 567.8v80" fill="none" stroke="#000" stroke-dasharray="5 2 5 2"/>
+    <path d="m376.1 184.8v142h70v-8" fill="none" stroke="#000" stroke-dasharray="5 2 5 2"/>
+    <path d="m290.1 185.8v150h241v-17" fill="none" stroke="#000" stroke-dasharray="5 2 5 2"/>
+    <path d="m1019.1 207.8v51h-35v9h120v-17" fill="none" stroke="#000" stroke-dasharray="5 2 5 2"/>
+    <path d="m1608.6 195.8v80" fill="none" stroke="#000" stroke-dasharray="5 2 5 2"/>
+    <path d="m1227.1 1042.3v89" fill="none" stroke="#000" stroke-dasharray="5 2 5 2"/>
+    <path d="m1286.1 1042.3v83" fill="none" stroke="#000" stroke-dasharray="5 2 5 2"/>
+    <path d="m1335.1 1042.3v79" fill="none" stroke="#000" stroke-dasharray="5 2 5 2"/>
+    <path d="m1540.6 1469.3v80" fill="none" stroke="#000" stroke-dasharray="5 2 5 2"/>
+    <path d="m1587.6 1469.3 1 82" fill="none" stroke="#000" stroke-dasharray="5 2 5 2"/>
+    <path d="m2427.1 1083.3v80" fill="none" stroke="#000" stroke-dasharray="5 2 5 2"/>
+    <path d="m2363.1 1083.3v84" fill="none" stroke="#000" stroke-dasharray="5 2 5 2"/>
+    <path d="m2304.1 1083.3 1 80" fill="none" stroke="#000" stroke-dasharray="5 2 5 2"/>
+    <path id="line-c" d="m1724.6 1466.8v61.5m0 0a4 4 0 1 0 0 8v1m0 0a4 4 0 1 0 0 8v129.5h303v-278" fill="none" stroke="#000" stroke-dasharray="5 2 5 2" stroke-width="2"/>
+    <path d="m2132.6 1399.8v80" fill="none" stroke="#000" stroke-dasharray="5 2 5 2"/>
+    <path d="m1758.6 1034.8v80" fill="none" stroke="#000" stroke-dasharray="5 2 5 2"/>
+    <path d="m2026.6 1045.8v80" fill="none" stroke="#000" stroke-dasharray="5 2 5 2"/>
+    <path d="m1977.6 1045.8v177h170v-229" fill="none" stroke="#000" stroke-dasharray="5 2 5 2" stroke-width="2"/>
+    <path d="m906.6 892.3h49" fill="none" stroke="#000" stroke-width="3"/>
+    <path d="m986.6 892.3h44" fill="none" stroke="#000" stroke-width="3"/>
+    <path d="m2503.6 607.3h34" fill="none" stroke="#000" stroke-width="3"/>
+    <path d="m2568.6 612.3h62" fill="none" stroke="#000" stroke-width="3"/>
+    <path d="m355.6 1008.3h316" fill="none" stroke="#000" stroke-width="3"/>
+    <path d="m294.6 510.3h250" fill="none" stroke="#000" stroke-width="3"/>
+    <path d="m1948.1 478.8h244" fill="none" stroke="#000" stroke-width="3"/>
+    <path d="m1648.6 513.8h104" fill="none" stroke="#000" stroke-width="3"/>
+    <path d="m1253.6 511.8h159" fill="none" stroke="#000" stroke-width="3"/>
+    <path d="m932.6 511.8h110" fill="none" stroke="#000" stroke-width="3"/>
+    <path d="m2197.1 128.3h248" fill="none" stroke="#000" stroke-width="3"/>
+    <path d="m697.6 517.8h49" fill="none" stroke="#000" stroke-width="3"/>
+    <path d="m290.1 100.8h287" fill="none" stroke="#000" stroke-width="3"/>
+    <path d="m969.1 156.8v2h50 35" fill="none" stroke="#000" stroke-width="3"/>
+    <path d="m1511.6 109.8h246" fill="none" stroke="#000" stroke-width="3"/>
+    <path d="m1169.1 956.3h341" fill="none" stroke="#000" stroke-width="3"/>
+    <path d="m1539.6 1383.3h350" fill="none" stroke="#000" stroke-width="3"/>
+    <path d="m2262.1 997.3h399" fill="none" stroke="#000" stroke-width="3"/>
+    <path d="m2027.6 1349.8h40" fill="none" stroke="#000" stroke-width="3"/>
+    <path d="m2092.6 1349.8h40" fill="none" stroke="#000" stroke-width="3"/>
+    <path d="m1658.6 984.8h147" fill="none" stroke="#000" stroke-width="3"/>
+    <path d="m1922.6 1010.8h106" fill="none" stroke="#000" stroke-width="3"/>
+</svg>
