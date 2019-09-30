@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Button, Steps, Modal } from 'antd';
 import MyLayout from '@/layouts/MyLayout';
 import Topology from './Topology';
-import styles from './index.less';
+import styles from './LTOld.less';
 
 const { Step } = Steps;
 
