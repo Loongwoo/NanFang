@@ -89,7 +89,7 @@ const LianTang = ({ location, setBefore, setAfter }) => {
       load(true);
     } else if (current === 1) {
       load(false);
-      setBefore(2);
+      setBefore(1);
       addClkEvt('rect-c', cClick);
     } else if (current === 2) {
       rmvClkEvt('rect-c', cClick);
@@ -130,14 +130,6 @@ const LianTang = ({ location, setBefore, setAfter }) => {
       onOk: () => setCurrent(4),
     });
 
-  const handleReady = () =>
-    Modal.warning({
-      title: '告警',
-      content: warnings,
-      okText: '知道了',
-      onOk: () => setCurrent(1),
-    });
-
   const load = v => {
     if (v) {
       blinkYellow('rect-g');
@@ -167,7 +159,6 @@ const LianTang = ({ location, setBefore, setAfter }) => {
       result={result}
       current={current}
       changeCurrent={setCurrent}
-      readyStart={handleReady}
     />
   );
 };

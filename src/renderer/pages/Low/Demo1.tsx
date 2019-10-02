@@ -76,13 +76,17 @@ const Demo3 = ({ location, setBefore, setAfter }) => {
   const g2Click = () =>
     setBuildin({ name: 'G2', value: true, onOk: () => handleOk(6) });
 
-  const child = buildin ? <Building {...buildin} /> : null;
+  const svg = {
+    title: '拓扑图',
+    src: low,
+    child: buildin ? <Building {...buildin} /> : null,
+  };
 
   return (
     <FlowPage
       location={location}
       warnings={warnings}
-      svg={{ title: '拓扑图', src: low, child }}
+      svg={svg}
       title="示例一"
       steps={steps}
       result={result}

@@ -16,7 +16,6 @@ export default ({
   nexts = [],
   current,
   changeCurrent,
-  readyStart = null,
 }) => {
   const finished = current === steps.length - 1;
 
@@ -28,17 +27,28 @@ export default ({
         cancelText: '继续',
         onOk: () => changeCurrent(0),
       });
-    } else if (readyStart) {
-      readyStart();
     } else {
-      changeCurrent(1);
+      Modal.warning({
+        title: `发现${warnings.length}条告警`,
+        content: (
+          <div>
+            {warnings.map((a, i) => (
+              <div key={i} style={{ marginBottom: 3 }}>
+                {a}
+              </div>
+            ))}
+          </div>
+        ),
+        okText: '知道了',
+        onOk: () => changeCurrent(1),
+      });
     }
   };
 
   return (
     <MyLayout location={location}>
       {current > 0 && warnings ? (
-        <marquee className={styles.marquee} behavior="scroll">
+        <marquee className={styles.marquee} scrollamount={10} behavior="scroll">
           {warnings}
         </marquee>
       ) : (

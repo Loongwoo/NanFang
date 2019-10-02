@@ -3,7 +3,7 @@ import FlowPage from '@/components/FlowPage';
 import Building from '@/components/Building';
 import { addClkEvt, rmvClkEvt, setStroke, showModal } from '@/utils/svgUtils';
 import { connect } from 'dva';
-import Low from '@/assets/low.svg';
+import low from '@/assets/low.svg';
 
 const warnings = [
   '工单1：楼栋G3用户7报修故障；',
@@ -113,13 +113,17 @@ const Demo4 = ({ location, setBefore, setAfter }) => {
   const f4Click = () =>
     showModal({ title: '开关FZX1-4', value: true, onOk: () => handleOk(8) });
 
-  const child = buildin ? <Building {...buildin} /> : null;
+  const svg = {
+    title: '拓扑图',
+    src: low,
+    child: buildin ? <Building {...buildin} /> : null,
+  };
 
   return (
     <FlowPage
       location={location}
       warnings={warnings}
-      svg={{ title: '拓扑图', src: Low, child }}
+      svg={svg}
       title="示例二"
       steps={steps}
       result={result}
