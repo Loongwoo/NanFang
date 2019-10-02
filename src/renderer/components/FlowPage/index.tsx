@@ -3,10 +3,11 @@ import { Button, Steps, Modal } from 'antd';
 import MyLayout from '@/layouts/MyLayout';
 import SVGView from '@/components/SVGView';
 import styles from './index.less';
+import { connect } from 'dva';
 
 const { Step } = Steps;
 
-export default ({
+const FlowPage = ({
   location,
   warnings,
   svg,
@@ -16,7 +17,17 @@ export default ({
   nexts = [],
   current,
   changeCurrent,
+  setBefore,
+  setAfter,
 }) => {
+  if (current === 0) {
+    setBefore(0);
+  } else if (current === 1) {
+    setBefore(warnings.length);
+  } else if (current === steps.length - 1) {
+    setAfter(result.length);
+  }
+
   const finished = current === steps.length - 1;
 
   const handleStart = () => {
@@ -104,3 +115,21 @@ export default ({
     </MyLayout>
   );
 };
+
+export default connect(
+  ({}) => ({}),
+  dispatch => ({
+    setBefore(before) {
+      dispatch({
+        type: 'order/setOrder',
+        values: { before, after: 0 },
+      });
+    },
+    setAfter(after) {
+      dispatch({
+        type: 'order/setOrder',
+        values: { after },
+      });
+    },
+  })
+)(FlowPage);

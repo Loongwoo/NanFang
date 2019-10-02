@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import FlowPage from '@/components/FlowPage';
 import { Modal } from 'antd';
-import { connect } from 'dva';
 import liantang from '@/assets/liantang.svg';
 import {
   addClkEvt,
@@ -35,7 +34,7 @@ const result = [
   '通知供电分局人员进行巡线排查故障：巡线起点为大信置业专用配电站602；终点为大信置业D专用配电站603',
 ];
 
-const LianTang = ({ location, setBefore, setAfter }) => {
+export default ({ location }) => {
   const [current, setCurrent] = useState(0);
 
   useEffect(() => {
@@ -54,8 +53,6 @@ const LianTang = ({ location, setBefore, setAfter }) => {
     }
 
     if (current === 0) {
-      setBefore(0);
-
       setStroke('rect-f', '#000');
       setStroke('line-f', '#0f0', true);
 
@@ -69,7 +66,6 @@ const LianTang = ({ location, setBefore, setAfter }) => {
       clearFill('rect-c');
       clearFill('rect-f');
     } else if (current === 1) {
-      setBefore(1);
       blinkBlue('rect-c');
     } else if (current === 2) {
       clearFill('rect-c');
@@ -91,8 +87,6 @@ const LianTang = ({ location, setBefore, setAfter }) => {
         okText: '知道了',
         onOk: () => setCurrent(7),
       });
-    } else if (current === 7) {
-      setAfter(1);
     }
   });
 
@@ -133,21 +127,3 @@ const LianTang = ({ location, setBefore, setAfter }) => {
     />
   );
 };
-
-export default connect(
-  ({}) => ({}),
-  dispatch => ({
-    setBefore(before) {
-      dispatch({
-        type: 'order/setOrder',
-        values: { before, after: 0 },
-      });
-    },
-    setAfter(after) {
-      dispatch({
-        type: 'order/setOrder',
-        values: { after },
-      });
-    },
-  })
-)(LianTang);

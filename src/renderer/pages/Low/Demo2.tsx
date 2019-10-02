@@ -8,7 +8,6 @@ import {
   blinkBlue,
   clearFill,
 } from '@/utils/svgUtils';
-import { connect } from 'dva';
 import low from '@/assets/low.svg';
 
 const warnings = [
@@ -37,7 +36,7 @@ const result = [
   '楼栋G5用户11报修',
 ];
 
-const Demo4 = ({ location, setBefore, setAfter }) => {
+export default ({ location }) => {
   const [buildin, setBuildin] = useState(null);
   const [current, setCurrent] = useState(0);
 
@@ -54,7 +53,6 @@ const Demo4 = ({ location, setBefore, setAfter }) => {
     }
 
     if (current === 0) {
-      setBefore(0);
       setBuildin(null);
       setStroke('rect-g3', 'green');
       setStroke('line-g3', 'green', true);
@@ -70,7 +68,6 @@ const Demo4 = ({ location, setBefore, setAfter }) => {
       clearFill('rect-f3');
       clearFill('rect-f4');
     } else if (current === 1) {
-      setBefore(5);
       blinkBlue('rect-g3');
       blinkBlue('rect-g4');
     } else if (current === 2) {
@@ -91,8 +88,6 @@ const Demo4 = ({ location, setBefore, setAfter }) => {
     } else if (current === 8) {
       clearFill('rect-f2');
       clearFill('rect-f4');
-    } else if (current === 9) {
-      setAfter(2);
     }
   });
 
@@ -146,21 +141,3 @@ const Demo4 = ({ location, setBefore, setAfter }) => {
     />
   );
 };
-
-export default connect(
-  ({}) => ({}),
-  dispatch => ({
-    setBefore(before) {
-      dispatch({
-        type: 'order/setOrder',
-        values: { before, after: 0 },
-      });
-    },
-    setAfter(after) {
-      dispatch({
-        type: 'order/setOrder',
-        values: { after },
-      });
-    },
-  })
-)(Demo4);
