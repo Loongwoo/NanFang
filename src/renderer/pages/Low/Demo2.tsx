@@ -96,36 +96,32 @@ export default ({ location }) => {
     setTimeout(() => setCurrent(v + 1), 200);
   };
 
-  const g3Click = () =>
-    setBuildin({ name: 'G3', value: false, onOk: () => handleOk(2) });
-
-  const g4Click = () =>
-    setBuildin({ name: 'G4', value: false, onOk: () => handleOk(2) });
-
-  const f1Click = () =>
-    askModal({ title: '开关FZX1-1', value: true, onOk: () => handleOk(6) });
-
-  const f2Click = () =>
-    askModal({ title: '开关FZX1-2', value: true, onOk: () => handleOk(8) });
-
-  const f3Click = () =>
-    askModal({ title: '开关FZX1-3', value: false, onOk: () => handleOk(4) });
-
-  const f4Click = () =>
-    askModal({ title: '开关FZX1-4', value: true, onOk: () => handleOk(8) });
+  const onLoad = () => {
+    addClkEvt('rect-g3', () =>
+      setBuildin({ name: 'G3', value: false, onOk: () => handleOk(2) })
+    );
+    addClkEvt('rect-g4', () =>
+      setBuildin({ name: 'G4', value: false, onOk: () => handleOk(2) })
+    );
+    addClkEvt('rect-f1', () =>
+      askModal({ title: '开关FZX1-1', value: true, onOk: () => handleOk(6) })
+    );
+    addClkEvt('rect-f2', () =>
+      askModal({ title: '开关FZX1-2', value: true, onOk: () => handleOk(8) })
+    );
+    addClkEvt('rect-f3', () =>
+      askModal({ title: '开关FZX1-3', value: false, onOk: () => handleOk(4) })
+    );
+    addClkEvt('rect-f4', () =>
+      askModal({ title: '开关FZX1-4', value: true, onOk: () => handleOk(8) })
+    );
+  };
 
   const svg = {
     title: '拓扑图',
     src: low,
     child: buildin ? <Building {...buildin} /> : null,
-    onLoad: () => {
-      addClkEvt('rect-g3', g3Click);
-      addClkEvt('rect-g4', g4Click);
-      addClkEvt('rect-f1', f1Click);
-      addClkEvt('rect-f2', f2Click);
-      addClkEvt('rect-f3', f3Click);
-      addClkEvt('rect-f4', f4Click);
-    },
+    onLoad,
   };
 
   return (

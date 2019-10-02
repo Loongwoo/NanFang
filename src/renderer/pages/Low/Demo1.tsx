@@ -68,24 +68,23 @@ export default ({ location }) => {
     setTimeout(() => setCurrent(v + 1), 200);
   };
 
-  const g1Click = () =>
-    setBuildin({ name: 'G1', value: false, onOk: () => handleOk(2) });
-
-  const f2Click = () =>
-    askModal({ title: '开关FZX1-2', value: true, onOk: () => handleOk(4) });
-
-  const g2Click = () =>
-    setBuildin({ name: 'G2', value: true, onOk: () => handleOk(6) });
+  const onLoad = () => {
+    addClkEvt('rect-g1', () =>
+      setBuildin({ name: 'G1', value: false, onOk: () => handleOk(2) })
+    );
+    addClkEvt('rect-f2', () =>
+      askModal({ title: '开关FZX1-2', value: true, onOk: () => handleOk(4) })
+    );
+    addClkEvt('rect-g2', () =>
+      setBuildin({ name: 'G2', value: true, onOk: () => handleOk(6) })
+    );
+  };
 
   const svg = {
     title: '拓扑图',
     src: low,
     child: buildin ? <Building {...buildin} /> : null,
-    onLoad: () => {
-      addClkEvt('rect-g1', g1Click);
-      addClkEvt('rect-f2', f2Click);
-      addClkEvt('rect-g2', g2Click);
-    },
+    onLoad,
   };
 
   return (

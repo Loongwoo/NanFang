@@ -90,34 +90,28 @@ export default ({ location }) => {
     }
   });
 
-  const cClick = () =>
-    showModal({
-      title: '万城大信充电桩专用箱变',
-      value: true,
-      onOk: () => setCurrent(2),
-    });
-
-  const fClick = () =>
-    showModal({
-      title: '大信D段专用电房',
-      value: false,
-      onOk: () => setCurrent(4),
-    });
-
-  const svg = {
-    lengend: false,
-    src: liantang,
-    onLoad: () => {
-      addClkEvt('rect-c', cClick);
-      addClkEvt('rect-f', fClick);
-    },
+  const onLoad = () => {
+    addClkEvt('rect-c', () =>
+      showModal({
+        title: '万城大信充电桩专用箱变',
+        value: true,
+        onOk: () => setCurrent(2),
+      })
+    );
+    addClkEvt('rect-f', () =>
+      showModal({
+        title: '大信D段专用电房',
+        value: false,
+        onOk: () => setCurrent(4),
+      })
+    );
   };
 
   return (
     <FlowPage
       location={location}
       warnings={warnings}
-      svg={svg}
+      svg={{ lengend: false, src: liantang, onLoad }}
       title="莲塘天明线706"
       steps={steps}
       nexts={[2, 4, 5]}
