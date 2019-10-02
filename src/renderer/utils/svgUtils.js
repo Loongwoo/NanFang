@@ -78,12 +78,18 @@ export const clearChild = id => {
   }
 };
 
+export const clearFill = id => {
+  const el = getEl(id);
+  if (el) {
+    el.setAttribute('fill', 'none');
+    el.innerHTML = '';
+  }
+};
+
 export const addClkEvt = (id, event) => {
   const el = document.getElementById(id);
   if (el) {
     el.addEventListener('click', event, false);
-
-    blinkBlue(el);
   }
 };
 
@@ -91,9 +97,6 @@ export const rmvClkEvt = (id, event) => {
   const el = document.getElementById(id);
   if (el) {
     el.removeEventListener('click', event, false);
-    el.setAttribute('fill', 'none');
-
-    clearChild(el);
   }
 };
 

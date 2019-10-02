@@ -2,7 +2,7 @@
 <svg height="1000" width="1000" viewBox="0 0 800 1000" version="1.1"
     xmlns="http://www.w3.org/2000/svg"
     xmlns:xlink="http://www.w3.org/1999/xlink">
-    <g fill="#fff" stroke-width="1" stroke="green" >
+    <g fill="none" stroke-width="1" stroke="green" >
         <path d="m640 40h110" />
         <path d="m700 40v15" stroke-dasharray="10" >
             <animate attributeName="stroke-dashoffset" dur="1s" repeatCount="indefinite" keyTimes="0;1" calcMode="linear" values="40;0" />
@@ -73,66 +73,66 @@
       Tr1-4
     </text>
     </g>
-    <path id="line-f1" d="m500 570v40" fill="#fff" stroke-width="1" stroke="green" stroke-dasharray="10">
+    <path id="line-f1" d="m500 570v40" fill="none" stroke-width="1" stroke="green" stroke-dasharray="10">
         <animate attributeName="stroke-dashoffset" dur="1s" repeatCount="indefinite" keyTimes="0;1" calcMode="linear" values="40;0" />
     </path>
-    <rect id="rect-f1" x="473" y="610" width="55" height="30" fill="#fff" stroke-width="1" stroke="green" />
+    <rect id="rect-f1" x="473" y="610" width="55" height="30" fill="none" stroke-width="1" stroke="green" />
     <text id="text-f1" x="425" y="610" fill="green" stroke="none" font-size="20" text-anchor="middle" dominant-baseline="middle" >
       FZX1-1
     </text>
-    <path id="line-f2" d="m473 625l-213 75" fill="#fff" stroke-width="1" stroke="green" stroke-dasharray="10" >
+    <path id="line-f2" d="m473 625l-213 75" fill="none" stroke-width="1" stroke="green" stroke-dasharray="10" >
         <animate attributeName="stroke-dashoffset" dur="1s" repeatCount="indefinite" keyTimes="0;1" calcMode="linear" values="40;0" />
     </path>
-    <rect id="rect-f2" x="233" y="700" width="55" height="30" fill="#fff" stroke-width="1" stroke="green" />
+    <rect id="rect-f2" x="233" y="700" width="55" height="30" fill="none" stroke-width="1" stroke="green" />
     <text id="text-f2" x="180" y="715" fill="green" stroke="none" font-size="20" text-anchor="middle" dominant-baseline="middle" >
       FZX1-2
     </text>
-    <path id="line-f3" d="M500 640v60" stroke-dasharray="10" fill="#fff" stroke-width="1" stroke="green" >
+    <path id="line-f3" d="M500 640v60" stroke-dasharray="10" fill="none" stroke-width="1" stroke="green" >
         <animate attributeName="stroke-dashoffset" dur="1s" repeatCount="indefinite" keyTimes="0;1" calcMode="linear" values="40;0" />
     </path>
-    <rect id="rect-f3" x="473" y="700" width="55" height="30" fill="#fff" stroke-width="1" stroke="green" />
+    <rect id="rect-f3" x="473" y="700" width="55" height="30" fill="none" stroke-width="1" stroke="green" />
     <text id="text-f3" x="420" y="715" fill="green" stroke="none" font-size="20" text-anchor="middle" dominant-baseline="middle" >
       FZX1-3
     </text>
-    <path id="line-f4" d="m527 625l213 75" fill="#fff" stroke-width="1" stroke="green" stroke-dasharray="10" >
+    <path id="line-f4" d="m527 625l213 75" fill="none" stroke-width="1" stroke="green" stroke-dasharray="10" >
         <animate attributeName="stroke-dashoffset" dur="1s" repeatCount="indefinite" keyTimes="0;1" calcMode="linear" values="40;0" />
     </path>
-    <rect id="rect-f4" x="713" y="700" width="55" height="30" fill="#fff" stroke-width="1" stroke="green" />
+    <rect id="rect-f4" x="713" y="700" width="55" height="30" fill="none" stroke-width="1" stroke="green" />
     <text id="text-f4" x="660" y="715" fill="green" stroke="none" font-size="20" text-anchor="middle" dominant-baseline="middle" >
       FZX1-4
     </text>
-    <path id="line-g1" d="m260 730l-160 70" fill="#fff" stroke-width="1" stroke="green" stroke-dasharray="10" >
+    <path id="line-g1" d="m260 730l-160 70" fill="none" stroke-width="1" stroke="green" stroke-dasharray="10" >
         <animate attributeName="stroke-dashoffset" dur="1s" repeatCount="indefinite" keyTimes="0;1" calcMode="linear" values="40;0" />
     </path>
-    <rect id="rect-g1" x="70" y="800" width="60" height="130" fill="#fff" stroke-width="1" stroke="green" />
+    <rect id="rect-g1" x="70" y="800" width="60" height="130" fill="none" stroke-width="1" stroke="green" />
     <text id="text-g1" x="100" y="960" fill="green" stroke="none" font-size="20" text-anchor="middle" dominant-baseline="middle" >
       G1
     </text>
-    <path id="line-g2" d="m260 730v70" fill="#fff" stroke-width="1" stroke="green" stroke-dasharray="10" >
+    <path id="line-g2" d="m260 730v70" fill="none" stroke-width="1" stroke="green" stroke-dasharray="10" >
         <animate attributeName="stroke-dashoffset" dur="1s" repeatCount="indefinite" keyTimes="0;1" calcMode="linear" values="40;0" />
     </path>
-    <rect id="rect-g2" x="230" y="800" width="60" height="130" fill="#fff" stroke-width="1" stroke="green" />
+    <rect id="rect-g2" x="230" y="800" width="60" height="130" fill="none" stroke-width="1" stroke="green" />
     <text id="text-g2" x="260" y="960" fill="green" stroke="none" font-size="20" text-anchor="middle" dominant-baseline="middle" >
       G2
     </text>
-    <path id="line-g3" d="m500 730l-80 70" fill="#fff" stroke-width="1" stroke="green" stroke-dasharray="10" >
+    <path id="line-g3" d="m500 730l-80 70" fill="none" stroke-width="1" stroke="green" stroke-dasharray="10" >
         <animate attributeName="stroke-dashoffset" dur="1s" repeatCount="indefinite" keyTimes="0;1" calcMode="linear" values="40;0" />
     </path>
-    <rect id="rect-g3" x="390" y="800" width="60" height="130" fill="#fff" stroke-width="1" stroke="green" />
+    <rect id="rect-g3" x="390" y="800" width="60" height="130" fill="none" stroke-width="1" stroke="green" />
     <text id="text-g3" x="410" y="960" fill="green" stroke="none" font-size="20" text-anchor="middle" dominant-baseline="middle" >
       G3
     </text>
-    <path id="line-g4" d="m500 730l80 70" fill="#fff" stroke-width="1" stroke="green" stroke-dasharray="10" >
+    <path id="line-g4" d="m500 730l80 70" fill="none" stroke-width="1" stroke="green" stroke-dasharray="10" >
         <animate attributeName="stroke-dashoffset" dur="1s" repeatCount="indefinite" keyTimes="0;1" calcMode="linear" values="40;0" />
     </path>
-    <rect id="rect-g4" x="550" y="800" width="60" height="130" fill="#fff" stroke-width="1" stroke="green" />
+    <rect id="rect-g4" x="550" y="800" width="60" height="130" fill="none" stroke-width="1" stroke="green" />
     <text id="text-g4" x="580" y="960" fill="green" stroke="none" font-size="20" text-anchor="middle" dominant-baseline="middle" >
       G4
     </text>
-    <path id="line-g5" d="m740 730v70" fill="#fff" stroke-width="1" stroke="green" stroke-dasharray="10" >
+    <path id="line-g5" d="m740 730v70" fill="none" stroke-width="1" stroke="green" stroke-dasharray="10" >
         <animate attributeName="stroke-dashoffset" dur="1s" repeatCount="indefinite" keyTimes="0;1" calcMode="linear" values="40;0" />
     </path>
-    <rect id="rect-g5" x="710" y="800" width="60" height="130" fill="#fff" stroke-width="1" stroke="green" />
+    <rect id="rect-g5" x="710" y="800" width="60" height="130" fill="none" stroke-width="1" stroke="green" />
     <text id="text-g5" x="740" y="960" fill="green" stroke="none" font-size="20" text-anchor="middle" dominant-baseline="middle" >
       G5
     </text>

@@ -5,16 +5,19 @@ import { connect } from 'dva';
 import liantang from '@/assets/liantang.svg';
 import {
   addClkEvt,
-  rmvClkEvt,
   setStroke,
   showModal,
   blinkRed,
   clearChild,
   setSW,
+  blinkBlue,
+  clearFill,
 } from '@/utils/svgUtils';
 
 const warnings = [
-  '2019-10-3 21:43:21:225，大信置业G专用配电站602与大信置业D专用配电站603之间出现故障，开关大信置业G专用配电站602与大信置业D专用配电站603分开，隔离故障。',
+  [
+    '2019-10-3 21:43:21:225，大信置业G专用配电站602与大信置业D专用配电站603之间出现故障，开关大信置业G专用配电站602与大信置业D专用配电站603分开，隔离故障。',
+  ],
 ];
 
 const steps = [
@@ -63,20 +66,20 @@ const LianTang = ({ location, setBefore, setAfter }) => {
       setSW('rect-x', 2);
       setSW('rect-d', 2);
 
-      rmvClkEvt('rect-c', cClick);
-      rmvClkEvt('rect-f', fClick);
+      clearFill('rect-c');
+      clearFill('rect-f');
     } else if (current === 1) {
       setBefore(1);
-      addClkEvt('rect-c', cClick);
+      blinkBlue('rect-c');
     } else if (current === 2) {
-      rmvClkEvt('rect-c', cClick);
+      clearFill('rect-c');
     } else if (current === 3) {
-      addClkEvt('rect-f', fClick);
+      blinkBlue('rect-f');
     } else if (current === 4) {
-      rmvClkEvt('rect-f', fClick);
+      clearFill('rect-f');
     } else if (current === 5) {
       Modal.warning({
-        title: '告警',
+        title: '更新告警',
         content: '大信置业G专用配电站602合位，大信置业D专用配电站603开关分位',
         okText: '知道了',
       });
@@ -107,11 +110,20 @@ const LianTang = ({ location, setBefore, setAfter }) => {
       onOk: () => setCurrent(4),
     });
 
+  const svg = {
+    lengend: false,
+    src: liantang,
+    onLoad: () => {
+      addClkEvt('rect-c', cClick);
+      addClkEvt('rect-f', fClick);
+    },
+  };
+
   return (
     <FlowPage
       location={location}
       warnings={warnings}
-      svg={{ lengend: false, src: liantang }}
+      svg={svg}
       title="莲塘天明线706"
       steps={steps}
       nexts={[2, 4, 5]}

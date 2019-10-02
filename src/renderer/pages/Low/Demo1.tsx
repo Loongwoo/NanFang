@@ -3,10 +3,10 @@ import FlowPage from '@/components/FlowPage';
 import Building from '@/components/Building';
 import {
   addClkEvt,
-  rmvClkEvt,
   setStroke,
-  showModal,
   askModal,
+  blinkBlue,
+  clearFill,
 } from '@/utils/svgUtils';
 import { connect } from 'dva';
 import low from '@/assets/low.svg';
@@ -45,24 +45,24 @@ const Demo3 = ({ location, setBefore, setAfter }) => {
       setBuildin(null);
       setStroke('rect-g1', 'green');
       setStroke('line-g1', 'green', true);
-      rmvClkEvt('rect-g1', g1Click);
-      rmvClkEvt('rect-f2', f2Click);
-      rmvClkEvt('rect-g2', g2Click);
+      clearFill('rect-g1');
+      clearFill('rect-f2');
+      clearFill('rect-g2');
     } else if (current === 1) {
       setBefore(4);
-      addClkEvt('rect-g1', g1Click);
+      blinkBlue('rect-g1');
     } else if (current === 2) {
       setBuildin(null);
-      rmvClkEvt('rect-g1', g1Click);
+      clearFill('rect-g1');
     } else if (current === 3) {
-      addClkEvt('rect-f2', f2Click);
+      blinkBlue('rect-f2');
     } else if (current === 4) {
-      rmvClkEvt('rect-f2', f2Click);
+      clearFill('rect-f2');
     } else if (current === 5) {
-      addClkEvt('rect-g2', g2Click);
+      blinkBlue('rect-g2');
     } else if (current === 6) {
       setBuildin(null);
-      rmvClkEvt('rect-g2', g2Click);
+      clearFill('rect-g2');
     } else if (current === 7) {
       setAfter(1);
     }
@@ -86,6 +86,11 @@ const Demo3 = ({ location, setBefore, setAfter }) => {
     title: '拓扑图',
     src: low,
     child: buildin ? <Building {...buildin} /> : null,
+    onLoad: () => {
+      addClkEvt('rect-g1', g1Click);
+      addClkEvt('rect-f2', f2Click);
+      addClkEvt('rect-g2', g2Click);
+    },
   };
 
   return (

@@ -3,10 +3,10 @@ import FlowPage from '@/components/FlowPage';
 import Building from '@/components/Building';
 import {
   addClkEvt,
-  rmvClkEvt,
   setStroke,
-  showModal,
   askModal,
+  blinkBlue,
+  clearFill,
 } from '@/utils/svgUtils';
 import { connect } from 'dva';
 import low from '@/assets/low.svg';
@@ -63,34 +63,34 @@ const Demo4 = ({ location, setBefore, setAfter }) => {
       setStroke('rect-f3', 'green');
       setStroke('line-f3', 'green', true);
 
-      rmvClkEvt('rect-g3', g3Click);
-      rmvClkEvt('rect-g4', g4Click);
-      rmvClkEvt('rect-f1', f1Click);
-      rmvClkEvt('rect-f2', f2Click);
-      rmvClkEvt('rect-f3', f3Click);
-      rmvClkEvt('rect-f4', f4Click);
+      clearFill('rect-g3');
+      clearFill('rect-g4');
+      clearFill('rect-f1');
+      clearFill('rect-f2');
+      clearFill('rect-f3');
+      clearFill('rect-f4');
     } else if (current === 1) {
       setBefore(5);
-      addClkEvt('rect-g3', g3Click);
-      addClkEvt('rect-g4', g4Click);
+      blinkBlue('rect-g3');
+      blinkBlue('rect-g4');
     } else if (current === 2) {
       setBuildin(null);
-      rmvClkEvt('rect-g3', g3Click);
-      rmvClkEvt('rect-g4', g4Click);
+      clearFill('rect-g3');
+      clearFill('rect-g4');
     } else if (current === 3) {
-      addClkEvt('rect-f3', f3Click);
+      blinkBlue('rect-f3');
     } else if (current === 4) {
-      rmvClkEvt('rect-f3', f3Click);
+      clearFill('rect-f3');
     } else if (current === 5) {
-      addClkEvt('rect-f1', f1Click);
+      blinkBlue('rect-f1');
     } else if (current === 6) {
-      rmvClkEvt('rect-f1', f3Click);
+      clearFill('rect-f1');
     } else if (current === 7) {
-      addClkEvt('rect-f2', f2Click);
-      addClkEvt('rect-f4', f4Click);
+      blinkBlue('rect-f2');
+      blinkBlue('rect-f4');
     } else if (current === 8) {
-      rmvClkEvt('rect-f2', f2Click);
-      rmvClkEvt('rect-f4', f4Click);
+      clearFill('rect-f2');
+      clearFill('rect-f4');
     } else if (current === 9) {
       setAfter(2);
     }
@@ -123,6 +123,14 @@ const Demo4 = ({ location, setBefore, setAfter }) => {
     title: '拓扑图',
     src: low,
     child: buildin ? <Building {...buildin} /> : null,
+    onLoad: () => {
+      addClkEvt('rect-g3', g3Click);
+      addClkEvt('rect-g4', g4Click);
+      addClkEvt('rect-f1', f1Click);
+      addClkEvt('rect-f2', f2Click);
+      addClkEvt('rect-f3', f3Click);
+      addClkEvt('rect-f4', f4Click);
+    },
   };
 
   return (
