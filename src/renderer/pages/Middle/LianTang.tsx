@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import FlowPage from '@/components/FlowPage';
 import { Modal } from 'antd';
+import { connect } from 'dva';
 import liantang from '@/assets/liantang.svg';
 import {
   addClkEvt,
@@ -31,7 +32,7 @@ const steps = [
 const result =
   '通知供电分局人员进行巡线排查故障：巡线起点为大信置业专用配电站602；终点为大信置业D专用配电站603';
 
-export default ({ location }) => {
+const LianTang = ({ location, setBefore, setAfter }) => {
   const [current, setCurrent] = useState(0);
 
   useEffect(() => {
@@ -60,6 +61,8 @@ export default ({ location }) => {
     }
 
     if (current === 0) {
+      setBefore(0);
+
       setStroke('rect-g', '#000');
       setStroke('rect-c', '#000');
       setStroke('line-x', '#000', false);
@@ -86,6 +89,7 @@ export default ({ location }) => {
       load(true);
     } else if (current === 1) {
       load(false);
+      setBefore(2);
       addClkEvt('rect-c', cClick);
     } else if (current === 2) {
       rmvClkEvt('rect-c', cClick);
@@ -107,6 +111,8 @@ export default ({ location }) => {
         okText: '知道了',
         onOk: () => setCurrent(7),
       });
+    } else if (current === 7) {
+      setAfter(1);
     }
   });
 
@@ -144,11 +150,17 @@ export default ({ location }) => {
     }
   };
 
+  const svg = {
+    lengend: false,
+    src: liantang,
+    onLoad: () => load(true),
+  };
+
   return (
     <FlowPage
       location={location}
       warnings={warnings}
-      svg={{ lengend: false, src: liantang, onLoad: () => load(true) }}
+      svg={svg}
       title="莲塘天明线706"
       steps={steps}
       nexts={[2, 4, 5]}
@@ -159,3 +171,21 @@ export default ({ location }) => {
     />
   );
 };
+
+export default connect(
+  ({}) => ({}),
+  dispatch => ({
+    setBefore(before) {
+      dispatch({
+        type: 'order/setOrder',
+        values: { before, after: 0 },
+      });
+    },
+    setAfter(after) {
+      dispatch({
+        type: 'order/setOrder',
+        values: { after },
+      });
+    },
+  })
+)(LianTang);

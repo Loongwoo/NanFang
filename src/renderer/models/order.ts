@@ -5,11 +5,17 @@ const initState = {
 
 export default {
   namespace: 'order',
+
   state: initState,
+
   effects: {},
+
   reducers: {
     setOrder(state, payload) {
-      return { ...state, ...payload.values };
+      return {
+        ...state,
+        ...payload.values,
+      };
     },
   },
 };

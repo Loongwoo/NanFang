@@ -133,10 +133,16 @@ export default connect(
   ({}) => ({}),
   dispatch => ({
     setBefore(before) {
-      dispatch({ type: 'order/setOrder', values: { before, after: 0 } });
+      dispatch({
+        type: 'order/setOrder',
+        values: { before, after: 0 },
+      });
     },
     setAfter(after) {
-      dispatch({ type: 'order/setOrder', values: { after } });
+      dispatch({
+        type: 'order/setOrder',
+        values: { after },
+      });
     },
   })
 )(Demo4);
