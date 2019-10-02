@@ -1,4 +1,4 @@
-import { Modal } from 'antd';
+import { Modal, message } from 'antd';
 
 export const xmlns = 'http://www.w3.org/2000/svg';
 
@@ -7,6 +7,28 @@ export const showModal = ({ value, ...rest }) =>
     content: value ? '恭喜你，电路正常！' : '糟糕，停电了！',
     okText: '知道了',
     ...rest,
+  });
+
+export const askModal = ({ title, value, onOk }) =>
+  Modal.confirm({
+    title,
+    content: '请问此处是否停电？',
+    okText: '有电',
+    cancelText: '停电',
+    onOk: () => {
+      if (value) {
+        onOk();
+      } else {
+        message.info('判断错误，请重新判断');
+      }
+    },
+    onCancel: () => {
+      if (!value) {
+        onOk();
+      } else {
+        message.info('判断错误，请重新判断');
+      }
+    },
   });
 
 export const blinkBlue = (id, n = 'fill') => blink(id, 0, 0, 255, 0.8, n);

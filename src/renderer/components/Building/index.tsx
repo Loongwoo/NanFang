@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Button, message } from 'antd';
-import { showModal } from '@/utils/svgUtils';
+import { showModal, askModal } from '@/utils/svgUtils';
 import styles from './index.less';
 
 const genG = v => {
@@ -19,21 +19,26 @@ export default ({ name, value, onOk }) => {
   const handleRoom = key => {
     setTimes(times + 1);
 
-    const onOk = () => setStatus({ ...status, [key]: value });
-    showModal({ title: `电表-${key}`, value, onOk });
+    showModal({
+      title: `电表-${key}`,
+      value,
+      onOk: () => {
+        setStatus({ ...status, [key]: value });
+      },
+    });
   };
 
   const handleBack = () => {
     if (times === 0) {
       message.warn('请先召测任意一个房间的电表');
     } else {
-      showModal({ title: `楼房-${name}`, value, onOk });
+      askModal({ title: `楼栋-${name}`, value, onOk });
     }
   };
 
   return (
     <div className={styles.group}>
-      <h2 style={{ color: '#777' }}>{`楼房${name}`}</h2>
+      <h2 style={{ color: '#777' }}>{`楼栋${name}电表详细示意图`}</h2>
 
       <div className={styles.floors}>
         {Object.keys(status).map(key => {

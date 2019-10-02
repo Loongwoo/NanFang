@@ -1,7 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import FlowPage from '@/components/FlowPage';
 import Building from '@/components/Building';
-import { addClkEvt, rmvClkEvt, setStroke, showModal } from '@/utils/svgUtils';
+import {
+  addClkEvt,
+  rmvClkEvt,
+  setStroke,
+  showModal,
+  askModal,
+} from '@/utils/svgUtils';
 import { connect } from 'dva';
 import low from '@/assets/low.svg';
 
@@ -102,16 +108,16 @@ const Demo4 = ({ location, setBefore, setAfter }) => {
     setBuildin({ name: 'G4', value: false, onOk: () => handleOk(2) });
 
   const f1Click = () =>
-    showModal({ title: '开关FZX1-1', value: true, onOk: () => handleOk(6) });
+    askModal({ title: '开关FZX1-1', value: true, onOk: () => handleOk(6) });
 
   const f2Click = () =>
-    showModal({ title: '开关FZX1-2', value: true, onOk: () => handleOk(8) });
+    askModal({ title: '开关FZX1-2', value: true, onOk: () => handleOk(8) });
 
   const f3Click = () =>
-    showModal({ title: '开关FZX1-3', value: false, onOk: () => handleOk(4) });
+    askModal({ title: '开关FZX1-3', value: false, onOk: () => handleOk(4) });
 
   const f4Click = () =>
-    showModal({ title: '开关FZX1-4', value: true, onOk: () => handleOk(8) });
+    askModal({ title: '开关FZX1-4', value: true, onOk: () => handleOk(8) });
 
   const svg = {
     title: '拓扑图',

@@ -126,6 +126,7 @@ export default ({ src, title, lengend = true, child, onLoad }) => {
             loader={<Loading />}
             onLoad={onLoad}
             onError={e => {
+              // tslint:disable-next-line: no-console
               console.log('svg', e);
             }}
             style={{
