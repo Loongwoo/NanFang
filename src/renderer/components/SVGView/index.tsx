@@ -139,10 +139,8 @@ export default ({ src, title, lengend = true, child, onLoad }) => {
       {title && !child && <h3 className={styles.title}>{title}</h3>}
       {lengend && !child && (
         <div className={styles.legend}>
-          <div style={{ color: 'green', marginBottom: 5 }}>
-            绿色线条代表有电
-          </div>
-          <div style={{ color: 'red' }}>红色线条代表停电</div>
+          <div className={styles.l1}>绿色线条代表有电</div>
+          <div className={styles.l2}>红色线条代表停电</div>
         </div>
       )}
 

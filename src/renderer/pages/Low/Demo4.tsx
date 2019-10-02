@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import FlowPage from '@/components/FlowPage';
 import Building from '@/components/Building';
 import { addClkEvt, rmvClkEvt, setStroke, showModal } from '@/utils/svgUtils';
+import { connect } from 'dva';
 import Low from '@/assets/low.svg';
 
 const warnings = [
@@ -25,9 +26,12 @@ const steps = [
   '得出结论',
 ];
 
-const result = 'FZX1-1至FZX1-3段故障，工单1-5合并为同一抢修工单';
+const result = [
+  '工单1-4合并为同一抢修工单，FZX1-1至FZX1-3段故障',
+  '楼栋G5用户11报修',
+];
 
-export default ({ location }) => {
+const Demo4 = ({ location, setBefore, setAfter }) => {
   const [buildin, setBuildin] = useState(null);
   const [current, setCurrent] = useState(0);
 
@@ -44,6 +48,7 @@ export default ({ location }) => {
     }
 
     if (current === 0) {
+      setBefore(0);
       setBuildin(null);
       setStroke('rect-g3', 'green');
       setStroke('line-g3', 'green', true);
@@ -59,6 +64,7 @@ export default ({ location }) => {
       rmvClkEvt('rect-f3', f3Click);
       rmvClkEvt('rect-f4', f4Click);
     } else if (current === 1) {
+      setBefore(5);
       addClkEvt('rect-g3', g3Click);
       addClkEvt('rect-g4', g4Click);
     } else if (current === 2) {
@@ -79,6 +85,8 @@ export default ({ location }) => {
     } else if (current === 8) {
       rmvClkEvt('rect-f2', f2Click);
       rmvClkEvt('rect-f4', f4Click);
+    } else if (current === 9) {
+      setAfter(2);
     }
   });
 
@@ -120,3 +128,15 @@ export default ({ location }) => {
     />
   );
 };
+
+export default connect(
+  ({}) => ({}),
+  dispatch => ({
+    setBefore(before) {
+      dispatch({ type: 'order/setOrder', values: { before, after: 0 } });
+    },
+    setAfter(after) {
+      dispatch({ type: 'order/setOrder', values: { after } });
+    },
+  })
+)(Demo4);

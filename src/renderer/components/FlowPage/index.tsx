@@ -37,10 +37,12 @@ export default ({
 
   return (
     <MyLayout location={location}>
-      {warnings && (
+      {current > 0 && warnings ? (
         <marquee className={styles.marquee} behavior="scroll">
           {warnings}
         </marquee>
+      ) : (
+        <div className={styles.header}>现在一切运行正常</div>
       )}
 
       <div className={styles.content}>
@@ -72,7 +74,10 @@ export default ({
             ])}
           </Steps>
 
-          {finished && <h3 className={styles.result}>{result}</h3>}
+          {finished &&
+            result.map((r, i) => (
+              <h3 key={i} className={styles.result}>{`工单${i + 1}：${r}`}</h3>
+            ))}
 
           <div style={{ marginBottom: 20, textAlign: 'center' }}>
             <Button

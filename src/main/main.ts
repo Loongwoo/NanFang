@@ -96,7 +96,7 @@ function createWindow() {
     minHeight: 600,
     minWidth: 900,
     width: 1165,
-    height: 650,
+    height: 688,
     backgroundColor: 'white',
     titleBarStyle,
     title: '配电网多源信息故障诊断模拟软件',

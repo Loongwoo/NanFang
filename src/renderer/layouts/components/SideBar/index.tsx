@@ -1,10 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, Icon } from 'antd';
 import { FormattedMessage } from 'umi-plugin-locale';
+import { connect } from 'dva';
 import styles from './index.less';
+
 const SubMenu = Menu.SubMenu;
 
-const SideBar = ({ history, route: { routes }, location: { pathname } }) => {
+const SideBar = ({
+  history,
+  route: { routes },
+  location: { pathname },
+  before,
+  after,
+}) => {
   const defaultSelectedKeys = [pathname.slice(1)];
   const defaultOpenKeys = ['low', 'middle'];
 
@@ -58,8 +66,15 @@ const SideBar = ({ history, route: { routes }, location: { pathname } }) => {
         </div>
         <div className={styles.desc}>
           <ruby>
-            今日工单
-            <b> 9 </b>条<rp>(</rp>
+            <div>
+              <div>
+                今日工单<b> {before} </b>条
+              </div>
+              <div>
+                合并工单<b> {after} </b>条
+              </div>
+            </div>
+            <rp>(</rp>
             <rt>工单系统</rt>
             <rp>)</rp>
           </ruby>
@@ -78,4 +93,8 @@ const SideBar = ({ history, route: { routes }, location: { pathname } }) => {
     </div>
   );
 };
-export default SideBar;
+
+export default connect(({ order }) => ({
+  before: order.before,
+  after: order.after,
+}))(SideBar);
