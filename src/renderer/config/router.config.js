@@ -22,6 +22,7 @@ export default [
             path: '/middle/liantang',
             name: 'liantang',
             component: './Middle/Liantang',
+            // component: './Blank',
           },
         ],
       },
