@@ -1,6 +1,6 @@
 {
   "name": "nanfang",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "private": true,
   "author": {
     "name": "Loongwoo",
@@ -10,7 +10,7 @@
   "description": "一个演示的桌面客户端。",
   "main": "./dist/main/main.js",
   "build": {
-    "productName": "NanFang",
+    "productName": "配电网多源信息故障诊断模拟软件",
     "appId": "com.kiwik.NanFang",
     "directories": {
       "output": "release"
