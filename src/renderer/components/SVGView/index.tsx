@@ -3,6 +3,7 @@ import { Button } from 'antd';
 import SVG from '@/components/ReactSVG';
 import styles from './index.less';
 import Loading from '../Loading';
+import { AutoSizer } from 'react-virtualized';
 
 const StartLeft = 240;
 const StartTop = 44;
@@ -112,6 +113,8 @@ export default ({ src, title, lengend = true, child, onLoad }) => {
     setTimeout(recovery, 100);
   };
 
+  const style = { width: `${100 * scale}%`, height: `${100 * scale - 1}%` };
+
   return (
     <div className={styles.main}>
       {child}
@@ -121,17 +124,23 @@ export default ({ src, title, lengend = true, child, onLoad }) => {
           className={styles.svgContainer}
           style={{ cursor: 'pointer' }}
         >
-          <SVG
-            src={src}
-            loader={<Loading />}
-            onLoad={onLoad}
-            onError={e => {
-              // tslint:disable-next-line: no-console
-              console.log('svg', e);
-            }}
-            width={`${100 * scale}%`}
-            height={`${100 * scale - 1}%`}
-          />
+          <div style={style}>
+            <AutoSizer>
+              {({ width, height }) => (
+                <SVG
+                  src={src}
+                  loader={<Loading />}
+                  onLoad={onLoad}
+                  onError={e => {
+                    // tslint:disable-next-line: no-console
+                    console.log('svg', e);
+                  }}
+                  width={width}
+                  height={height}
+                />
+              )}
+            </AutoSizer>
+          </div>
         </div>
       )}
 
