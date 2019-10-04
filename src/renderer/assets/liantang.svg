@@ -1346,9 +1346,6 @@
     <path d="m2038.6 560.8v245h-628v-247" fill="none" stroke="#0f0" stroke-dasharray="20" stroke-width="2">
         <animate attributeName="stroke-dashoffset" dur="1s" repeatCount="indefinite" keyTimes="0;1" calcMode="linear" values="80;0" />
     </path>
-    <path d="m953.6 942.3v25h35v-25" fill="none" stroke="#0f0" stroke-dasharray="20">
-        <animate attributeName="stroke-dashoffset" dur="1s" repeatCount="indefinite" keyTimes="0;1" calcMode="linear" values="80;0" />
-    </path>
     </path>
     <path d="m1466.6 1038.8v52.5m0 0a2 2 0 1 0 0 4v1m0 0a2 2 0 1 0 0 4v151.5h192v-220" fill="none" stroke="#0f0" stroke-dasharray="20" stroke-width="2">
         <animate attributeName="stroke-dashoffset" dur="1s" repeatCount="indefinite" keyTimes="0;1" calcMode="linear" values="80;0" />
@@ -1362,8 +1359,9 @@
     <path d="m1977.6 1045.8v177h170v-229" fill="none" stroke="#0f0" stroke-dasharray="20" stroke-width="2">
         <animate attributeName="stroke-dashoffset" dur="1s" repeatCount="indefinite" keyTimes="0;1" calcMode="linear" values="80;0" />
     </path>
+    <path d="m953.6 942.3v25h35v-25" fill="none" stroke="#0f0" stroke-dasharray="5 2 5 2" />
     <path d="m1028.6 968.3v80" fill="none" stroke="#0f0" stroke-dasharray="5 2 5 2" />
-    <path d="m2630.6 662.3v80" fill="none" stroke="#0f0" stroke-dasharray="5 2 5 2">
+    <path d="m2630.6 662.3v80" fill="none" stroke="#0f0" stroke-dasharray="5 2 5 2" />
     <path d="m529.6 1094.3v97" fill="none" stroke="#000" stroke-dasharray="5 2 5 2"/>
     <path d="m581.6 1094.3v80" fill="none" stroke="#000" stroke-dasharray="5 2 5 2"/>
     <path d="m544.6 596.3v80" fill="none" stroke="#000" stroke-dasharray="5 2 5 2"/>
