@@ -129,10 +129,8 @@ export default ({ src, title, lengend = true, child, onLoad }) => {
               // tslint:disable-next-line: no-console
               console.log('svg', e);
             }}
-            style={{
-              width: `${100 * scale}%`,
-              height: `${100 * scale - 1}%`,
-            }}
+            width={`${100 * scale}%`}
+            height={`${100 * scale - 1}%`}
           />
         </div>
       )}
