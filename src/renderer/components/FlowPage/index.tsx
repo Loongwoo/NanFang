@@ -4,6 +4,8 @@ import MyLayout from '@/layouts/MyLayout';
 import SVGView from '@/components/SVGView';
 import styles from './index.less';
 import { connect } from 'dva';
+import { ipcRenderer } from 'electron';
+import { WINDOW_MAX } from '../../../constants';
 
 const { Step } = Steps;
 
@@ -56,15 +58,25 @@ const FlowPage = ({
     }
   };
 
+  const handleMax = () => {
+    ipcRenderer.send(WINDOW_MAX);
+  };
+
   return (
     <MyLayout location={location}>
-      {current > 0 && warnings ? (
-        <marquee className={styles.marquee} scrollamount={10} behavior="scroll">
-          {warnings}
-        </marquee>
-      ) : (
-        <div className={styles.header}>目前没有新增报修工单！</div>
-      )}
+      <div className={styles.header} onDoubleClick={handleMax}>
+        {current > 0 && warnings ? (
+          <marquee
+            className={styles.marquee}
+            scrollamount={10}
+            behavior="scroll"
+          >
+            {warnings}
+          </marquee>
+        ) : (
+          <div className={styles.nowarnings}>目前没有新增报修工单！</div>
+        )}
+      </div>
 
       <div className={styles.content}>
         <div className={styles.svgView}>

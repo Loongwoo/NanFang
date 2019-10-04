@@ -1,6 +1,7 @@
-import { app, BrowserWindow, Menu, systemPreferences } from 'electron';
+import { app, BrowserWindow, Menu, systemPreferences, ipcMain } from 'electron';
 import * as path from 'path';
 import * as url from 'url';
+import { WINDOW_MAX } from '../constants';
 
 const isMac = 'darwin' === process.platform;
 const USER_AGENT =
@@ -149,6 +150,15 @@ function createWindow() {
     }
   });
 }
+
+const handleMax = event => {
+  if (mainWindow.isMaximized()) {
+    mainWindow.unmaximize();
+  } else {
+    mainWindow.maximize();
+  }
+};
+ipcMain.on(WINDOW_MAX, handleMax);
 
 app.on('ready', () => {
   createWindow();
