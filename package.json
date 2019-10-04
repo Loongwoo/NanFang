@@ -1,6 +1,6 @@
 {
   "name": "nanfang",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "private": true,
   "author": {
     "name": "Loongwoo",
@@ -136,6 +136,7 @@
     "webpack-merge": "^4.2.1"
   },
   "dependencies": {
+    "@svgr/webpack": "^4.3.3",
     "antd": "^3.17.0",
     "axios": "^0.18.0",
     "classnames": "^2.2.6",

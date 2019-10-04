@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Button } from 'antd';
+import { Button, message } from 'antd';
 import SVG from '@/components/ReactSVG';
 import styles from './index.less';
 import Loading from '../Loading';
@@ -134,6 +134,7 @@ export default ({ src, title, lengend = true, child, onLoad }) => {
                   onError={e => {
                     // tslint:disable-next-line: no-console
                     console.log('svg', e);
+                    message.error(e.message);
                   }}
                   width={width}
                   height={height}

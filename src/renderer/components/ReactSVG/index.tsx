@@ -362,11 +362,11 @@ export default class InlineSVG extends React.PureComponent<IProps, IState> {
             throw new InlineSVGError('Not Found');
           }
 
-          if (
-            !['image/svg+xml', 'text/plain'].some(d => fileType.indexOf(d) >= 0)
-          ) {
-            throw new InlineSVGError(`Content type isn't valid: ${fileType}`);
-          }
+          // if (
+          //   !['image/svg+xml', 'text/plain'].some(d => fileType.indexOf(d) >= 0)
+          // ) {
+          //   throw new InlineSVGError(`Content type isn't valid: ${contentType} ${fileType}`);
+          // }
 
           return response.text();
         })
