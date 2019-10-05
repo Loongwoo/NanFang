@@ -4,12 +4,13 @@ import SVG from '@/components/ReactSVG';
 import styles from './index.less';
 import Loading from '../Loading';
 import { AutoSizer } from 'react-virtualized';
+import classNames from 'classnames';
 
 const StartLeft = 240;
 const StartTop = 44;
 const ScaleArray = [1, 2, 4, 8];
 
-export default ({ src, title, lengend = true, child, onLoad }) => {
+export default ({ className, src, title, lengend = true, child, onLoad }) => {
   const [scale, setScale] = useState(1);
 
   useEffect(() => {
@@ -116,16 +117,17 @@ export default ({ src, title, lengend = true, child, onLoad }) => {
   const style = { width: `${100 * scale}%`, height: `${100 * scale - 1}%` };
 
   return (
-    <div className={styles.main}>
-      {child}
-      {!child && (
-        <div
-          id="svg-container"
-          className={styles.svgContainer}
-          style={{ cursor: 'pointer' }}
-        >
-          <div style={style}>
-            <AutoSizer>
+    <div className={classNames(className, styles.main)}>
+      {child ? (
+        child
+      ) : (
+        <>
+          <div
+            id="svg-container"
+            className={styles.svgContainer}
+            style={{ cursor: 'pointer' }}
+          >
+            <AutoSizer style={style}>
               {({ width, height }) => (
                 <SVG
                   src={src}
@@ -136,38 +138,36 @@ export default ({ src, title, lengend = true, child, onLoad }) => {
                     console.log('svg', e);
                     message.error(e.message);
                   }}
-                  width={width}
-                  height={height}
+                  width="100%"
+                  height="100%"
                 />
               )}
             </AutoSizer>
+
+            {title && <h3 className={styles.title}>{title}</h3>}
+            {lengend && (
+              <div className={styles.legend}>
+                <div className={styles.l1}>绿色线条代表有电</div>
+                <div className={styles.l2}>红色线条代表停电</div>
+              </div>
+            )}
           </div>
-        </div>
-      )}
 
-      {title && !child && <h3 className={styles.title}>{title}</h3>}
-      {lengend && !child && (
-        <div className={styles.legend}>
-          <div className={styles.l1}>绿色线条代表有电</div>
-          <div className={styles.l2}>红色线条代表停电</div>
-        </div>
-      )}
-
-      {!child && (
-        <div className={styles.footer}>
-          {ScaleArray.map(a => (
-            <Button
-              key={a}
-              ghost={scale !== a}
-              type="primary"
-              shape="circle"
-              style={{ marginLeft: a > 1 ? 20 : 0 }}
-              onClick={() => handleScale(a)}
-            >
-              {`${a}X`}
-            </Button>
-          ))}
-        </div>
+          <div className={styles.footer}>
+            {ScaleArray.map(a => (
+              <Button
+                key={a}
+                ghost={scale !== a}
+                type="primary"
+                shape="circle"
+                style={{ marginLeft: a > 1 ? 20 : 0 }}
+                onClick={() => handleScale(a)}
+              >
+                {`${a}X`}
+              </Button>
+            ))}
+          </div>
+        </>
       )}
     </div>
   );

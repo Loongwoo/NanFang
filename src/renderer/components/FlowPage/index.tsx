@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Button, Steps, Modal } from 'antd';
 import MyLayout from '@/layouts/MyLayout';
 import SVGView from '@/components/SVGView';
@@ -79,9 +79,7 @@ const FlowPage = ({
       </div>
 
       <div className={styles.content}>
-        <div className={styles.svgView}>
-          <SVGView {...svg} />
-        </div>
+        <SVGView className={styles.svgView} {...svg} />
 
         <div className={styles.right}>
           {title && <h3 className={styles.title}>{title}</h3>}
