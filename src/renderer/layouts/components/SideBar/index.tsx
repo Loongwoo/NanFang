@@ -3,6 +3,8 @@ import { Menu, Icon } from 'antd';
 import { FormattedMessage } from 'umi-plugin-locale';
 import { connect } from 'dva';
 import styles from './index.less';
+import { ipcRenderer } from 'electron';
+import { WINDOW_MAX } from '../../../../constants';
 
 const SubMenu = Menu.SubMenu;
 
@@ -54,12 +56,16 @@ const SideBar = ({
     }
   });
 
+  const handleMax = () => {
+    ipcRenderer.send(WINDOW_MAX);
+  };
+
   const dateArr = new Date().toDateString().split(' ');
   const day = dateArr[2];
   const month = dateArr[1];
   return (
     <div className={styles.sidebar}>
-      <div className={styles.widget}>
+      <div className={styles.widget} onDoubleClick={handleMax}>
         <div className={styles.date}>
           <span className={styles.month}> {month}</span>
           <span className={styles.day}>{day}</span>
