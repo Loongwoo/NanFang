@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Button, Steps, Modal } from 'antd';
 import MyLayout from '@/layouts/MyLayout';
 import SVGView from '@/components/SVGView';
@@ -66,15 +66,11 @@ const FlowPage = ({
     <MyLayout location={location}>
       <div className={styles.header} onDoubleClick={handleMax}>
         {current > 0 && warnings ? (
-          <marquee
-            className={styles.marquee}
-            scrollamount={10}
-            behavior="scroll"
-          >
+          <marquee scrollamount={10} behavior="scroll" style={{ color: 'red' }}>
             {warnings}
           </marquee>
         ) : (
-          <div className={styles.nowarnings}>目前没有新增报修工单！</div>
+          <span style={{ color: 'green' }}>目前没有新增报修工单！</span>
         )}
       </div>
 
