@@ -131,8 +131,10 @@ export default ({ className, src, title, lengend = true, child, onLoad }) => {
         scrollHeight: h2,
       } = el;
       if (w1 !== w2 && h1 !== h2) {
-        el.scrollTop = h2 * y - ch2 / 2;
-        el.scrollLeft = w2 * x - cw2 / 2;
+        setScroll({
+          top: h2 * y - ch2 / 2,
+          left: w2 * x - cw2 / 2,
+        });
       } else {
         setTimeout(recovery, 100);
       }
