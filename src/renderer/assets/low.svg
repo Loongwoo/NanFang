@@ -9,8 +9,8 @@
         </path>
         <rect x="685" y="55" width="30" height="55" />
         <text x="700" y="81.5" transform="rotate(90,700,81.5)" fill="green" stroke="none" font-size="20" text-anchor="middle" dominant-baseline="middle" >
-      701
-    </text>
+          701
+        </text>
         <path d="m700 110v23h-200v50" stroke-dasharray="10">
             <animate attributeName="stroke-dashoffset" dur="1s" repeatCount="indefinite" keyTimes="0;1" calcMode="linear" values="40;0" />
         </path>
@@ -18,13 +18,13 @@
             <animate attributeName="stroke-dashoffset" dur="1s" repeatCount="indefinite" keyTimes="0;1" calcMode="linear" values="40;0" />
         </path>
         <text x="410" y="120" fill="green" stroke="none" font-size="20" text-anchor="middle" dominant-baseline="middle" >
-      Tr1-1
-    </text>
+          Tr1-1
+        </text>
         <circle cx="400" cy="154" r="20" />
         <circle cx="420" cy="154" r="20" />
         <text x="440" y="210" fill="green" stroke="none" font-size="20" text-anchor="middle" dominant-baseline="middle" >
-      Cb1-1
-    </text>
+          Cb1-1
+        </text>
         <rect x="485" y="183" width="30" height="55" />
         <path d="m500 238v111" stroke-dasharray="10">
             <animate attributeName="stroke-dashoffset" dur="1s" repeatCount="indefinite" keyTimes="0;1" calcMode="linear" values="40;0" />
@@ -36,43 +36,44 @@
         <circle cx="593" cy="265" r="20" />
         <circle cx="613" cy="265" r="20" />
         <text x="700" y="265" fill="green" stroke="none" font-size="20" text-anchor="middle" dominant-baseline="middle" >
-      Tr1-2
-    </text>
+          Tr1-2
+        </text>
         <path d="m500 328h73" stroke-dasharray="10">
             <animate attributeName="stroke-dashoffset" dur="1s" repeatCount="indefinite" keyTimes="0;1" calcMode="linear" values="40;0" />
         </path>
         <circle cx="593" cy="328" r="20" />
         <circle cx="613" cy="328" r="20" />
         <text x="700" y="328" fill="green" stroke="none" font-size="20" text-anchor="middle" dominant-baseline="middle" >
-      Tr1-3
-    </text>
+          Tr1-3
+        </text>
         <text x="440" y="377" fill="green" stroke="none" font-size="20" text-anchor="middle" dominant-baseline="middle" >
-      Cb1-2
-    </text>
+          Cb1-2
+        </text>
         <rect x="485" y="350" width="30" height="55" />
         <path d="m500 422h-55" stroke-dasharray="10">
             <animate attributeName="stroke-dashoffset" dur="1s" repeatCount="indefinite" keyTimes="0;1" calcMode="linear" values="40;0" />
         </path>
         <rect x="390" y="407" width="55" height="30" />
         <text x="350" y="422" fill="green" stroke="none" font-size="20" text-anchor="middle" dominant-baseline="middle" >
-      Cb1-3
-    </text>
+          Cb1-3
+        </text>
         <path d="m500 405v40" stroke-dasharray="10">
             <animate attributeName="stroke-dashoffset" dur="1s" repeatCount="indefinite" keyTimes="0;1" calcMode="linear" values="40;0" />
         </path>
         <rect x="473" y="445" width="55" height="30" />
         <text x="570" y="460" fill="green" stroke="none" font-size="20" text-anchor="middle" dominant-baseline="middle" >
-      Cb1-4
-    </text>
+          Cb1-4
+        </text>
         <path d="m500 475v35" stroke-dasharray="10">
             <animate attributeName="stroke-dashoffset" dur="1s" repeatCount="indefinite" keyTimes="0;1" calcMode="linear" values="40;0" />
         </path>
         <circle cx="500" cy="530" r="20" />
         <circle cx="500" cy="550" r="20" />
         <text x="570" y="540" fill="green" stroke="none" font-size="20" text-anchor="middle" dominant-baseline="middle" >
-      Tr1-4
-    </text>
+          Tr1-4
+        </text>
     </g>
+    
     <path id="line-f1" d="m500 570v40" fill="none" stroke-width="1" stroke="green" stroke-dasharray="10">
         <animate attributeName="stroke-dashoffset" dur="1s" repeatCount="indefinite" keyTimes="0;1" calcMode="linear" values="40;0" />
     </path>
