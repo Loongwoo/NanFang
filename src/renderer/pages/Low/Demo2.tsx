@@ -1,13 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import FlowPage from '@/components/FlowPage';
 import Building from '@/components/Building';
-import {
-  addClkEvt,
-  setStroke,
-  askModal,
-  blinkBlue,
-  clearFill,
-} from '@/utils/svgUtils';
+import * as _ from '@/utils/svgUtils';
 
 const warnings = [
   '工单1：楼栋G3用户7报修故障；',
@@ -41,52 +35,52 @@ export default ({ location }) => {
 
   useEffect(() => {
     if (current > 1) {
-      setStroke('rect-g3', 'red');
-      setStroke('line-g3', 'red', false);
-      setStroke('rect-g4', 'red');
-      setStroke('line-g4', 'red', false);
+      _.setStroke('rect-g3', 'red');
+      _.setStroke('line-g3', 'red', false);
+      _.setStroke('rect-g4', 'red');
+      _.setStroke('line-g4', 'red', false);
     }
     if (current > 3) {
-      setStroke('rect-f3', 'red');
-      setStroke('line-f3', 'red', false);
+      _.setStroke('rect-f3', 'red');
+      _.setStroke('line-f3', 'red', false);
     }
 
     if (current === 0) {
       setBuildin(null);
-      setStroke('rect-g3', 'green');
-      setStroke('line-g3', 'green', true);
-      setStroke('rect-g4', 'green');
-      setStroke('line-g4', 'green', true);
-      setStroke('rect-f3', 'green');
-      setStroke('line-f3', 'green', true);
+      _.setStroke('rect-g3', 'green');
+      _.setStroke('line-g3', 'green', true);
+      _.setStroke('rect-g4', 'green');
+      _.setStroke('line-g4', 'green', true);
+      _.setStroke('rect-f3', 'green');
+      _.setStroke('line-f3', 'green', true);
 
-      clearFill('rect-g3');
-      clearFill('rect-g4');
-      clearFill('rect-f1');
-      clearFill('rect-f2');
-      clearFill('rect-f3');
-      clearFill('rect-f4');
+      _.clearFill('rect-g3');
+      _.clearFill('rect-g4');
+      _.clearFill('rect-f1');
+      _.clearFill('rect-f2');
+      _.clearFill('rect-f3');
+      _.clearFill('rect-f4');
     } else if (current === 1) {
-      blinkBlue('rect-g3');
-      blinkBlue('rect-g4');
+      _.blinkBlue('rect-g3');
+      _.blinkBlue('rect-g4');
     } else if (current === 2) {
       setBuildin(null);
-      clearFill('rect-g3');
-      clearFill('rect-g4');
+      _.clearFill('rect-g3');
+      _.clearFill('rect-g4');
     } else if (current === 3) {
-      blinkBlue('rect-f3');
+      _.blinkBlue('rect-f3');
     } else if (current === 4) {
-      clearFill('rect-f3');
+      _.clearFill('rect-f3');
     } else if (current === 5) {
-      blinkBlue('rect-f1');
+      _.blinkBlue('rect-f1');
     } else if (current === 6) {
-      clearFill('rect-f1');
+      _.clearFill('rect-f1');
     } else if (current === 7) {
-      blinkBlue('rect-f2');
-      blinkBlue('rect-f4');
+      _.blinkBlue('rect-f2');
+      _.blinkBlue('rect-f4');
     } else if (current === 8) {
-      clearFill('rect-f2');
-      clearFill('rect-f4');
+      _.clearFill('rect-f2');
+      _.clearFill('rect-f4');
     }
   });
 
@@ -96,23 +90,23 @@ export default ({ location }) => {
   };
 
   const onLoad = () => {
-    addClkEvt('rect-g3', () =>
+    _.addClkEvt('rect-g3', () =>
       setBuildin({ name: 'G3', value: false, onOk: () => handleOk(2) })
     );
-    addClkEvt('rect-g4', () =>
+    _.addClkEvt('rect-g4', () =>
       setBuildin({ name: 'G4', value: false, onOk: () => handleOk(2) })
     );
-    addClkEvt('rect-f1', () =>
-      askModal({ title: '开关FZX1-1', value: true, onOk: () => handleOk(6) })
+    _.addClkEvt('rect-f1', () =>
+      _.askModal({ title: '开关FZX1-1', value: true, onOk: () => handleOk(6) })
     );
-    addClkEvt('rect-f2', () =>
-      askModal({ title: '开关FZX1-2', value: true, onOk: () => handleOk(8) })
+    _.addClkEvt('rect-f2', () =>
+      _.askModal({ title: '开关FZX1-2', value: true, onOk: () => handleOk(8) })
     );
-    addClkEvt('rect-f3', () =>
-      askModal({ title: '开关FZX1-3', value: false, onOk: () => handleOk(4) })
+    _.addClkEvt('rect-f3', () =>
+      _.askModal({ title: '开关FZX1-3', value: false, onOk: () => handleOk(4) })
     );
-    addClkEvt('rect-f4', () =>
-      askModal({ title: '开关FZX1-4', value: true, onOk: () => handleOk(8) })
+    _.addClkEvt('rect-f4', () =>
+      _.askModal({ title: '开关FZX1-4', value: true, onOk: () => handleOk(8) })
     );
   };
 

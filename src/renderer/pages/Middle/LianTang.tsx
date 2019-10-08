@@ -1,16 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import FlowPage from '@/components/FlowPage';
 import { Modal } from 'antd';
-import {
-  addClkEvt,
-  setStroke,
-  showModal,
-  blinkRed,
-  clearChild,
-  setSW,
-  blinkBlue,
-  clearFill,
-} from '@/utils/svgUtils';
+import * as _ from '@/utils/svgUtils';
 
 const warnings = [
   [
@@ -38,40 +29,40 @@ export default ({ location }) => {
 
   useEffect(() => {
     if (current >= 4) {
-      setStroke('rect-f', '#f00');
-      setStroke('line-f', '#f00', false);
+      _.setStroke('rect-f', '#f00');
+      _.setStroke('line-f', '#f00', false);
     }
     if (current >= 5) {
-      setStroke('rect-x', '#f00');
-      setStroke('rect-d', '#f00');
-      setStroke('line-d', '#f00');
-      blinkRed('rect-x', 'stroke');
-      blinkRed('rect-d', 'stroke');
-      setSW('rect-x', 4);
-      setSW('rect-d', 4);
+      _.setStroke('rect-x', '#f00');
+      _.setStroke('rect-d', '#f00');
+      _.setStroke('line-d', '#f00');
+      _.blinkRed('rect-x', 'stroke');
+      _.blinkRed('rect-d', 'stroke');
+      _.setSW('rect-x', 4);
+      _.setSW('rect-d', 4);
     }
 
     if (current === 0) {
-      setStroke('rect-f', '#000');
-      setStroke('line-f', '#0f0', true);
+      _.setStroke('rect-f', '#000');
+      _.setStroke('line-f', '#0f0', true);
 
-      setStroke('rect-x', '#000');
-      setStroke('rect-d', '#f0f');
-      clearChild('rect-x');
-      clearChild('rect-d');
-      setSW('rect-x', 2);
-      setSW('rect-d', 2);
+      _.setStroke('rect-x', '#000');
+      _.setStroke('rect-d', '#f0f');
+      _.clearFill('rect-x');
+      _.clearFill('rect-d');
+      _.clearFill('rect-c');
+      _.clearFill('rect-f');
 
-      clearFill('rect-c');
-      clearFill('rect-f');
+      _.setSW('rect-x', 2);
+      _.setSW('rect-d', 2);
     } else if (current === 1) {
-      blinkBlue('rect-c');
+      _.blinkBlue('rect-c');
     } else if (current === 2) {
-      clearFill('rect-c');
+      _.clearFill('rect-c');
     } else if (current === 3) {
-      blinkBlue('rect-f');
+      _.blinkBlue('rect-f');
     } else if (current === 4) {
-      clearFill('rect-f');
+      _.clearFill('rect-f');
     } else if (current === 5) {
       Modal.warning({
         title: '更新告警',
@@ -91,15 +82,15 @@ export default ({ location }) => {
   });
 
   const onLoad = () => {
-    addClkEvt('rect-c', () =>
-      showModal({
+    _.addClkEvt('rect-c', () =>
+      _.showModal({
         title: '万城大信充电桩专用箱变',
         value: true,
         onOk: () => setCurrent(2),
       })
     );
-    addClkEvt('rect-f', () =>
-      showModal({
+    _.addClkEvt('rect-f', () =>
+      _.showModal({
         title: '大信D段专用电房',
         value: false,
         onOk: () => setCurrent(4),

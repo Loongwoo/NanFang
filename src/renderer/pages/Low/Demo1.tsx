@@ -1,13 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import FlowPage from '@/components/FlowPage';
 import Building from '@/components/Building';
-import {
-  addClkEvt,
-  setStroke,
-  askModal,
-  blinkBlue,
-  clearFill,
-} from '@/utils/svgUtils';
+import * as _ from '@/utils/svgUtils';
 
 const warnings = [
   '工单1：楼栋G1用户2报修故障；',
@@ -35,30 +29,30 @@ export default ({ location }) => {
 
   useEffect(() => {
     if (current > 1) {
-      setStroke('rect-g1', 'red');
-      setStroke('line-g1', 'red', false);
+      _.setStroke('rect-g1', 'red');
+      _.setStroke('line-g1', 'red', false);
     }
     if (current === 0) {
       setBuildin(null);
-      setStroke('rect-g1', 'green');
-      setStroke('line-g1', 'green', true);
-      clearFill('rect-g1');
-      clearFill('rect-f2');
-      clearFill('rect-g2');
+      _.setStroke('rect-g1', 'green');
+      _.setStroke('line-g1', 'green', true);
+      _.clearFill('rect-g1');
+      _.clearFill('rect-f2');
+      _.clearFill('rect-g2');
     } else if (current === 1) {
-      blinkBlue('rect-g1');
+      _.blinkBlue('rect-g1');
     } else if (current === 2) {
       setBuildin(null);
-      clearFill('rect-g1');
+      _.clearFill('rect-g1');
     } else if (current === 3) {
-      blinkBlue('rect-f2');
+      _.blinkBlue('rect-f2');
     } else if (current === 4) {
-      clearFill('rect-f2');
+      _.clearFill('rect-f2');
     } else if (current === 5) {
-      blinkBlue('rect-g2');
+      _.blinkBlue('rect-g2');
     } else if (current === 6) {
       setBuildin(null);
-      clearFill('rect-g2');
+      _.clearFill('rect-g2');
     }
   });
 
@@ -68,13 +62,13 @@ export default ({ location }) => {
   };
 
   const onLoad = () => {
-    addClkEvt('rect-g1', () =>
+    _.addClkEvt('rect-g1', () =>
       setBuildin({ name: 'G1', value: false, onOk: () => handleOk(2) })
     );
-    addClkEvt('rect-f2', () =>
-      askModal({ title: '开关FZX1-2', value: true, onOk: () => handleOk(4) })
+    _.addClkEvt('rect-f2', () =>
+      _.askModal({ title: '开关FZX1-2', value: true, onOk: () => handleOk(4) })
     );
-    addClkEvt('rect-g2', () =>
+    _.addClkEvt('rect-g2', () =>
       setBuildin({ name: 'G2', value: true, onOk: () => handleOk(6) })
     );
   };

@@ -71,13 +71,6 @@ export const dashAnimate = id => {
   }
 };
 
-export const clearChild = id => {
-  const el = getEl(id);
-  if (el) {
-    el.innerHTML = '';
-  }
-};
-
 export const clearFill = id => {
   const el = getEl(id);
   if (el) {
@@ -108,7 +101,7 @@ export const setStroke = (id, color, dash) => {
     if (dash) {
       dashAnimate(el);
     } else {
-      clearChild(el);
+      el.innerHTML = '';
     }
   }
 };
