@@ -8,7 +8,6 @@ import {
   blinkBlue,
   clearFill,
 } from '@/utils/svgUtils';
-import low from '@/assets/low.svg';
 
 const warnings = [
   '工单1：楼栋G3用户7报修故障；',
@@ -117,13 +116,14 @@ export default ({ location }) => {
     );
   };
 
+  const src = require('@/assets/low.svg') as string;
   const child = buildin ? <Building {...buildin} /> : null;
 
   return (
     <FlowPage
       location={location}
       warnings={warnings}
-      svg={{ title: '拓扑图', src: low, child, onLoad }}
+      svg={{ title: '拓扑图', src, child, onLoad }}
       title="示例二"
       steps={steps}
       result={result}

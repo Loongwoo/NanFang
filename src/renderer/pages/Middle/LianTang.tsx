@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import FlowPage from '@/components/FlowPage';
 import { Modal } from 'antd';
-import liantang from '@/assets/liantang.svg';
 import {
   addClkEvt,
   setStroke,
@@ -108,11 +107,13 @@ export default ({ location }) => {
     );
   };
 
+  const src = require('@/assets/liantang.svg') as string;
+
   return (
     <FlowPage
       location={location}
       warnings={warnings}
-      svg={{ lengend: false, src: liantang, onLoad }}
+      svg={{ lengend: false, src, onLoad }}
       title="莲塘天明线706"
       steps={steps}
       nexts={[2, 4]}
