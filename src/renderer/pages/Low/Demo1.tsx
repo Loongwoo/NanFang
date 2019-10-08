@@ -80,18 +80,13 @@ export default ({ location }) => {
     );
   };
 
-  const svg = {
-    title: '拓扑图',
-    src: low,
-    child: buildin ? <Building {...buildin} /> : null,
-    onLoad,
-  };
+  const child = buildin ? <Building {...buildin} /> : null;
 
   return (
     <FlowPage
       location={location}
       warnings={warnings}
-      svg={svg}
+      svg={{ title: '拓扑图', src: low, child, onLoad }}
       title="示例一"
       steps={steps}
       result={result}

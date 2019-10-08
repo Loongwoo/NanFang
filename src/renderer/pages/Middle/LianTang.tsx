@@ -78,6 +78,7 @@ export default ({ location }) => {
         title: '更新告警',
         content: '大信置业G专用配电站602合位，大信置业D专用配电站603开关分位',
         okText: '知道了',
+        onOk: () => setCurrent(6),
       });
     } else if (current === 6) {
       Modal.info({
@@ -114,7 +115,7 @@ export default ({ location }) => {
       svg={{ lengend: false, src: liantang, onLoad }}
       title="莲塘天明线706"
       steps={steps}
-      nexts={[2, 4, 5]}
+      nexts={[2, 4]}
       result={result}
       current={current}
       changeCurrent={setCurrent}
