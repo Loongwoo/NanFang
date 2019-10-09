@@ -7,6 +7,8 @@
 ## 开发
 
 ```
+$ git clone https://github.com/Loongwoo/NanFang.git
+$ cd NanFang
 $ yarn install
 $ yarn run start:main
 $ yarn run start:renderer
