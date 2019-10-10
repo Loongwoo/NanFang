@@ -5,6 +5,7 @@ import { connect } from 'dva';
 import styles from './index.less';
 import { ipcRenderer } from 'electron';
 import { WINDOW_MAX } from '../../../../constants';
+import checkUpdate from '@/utils/checkUpdate';
 
 const SubMenu = Menu.SubMenu;
 
@@ -15,6 +16,10 @@ const SideBar = ({
   before,
   after,
 }) => {
+  useEffect(() => {
+    checkUpdate();
+  }, []);
+
   const defaultSelectedKeys = [pathname.slice(1)];
   const defaultOpenKeys = ['low', 'middle'];
 
