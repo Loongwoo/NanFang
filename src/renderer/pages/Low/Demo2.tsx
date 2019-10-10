@@ -97,16 +97,20 @@ export default ({ location }) => {
       setBuildin({ name: 'G4', value: false, onOk: () => handleOk(2) })
     );
     _.addClkEvt('rect-f1', () =>
-      _.askModal({ title: '开关FZX1-1', value: true, onOk: () => handleOk(6) })
+      _.showModal({ title: '开关FZX1-1', value: true, onOk: () => handleOk(6) })
     );
     _.addClkEvt('rect-f2', () =>
-      _.askModal({ title: '开关FZX1-2', value: true, onOk: () => handleOk(8) })
+      _.showModal({ title: '开关FZX1-2', value: true, onOk: () => handleOk(8) })
     );
     _.addClkEvt('rect-f3', () =>
-      _.askModal({ title: '开关FZX1-3', value: false, onOk: () => handleOk(4) })
+      _.showModal({
+        title: '开关FZX1-3',
+        value: false,
+        onOk: () => handleOk(4),
+      })
     );
     _.addClkEvt('rect-f4', () =>
-      _.askModal({ title: '开关FZX1-4', value: true, onOk: () => handleOk(8) })
+      _.showModal({ title: '开关FZX1-4', value: true, onOk: () => handleOk(8) })
     );
   };
 

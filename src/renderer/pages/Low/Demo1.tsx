@@ -66,7 +66,7 @@ export default ({ location }) => {
       setBuildin({ name: 'G1', value: false, onOk: () => handleOk(2) })
     );
     _.addClkEvt('rect-f2', () =>
-      _.askModal({ title: '开关FZX1-2', value: true, onOk: () => handleOk(4) })
+      _.showModal({ title: '开关FZX1-2', value: true, onOk: () => handleOk(4) })
     );
     _.addClkEvt('rect-g2', () =>
       setBuildin({ name: 'G2', value: true, onOk: () => handleOk(6) })
