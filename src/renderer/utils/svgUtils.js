@@ -31,14 +31,18 @@ export const askModal = ({ title, value, onOk }) =>
     },
   });
 
-export const blinkBlue = (id, n = 'fill') => blink(id, 0, 0, 255, 0.8, n);
+export const blinkBlue = (id, n = 'fill') => blink(id, 0, 0, 255, 0.8, n, true);
 
-export const blinkRed = (id, n = 'fill') => blink(id, 255, 0, 0, 0.8, n);
+export const blinkGreen = (id, n = 'fill', f = true) =>
+  blink(id, 0, 255, 0, 1, n, f);
+
+export const blinkRed = (id, n = 'fill', f = true) =>
+  blink(id, 255, 0, 0, 1, n, f);
 
 export const getEl = o =>
   typeof o === 'string' ? document.getElementById(o) : o;
 
-export const blink = (id, r, g, b, a, n) => {
+export const blink = (id, r, g, b, a, n, f) => {
   const el = getEl(id);
   if (el) {
     const values = `rgba(${r}, ${g}, ${b}, ${a});rgba(${r}, ${g}, ${b}, 0);rgba(${r}, ${g}, ${b}, ${a})`;
@@ -52,7 +56,7 @@ export const blink = (id, r, g, b, a, n) => {
     animate.setAttributeNS(null, 'values', values);
     el.appendChild(animate);
 
-    if (n === 'fill') {
+    if (f) {
       focus(el);
     }
   }
@@ -73,13 +77,21 @@ export const focus = id => {
     const sX = (scrollWidth - svgWidth * scale) * 0.5;
     const sY = (scrollHeight - svgHeight * scale) * 0.5;
 
-    const x = Number(el.getAttribute('x')) * scale + sX;
-    const y = Number(el.getAttribute('y')) * scale + sY;
-    const w = Number(el.getAttribute('width')) * scale;
-    const h = Number(el.getAttribute('height')) * scale;
+    if (el.localName === 'rect') {
+      const x = Number(el.getAttribute('x')) * scale + sX;
+      const y = Number(el.getAttribute('y')) * scale + sY;
+      const w = Number(el.getAttribute('width')) * scale;
+      const h = Number(el.getAttribute('height')) * scale;
 
-    con.scrollLeft = x - (clientWidth - w) / 2;
-    con.scrollTop = y - (clientHeight - h) / 2;
+      con.scrollLeft = x - (clientWidth - w) / 2;
+      con.scrollTop = y - (clientHeight - h) / 2;
+    } else if (el.localName === 'circle') {
+      const x = Number(el.getAttribute('cx')) * scale + sX;
+      const y = Number(el.getAttribute('cy')) * scale + sY;
+
+      con.scrollLeft = x - clientWidth / 2;
+      con.scrollTop = y - clientHeight / 2;
+    }
   }
 };
 

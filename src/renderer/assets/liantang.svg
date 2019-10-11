@@ -325,6 +325,7 @@
     <use height="37" transform="scale(1.044)" width="18.8" x="1222.5" xlink:href="#n" y="914.2"/>
     <use height="37" transform="scale(1.044)" width="18.8" x="1269.4" xlink:href="#n" y="914.2"/>
     <use height="37" transform="scale(1.044)" width="18.8" x="1316.3" xlink:href="#o" y="914.2" id="g-602" />
+    <circle cx="1380.3" cy="954.2" r="60" stroke="none" fill="none" stroke-width="4" id="g-circle" />
     <use height="37" transform="scale(1.044)" width="18.8" x="1356.6" xlink:href="#n" y="914.2"/>
     <use height="37" transform="scale(1.044)" width="18.8" x="1394.9" xlink:href="#n" y="914.2"/>
     <use height="37" transform="scale(1.044)" width="18.8" x="1465.3" xlink:href="#n" y="1323.2"/>
@@ -341,6 +342,7 @@
     <use height="37" transform="scale(1.044)" width="18.8" x="2315.4" xlink:href="#n" y="953.5"/>
     <use height="37" transform="scale(1.044)" width="18.8" x="2362.3" xlink:href="#o" y="953.5"/>
     <use height="37" transform="scale(1.044)" width="18.8" x="2426.5" xlink:href="#n" y="953.5" id="d-603" />
+    <circle cx="2475.3" cy="994.2" r="60" stroke="none" fill="none" stroke-width="4" id="d-circle" />
     <use height="37" transform="scale(1.044)" width="18.8" x="2460" xlink:href="#o" y="953.5"/>
     <use height="37" transform="scale(1.044)" width="18.8" x="2497.4" xlink:href="#o" y="953.5"/>
     <use height="71.7" transform="scale(.84)" width="34" x="1207.5" xlink:href="#e" y="1264.3"/>

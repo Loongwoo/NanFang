@@ -36,8 +36,8 @@ export default ({ location }) => {
       _.setStroke('rect-x', '#f00');
       _.setStroke('rect-d', '#f00');
       _.setStroke('line-d', '#f00');
-      _.blinkRed('rect-x', 'stroke');
-      _.blinkRed('rect-d', 'stroke');
+      _.blinkRed('rect-x', 'stroke', false);
+      _.blinkRed('rect-d', 'stroke', false);
       _.setSW('rect-x', 4);
       _.setSW('rect-d', 4);
     }
@@ -45,7 +45,8 @@ export default ({ location }) => {
     if (current === 0) {
       _.setStroke('rect-f', '#000');
       _.setStroke('line-f', '#0f0', true);
-
+      _.setStroke('g-circle', 'none', false);
+      _.setStroke('d-circle', 'none', false);
       _.setStroke('rect-x', '#000');
       _.setStroke('rect-d', '#f0f');
       _.clearFill('rect-x');
@@ -59,11 +60,15 @@ export default ({ location }) => {
       _.blinkBlue('rect-c');
     } else if (current === 2) {
       _.clearFill('rect-c');
+      _.blinkGreen('g-circle', 'stroke');
     } else if (current === 3) {
+      _.setStroke('g-circle', 'none', false);
       _.blinkBlue('rect-f');
     } else if (current === 4) {
       _.clearFill('rect-f');
+      _.blinkRed('d-circle', 'stroke');
     } else if (current === 5) {
+      _.setStroke('d-circle', 'none', false);
       Modal.warning({
         title: '更新告警',
         content: '大信置业G专用配电站602合位，大信置业D专用配电站603开关分位',
