@@ -158,6 +158,7 @@ export default ({ className, src, title, lengend = true, child, onLoad }) => {
             <AutoSizer style={style}>
               {({ width, height }) => (
                 <SVG
+                  id="my-svg"
                   src={src}
                   loader={<Loading />}
                   onLoad={onLoad}

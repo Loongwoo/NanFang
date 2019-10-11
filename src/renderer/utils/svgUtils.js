@@ -33,8 +33,6 @@ export const askModal = ({ title, value, onOk }) =>
 
 export const blinkBlue = (id, n = 'fill') => blink(id, 0, 0, 255, 0.8, n);
 
-export const blinkYellow = (id, n = 'fill') => blink(id, 255, 255, 0, 0.8, n);
-
 export const blinkRed = (id, n = 'fill') => blink(id, 255, 0, 0, 0.8, n);
 
 export const getEl = o =>
@@ -53,6 +51,28 @@ export const blink = (id, r, g, b, a, n) => {
     animate.setAttributeNS(null, 'calcMode', 'linear');
     animate.setAttributeNS(null, 'values', values);
     el.appendChild(animate);
+
+    if (n === 'fill') {
+      const [, , svgWidth, svgHeight] = getEl('my-svg')
+        .getAttribute('viewBox')
+        .split(' ')
+        .map(a => parseInt(a, 10));
+
+      const con = document.getElementById('svg-container');
+      const { clientWidth, clientHeight, scrollWidth, scrollHeight } = con;
+
+      const scale = Math.min(scrollWidth / svgWidth, scrollHeight / svgHeight);
+      const sX = (scrollWidth - svgWidth * scale) * 0.5;
+      const sY = (scrollHeight - svgHeight * scale) * 0.5;
+
+      const x = Number(el.getAttribute('x')) * scale + sX;
+      const y = Number(el.getAttribute('y')) * scale + sY;
+      const w = Number(el.getAttribute('width')) * scale;
+      const h = Number(el.getAttribute('height')) * scale;
+
+      con.scrollLeft = x - (clientWidth - w) / 2;
+      con.scrollTop = y - (clientHeight - h) / 2;
+    }
   }
 };
 

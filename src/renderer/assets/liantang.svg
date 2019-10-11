@@ -166,7 +166,7 @@
     <path d="m0 0h2866v2027h-2866z" fill="#fff" stroke="#fff" stroke-width="4"/>
     <path d="m157.6 1749.3v-96.7h167.1v96.7z" fill="none" stroke="#000" stroke-width="2"/>
     <path d="m860.1 1151.3v-271h223v271z" fill="none" stroke="#141414" stroke-width="2"/>
-    <path id="rect-f" d="m2450.6 845.8v-250h235v250z" fill="none" stroke="#141414" stroke-width="2"/>
+    <rect id="rect-f" x="2450.6" y="595.8" width="235" height="250" fill="none" stroke="#141414" stroke-width="2"/>
     <path d="m2128.6 1015.8v-119h56v119z" fill="none" stroke="#141414"/>
     <path d="m313.6 1293.8v-297h499v297z" fill="none" stroke="#141414" stroke-width="2"/>
     <path d="m224.6 794.8v-296h390v296z" fill="none" stroke="#141414" stroke-width="2"/>
@@ -179,10 +179,10 @@
     <path d="m243.6 347.8v-259h411v259z" fill="none" stroke="#141414" stroke-width="2"/>
     <path d="m909.6 279.8v-135h306v135z" fill="none" stroke="#141414" stroke-width="2"/>
     <path d="m1434.6 368.8v-271h361v271z" fill="none" stroke="#f0f" stroke-dasharray="5 2 5 2" stroke-width="2"/>
-    <path id="rect-g" d="m1126.6 1243.8v-299h466v299z" fill="none" stroke="#141414" stroke-width="2"/>
-    <path id="rect-x" d="m1462.6 1666.8v-296h495v296z" fill="none" stroke="#141414" stroke-width="2"/>
-    <path id="rect-d" d="m2216.6 1301.8v-316h533v316z" fill="none" stroke="#f0f" stroke-dasharray="5 2 5 2" stroke-width="2"/>
-    <path id="rect-c" d="m2008.6 1582.8v-245h179v245z" fill="none" stroke="#141414"/>
+    <rect id="rect-g" x="1126.6" y="944.8" width="466" height="299" fill="none" stroke="#141414" stroke-width="2"/>
+    <rect id="rect-x" x="1462.6" y="1370.8" width="495" height="296" fill="none" stroke="#141414" stroke-width="2"/>
+    <rect id="rect-d" x="2216.6" y="985.8" width="533" height="316" fill="none" stroke="#f0f" stroke-dasharray="5 2 5 2" stroke-width="2"/>
+    <rect id="rect-c" x="2008.6" y="1337.8" width="179" height="245" fill="none" stroke="#141414"/>
     <path d="m1639.1 1218.8v-246h198v246z" fill="none" stroke="#141414" stroke-width="2"/>
     <path d="m1879.6 1214.8v-216h192v216z" fill="none" stroke="#141414" stroke-width="2"/>
     <use height="17.3" transform="scale(.81)" width="12" x="539.1" xlink:href="#b" y="1331.4"/>
