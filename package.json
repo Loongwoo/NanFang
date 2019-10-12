@@ -147,7 +147,6 @@
     "http-proxy": "^1.17.0",
     "lodash": "^4.17.11",
     "normalize.css": "^8.0.1",
-    "react-from-dom": "^0.2.3",
     "react-virtualized": "^9.21.1",
     "redux-persist": "^5.10.0"
   },
