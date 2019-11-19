@@ -44,9 +44,12 @@ const Login = ({ isLogin, login, logout, location, form }) => {
           {getFieldDecorator('secretKey', {
             rules: [
               { required: true, message: '激活码不能为空' },
-              { pattern: /^[a-z\d-]{36}$/i, message: '激活码格式不对' },
+              {
+                pattern: /^[A-Z\d]{5}-[A-Z\d]{5}-[A-Z\d]{5}-[A-Z\d]{5}-[A-Z\d]{5}$/i,
+                message: '激活码格式不对',
+              },
             ],
-          })(<Input placeholder="请输入64位的激活码" />)}
+          })(<Input placeholder="请输入激活码" />)}
         </Form.Item>
 
         <Form.Item wrapperCol={{ offset: 4 }}>

@@ -82,7 +82,7 @@ export default ({ location }) => {
       _.clearFill('rect-f2');
       _.clearFill('rect-f4');
     }
-  });
+  }, [current]);
 
   const handleOk = v => {
     setCurrent(v);

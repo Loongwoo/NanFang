@@ -84,7 +84,7 @@ export default ({ location }) => {
         onOk: () => setCurrent(7),
       });
     }
-  });
+  }, [current]);
 
   const onLoad = () => {
     _.addClkEvt('rect-c', () =>

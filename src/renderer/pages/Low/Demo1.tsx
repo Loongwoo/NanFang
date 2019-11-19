@@ -54,7 +54,7 @@ export default ({ location }) => {
       setBuildin(null);
       _.clearFill('rect-g2');
     }
-  });
+  }, [current]);
 
   const handleOk = v => {
     setCurrent(v);
